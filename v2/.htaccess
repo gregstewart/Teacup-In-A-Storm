@@ -1,0 +1,2 @@
+RewriteEngine on 
+rewriteRule !\.(gif|jpg|png|css)$ index.php?file=%{THE_REQUEST}
