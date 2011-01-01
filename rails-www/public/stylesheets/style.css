@@ -47,14 +47,15 @@
 	background-color : #fff;
 	color : #f66419;
 	text-decoration : none;
+        text-transform: uppercase;
 }
 
 #navigation a:hover {
 	background-color : #fff;
 	color : #f66419;
 	text-decoration : underline;
+        text-transform: uppercase;
 }
-
 /* end header */
 
 /* start body */
