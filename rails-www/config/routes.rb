@@ -1,4 +1,8 @@
 RailsWww::Application.routes.draw do
+  get "pages/home"
+  get "pages/portfolio"
+  get "pages/cv"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
