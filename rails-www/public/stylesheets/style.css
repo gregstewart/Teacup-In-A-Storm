@@ -232,6 +232,14 @@
 	text-transform : uppercase;
 }
 
+#central h3.cv {
+    display: block;
+    color: #9bcdff;
+    padding-left : 5px;
+    margin-top : 5px;
+    margin-bottom : 5px;
+}
+
 #central h4 {
 	padding-left : 5px;
 	margin-top : 5px;
@@ -372,6 +380,12 @@
 	color : #666;
 }
 
+#central div.personal-details {
+    padding-left : 5px;
+    margin-top : 5px;
+    margin-bottom : 15px;
+}
+
 /* start footer */
 #footer {
 	text-align : center;
@@ -395,11 +409,11 @@
 /* end footer */
 
 body {
-	background-image : url(/images/teacup.gif);
-	background-repeat : no-repeat;
-	height: 600px;
-  voice-family:inherit;
-  height: 600px;
+    background-image : url(/images/teacup.gif);
+    background-repeat : no-repeat;
+    height: 600px;
+    voice-family:inherit;
+    height: 600px;
 } html>body {height: 600px;}
 
 /* end body */
