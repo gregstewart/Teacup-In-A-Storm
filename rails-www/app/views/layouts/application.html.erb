@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%= csrf_meta_tag %>
+    <%= render 'layouts/meta' %>
+    <%= render 'layouts/stylesheets' %>
+  </head>
+  <body class="col-SM">
+    <%= render 'layouts/header' %>
+
+    <%= render 'layouts/navigation' %>
+    
+    <%= render 'layouts/breadcrumb' %>
+
+    <!-- Start content -->
+    <div id="content">
+
+      <!-- Start wrap -->
+      <div class="wrap">
+
+        <!-- Main Column -->
+        <div class="maincol" id="central">
+          <h3>Main col</h3>
+
+          <%= yield %>
+        </div>
+        <!-- End Main Column -->
+
+        <!-- Sub Column -->
+        <div class="subcol">
+          <h3>Left col</h3>
+
+        </div>
+        <!-- End Sub Column -->
+
+      </div>
+      <!-- End wrap -->
+
+      <!-- Xtra Column -->
+      <div class="xcol">
+      <h3>Right col</h3>
+
+      </div>
+      <!-- End Xtra Column -->
+
+    </div>
+    <!-- End content -->
+    <%= render 'layouts/footer' %>
+
+  </body>
+</html>
