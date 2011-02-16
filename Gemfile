@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.1'
+gem 'haml'
 
 # Use unicorn as the web server
 # gem 'unicorn'

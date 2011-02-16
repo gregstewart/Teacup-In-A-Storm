@@ -1,0 +1,41 @@
+%h2 Home
+
+%hr
+%p I have been building and developing web sites for clients both large and small all over the world for well over a decade now. I call myself very fortunate that my job is also my hobby.
+.lhs.vcard
+  .org{:title => "TCIAS Pty Ltd", :lang => "en"}
+    %h2
+      %span.orgtcias Teacup In A Storm
+  .name{:lang => "en"}
+    %h2.fn.n
+      %span.given-name Greg
+      %span.family-name Stewart
+    %h2.title{:lang =>"en"} Consultant/Developer
+  .info
+    %h3
+      %abbr.type{:title => "email"} Email
+
+    =render 'layouts/encrypted_email'
+    %br
+    %h3
+      %abbr.type{:title => "blog"} Blog
+    %a.blog{:href => "http://gregs.tcias.co.uk/", :accesskey => "W", :tabindex => "2"} gregs.tcias.co.uk
+    %br
+    %h3 Skype
+    %a.url{:href => "skype:wildecard1999?call", :accesskey => "S", :tabindex => "3"} Skype me
+    .tel
+      %h3
+        %abbr.type{:title => "work"} Phone
+      %span.value +44 208 2869246
+    .tel
+      %h3
+        %abbr.type{:title => "cell"} Mobile
+      %span.value +44 7891 032239
+    .tel
+      %h3
+        %abbr.type{:title => "work"} Office
+      %span{:lang => "en", :"xml:lang" => "en"}
+        %span.street-address 23 Newtown Rd
+        %span.locality Wimbledon
+        %span.region London
+        %span.postal-code SW19 3PJ
