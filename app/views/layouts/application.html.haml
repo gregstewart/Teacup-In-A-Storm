@@ -1,0 +1,43 @@
+!!! 5
+%html
+  %head
+    %title=title
+    = csrf_meta_tag
+    = render 'layouts/meta'
+    = render 'layouts/stylesheets'
+
+  %body.col-SM
+    = render 'layouts/header'
+
+    = render 'layouts/navigation'
+    
+    = render 'layouts/breadcrumb'
+
+    <!-- Start content -->
+    #content
+
+      <!-- Start wrap -->
+      .wrap
+
+        <!-- Main Column -->
+        .maincol#central
+          %h3 Main col
+
+          = yield
+        <!-- End Main Column -->
+
+        <!-- Sub Column -->
+        .subcol
+          %h3 Left col
+        <!-- End Sub Column -->
+
+      <!-- End wrap -->
+
+      <!-- Xtra Column -->
+      .xcol
+        %h3 Right col
+
+      <!-- End Xtra Column -->
+
+    <!-- End content -->
+    = render 'layouts/footer'
