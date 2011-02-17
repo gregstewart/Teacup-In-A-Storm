@@ -13,31 +13,31 @@
     
     = render 'layouts/breadcrumb'
 
-    <!-- Start content -->
+    / Start content
     #content
 
-      <!-- Start wrap -->
+      / Start wrap
       .wrap
 
-        <!-- Main Column -->
+        / Main Column
         .maincol#central
           %h3 Main col
 
           = yield
-        <!-- End Main Column -->
+        / End Main Column
 
-        <!-- Sub Column -->
+        / Sub Column
         .subcol
           %h3 Left col
-        <!-- End Sub Column -->
+        / End Sub Column
 
-      <!-- End wrap -->
+      / End wrap
 
-      <!-- Xtra Column -->
+      / Xtra Column
       .xcol
         %h3 Right col
 
-      <!-- End Xtra Column -->
+      / End Xtra Column
 
-    <!-- End content -->
+    / End content
     = render 'layouts/footer'

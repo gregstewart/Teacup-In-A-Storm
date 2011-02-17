@@ -1,0 +1,19 @@
+= favicon_link_tag
+/ to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp
+%script{:type => "text/javascript"}
+<!--[if lt IE 9]>
+%script{:src => "http://html5shiv.googlecode.com/svn/trunk/html5.js"}
+<![endif]-->
+= stylesheet_link_tag 'd', :media => 'screen'
+= stylesheet_link_tag 'd',  :media => 'print'
+%style{:type => "text/css"}
+  :plain
+    /* Default widths */
+    #content { width:755px; }
+    .maincol { width:560px; }
+    .subcol { width:140px; }
+    .xcol { width:180px; }
+    .col-MSX .wrap, .col-SMX .wrap { width:560px; }
+    /* Overiding widths */
+    .col-MSX .maincol, .col-SMX .maincol { width:410px; }
+    .col-MSX .subcol, .col-SMX .subcol { width:130px; }
