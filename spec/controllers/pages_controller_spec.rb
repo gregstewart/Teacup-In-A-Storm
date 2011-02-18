@@ -22,6 +22,12 @@ describe PagesController do
       response.should_not have_selector("li.breadcrumb",
                         :content => "cv")
     end
+
+    it "should not have jquery" do
+      get 'home'
+      response.should_not have_selector("script",
+                        :src => "javascripts/jquery-1.5.min.js")
+    end
   end
 
   describe "GET 'portfolio'" do
@@ -40,6 +46,24 @@ describe PagesController do
       get 'portfolio'
       response.should have_selector("li.breadcrumb",
                         :content => "portfolio")
+    end
+
+    it "should have jquery" do
+      get 'portfolio'
+      response.should have_selector("script",
+                        :src => "javascripts/jquery-1.5.min.js")
+    end
+
+    it "should have orbit" do
+      get 'portfolio'
+      response.should have_selector("script",
+                        :src => "javascripts/jquery.orbit.min.js")
+    end
+
+    it "should have reveal" do
+      get 'portfolio'
+      response.should have_selector("script",
+                        :src => "javascripts/jquery.reveal.js")
     end
   end
 

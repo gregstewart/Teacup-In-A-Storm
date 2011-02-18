@@ -9,6 +9,16 @@
   %p{:align => "right"}
     %a{:href => "http://www.hometrack.co.uk/", :title => "Go to the website: Hometrack - The UK's leading housing intelligence business"} Visit the website
     %img{haml_image_more_tag}
+    %a{:href => "#", :"data-reveal-id" => "myModal" } View Samples
+    %img{:src => "images/tcias_more.gif", :alt => "View samples", :align => "absmiddle", :width=> "16", :height => "16", :border => "0"}
+
+    #myModal.reveal-modal.large{:data => {:"dismissmodalclass" => "close-reveal-modal"}}
+      #hometrack-featured
+        %img{:src => "images/case/large/rt.jpg", :alt => "Realtime Australia" }
+        %img{:src => "images/case/large/htv.jpg", :alt => "Hometrack Valuer Australia" }
+        %img{:src => "images/case/large/sitemap.jpg", :alt => "Sitemap UK" }
+      %span{:class => "orbit-caption", :id => "htmlCaption"}
+      %a.close-reveal-modal &#215;
     
 .case
   %img{haml_image_tag("images/case/rocketboots_case_1.gif", "Rocketboots")}
