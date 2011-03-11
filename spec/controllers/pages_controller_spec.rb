@@ -28,6 +28,12 @@ describe PagesController do
       response.should_not have_selector("script",
                         :src => "javascripts/jquery-1.5.min.js")
     end
+
+    it "should have google analytics" do
+      get 'home'
+      response.should have_selector("script",
+                        :content => "_gaq")
+    end
   end
 
   describe "GET 'portfolio'" do
