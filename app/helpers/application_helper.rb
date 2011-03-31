@@ -15,12 +15,16 @@ module ApplicationHelper
     levels = request.path.split('?')[0].split('/')
     levels.delete_at(0)
 
-    links = content_tag(:li, content_tag(:a, "tcias", :href => "/") << sep.html_safe, :class => "breadcrumb") if include_home
+    links = content_tag(:li, content_tag(:a, "tcias", :href => "/", :accesskey => "h", :title => "Home [h]") << sep.html_safe, :class => "breadcrumb") if include_home
 
     levels.each_with_index do |level, index|
+      item  = level.downcase.gsub(/_/, " ")
+      accesskey = item[0,1]
       links << content_tag(:li, content_tag(:a,
-                                level.downcase.gsub(/_/, " "),
-                                :href => "/"+levels[0..index].join("/")
+                                item,
+                                :href => "/"+levels[0..index].join("/"),
+                                :accesskey => accesskey,
+                                :title => "#{item} [#{accesskey}]"
                            ) << sep.html_safe, :class => "breadcrumb")
     end
 
