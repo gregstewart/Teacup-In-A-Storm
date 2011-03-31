@@ -1,48 +1,35 @@
 body {
-	font-size : .75em;
-}
+  font-size: .75em; }
 
 h2 {
-	margin : 0;
-	padding : 0;
-}
+  margin: 0;
+  padding: 0; }
 
 h3 {
-	display : none;
-}
-
-p {
-	
-}
+  display: none; }
 
 ul {
-	margin-left: 0;
-	padding-left: 0;
-	display: inline;
-}
+  margin-left: 0;
+  padding-left: 0;
+  display: inline; }
 
 li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: inline;
-}
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline; }
 
 hr {
-	display : none;
-}
+  display: none; }
 
 legend {
-	display : none;
-}
+  display: none; }
 
 fieldset {
-	margin : 0;
-	padding : 0;
-	border : 0;
-}
+  margin: 0;
+  padding: 0;
+  border: 0; }
 
 form {
-	margin : 0;
-	padding : 0;
-}
+  margin: 0;
+  padding: 0; }
