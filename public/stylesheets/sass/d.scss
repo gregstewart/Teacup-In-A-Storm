@@ -1,13 +1,18 @@
-@import "/stylesheets/structure.css";
-@import "/stylesheets/style.css";
-@import "/stylesheets/tags.css";
+@import "structure";
+@import "style";
+@import "tags";
 
 /* Default widths */
-#content { width:755px; }
-.maincol { width:560px; }
-.subcol { width:140px; }
-.xcol { width:180px; }
-.col-MSX .wrap, .col-SMX .wrap { width:560px; }
-/* Overiding widths */
-.col-MSX .maincol, .col-SMX .maincol { width:410px; }
-.col-MSX .subcol, .col-SMX .subcol { width:130px; }
+#content {
+    width:755px;
+    .maincol { width:560px; }
+    .subcol { width:140px; }
+    .xcol { width:180px; }
+    .col-MSX .wrap, .col-SMX .wrap { width:560px; }
+    .col-MSX .maincol, .col-SMX .maincol { /* Overiding widths */ width:410px; }
+    .col-MSX .subcol, .col-SMX .subcol { /* Overiding widths */ width:130px; }
+}
+
+
+
+
