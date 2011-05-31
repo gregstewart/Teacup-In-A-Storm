@@ -22,32 +22,32 @@ body {
   margin-left:10px;
 }
 
-.maincol {
-  float:left;
-  margin:0;
-  font-size:85%;
-  line-height:1.5em;
-}
-.subcol {
-  float:right;
-  margin:0;
-  font-size:85%;
-  line-height:1.5em;
-}
-.xcol {
-  float:right;
-  font-size:85%;
-  line-height:1.5em;
-}
-  
-.col-M .maincol {
-  float:none;
-  width:100%;
-}
-.col-SM .xcol, .col-MS .xcol, .col-M .subcol, .col-M .xcol { display:none; }
-.col-SM .maincol, .col-SMX .maincol { float:right; }
-.col-SM .subcol, .col-SMX .subcol { float:left; }
-.col-MSX .wrap, .col-SMX .wrap { float:left; }
+    .maincol {
+      float:left;
+      margin:0;
+      font-size:85%;
+      line-height:1.5em;
+    }
+    .subcol {
+      float:right;
+      margin:0;
+      font-size:85%;
+      line-height:1.5em;
+    }
+    .xcol {
+      float:right;
+      font-size:85%;
+      line-height:1.5em;
+    }
+
+    .col-M .maincol {
+      float:none;
+      width:100%;
+    }
+    .col-SM .xcol, .col-MS .xcol, .col-M .subcol, .col-M .xcol { display:none; }
+    .col-SM .maincol, .col-SMX .maincol { float:right; }
+    .col-SM .subcol, .col-SMX .subcol { float:left; }
+    .col-MSX .wrap, .col-SMX .wrap { float:left; }
 /* Footer
 ----------------------------------------------- */
 #footer {
@@ -56,6 +56,6 @@ body {
   font-size:85%;
 }
 
-#footer .hide {
-	display : none;
-}
+    #footer .hide {
+        display : none;
+    }
