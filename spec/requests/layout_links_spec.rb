@@ -9,6 +9,9 @@ describe "LayoutLinks" do
   it "should have a portfolio page at '/portfolio'" do
     get "/portfolio"
     response.should(have_selector("title", :content => "portfolio"))
+
+
+
   end
 
   it "should have a cv page at '/cv'" do
