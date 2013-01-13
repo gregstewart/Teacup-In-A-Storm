@@ -30,10 +30,10 @@ GEM
     activesupport (3.0.19)
     arel (2.0.10)
     builder (2.1.2)
-    diff-lcs (1.1.2)
+    diff-lcs (1.1.3)
     erubis (2.6.6)
       abstract (>= 1.0.0)
-    haml (3.0.25)
+    haml (3.1.7)
     i18n (0.5.0)
     json (1.7.6)
     mail (2.2.19)
@@ -42,7 +42,8 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.19)
-    nokogiri (1.4.4)
+    multi_json (1.5.0)
+    nokogiri (1.5.6)
     polyglot (0.3.3)
     rack (1.2.6)
     rack-mount (0.6.14)
@@ -64,7 +65,6 @@ GEM
       rdoc (~> 3.4)
       thor (~> 0.14.4)
     rake (10.0.3)
-    rcov (0.9.9)
     rdoc (3.12)
       json (~> 1.4)
     rspec (2.3.0)
@@ -80,6 +80,11 @@ GEM
       activesupport (~> 3.0)
       railties (~> 3.0)
       rspec (~> 2.3.0)
+    sass (3.2.5)
+    simplecov (0.7.1)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.7.1)
+    simplecov-html (0.7.1)
     thor (0.14.6)
     treetop (1.4.12)
       polyglot
@@ -96,7 +101,9 @@ PLATFORMS
 DEPENDENCIES
   haml
   rails (= 3.0.19)
-  rcov
+  rake (= 10.0.3)
   rspec (= 2.3.0)
   rspec-rails (= 2.3.0)
+  sass
+  simplecov
   webrat (= 0.7.1)

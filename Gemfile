@@ -2,6 +2,8 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.19'
 gem 'haml'
+gem 'sass'
+gem 'rake', '10.0.3'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -29,7 +31,7 @@ group :development do
 end
 
 group :test do
-  gem 'rcov'
+  gem 'simplecov'
   gem 'rspec', '2.3.0'
   gem 'webrat', '0.7.1'
 end
