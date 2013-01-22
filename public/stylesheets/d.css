@@ -1,4 +1,7 @@
 /*
+	css variables
+*/
+/*
 -----------------------------------------------
 adaptive path basic style
 version:  2003.06.15
@@ -8,7 +11,7 @@ body {
   padding: 0;
   background: #fff;
   color: #000;
-  font: x-small Verdana,Sans-serif;
+  font: x-small Verdana, Sans-serif;
   voice-family: "\"}\"";
   voice-family: inherit;
   font-size: small; }
@@ -65,11 +68,8 @@ html > body {
 #footer .hide {
   display: none; }
 
-/*
-	css variables
-*/
 /* start header */
-#header {
+header {
   padding: 0;
   margin: 0;
   background-image: url(/images/header_bg.gif);
@@ -77,8 +77,6 @@ html > body {
   height: 100px;
   voice-family: inherit;
   height: 100px; }
-  #header a {
-    display: none; }
 
 html > body {
   height: 100px; }
@@ -88,13 +86,13 @@ html > body {
   padding-top: 15px; }
 
 /* navigation in header style */
-#navigation {
+navigation {
   padding-left: 340px;
   margin-top: -26px;
   font-size: 85%; }
-  #navigation ul {
+  navigation ul {
     margin: 0 0 0 12px; }
-  #navigation li {
+  navigation li {
     background-color: white;
     border: 1px solid #938883;
     margin-left: 2px;
@@ -103,12 +101,12 @@ html > body {
     padding-right: 14px;
     padding-bottom: 1px;
     text-align: right; }
-  #navigation a {
+  navigation a {
     background-color: white;
     color: #f66419;
     text-decoration: none;
     text-transform: uppercase; }
-    #navigation a:hover {
+    navigation a:hover {
       text-decoration: underline; }
 
 /* end header */
@@ -357,22 +355,22 @@ html > body {
     border-right: 1px solid #b3aba8;
     border-bottom: 3px solid #9bcdff;
     color: #666666; }
-  #central div.personal-details {
+  #central .personal-details {
     padding-left: 5px;
     margin-top: 5px;
     margin-bottom: 15px; }
 
 /* start footer */
-#footer {
+footer {
   text-align: center;
   padding-bottom: 10px;
   width: 765px; }
-  #footer p {
+  footer p {
     color: #666666; }
-  #footer a {
+  footer a {
     color: #666666;
     text-decoration: none; }
-    #footer a:hover {
+    footer a:hover {
       text-decoration: underline; }
 
 html > body {
@@ -381,14 +379,14 @@ html > body {
 /* end footer */
 /* end body */
 /*forms */
-div.row {
+.row {
   clear: both;
   padding-top: 10px; }
-  div.row span.label {
+  .row span.label {
     float: left;
     width: 75px;
     text-align: right; }
-  div.row span.formw {
+  .row .formw {
     float: right;
     width: 315px;
     text-align: left; }

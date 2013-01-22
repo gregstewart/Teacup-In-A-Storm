@@ -1,8 +1,9 @@
 <!-- Header row -->
-#header
+%header
   %h3 Header
   #logo
   #tag
     = image_tag("tag_line.gif", :alt => "Form follows function", :longdesc= => "tag_line.txt")
   %hr
+    = render 'layouts/navigation'
 <!-- End header row -->

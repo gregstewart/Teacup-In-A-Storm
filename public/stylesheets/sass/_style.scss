@@ -1,21 +1,7 @@
-/*
-	css variables
-*/
-$black: #000;
-$charcoal_grey: #666;
-$shade_of_grey: #b3aba8;
-$lighter_grey: #938883;
-$even_lighter_grey: #dad5d3;
-$drop_shadow_grey: #dad5d9;
-$white: #fff;
-$off_white: #faf9f8;
-$orange: #f66419;
-$light_blue: #9bcdff;
-$brick_red: #d68585;
-$fancy_red: #ff6a6a;
+
 
 /* start header */
-#header {
+header {
 	padding: 0;
 	margin: 0;
 	background-image: url(/images/header_bg.gif);
@@ -23,9 +9,7 @@ $fancy_red: #ff6a6a;
 	height: 100px;
  	voice-family:inherit;
     height: 100px;
-    a {
-        display : none;
-    }
+
 } html>body {height: 100px;}
 
 #tag {
@@ -34,7 +18,7 @@ $fancy_red: #ff6a6a;
 }
 
 /* navigation in header style */
-#navigation {
+navigation {
 	padding-left : 340px;
 	margin-top : -26px;
 	font-size : 85%;
@@ -332,14 +316,14 @@ body {
         border-bottom : 3px solid $light_blue;
         color : $charcoal_grey;
     }
-    div.personal-details {
+    .personal-details {
         padding-left : 5px;
         margin-top : 5px;
         margin-bottom : 15px;
     }
 }
 /* start footer */
-#footer {
+footer {
 	text-align : center;
 	padding-bottom : 10px;
 	width : 765px;
@@ -356,7 +340,7 @@ body {
 /* end footer */
 /* end body */
 /*forms */
-div.row {
+.row {
     clear: both;
     padding-top: 10px;
     span.label {
@@ -364,7 +348,7 @@ div.row {
         width: 75px;
         text-align: right;
     }
-    span.formw {
+    .formw {
         float: right;
         width: 315px;
         text-align: left;
