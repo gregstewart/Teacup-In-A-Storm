@@ -27,11 +27,12 @@ gem 'unicorn'
 #   gem 'webrat'
 # end
 group :development do
-  gem 'rspec-rails', '2.3.0'
+  gem 'rspec-rails', '2.8.1'
 end
 
 group :test do
   gem 'simplecov'
-  gem 'rspec', '2.3.0'
+  gem 'rspec-rails', '2.8.1'
+  gem 'rspec', '2.8.0'
   gem 'webrat', '0.7.1'
 end
