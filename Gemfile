@@ -5,9 +5,6 @@ gem 'haml'
 gem 'sass'
 gem 'rake', '10.0.3'
 
-# Use unicorn as the web server
-gem 'unicorn'
-
 # Deploy with Capistrano
 # gem 'capistrano'
 
@@ -23,16 +20,23 @@ gem 'unicorn'
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
-group :development do
+group :development, :test do
   gem 'rspec-rails', '2.8.1'
+  gem 'webrat', '0.7.1'
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :test do
   gem 'simplecov'
-  gem 'rspec-rails', '2.8.1'
   gem 'rspec', '2.8.0'
-  gem 'webrat', '0.7.1'
+
+end
+
+group :production do
+  # Use unicorn as the web server
+  gem 'unicorn'
 end
