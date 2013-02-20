@@ -1,0 +1,12 @@
+@font-face {
+  font: {
+    family: 'FontAwesome';
+    weight: 'normal';
+    style: 'normal';
+  }
+  src: asset-url('fontawesome-webfont.eot', font);
+  src: asset-url('fontawesome-webfont.eot', font) format('embedded-opentype'),
+       asset-url('fontawesome-webfont.woff', font) format('woff'),
+       asset-url('fontawesome-webfont.ttf', font) format('truetype'),
+       asset-url('fontawesome-webfont.svg#FontAwesomeRegular', font) format('svg')
+}
