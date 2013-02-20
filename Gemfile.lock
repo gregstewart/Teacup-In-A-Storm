@@ -129,7 +129,6 @@ DEPENDENCIES
   haml
   rails (= 3.2.12)
   rake (= 10.0.3)
-  rspec (= 2.8.0)
   rspec-rails (= 2.8.1)
   sass
   simplecov
