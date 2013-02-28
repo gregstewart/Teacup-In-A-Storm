@@ -1,0 +1,21 @@
+$fontPath:   "/assets" !default;
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('#{$fontPath}/fontawesome-webfont.eot?v=3.0.1');
+  src: url('#{$fontPath}/fontawesome-webfont.eot?#iefix&v=3.0.1') format("embedded-opentype"),
+    url('#{$fontPath}/fontawesome-webfont.woff?v=3.0.1') format("woff"),
+    url('#{$fontPath}/fontawesome-webfont.ttf?v=3.0.1') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Junction';
+  src: url('#{$fontPath}/Junction-webfont.eot?v=3.0.1');
+  src: url('#{$fontPath}/Junction-webfont.eot?#iefix&v=3.0.1') format("embedded-opentype"),
+    url('#{$fontPath}/Junction-webfont.woff?v=3.0.1') format("woff"),
+    url('#{$fontPath}/Junction-webfont.ttf?v=3.0.1') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

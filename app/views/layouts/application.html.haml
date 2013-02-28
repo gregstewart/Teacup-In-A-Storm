@@ -8,11 +8,12 @@
     = javascript_include_tag "application"
 
 %body
-  = render 'partials/header'
+  .container
+    = render 'partials/header'
 
-  = render 'partials/breadcrumb'
+    = render 'partials/breadcrumb'
 
-  = yield
+    = yield
 
-  = render 'partials/footer'
+    = render 'partials/footer'
   = render 'partials/javascripts'

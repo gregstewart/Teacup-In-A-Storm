@@ -28,7 +28,7 @@ module ApplicationHelper
                            ) << sep.html_safe, :class => "breadcrumb")
     end
 
-    div_content = content_tag(:h3, "Breacrumb") << content_tag(:ul, links)
+    div_content = content_tag(:ul, links)
 
     content_tag :div, div_content, :id => "breadcrumb" 
   end

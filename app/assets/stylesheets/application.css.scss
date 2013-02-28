@@ -8,7 +8,25 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= require_tree .
+ = require_self
+ = require_tree .
  */
-@import "fonts";
+
+body {
+  h1, h2, h3, h4 {
+    font-family: Junction;
+  }
+}
+
+dt {
+  display: none;
+}
+
+.boxee {
+  border:  1px solid rgba(0,0,0,1);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
