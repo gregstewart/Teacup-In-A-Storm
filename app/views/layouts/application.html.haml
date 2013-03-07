@@ -1,11 +1,10 @@
 !!! 5
 %html
   %head
-    %title =:title
+    %title= full_title(yield(:title))
     = render 'partials/meta'
     = csrf_meta_tag
     = stylesheet_link_tag    "application", :media => "all"
-    = javascript_include_tag "application"
 
 %body
   = render 'partials/header'
@@ -17,4 +16,5 @@
     = yield
 
     = render 'partials/footer'
+  = javascript_include_tag "application"
   = render 'partials/javascripts'

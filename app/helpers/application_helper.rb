@@ -1,11 +1,11 @@
 module ApplicationHelper
-  # Return a title on a per-page basis.
-  def title
+  # Returns the full title on a per-page basis.
+  def full_title(page_title)
     base_title = "TCIAS"
-    if @title.nil?
+    if page_title.empty?
       base_title
     else
-      "#{base_title} | #{@title}"
+      "#{base_title} | #{page_title}"
     end
   end
 
@@ -42,6 +42,6 @@ module ApplicationHelper
   end
 
   def haml_image_more_tag
-    {:src => "images/tcias_more.gif", :alt => "Go to website", :align => "absmiddle", :width=> "16", :height => "16", :border => "0"}
+    {:src => "/assets/tcias_more.gif", :alt => "Go to website", :align => "absmiddle", :width=> "16", :height => "16", :border => "0"}
   end
 end
