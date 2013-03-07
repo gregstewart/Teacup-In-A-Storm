@@ -24,7 +24,6 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'rspec-rails', '2.8.1'
-  gem 'webrat', '0.7.1'
 end
 
 group :development do
@@ -33,7 +32,9 @@ group :development do
 end
 
 group :test do
+  gem 'spork'
   gem 'simplecov'
+  gem 'capybara', '1.1.2'
   gem "jasmine"
 end
 
