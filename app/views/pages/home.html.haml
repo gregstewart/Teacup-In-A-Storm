@@ -1,69 +1,101 @@
 %h2 Home
 
-.four.columns.alpha
-  .boxee
-    %img{:src=> "/assets/logo.png"}
-.four.columns
-  %p
-.four.columns
-  %p
-.four.columns.omega
-  .boxee
+.row.clearfix
 
-    .lhs.vcard
-      .name{:lang => "en"}
-        %h2.fn.n
-          %span.given-name Greg
-          %span.family-name Stewart
-        %h2.title{:lang =>"en"} Consultant/Developer
-      %dl.info
-        %dt.email
-          %abbr.type{:title => "email"} Email
-        %dd
-          %i.icon-envelope
-            =render 'partials/encrypted_email'
-        %dt.blog
-          %abbr.type{:title => "blog"} Blog
-        %dd
-          %i.icon-pencil
-            %a.blog{:href => "http://gregs.tcias.co.uk/", :accesskey => "W", :tabindex => "2"} gregs.tcias.co.uk
-        %dt.github
-          %abbr.type{:title => "github"} Github
-        %dd
-          %i.icon-github-alt
-            %a.url{:href => "https://github.com/gregstewart", :accesskey => "G", :tabindex => "4"} Github
-        %dt.linkedin
-          %abbr.type{:title => "LinkedIn"} LinkedIn
-        %dd
-          %i.icon-linkedin-sign
-            %a.url{:href => "http://www.linkedin.com/in/gregstewart", :accesskey => "L", :tabindex => "3"} LinkedIn
-        %dt.twitter
-          %abbr.type{:title => "twitter"} Twitter
-        %dd
-          %i.icon-twitter-sign
-            %a.url{:href => "https://twitter.com/_greg_stewart_", :accesskey => "T", :tabindex => "5"} Twitter
-      %dl.tel
-        %dt.phone
-          %abbr.type{:title => "work"} Phone
-        %dd
-          %i.icon-phone-sign
-            %span.value +44 208 2869246
-        %dt.mobile
-          %abbr.type{:title => "cell"} Mobile
-        %dd
-          %i.icon-phone-sign
-            %span.value +44 7891 032239
-        %dt.skype
-          %abbr.type{:title => "Skype"} Skype
-        %dd
-          %i.icon-phone-sign
-            %a.url{:href => "skype:wildecard1999?call", :accesskey => "S", :tabindex => "4"} Skype me
+  .four.columns.alpha
+    .boxee.inset-shadow
+      %img{:src=> "/assets/logo.png"}
+  .eight.columns.omega
+    .boxee.inset-shadow
 
-      .address
-        %i.icon-home
-        %abbr.type{:title => "home"} Home
-        %span{:lang => "en", :"xml:lang" => "en"}
-          %span.street-address 547 Kingston Rd
-          %span.locality Raynes Park
-          %span.region London
-          %span.postal-code SW20 8SF
+      .lhs.vcard
+        .name{:lang => "en"}
+          %h2.fn.n
+            %span.given-name Greg
+            %span.family-name Stewart
+          %h2.title{:lang =>"en"} Consultant/Developer
+        %dl.info
+          %dt.email
+            %abbr.type{:title => "email"} Email
+          %dd
+            %i.icon-envelope
+              =render 'partials/encrypted_email'
+        %dl.tel
+          %dt.phone
+            %abbr.type{:title => "work"} Phone
+          %dd
+            %i.icon-phone-sign
+              %span.value +44 208 2869246
+          %dt.mobile
+            %abbr.type{:title => "cell"} Mobile
+          %dd
+            %i.icon-phone-sign
+              %span.value +44 7891 032239
+          %dt.skype
+            %abbr.type{:title => "Skype"} Skype
+          %dd
+            %i.icon-skype
+              %a.url{:href => "skype:wildecard1999?call", :accesskey => "S", :tabindex => "4"} Skype me
+
+        .address
+          %i.icon-home
+          %abbr.type{:title => "home"} Home
+          %span{:lang => "en", :"xml:lang" => "en"}
+            %span.street-address 547 Kingston Rd
+            %span.locality Raynes Park
+            %span.region London
+            %span.postal-code SW20 8SF
+  .four.columns.omega
+    .boxee.inset-shadow
+      %a.url.icon{:href => "https://github.com/gregstewart", :accesskey => "G", :tabindex => "4", :title => "Click to view my Github profile"}
+        %i.icon-github{:title => "Github icon"}
+.row.clearfix
+  .four.columns.alpha
+    .boxee.inset-shadow
+      %a.url.icon{:href => "https://twitter.com/_greg_stewart_", :accesskey => "T", :tabindex => "5", :title => "Click to view my twitter profile"}
+        %i.icon-twitter{:title => "Twitter icon"}
+  .four.columns
+    .boxee.inset-shadow
+      %a.url.icon{:href => "http://www.linkedin.com/in/gregstewart", :accesskey => "L", :tabindex => "3", :title => "Click to view LinkedIn profile"}
+        %i.icon-linkedin-sign{:title => "LinkedIn icon"}
+
+  .four.columns
+    .boxee.inset-shadow
+      %a.url.icon{:href => "http://www.flickr.com/photos/greg_and_jodie/", :accesskey => "F", :tabindex => "3", :title => "Click to view Flickr profile"}
+        %i.icon-flickr-sign{:title => "Flickr icon"}
+
+  .four.columns.omega
+    .boxee.inset-shadow
+      %a.url.icon{:href => "https://vimeo.com/user2724002/videos", :accesskey => "V", :tabindex => "3", :title => "Click to view Vimeo profile"}
+        %i.icon-vimeo-sign{:title => "Vimeo icon"}
+
+.row.clearfix
+  .four.columns.alpha
+    .boxee.inset-shadow
+      %a.url.icon{:href => "https://delicious.com/wildcard1999", :accesskey => "D", :tabindex => "5", :title => "Click to view my delicious profile"}
+        %i.icon-delicious{:title => "Delicious icon"}
+
+  .four.columns
+    .boxee.inset-shadow
+      %a.url.icon{:href => "http://instagram.com/_greg_stewart_", :accesskey => "I", :tabindex => "5", :title => "Click to view my Instagram profile"}
+        %i.icon-instagram{:title => "Instagram icon"}
+
+  .four.columns
+    .boxee.inset-shadow
+      %a.url.icon{:href => "http://www.last.fm/user/greg_stewart", :accesskey => "I", :tabindex => "5", :title => "Click to view my Last.fm profile"}
+        %i.icon-lastfm-sign{:title => "Last.fm icon"}
+  .four.columns.omega
+    .boxee.inset-shadow
+      %a.url.icon{:href => "http://gregs.tcias.co.uk", :accesskey => "V", :tabindex => "3", :title => "Click to view my blog"}
+        %i.icon-wordpress{:title => "Wordpress icon"}
+
+.row.clearfix
+  .eight.columns.alpha
+    .boxee.inset-shadow
+      %a.url.icon{:href => "http://stackoverflow.com/users/197825/greg-stewart", :accesskey => "D", :tabindex => "5", :title => "Click to view my stackoverflow profile"}
+        %i.icon-stack-overflow{:title => "Stackoverflow icon"}
+
+  .eight.columns.omega
+    .boxee.inset-shadow
+      %a.url.icon{:href => "https://plus.google.com/110643069434566075441", :accesskey => "I", :tabindex => "5", :title => "Click to view my Google+ profile"}
+        %i.icon-google-plus{:title => "Google+ icon"}
