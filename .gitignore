@@ -5,3 +5,4 @@ coverage.data
 log/
 tmp/
 lib/
+.sass-cache/
