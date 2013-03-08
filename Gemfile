@@ -5,6 +5,7 @@ gem 'rake', '10.0.3'
 gem 'haml'
 gem 'sass'
 gem 'jquery-rails'
+gem 'feedzirra'
 
 # Deploy with Capistrano
 # gem 'capistrano'
