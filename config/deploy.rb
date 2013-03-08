@@ -33,7 +33,7 @@ set :rvm_type, :system
 namespace :deploy do
   task :start do ; end
   task :stop do ; end
-  desc "Restart the application"
+  #desc "Restart the application"
   #task :restart, :roles => :app, :except => { :no_release => true } do
   #  run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   #end
@@ -47,5 +47,5 @@ namespace :deploy do
     run "#{try_sudo} kill -s USR2 `cat #{unicorn_pid}`"
   end
 end
-before "deploy:assets:precompile"
-after "deploy:update_code", "deploy:migrate", "deploy:restart", "deploy:cleanup"
+
+after "deploy:update_code", "deploy:restart", "deploy:cleanup"

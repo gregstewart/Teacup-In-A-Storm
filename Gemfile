@@ -1,9 +1,18 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.2.12'
+
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer'
+
+  gem 'uglifier', '>= 1.0.3'
+end
+
 gem 'rake', '10.0.3'
 gem 'haml'
-gem 'sass'
 gem 'jquery-rails'
 gem 'feedzirra'
 

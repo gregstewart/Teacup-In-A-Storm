@@ -3,7 +3,7 @@ app_path = "/home/tcias/app"
 #listen 2007 # by default Unicorn listens on port 8080
 worker_processes 4
 working_directory "#{app_path}/current" # available in 0.94.0+
-listen "#{app_path}/tmp/sockets/unicorn.sock", :backlog => 64
+listen "#{app_path}/tmp/tcias_unicorn.sock", :backlog => 64
 timeout 30
 pid "#{app_path}/shared/pids/unicorn.pid"
 stderr_path "#{app_path}/shared/log/unicorn.stderr.log"
