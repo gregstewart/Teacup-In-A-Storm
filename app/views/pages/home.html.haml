@@ -6,7 +6,7 @@
   .four.columns.alpha
     .boxee.inset-shadow
       %img{:src=> "/assets/logo.png"}
-  .eight.columns.omega
+  .eight.columns
     .boxee.inset-shadow
 
       .lhs.vcard
@@ -50,11 +50,30 @@
     .boxee.inset-shadow
       %a.url.icon{:href => "http://gregs.tcias.co.uk", :accesskey => "V", :tabindex => "3", :title => "Click to view my blog"}
         %i.icon-wordpress{:title => "Wordpress icon"}
+
+      .feed
+        %h3 5 most recent posts
+        %ul
+          -@wordpress_entries.each do |entry|
+            %li
+              %a{:href=>entry.url}
+                =entry.title
+
+
 .row.clearfix
   .four.columns.alpha
     .boxee.inset-shadow
       %a.url.icon{:href => "https://github.com/gregstewart", :accesskey => "G", :tabindex => "4", :title => "Click to view my Github profile"}
         %i.icon-github{:title => "Github icon"}
+
+      .feed
+        %ul
+          -@github_entries.each do |entry|
+            %li
+              =entry.type
+              %a{:href => entry.repo.url}
+                =entry.repo.name
+              =entry.created_at
   .four.columns
     .boxee.inset-shadow
       %a.url.icon{:href => "http://www.linkedin.com/in/gregstewart", :accesskey => "L", :tabindex => "3", :title => "Click to view LinkedIn profile"}
@@ -80,11 +99,20 @@
     .boxee.inset-shadow
       %a.url.icon{:href => "http://instagram.com/_greg_stewart_", :accesskey => "I", :tabindex => "5", :title => "Click to view my Instagram profile"}
         %i.icon-instagram{:title => "Instagram icon"}
+      .feed
+        %h3 5 most recent images
+        %ul
+          -@instagram_entries.each do |entry|
+            %li
+              %a{:href=>entry.link}
+                -caption = entry.caption.text unless entry.caption.nil?
+                %img{:src=>entry.images.thumbnail.url, :title =>caption}
 
   .four.columns
     .boxee.inset-shadow
       %a.url.icon{:href => "http://www.last.fm/user/greg_stewart", :accesskey => "I", :tabindex => "5", :title => "Click to view my Last.fm profile"}
         %i.icon-lastfm-sign{:title => "Last.fm icon"}
+
   .four.columns.omega
     .boxee.inset-shadow
       %a.url.icon{:href => "https://twitter.com/_greg_stewart_", :accesskey => "T", :tabindex => "5", :title => "Click to view my twitter profile"}

@@ -14,7 +14,10 @@ end
 gem 'rake', '10.0.3'
 gem 'haml'
 gem 'jquery-rails'
+
 gem 'feedzirra'
+gem 'instagram'
+gem 'octokit',  :git => 'git@github.com:gregstewart/octokit.git'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -47,7 +50,7 @@ group :test do
   gem 'spork'
   gem 'simplecov'
   gem 'capybara', '1.1.2'
-  gem "jasmine"
+  gem 'jasmine'
 end
 
 group :production do
