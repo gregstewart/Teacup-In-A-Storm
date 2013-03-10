@@ -23,6 +23,7 @@ set :copy_strategy, :export
 set :unicorn_config, "#{current_path}/config/unicorn.rb"
 set :unicorn_pid, "#{current_path}/tmp/pids/unicorn.pid"
 set :keep_releases, 2
+set :bundle_flags, "--deployment --local --quiet"
 
 # RVM bootstrap: change to your Ruby and GemSet
 # make sure this gem is installed!
@@ -46,6 +47,10 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} kill -s USR2 `cat #{unicorn_pid}`"
   end
+  task :symlink_shared do
+    run "ln -s #{shared_path}/api_keys.yml #{release_path}/config/"
+  end
 end
 
+before "deploy:restart", "deploy:symlink_shared"
 after "deploy:update_code", "deploy:restart", "deploy:cleanup"
