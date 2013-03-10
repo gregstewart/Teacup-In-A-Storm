@@ -94,32 +94,19 @@
                 =entry['title']
 
 .row.clearfix
-  .four.columns.alpha.isotope
-    .boxee{:data => {:cateogry => "github"}}
-      %a.url.icon{:href => "https://github.com/gregstewart", :accesskey => "G", :tabindex => "4", :title => "Click to view my Github profile"}
-        %i.icon-github{:title => "Github icon"}
+  .six.columns.alpha.isotope
+    .boxee{:data => {:cateogry => "twitter"}}
+      %a.url.icon{:href => "https://twitter.com/_greg_stewart_", :accesskey => "T", :tabindex => "5", :title => "Click to view my twitter profile"}
+        %i.icon-twitter{:title => "Twitter icon"}
 
-      -#.feed
-      -#  %ul
-      -#    -@github_entries.each do |entry|
-      -#      %li
-      -#        =entry.type
-      -#        %a{:href => entry.repo.url}
-      -#          =entry.repo.name
-      -#        =entry.created_at
-
-    .boxee{:data => {:cateogry => "stackoverflow"}}
-      %a.url.icon{:href => "http://stackoverflow.com/users/197825/greg-stewart", :accesskey => "D", :tabindex => "5", :title => "Click to view my stackoverflow profile"}
-        %i.icon-stack-overflow{:title => "Stackoverflow icon"}
-
-    .boxee
-      %a.url.icon{:href => "http://www.last.fm/user/greg_stewart", :accesskey => "I", :tabindex => "5", :title => "Click to view my Last.fm profile"}
-        %i.icon-lastfm-sign{:title => "Last.fm icon"}
-
-    .boxee{:data => {:cateogry => "flickr"}}
-      %a.url.icon{:href => "http://www.flickr.com/photos/greg_and_jodie/", :accesskey => "F", :tabindex => "3", :title => "Click to view Flickr profile"}
-        %i.icon-flickr-sign{:title => "Flickr icon"}
-
+      .feed
+        %h3 Recent tweets
+        %ul
+          -@twitter_entries.each do |entry|
+            %li
+              %a{:href=>"https://twitter.com/_greg_stewart_/status/#{entry.id}"}
+                =entry.text
+              =entry.created_at
   .six.columns.isotope
     .boxee{:data => {:cateogry => "instagram"}}
       %a.url.icon{:href => "http://instagram.com/_greg_stewart_", :accesskey => "I", :tabindex => "5", :title => "Click to view my Instagram profile"}
@@ -133,29 +120,34 @@
                 -caption = entry.caption.text unless entry.caption.nil?
                 %img{:src=>entry.images.thumbnail.url, :title =>caption, :class=>"instagram"}
 
-  .six.columns.omega.isotope
-    .boxee{:data => {:cateogry => "twitter"}}
-      %a.url.icon{:href => "https://twitter.com/_greg_stewart_", :accesskey => "T", :tabindex => "5", :title => "Click to view my twitter profile"}
-        %i.icon-twitter{:title => "Twitter icon"}
+  .four.columns.omega.isotope
+    .boxee.stacked{:data => {:cateogry => "github"}}
+      %a.url.icon{:href => "https://github.com/gregstewart", :accesskey => "G", :tabindex => "4", :title => "Click to view my Github profile"}
+        %i.icon-github{:title => "Github icon"}
 
-      .feed
-        %h3 Recent tweets
-        %ul
-          -@twitter_entries.each do |entry|
-            %li
-              %a{:href=>"https://twitter.com/_greg_stewart_/status/#{entry.id}"}
-                =entry.text
-              =entry.created_at
+      -#.feed
+      -#  %ul
+      -#    -@github_entries.each do |entry|
+      -#      %li
+      -#        =entry.type
+      -#        %a{:href => entry.repo.url}
+      -#          =entry.repo.name
+      -#        =entry.created_at
+
+    .boxee.stacked{:data => {:cateogry => "stackoverflow"}}
+      %a.url.icon{:href => "http://stackoverflow.com/users/197825/greg-stewart", :accesskey => "D", :tabindex => "5", :title => "Click to view my stackoverflow profile"}
+        %i.icon-stack-overflow{:title => "Stackoverflow icon"}
+
+    .boxee.stacked{:data => {:cateogry => "lastfm"}}
+      %a.url.icon{:href => "http://www.last.fm/user/greg_stewart", :accesskey => "I", :tabindex => "5", :title => "Click to view my Last.fm profile"}
+        %i.icon-lastfm-sign{:title => "Last.fm icon"}
+
+    .boxee.stacked{:data => {:cateogry => "flickr"}}
+      %a.url.icon{:href => "http://www.flickr.com/photos/greg_and_jodie/", :accesskey => "F", :tabindex => "3", :title => "Click to view Flickr profile"}
+        %i.icon-flickr-sign{:title => "Flickr icon"}
 
 .row.clearfix
-  .four.columns.alpha.isotope
-
-  .four.columns.isotope
-
-  .four.columns.isotope
-
-
-  .four.columns.omega.isotope
+  .sixteen.columns.isotope
     .boxee{:data => {:cateogry => "google plus"}}
       %a.url.icon{:href => "https://plus.google.com/110643069434566075441", :accesskey => "I", :tabindex => "5", :title => "Click to view my Google+ profile"}
         %i.icon-google-plus{:title => "Google+ icon"}
