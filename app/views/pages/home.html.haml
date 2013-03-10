@@ -52,18 +52,19 @@
 
 .row.clearfix
   .four.columns.alpha.isotope
-    .boxee{:data => {:cateogry => "github"}}
-      %a.url.icon{:href => "https://github.com/gregstewart", :accesskey => "G", :tabindex => "4", :title => "Click to view my Github profile"}
-        %i.icon-github{:title => "Github icon"}
+    .boxee{:data => {:cateogry => "delicious"}}
+      %a.url.icon{:href => "https://delicious.com/wildcard1999", :accesskey => "D", :tabindex => "5", :title => "Click to view my delicious profile"}
+        %i.icon-delicious{:title => "Delicious icon"}
 
       .feed
+        %h3 5 most recent bookmarks
         %ul
-          -@github_entries.each do |entry|
+          -@delicious_entries.each do |entry|
             %li
-              =entry.type
-              %a{:href => entry.repo.url}
-                =entry.repo.name
-              =entry.created_at
+              %a{:href=>entry.url}
+                =entry.title
+
+
   .six.columns.isotope
     .boxee{:data => {:cateogry => "wordpress"}}
       %a.url.icon{:href => "http://gregs.tcias.co.uk", :accesskey => "V", :tabindex => "3", :title => "Click to view my blog"}
@@ -94,17 +95,18 @@
 
 .row.clearfix
   .four.columns.alpha.isotope
-    .boxee{:data => {:cateogry => "delicious"}}
-      %a.url.icon{:href => "https://delicious.com/wildcard1999", :accesskey => "D", :tabindex => "5", :title => "Click to view my delicious profile"}
-        %i.icon-delicious{:title => "Delicious icon"}
+    .boxee{:data => {:cateogry => "github"}}
+      %a.url.icon{:href => "https://github.com/gregstewart", :accesskey => "G", :tabindex => "4", :title => "Click to view my Github profile"}
+        %i.icon-github{:title => "Github icon"}
 
-      .feed
-        %h3 5 most recent bookmarks
-        %ul
-          -@delicious_entries.each do |entry|
-            %li
-              %a{:href=>entry.url}
-                =entry.title
+      -#.feed
+      -#  %ul
+      -#    -@github_entries.each do |entry|
+      -#      %li
+      -#        =entry.type
+      -#        %a{:href => entry.repo.url}
+      -#          =entry.repo.name
+      -#        =entry.created_at
 
   .six.columns.isotope
     .boxee{:data => {:cateogry => "instagram"}}
