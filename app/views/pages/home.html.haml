@@ -78,15 +78,19 @@
               %a{:href=>entry.url}
                 =entry.title
 
-  .four.columns
-    .boxee.inset-shadow
-      %a.url.icon{:href => "http://www.flickr.com/photos/greg_and_jodie/", :accesskey => "F", :tabindex => "3", :title => "Click to view Flickr profile"}
-        %i.icon-flickr-sign{:title => "Flickr icon"}
-
-  .four.columns.omega
+  .eight.columns.omega
     .boxee.inset-shadow
       %a.url.icon{:href => "https://vimeo.com/user2724002/videos", :accesskey => "V", :tabindex => "3", :title => "Click to view Vimeo profile"}
         %i.icon-vimeo-sign{:title => "Vimeo icon"}
+
+      .feed
+        %ul.images
+          -@vimeo_entries.each do |entry|
+            %li
+              %a{:href=>entry['url']}
+                %img{:src=>entry['thumbnail_large'], :title =>entry['title'], :class=>"vimeo"}
+              %br
+              =entry['title']
 
 .row.clearfix
   .four.columns.alpha
@@ -102,25 +106,20 @@
               %a{:href=>entry.url}
                 =entry.title
 
-  .four.columns
+  .six.columns
     .boxee.inset-shadow
       %a.url.icon{:href => "http://instagram.com/_greg_stewart_", :accesskey => "I", :tabindex => "5", :title => "Click to view my Instagram profile"}
         %i.icon-instagram{:title => "Instagram icon"}
       .feed
         %h3 5 most recent images
-        %ul
+        %ul.images
           -@instagram_entries.each do |entry|
             %li
               %a{:href=>entry.link}
                 -caption = entry.caption.text unless entry.caption.nil?
                 %img{:src=>entry.images.thumbnail.url, :title =>caption}
 
-  .four.columns
-    .boxee.inset-shadow
-      %a.url.icon{:href => "http://www.last.fm/user/greg_stewart", :accesskey => "I", :tabindex => "5", :title => "Click to view my Last.fm profile"}
-        %i.icon-lastfm-sign{:title => "Last.fm icon"}
-
-  .four.columns.omega
+  .six.columns.omega
     .boxee.inset-shadow
       %a.url.icon{:href => "https://twitter.com/_greg_stewart_", :accesskey => "T", :tabindex => "5", :title => "Click to view my twitter profile"}
         %i.icon-twitter{:title => "Twitter icon"}
@@ -135,12 +134,20 @@
               =entry.created_at
 
 .row.clearfix
-  .eight.columns.alpha
+  .four.columns.alpha
     .boxee.inset-shadow
       %a.url.icon{:href => "http://stackoverflow.com/users/197825/greg-stewart", :accesskey => "D", :tabindex => "5", :title => "Click to view my stackoverflow profile"}
         %i.icon-stack-overflow{:title => "Stackoverflow icon"}
+  .four.columns
+    .boxee.inset-shadow
+      %a.url.icon{:href => "http://www.last.fm/user/greg_stewart", :accesskey => "I", :tabindex => "5", :title => "Click to view my Last.fm profile"}
+        %i.icon-lastfm-sign{:title => "Last.fm icon"}
+  .four.columns
+    .boxee.inset-shadow
+      %a.url.icon{:href => "http://www.flickr.com/photos/greg_and_jodie/", :accesskey => "F", :tabindex => "3", :title => "Click to view Flickr profile"}
+        %i.icon-flickr-sign{:title => "Flickr icon"}
 
-  .eight.columns.omega
+  .four.columns.omega
     .boxee.inset-shadow
       %a.url.icon{:href => "https://plus.google.com/110643069434566075441", :accesskey => "I", :tabindex => "5", :title => "Click to view my Google+ profile"}
         %i.icon-google-plus{:title => "Google+ icon"}

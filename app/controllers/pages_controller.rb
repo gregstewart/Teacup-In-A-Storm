@@ -17,6 +17,9 @@ class PagesController < ApplicationController
     @twitter_feed = Twitter.user_timeline("_greg_stewart_")
     @twitter_entries = @twitter_feed[0..4]
 
+    @vimeo_feed = Vimeo::Simple::User.videos("user2724002")
+    @vimeo_entries = @vimeo_feed[0..4]
+
     respond_to do |format|
       format.html
     end
