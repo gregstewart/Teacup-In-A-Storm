@@ -23,7 +23,6 @@ set :copy_strategy, :export
 set :unicorn_config, "#{current_path}/config/unicorn.rb"
 set :unicorn_pid, "#{current_path}/tmp/pids/unicorn.pid"
 set :keep_releases, 2
-set :bundle_flags, "--deployment --local --quiet"
 
 # RVM bootstrap: change to your Ruby and GemSet
 # make sure this gem is installed!
@@ -53,4 +52,5 @@ namespace :deploy do
 end
 
 before "deploy:assets:precompile", "deploy:symlink_shared"
-after "deploy:update_code", "deploy:restart", "deploy:cleanup"
+after "deploy:update_code", "deploy:cleanup"
+after "deploy:create_symlink", "deploy:restart"
