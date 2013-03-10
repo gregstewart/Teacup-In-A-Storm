@@ -48,17 +48,8 @@
             %span.postal-code SW20 8SF
   .four.columns.omega
     .boxee.inset-shadow
-      %a.url.icon{:href => "http://gregs.tcias.co.uk", :accesskey => "V", :tabindex => "3", :title => "Click to view my blog"}
-        %i.icon-wordpress{:title => "Wordpress icon"}
-
-      .feed
-        %h3 5 most recent posts
-        %ul
-          -@wordpress_entries.each do |entry|
-            %li
-              %a{:href=>entry.url}
-                =entry.title
-
+      %a.url.icon{:href => "http://www.linkedin.com/in/gregstewart", :accesskey => "L", :tabindex => "3", :title => "Click to view LinkedIn profile"}
+        %i.icon-linkedin-sign{:title => "LinkedIn icon"}
 
 .row.clearfix
   .four.columns.alpha
@@ -76,8 +67,16 @@
               =entry.created_at
   .four.columns
     .boxee.inset-shadow
-      %a.url.icon{:href => "http://www.linkedin.com/in/gregstewart", :accesskey => "L", :tabindex => "3", :title => "Click to view LinkedIn profile"}
-        %i.icon-linkedin-sign{:title => "LinkedIn icon"}
+      %a.url.icon{:href => "http://gregs.tcias.co.uk", :accesskey => "V", :tabindex => "3", :title => "Click to view my blog"}
+        %i.icon-wordpress{:title => "Wordpress icon"}
+
+      .feed
+        %h3 5 most recent posts
+        %ul
+          -@wordpress_entries.each do |entry|
+            %li
+              %a{:href=>entry.url}
+                =entry.title
 
   .four.columns
     .boxee.inset-shadow
@@ -94,6 +93,14 @@
     .boxee.inset-shadow
       %a.url.icon{:href => "https://delicious.com/wildcard1999", :accesskey => "D", :tabindex => "5", :title => "Click to view my delicious profile"}
         %i.icon-delicious{:title => "Delicious icon"}
+
+      .feed
+        %h3 5 most recent bookmarks
+        %ul
+          -@delicious_entries.each do |entry|
+            %li
+              %a{:href=>entry.url}
+                =entry.title
 
   .four.columns
     .boxee.inset-shadow
@@ -117,6 +124,15 @@
     .boxee.inset-shadow
       %a.url.icon{:href => "https://twitter.com/_greg_stewart_", :accesskey => "T", :tabindex => "5", :title => "Click to view my twitter profile"}
         %i.icon-twitter{:title => "Twitter icon"}
+
+      .feed
+        %h3 Recent tweets
+        %ul
+          -@twitter_entries.each do |entry|
+            %li
+              %a{:href=>"https://twitter.com/_greg_stewart_/status/#{entry.id}"}
+                =entry.text
+              =entry.created_at
 
 .row.clearfix
   .eight.columns.alpha
