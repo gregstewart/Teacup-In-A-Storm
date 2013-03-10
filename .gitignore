@@ -6,3 +6,4 @@ log/
 tmp/
 lib/
 .sass-cache/
+config/api_keys.yml

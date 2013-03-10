@@ -1,5 +1,9 @@
 require File.expand_path('../boot', __FILE__)
 
+# load app_config.yml
+require 'yaml'
+APP_CONFIG = YAML.load(File.read(File.expand_path('../api_keys.yml', __FILE__)))
+
 # Pick the frameworks you want:
 require "action_controller/railtie"
 require "action_mailer/railtie"
