@@ -89,17 +89,31 @@ dt {
   img {
     width: 100%;
     height: 100%;
-    //@media only screen and (max-width: 767px) and (min-width: 320px) {
-    //  width: 50%;
-    //  height: 50%;
-    //}
-    //
-    //@media only screen and (max-width: 767px) and (min-width: 320px) {
-    //  &.vimeo {
-    //    width: 100%;
-    //    height: 100%;
-    //  }
-    //}
+
+    &.vimeo {
+      border:  1px solid rgb(147,136,131);
+    }
+
+    &.instagram {
+      border: none;
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 320px) {
+      width: 50%;
+      height: 50%;
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 320px) {
+      &.instagram {
+        border: none;
+        width: 100%;
+        height: 100%;
+      }
+      &.vimeo {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 
@@ -135,18 +149,17 @@ i[class^="icon-"], {
     @media only screen and (max-width: 767px) and (min-width: 320px) {
       display: block;
     }
+    a {
+      color: transparent;
+    }
   }
 }
 
-.vimeo {
-  border:  1px solid rgb(147,136,131);
+.inset-shadow {
+  -moz-box-shadow:    inset 0 0 9px rgb(0,0,0);
+  -webkit-box-shadow: inset 0 0 9px rgb(0,0,0);
+  box-shadow:         inset 0 0 9px rgb(0,0,0);
 }
-
-//.inset-shadow {
-//  -moz-box-shadow:    inset 0 0 9px rgb(0,0,0);
-//  -webkit-box-shadow: inset 0 0 9px rgb(0,0,0);
-//  box-shadow:         inset 0 0 9px rgb(0,0,0);
-//}
 
 .one-edge-shadow {
   -webkit-box-shadow: 0 6px 10px -6px rgb(0,0,0);
