@@ -69,7 +69,3 @@ module Teacupinastorm
     config.assets.version = '1.0'
   end
 end
-
-if Rails.env.development?
-  OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
-end
