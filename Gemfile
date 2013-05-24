@@ -17,7 +17,7 @@ gem 'jquery-rails'
 
 gem 'feedzirra'
 gem 'instagram'
-#gem 'octokit',  :git => 'git@github.com:gregstewart/octokit.git'
+gem 'octokit'
 gem 'twitter'
 gem 'vimeo'
 
