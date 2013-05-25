@@ -57,7 +57,9 @@
         %i.icon-delicious{:title => "Delicious icon"}
 
       .feed
-        %h3 5 most recent bookmarks
+        %h3
+          =@delicious_entries.length
+          most recent bookmarks
         %ul
           -@delicious_entries.each do |entry|
             %li
@@ -71,7 +73,10 @@
         %i.icon-wordpress{:title => "Wordpress icon"}
 
       .feed
-        %h3 5 most recent posts
+        %h3
+          =@wordpress_entries.length
+          most recent posts
+
         %ul
           -@wordpress_entries.each do |entry|
             %li
@@ -112,7 +117,9 @@
       %a.url.icon{:href => "http://instagram.com/_greg_stewart_", :accesskey => "I", :tabindex => "5", :title => "Click to view my Instagram profile"}
         %i.icon-instagram{:title => "Instagram icon"}
       .feed
-        %h3 5 most recent images
+        %h3
+          =@instagram_entries.length
+          most recent images
         %ul.images
           -@instagram_entries.each do |entry|
             %li
