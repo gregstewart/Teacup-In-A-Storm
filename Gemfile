@@ -20,6 +20,7 @@ gem 'instagram'
 gem 'octokit'
 gem 'twitter'
 gem 'vimeo'
+gem 'whenever', :require => false
 
 # Deploy with Capistrano
 # gem 'capistrano'
