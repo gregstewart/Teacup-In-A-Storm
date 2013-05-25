@@ -58,10 +58,10 @@
 
       .feed
         %h3
-          =@delicious_entries.length
+          =@page_items['delicious_entries'].length
           most recent bookmarks
         %ul
-          -@delicious_entries.each do |entry|
+          -@page_items['delicious_entries'].each do |entry|
             %li
               %a{:href=>entry.url}
                 =entry.title
@@ -74,11 +74,11 @@
 
       .feed
         %h3
-          =@wordpress_entries.length
+          =@page_items['blog_entries'].length
           most recent posts
 
         %ul
-          -@wordpress_entries.each do |entry|
+          -@page_items['blog_entries'].each do |entry|
             %li
               %a{:href=>entry.url}
                 =entry.title
@@ -90,7 +90,7 @@
 
       .feed
         %ul.images
-          -@vimeo_entries.each do |entry|
+          -@page_items['vimeo_entries'].each do |entry|
             %li
               %div
                 %a{:href=>entry['url']}
@@ -107,7 +107,7 @@
       .feed
         %h3 Recent tweets
         %ul
-          -@twitter_entries.each do |entry|
+          -@page_items['twitter_entries'].each do |entry|
             %li
               %a{:href=>"https://twitter.com/_greg_stewart_/status/#{entry.id}"}
                 =entry.text
@@ -118,10 +118,10 @@
         %i.icon-instagram{:title => "Instagram icon"}
       .feed
         %h3
-          =@instagram_entries.length
+          =@page_items['instagram_entries'].length
           most recent images
         %ul.images
-          -@instagram_entries.each do |entry|
+          -@page_items['instagram_entries'].each do |entry|
             %li
               %a{:href=>entry.link}
                 -caption = entry.caption.text unless entry.caption.nil?
@@ -134,7 +134,7 @@
 
       .feed
         %ul
-          -@github_entries.each do |entry|
+          -@page_items['github_entries'].each do |entry|
             %li
               =entry.type
               %a{:href => entry.repo.url}
