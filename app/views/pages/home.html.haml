@@ -62,7 +62,7 @@
           most recent bookmarks
         %ul
           -@page_items['delicious_entries'].each do |entry|
-            %li
+            %li{:class => 'delicious'}
               %a{:href=>entry.url}
                 =entry.title
 
@@ -79,7 +79,7 @@
 
         %ul
           -@page_items['blog_entries'].each do |entry|
-            %li
+            %li{:class => 'blog'}
               %a{:href=>entry.url}
                 =entry.title
 
@@ -91,7 +91,7 @@
       .feed
         %ul.images
           -@page_items['vimeo_entries'].each do |entry|
-            %li
+            %li{:class => 'vimeo'}
               %div
                 %a{:href=>entry['url']}
                   %img{:src=>entry['thumbnail_large'], :title =>entry['title'], :class=>"vimeo inset-shadow"}
@@ -108,7 +108,7 @@
         %h3 Recent tweets
         %ul
           -@page_items['twitter_entries'].each do |entry|
-            %li
+            %li{:class => 'twitter'}
               %a{:href=>"https://twitter.com/_greg_stewart_/status/#{entry.id}"}
                 =entry.text
               =entry.created_at
@@ -122,7 +122,7 @@
           most recent images
         %ul.images
           -@page_items['instagram_entries'].each do |entry|
-            %li
+            %li{:class => 'instagram'}
               %a{:href=>entry.link}
                 -caption = entry.caption.text unless entry.caption.nil?
                 %img{:src=>entry.images.thumbnail.url, :title =>caption, :class=>"instagram"}
@@ -135,7 +135,7 @@
       .feed
         %ul
           -@page_items['github_entries'].each do |entry|
-            %li
+            %li{:class => 'github'}
               =entry.type
               %a{:href => entry.repo.url}
                 =entry.repo.name
