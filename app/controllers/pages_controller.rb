@@ -5,8 +5,15 @@ class PagesController < ApplicationController
   def home
     @title = "home"
 
-    @page_items = Page.new.fetch
-
+    @page = Page.new
+    @page.fetch
+    #
+    #@entries[:delicious] = @page.get_by_type('delicious')
+    #@entries[:blog] = @page.get_by_type('blog')
+    #@entries[:vimeo] = @page.get_by_type('vimeo')
+    #@entries[:twitter] = @page.get_by_type('twitter')
+    #@entries[:instagram] = @page.get_by_type('instagram')
+    #@entries[:github] = @page.get_by_type('github')
 
     respond_to do |format|
       format.html
