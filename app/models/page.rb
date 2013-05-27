@@ -34,6 +34,10 @@ class Page
     @items.select {|v| v[:type] =~ Regexp.new(type) }
   end
 
+  def sort_by_date
+    @items.sort! {|x,y| y[:date] <=> x[:date] }
+  end
+
   def get_vimeo
     # upload_date (date), title (content), url (url), thumbnail_large (thumbnail)
     vimeo_feed = Vimeo::Simple::User.videos("user2724002")
