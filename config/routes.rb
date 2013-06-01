@@ -5,4 +5,5 @@ Teacupinastorm::Application.routes.draw do
   get "pages/home"
   root :to => "pages#home"
 
+  mount JasmineRails::Engine => "/specs" if defined?(JasmineRails)
 end

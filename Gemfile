@@ -40,6 +40,7 @@ gem 'whenever', :require => false
 
 group :development, :test do
   gem 'rspec-rails', '2.8.1'
+  gem 'jasmine-rails'
 end
 
 group :development do
@@ -53,7 +54,6 @@ group :test do
   gem 'spork'
   gem 'simplecov'
   gem 'capybara', '1.1.2'
-  gem 'jasmine'
 end
 
 group :production do
