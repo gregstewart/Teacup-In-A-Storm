@@ -17,9 +17,10 @@ gem 'jquery-rails'
 
 gem 'feedzirra'
 gem 'instagram'
-#gem 'octokit',  :git => 'git@github.com:gregstewart/octokit.git'
+gem 'octokit'
 gem 'twitter'
 gem 'vimeo'
+gem 'whenever', :require => false
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -39,6 +40,7 @@ gem 'vimeo'
 
 group :development, :test do
   gem 'rspec-rails', '2.8.1'
+  gem 'jasmine-rails'
 end
 
 group :development do
@@ -52,7 +54,6 @@ group :test do
   gem 'spork'
   gem 'simplecov'
   gem 'capybara', '1.1.2'
-  gem 'jasmine'
 end
 
 group :production do
