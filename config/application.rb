@@ -2,7 +2,8 @@ require File.expand_path('../boot', __FILE__)
 
 # load app_config.yml
 require 'yaml'
-APP_CONFIG = YAML.load(ERB.new(File.read(File.expand_path('../api_keys.yml', __FILE__))))
+require 'erb'
+APP_CONFIG = YAML.load(ERB.new(File.read(File.expand_path('../api_keys.yml', __FILE__))).result)
 puts APP_CONFIG
 # Pick the frameworks you want:
 require "action_controller/railtie"
