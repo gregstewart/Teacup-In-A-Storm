@@ -4,7 +4,7 @@ require 'spork'
 #require 'spork/ext/ruby-debug'
 
 require 'coveralls'
-Coveralls.wear!
+Coveralls.wear!('rails')
 
 Spork.prefork do
   # Loading more in this block will cause your tests to run faster. However,
