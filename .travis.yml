@@ -22,5 +22,9 @@ env:
   - secure: ! 'iB04v++cVqINN7NK8kQhVPCIOC0HcE5ph3qDlPrc69VJZNopOkUSsHrPyFy9
       9BF2T54StJmIknQCGqczuYSPGW0zzAL3CEQpUn1dYgoiDznVszD/u7OGcYPy
       LRlYC3cRcvK8oaJkz2jnyqxV7VPkpkYm5A8CdGaZQghs9unRznA='
+  - secure: ! 'ilt4VnNaR6wQhiNk/7mwT81Yt0zlRmmxeZ6qU7oEcvNa7+KuLaflstle1bpO
+        de0bZicoItzjKYUr5k6kvmUYxD3vRbQ1H3/4RLCEag78OmDodLWJRKy2qBaA
+        zyQ8BYiMCFkvkVvIzQCazWS8nVg2XBV0wE3p1U6ZdANHXFBoWuQ='
+
 before_install:
 - cp config/api_keys.example.yml config/api_keys.yml
