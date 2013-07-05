@@ -1,1 +1,3 @@
-This is just my static site (for now) showing my contact details and some of my previous work.
+{<img src="https://travis-ci.org/gregstewart/Teacup-In-A-Storm.png?branch=master" alt="Build Status" />}[https://travis-ci.org/gregstewart/Teacup-In-A-Storm]
+
+Not quite so static site anymore showing my contact details, various digital feeds and some of my previous work.
