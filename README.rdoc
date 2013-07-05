@@ -1,3 +1,4 @@
 {<img src="https://travis-ci.org/gregstewart/Teacup-In-A-Storm.png?branch=master" alt="Build Status" />}[https://travis-ci.org/gregstewart/Teacup-In-A-Storm]
+{<img src="https://coveralls.io/repos/gregstewart/Teacup-In-A-Storm/badge.png" alt="Coverage Status" />}[https://coveralls.io/r/gregstewart/Teacup-In-A-Storm]
 
 Not quite so static site anymore showing my contact details, various digital feeds and some of my previous work.
