@@ -1,8 +1,8 @@
 twitter:
-  consumer_key: <%= ENV["twitter_consumer_key"] %>
-  consumer_secret: <%= ENV["twitter_consumer_secret"] %>
-  oauth_token: <%= ENV["twitter_oauth_token"] %>
-  oauth_token_secret: <%= ENV["twitter_oauth_token_secret"] %>
+  consumer_key: '<%= ENV["twitter_consumer_key"] %>'
+  consumer_secret: '<%= ENV["twitter_consumer_secret"] %>'
+  oauth_token: '<%= ENV["twitter_oauth_token"] %>'
+  oauth_token_secret: '<%= ENV["twitter_oauth_token_secret"] %>'
 instagram:
-  client_id: <%= ENV["instagram_client_id"] %>
-  access_token: <%= ENV["instagram_access_token"] %>
+  client_id: '<%= ENV["instagram_client_id"] %>'
+  access_token: '<%= ENV["instagram_access_token"] %>'
