@@ -2,8 +2,7 @@
 language: ruby
 rvm:
 - 1.9.3
-before_install:
-- cp config/api_keys.example.yml config/api_keys.yml
+
 env:
   twitter_consumer_key:
     - secure: "Mxn8MGSLQYBIG+36cK02iyJ72ORYSX5cgDFFB80mi1l/k7BCOGaWLs5+jhHDGLVm/PGGb/nKo7Fjra8IlJiBEQfQvw4d58R1He1FpMXa6AfzbegmPNSXFDX+UGV35yucS7KbTN++lxTDOmHD0wB+irl9Kmw8olWgNgok8ArSJhk="
@@ -17,3 +16,6 @@ env:
     - secure: "apj3PgTYm6bdbuR+ps0vgADJrIhhaHFqjiHYIy8ZnZ8egDIDzb0dz/VKksu5TgjXNhE3ypYMIc7+8nQ2u4I3Ek7vEgtPwhhz6FITOZ9tIocW2+Z3KMWDlTzGnOWhL+FXvJpeSabyrDKImN3S2LzJc3zM/wPWe6e/AXM3fFcaGZg="
   instagram_access_token:
     - secure: "bOj6I6eaRPPoSkphu63KykcIZJNPM+zZIotwQ0nhrJ8HdGB7VwI+eVIEEG2ysms7fVxDxgCHR1z+SSeUTv2JA4ABHFmP7r3AejEJObAVdTc4rcL9VbQDenB2WYpp/Fzd7M9fwzwvgU6boGo1cGU+GLzXeLPFx+fd0SZkkC5gdmw="
+
+before_install:
+- cp config/api_keys.example.yml config/api_keys.yml
