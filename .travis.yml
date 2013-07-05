@@ -6,32 +6,14 @@ before_install:
 - cp config/api_keys.example.yml config/api_keys.yml
 env:
   twitter_consumer_key:
-    secure: |-
-      Mxn8MGSLQYBIG+36cK02iyJ72ORYSX5cgDFFB80mi1l/k7BCOGaWLs5+jhHD
-      GLVm/PGGb/nKo7Fjra8IlJiBEQfQvw4d58R1He1FpMXa6AfzbegmPNSXFDX+
-      UGV35yucS7KbTN++lxTDOmHD0wB+irl9Kmw8olWgNgok8ArSJhk=
+    - secure: "Mxn8MGSLQYBIG+36cK02iyJ72ORYSX5cgDFFB80mi1l/k7BCOGaWLs5+jhHDGLVm/PGGb/nKo7Fjra8IlJiBEQfQvw4d58R1He1FpMXa6AfzbegmPNSXFDX+UGV35yucS7KbTN++lxTDOmHD0wB+irl9Kmw8olWgNgok8ArSJhk="
   twitter_consumer_secret:
-    secure: |-
-      ieWVpDCgKyppJ4OvEDRpGXdM53draPKBdT7nuhfG5KTC8UZ+zV1MttKcEE9g
-      zIi+XMkf5Tq1Eyu2ddJoGQjc64PPCtIdNYkUz3PxDbXDTjAFPKoIxQMRcXp9
-      7sbZY3FVATu7E25T0Z3uOj/1NmQyF0ZJRVjnF6xKOWk7rBkSfuM=
+    - secure: "ieWVpDCgKyppJ4OvEDRpGXdM53draPKBdT7nuhfG5KTC8UZ+zV1MttKcEE9gzIi+XMkf5Tq1Eyu2ddJoGQjc64PPCtIdNYkUz3PxDbXDTjAFPKoIxQMRcXp97sbZY3FVATu7E25T0Z3uOj/1NmQyF0ZJRVjnF6xKOWk7rBkSfuM="
   twitter_oauth_token:
-    secure: |-
-      kcQtXTMT9CiBGBDBboGCbQkrHh2JXZSV7LwHXoQPng+EnTui+Z+v6DPNYvNx
-      d/4hU7TSgL5r62d1E5kp9wGHd81wAAWXKRmzcDCAfjzDb5SN4Uf3fAelW2sg
-      78+2S8Bjk9Fid5c4pox9xu9SK7yjZQsPAFoqUVPnFQtiElEk1oo=
+    - secure: "kcQtXTMT9CiBGBDBboGCbQkrHh2JXZSV7LwHXoQPng+EnTui+Z+v6DPNYvNxd/4hU7TSgL5r62d1E5kp9wGHd81wAAWXKRmzcDCAfjzDb5SN4Uf3fAelW2sg78+2S8Bjk9Fid5c4pox9xu9SK7yjZQsPAFoqUVPnFQtiElEk1oo="
   twitter_oauth_token_secret:
-    secure: |-
-      WOnDR0at7bB2/uiweivo/IzWrU1llDNQs+ZCTXQuKLMVpjHB6DOAjQk0q0sD
-      4aYm+b+upKnxJhAkO6WHhCWPuGcu4UA/KIRSiZMrXbrba9Ar5A+MFIQFHxT1
-      5R+QO3Lx8SuMHMNGnbCHhD+GDZN9s7HgnHIXaarSeV+4xYSERO0=
+    - secure: "WOnDR0at7bB2/uiweivo/IzWrU1llDNQs+ZCTXQuKLMVpjHB6DOAjQk0q0sD4aYm+b+upKnxJhAkO6WHhCWPuGcu4UA/KIRSiZMrXbrba9Ar5A+MFIQFHxT15R+QO3Lx8SuMHMNGnbCHhD+GDZN9s7HgnHIXaarSeV+4xYSERO0="
   instagram_client_id:
-    secure: |-
-      apj3PgTYm6bdbuR+ps0vgADJrIhhaHFqjiHYIy8ZnZ8egDIDzb0dz/VKksu5
-      TgjXNhE3ypYMIc7+8nQ2u4I3Ek7vEgtPwhhz6FITOZ9tIocW2+Z3KMWDlTzG
-      nOWhL+FXvJpeSabyrDKImN3S2LzJc3zM/wPWe6e/AXM3fFcaGZg=
+    - secure: "apj3PgTYm6bdbuR+ps0vgADJrIhhaHFqjiHYIy8ZnZ8egDIDzb0dz/VKksu5TgjXNhE3ypYMIc7+8nQ2u4I3Ek7vEgtPwhhz6FITOZ9tIocW2+Z3KMWDlTzGnOWhL+FXvJpeSabyrDKImN3S2LzJc3zM/wPWe6e/AXM3fFcaGZg="
   instagram_access_token:
-    secure: |-
-      bOj6I6eaRPPoSkphu63KykcIZJNPM+zZIotwQ0nhrJ8HdGB7VwI+eVIEEG2y
-      sms7fVxDxgCHR1z+SSeUTv2JA4ABHFmP7r3AejEJObAVdTc4rcL9VbQDenB2
-      WYpp/Fzd7M9fwzwvgU6boGo1cGU+GLzXeLPFx+fd0SZkkC5gdmw=
+    - secure: "bOj6I6eaRPPoSkphu63KykcIZJNPM+zZIotwQ0nhrJ8HdGB7VwI+eVIEEG2ysms7fVxDxgCHR1z+SSeUTv2JA4ABHFmP7r3AejEJObAVdTc4rcL9VbQDenB2WYpp/Fzd7M9fwzwvgU6boGo1cGU+GLzXeLPFx+fd0SZkkC5gdmw="
