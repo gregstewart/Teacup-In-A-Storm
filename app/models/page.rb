@@ -62,7 +62,8 @@ class Page
 
   def get_github
     # created_at (date), type + repo.name (content), repo.url (url)
-    github_feed = Octokit.user_events("gregstewart")
+    client = Octokit::Client.new(:login => APP_CONFIG['github']['client_id'], :oauth_token => APP_CONFIG['github']['access_token'])
+    github_feed = client.user_events(APP_CONFIG['github']['client_id'])
     github_items = github_feed[0..4]
 
     github_items.each do |item|
@@ -84,21 +85,32 @@ class Page
 
   def get_delicious
     # published (date), title (content), url (url)
-    delicious_feed = Feed.new("http://feeds.delicious.com/v2/rss/wildcard1999")
-    delicious_items = delicious_feed.get_last_five
+    delicious_items = get_feed("http://feeds.delicious.com/v2/rss/wildcard1999", 5)
 
     delicious_items.each do |item|
-      @items.push(set_page_item('delicious', item.published, item.title, item.url, ''))
+      @items.push(set_page_item("delicious", item.published, item.title, item.entry_id, ''))
     end
   end
 
   def get_blog
     # updated (date), title (content), entry_id (url)
-    blog_feed = Feed.new("http://gregs.tcias.co.uk/atom.xml")
-    blog_items = blog_feed.get_last_ten
-
+    blog_items = get_feed("http://gregs.tcias.co.uk/atom.xml", 10)
     blog_items.each do |item|
-      @items.push(set_page_item('blog', item.updated, item.title, item.entry_id, ''))
+      @items.push(set_page_item('blog', item.published, item.title, item.entry_id, ''))
     end
   end
+
+  def get_feed url, number_of_items
+    feed = Feed.new(url)
+
+    if number_of_items == 10
+      feed.get_last_ten
+    elsif number_of_items == 5
+      feed.get_last_five
+    end
+
+  end
+
+  private :get_feed
+
 end
