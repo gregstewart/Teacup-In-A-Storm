@@ -86,18 +86,13 @@ class Page
   def get_delicious
     # published (date), title (content), url (url)
     delicious_items = get_feed("http://feeds.delicious.com/v2/rss/wildcard1999", 5)
-
-    delicious_items.each do |item|
-      @items.push(set_page_item("delicious", item.published, item.title, item.entry_id, ''))
-    end
+    populate_page_items(delicious_items, 'delicious')
   end
 
   def get_blog
     # updated (date), title (content), entry_id (url)
     blog_items = get_feed("http://gregs.tcias.co.uk/atom.xml", 10)
-    blog_items.each do |item|
-      @items.push(set_page_item('blog', item.published, item.title, item.entry_id, ''))
-    end
+    populate_page_items(blog_items, 'blog')
   end
 
   def get_feed url, number_of_items
@@ -108,9 +103,14 @@ class Page
     elsif number_of_items == 5
       feed.get_last_five
     end
-
   end
 
-  private :get_feed
+  def populate_page_items items, type
+    items.each do |item|
+      @items.push(set_page_item(type, item.published, item.title, item.entry_id, ''))
+    end
+  end
+
+  private :get_feed, :populate_page_items
 
 end
