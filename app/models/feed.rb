@@ -5,17 +5,11 @@ class Feed
     @url = url
   end
 
-  def get_last_five
-    # fetching a single feed
+  def get_last number_of_items
     feed = Feedzirra::Feed.fetch_and_parse(@url)
 
-    feed.entries[0..4]
+    max_number_of_items = number_of_items - 1
+    feed.entries[0..max_number_of_items]
   end
 
-  def get_last_ten
-    # fetching a single feed
-    feed = Feedzirra::Feed.fetch_and_parse(@url)
-
-    feed.entries[0..9]
-  end
 end

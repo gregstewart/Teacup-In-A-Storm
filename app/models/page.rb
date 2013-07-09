@@ -31,11 +31,21 @@ class Page
   end
 
   def get_by_type(type)
-    @items.select {|v| v[:type] =~ Regexp.new(type) }
+    @items.select { |v| v[:type] =~ Regexp.new(type) }
   end
 
   def sort_by_date
-    @items.sort! {|x,y| y[:date] <=> x[:date] }
+    @items.sort! { |x, y| y[:date] <=> x[:date] }
+  end
+
+  def get_github
+    # created_at (date), type + repo.name (content), repo.url (url)
+    github_client = Github.new
+    github_items = github_client.get_last_user_events(5)
+
+    github_items.each do |item|
+      @items.push(set_page_item('github', item['created_at'], item['type'] + ' ' + item['repo']['name'], item['repo']['url'], ''))
+    end
   end
 
   def get_vimeo
@@ -60,17 +70,6 @@ class Page
 
   end
 
-  def get_github
-    # created_at (date), type + repo.name (content), repo.url (url)
-    client = Octokit::Client.new(:login => APP_CONFIG['github']['client_id'], :oauth_token => APP_CONFIG['github']['access_token'])
-    github_feed = client.user_events(APP_CONFIG['github']['client_id'])
-    github_items = github_feed[0..4]
-
-    github_items.each do |item|
-      @items.push(set_page_item('github', item['created_at'], item['type'] + ' ' + item['repo']['name'], item['repo']['url'], ''))
-    end
-  end
-
   def get_instagram
     # created_time (date), caption.text unless entry.caption.nil? (content ), link (url), images.thumbnail.url (thumbnail)
     instagram_feed = Instagram.user_recent_media(178138400)
@@ -85,24 +84,20 @@ class Page
 
   def get_delicious
     # published (date), title (content), url (url)
-    delicious_items = get_feed("http://feeds.delicious.com/v2/rss/wildcard1999", 5)
-    populate_page_items(delicious_items, 'delicious')
+    feed_items = get_feed("http://feeds.delicious.com/v2/rss/wildcard1999", 5)
+    populate_page_items(feed_items, 'delicious')
   end
 
   def get_blog
     # updated (date), title (content), entry_id (url)
-    blog_items = get_feed("http://gregs.tcias.co.uk/atom.xml", 10)
-    populate_page_items(blog_items, 'blog')
+    feed_items = get_feed("http://gregs.tcias.co.uk/atom.xml", 10)
+    populate_page_items(feed_items, 'blog')
   end
 
   def get_feed url, number_of_items
     feed = Feed.new(url)
 
-    if number_of_items == 10
-      feed.get_last_ten
-    elsif number_of_items == 5
-      feed.get_last_five
-    end
+    feed.get_last(number_of_items)
   end
 
   def populate_page_items items, type
