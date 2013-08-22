@@ -17,6 +17,7 @@ gem 'jquery-rails'
 
 gem 'feedzirra'
 gem 'instagram'
+gem 'foursquare2'
 gem 'octokit'
 gem 'twitter'
 gem 'vimeo'

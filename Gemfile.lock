@@ -81,6 +81,10 @@ GEM
       rdoc (~> 3.8)
       sax-machine (~> 0.0.20)
     ffi (1.9.0)
+    foursquare2 (1.9.7)
+      faraday (~> 0.8)
+      faraday_middleware (>= 0.8)
+      hashie (>= 1.0, < 3.0.0)
     haml (4.0.3)
       tilt
     hashie (2.0.5)
@@ -244,6 +248,7 @@ DEPENDENCIES
   capybara (= 1.1.2)
   coveralls
   feedzirra
+  foursquare2
   haml
   instagram
   jasmine-rails

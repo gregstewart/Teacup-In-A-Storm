@@ -18,6 +18,8 @@ class Page
 
     get_vimeo
 
+    get_foursquare
+
   end
 
   def get_blog
@@ -76,6 +78,15 @@ class Page
     end
   end
 
+  def get_foursquare
+    foursquare_client = FoursquareParser.new
+    foursquare_items = foursquare_client.get_last_user_events(10)
+
+    foursquare_items.each do |item|
+      @items.push(set_page_item('foursquare', item['createdAt'], item['venue']['name'], item['venue']['canonicalUrl'], ''))
+    end
+  end
+
   def sort_by_date
     @items.sort! { |x, y| y[:date] <=> x[:date] }
   end
@@ -83,7 +94,7 @@ class Page
   def set_page_item(type, date, content, url, thumbnail)
       page_item = {}
       page_item[:type] = type
-      page_item[:date] = (type == 'instagram') ? DateTime.parse(Time.at(date.to_i).to_s) : DateTime.parse(date.to_s)
+      page_item[:date] = (type == 'instagram' || type == 'foursquare') ? DateTime.parse(Time.at(date.to_i).to_s) : DateTime.parse(date.to_s)
       page_item[:content] = content
       page_item[:url] = url
       page_item[:thumbnail] = thumbnail

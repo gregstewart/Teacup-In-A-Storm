@@ -101,7 +101,7 @@
 
   .row.clearfix
     .six.columns.alpha.isotope
-      .boxee{:data => {:cateogry => "twitter"}}
+      .boxee.stacked{:data => {:cateogry => "twitter"}}
         %a.url.icon{:href => "https://twitter.com/_greg_stewart_", :accesskey => "T", :tabindex => "5", :title => "Click to view my twitter profile"}
           %i.icon-twitter{:title => "Twitter icon"}
 
@@ -110,6 +110,18 @@
           %ul
             -@page.get_by_type('twitter').each do |entry|
               %li{:class => 'twitter'}
+                %a{:href=>entry[:url]}
+                  =entry[:content]
+                =entry[:date]
+      .boxee.stacked{:data => {:cateogry => "foursquare"}}
+        %a.url.icon{:href => "https://foursquare.com/user/13278548", :accesskey => "T", :tabindex => "5", :title => "Click to view my twitter profile"}
+          %i.icon-foursquare{:title => "Foursquare icon"}
+
+        .feed
+          %h3 Recent checkins
+          %ul
+            -@page.get_by_type('foursquare').each do |entry|
+              %li{:class => 'foursquare'}
                 %a{:href=>entry[:url]}
                   =entry[:content]
                 =entry[:date]
