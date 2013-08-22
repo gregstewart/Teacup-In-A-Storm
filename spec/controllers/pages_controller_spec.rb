@@ -76,7 +76,7 @@ describe PagesController do
                                     :content => "TCIAS | Portfolio")
     end
 
-    xit "should have the right breadcrumb" do
+    it "should have the right breadcrumb" do
       visit portfolio_path
 
       page.should have_selector("li.breadcrumb",
@@ -98,7 +98,7 @@ describe PagesController do
                                     :content => "TCIAS | Curriculum Vitae")
     end
 
-    xit "should have the right breadcrumb" do
+    it "should have the right breadcrumb" do
       visit cv_path
 
       page.should have_selector("li.breadcrumb",

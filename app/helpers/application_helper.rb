@@ -9,28 +9,8 @@ module ApplicationHelper
     end
   end
 
-  def breadcrumbs(sep = " [&#8226;] ", include_home = true)
-    # adapted from here http://blog.craig-mackenzie.com/2007/08/09/simple-bread-crumbs-in-ruby-on-rails
-    
-    levels = request.path.split('?')[0].split('/')
-    levels.delete_at(0)
-
-    links = content_tag(:li, content_tag(:a, "tcias", :href => "/", :accesskey => "h", :title => "Home [h]") << sep.html_safe, :class => "breadcrumb") if include_home
-
-    levels.each_with_index do |level, index|
-      item  = level.downcase.gsub(/_/, " ")
-      accesskey = item[0,1]
-      links << content_tag(:li, content_tag(:a,
-                                item,
-                                :href => "/"+levels[0..index].join("/"),
-                                :accesskey => accesskey,
-                                :title => "#{item} [#{accesskey}]"
-                           ) << sep.html_safe, :class => "breadcrumb")
-    end
-
-    div_content = content_tag(:ul, links)
-
-    content_tag :div, div_content, :id => "breadcrumb" 
+  def breadcrumbs
+    Breadcrumb.new(request.path).build
   end
 
   def get_last_url_item
