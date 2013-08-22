@@ -10,4 +10,4 @@ github:
   client_id: '<%= ENV["github_client_id"] %>'
   access_token: '<%= ENV["github_access_token"] %>'
 foursquare:
-  oauth_token: '<%= ENV["foursquare__oauth_token"] %>'
+  oauth_token: '<%= ENV["foursquare_oauth_token"] %>'
