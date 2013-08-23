@@ -1,5 +1,5 @@
 class Page
-
+  attr_reader :items
   def initialize
     @items = []
   end
@@ -36,8 +36,7 @@ class Page
 
   def get_github
     # created_at (date), type + repo.name (content), repo.url (url)
-    github_client = Github.new
-    github_items = github_client.get_last_user_events(5)
+    github_items = GithubParser.new.get_last_user_events(5)
 
     github_items.each do |item|
       @items.push(set_page_item('github', item['created_at'], item['type'] + ' ' + item['repo']['name'], item['repo']['url'], ''))
@@ -79,8 +78,7 @@ class Page
   end
 
   def get_foursquare
-    foursquare_client = FoursquareParser.new
-    foursquare_items = foursquare_client.get_last_user_events(10)
+    foursquare_items = FoursquareParser.new.get_last_user_events(10)
 
     foursquare_items.each do |item|
       @items.push(set_page_item('foursquare', item['createdAt'], item['venue']['name'], item['venue']['canonicalUrl'], ''))

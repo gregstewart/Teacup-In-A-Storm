@@ -60,6 +60,11 @@ describe PagesController do
         matching = page.all('li.github')
         matching.size.should be(5)
       end
+
+      it "should have 10 foursquare links" do
+        matching = page.all('li.foursquare')
+        matching.size.should be(10)
+      end
     end
 
   end
@@ -106,4 +111,10 @@ describe PagesController do
     end
   end
 
+  describe "GET 'timeline'" do
+    it "should be successful" do
+      get 'timeline'
+      response.should be_success
+    end
+  end
 end

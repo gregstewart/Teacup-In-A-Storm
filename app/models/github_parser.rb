@@ -1,4 +1,4 @@
-class Github
+class GithubParser
 
   def initialize
     @client = Octokit::Client.new(:login => APP_CONFIG['github']['client_id'], :oauth_token => APP_CONFIG['github']['access_token'])
