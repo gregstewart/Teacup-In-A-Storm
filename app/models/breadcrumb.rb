@@ -3,8 +3,9 @@ include ActionView::Context
 class Breadcrumb
   def initialize url
     @url = url
+    @separator = "/"
   end
-  
+
   def build (sep = " [&#8226;] ", include_home = true)
     # adapted from here http://blog.craig-mackenzie.com/2007/08/09/simple-bread-crumbs-in-ruby-on-rails
 
@@ -48,15 +49,15 @@ class Breadcrumb
     end
 
     def generate_href_path(index, levels)
-      "/"+levels[0..index].join("/")
+      @separator+levels[0..index].join(@separator)
     end
 
     def get_levels
-      @url.split('?')[0].split('/')
+      @url.split("?")[0].split(@separator)
     end
 
     def get_last_url_item
-      @url.split('?')[0].split('/').last
+      get_levels.last
     end
   private :generate_link, :build_link_title, :convert_url_keywords_to_words, :generate_access_key, :generate_href_path,
           :get_levels, :get_last_url_item
