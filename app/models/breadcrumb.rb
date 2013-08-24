@@ -25,37 +25,39 @@ class Breadcrumb
     content_tag :div, div_content, :id => "breadcrumb"
   end
 
-  def generate_link(access_key, href_path, item, links, sep)
-    title = build_link_title(access_key, item)
-    links << content_tag(:li, content_tag(:a,
-                                          item,
-                                          :href => href_path,
-                                          :accesskey => access_key,
-                                          :title => title
-    ) << sep.html_safe, :class => "breadcrumb")
-  end
+    def generate_link(access_key, href_path, item, links, sep)
+      title = build_link_title(access_key, item)
+      links << content_tag(:li, content_tag(:a,
+                                            item,
+                                            :href => href_path,
+                                            :accesskey => access_key,
+                                            :title => title
+      ) << sep.html_safe, :class => "breadcrumb")
+    end
 
-  def build_link_title(access_key, item)
-    "#{item} [#{access_key}]"
-  end
+    def build_link_title(access_key, item)
+      "#{item} [#{access_key}]"
+    end
 
-  def convert_url_keywords_to_words(level)
-    level.downcase.gsub(/_/, " ")
-  end
+    def convert_url_keywords_to_words(level)
+      level.downcase.gsub(/_/, " ")
+    end
 
-  def generate_access_key(item)
-    item[0, 1]
-  end
+    def generate_access_key(item)
+      item[0, 1]
+    end
 
-  def generate_href_path(index, levels)
-    "/"+levels[0..index].join("/")
-  end
+    def generate_href_path(index, levels)
+      "/"+levels[0..index].join("/")
+    end
 
-  def get_levels
-    @url.split('?')[0].split('/')
-  end
+    def get_levels
+      @url.split('?')[0].split('/')
+    end
 
-  def get_last_url_item
-    @url.split('?')[0].split('/').last
-  end
+    def get_last_url_item
+      @url.split('?')[0].split('/').last
+    end
+  private :generate_link, :build_link_title, :convert_url_keywords_to_words, :generate_access_key, :generate_href_path,
+          :get_levels, :get_last_url_item
 end
