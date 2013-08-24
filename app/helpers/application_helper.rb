@@ -13,10 +13,6 @@ module ApplicationHelper
     Breadcrumb.new(request.path).build
   end
 
-  def get_last_url_item
-    request.path.split('?')[0].split('/').last
-  end
-
   def haml_image_tag (image,alt)
     {:src => image, :alt => alt, :class => "floatleft", :align => "left", :height => "50", :width => "50"}
   end
