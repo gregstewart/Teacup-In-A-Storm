@@ -1,0 +1,15 @@
+=provide(:title, 'Home')
+
+%section.default
+  = render 'partials/content_header'
+
+  %ul.timeline.row.clearfix
+    -@page.items.each do |item|
+      %li.sixteen.columns
+        .boxee
+          %i{:class=> "icon-#{item[:type]}",:title => "#{item[:type]} icon"}
+          %a{:href=>item[:url]}
+            = item[:content]
+            = if !item[:thumbnail].empty?
+              %div
+                %img{:src => item[:thumbnail], :class=>"#{item[:type]} inset-shadow"}

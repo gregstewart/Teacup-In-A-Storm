@@ -25,7 +25,7 @@ class Page
   def get_blog
     # updated (date), title (content), entry_id (url)
     feed_items = get_feed("http://gregs.tcias.co.uk/atom.xml", 10)
-    populate_page_items(feed_items, 'blog')
+    populate_page_items(feed_items, 'wordpress')
   end
 
   def get_delicious

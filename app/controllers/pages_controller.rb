@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
-  caches_page :home
+  caches_page :home, :timeline
 
   def home
     @title = "home"
@@ -21,7 +21,11 @@ class PagesController < ApplicationController
     @page.fetch
     @page.sort_by_date
 
-    render :json => @page
+    respond_to do |format|
+      format.html
+      format.json
+    end
+
   end
 
   def portfolio

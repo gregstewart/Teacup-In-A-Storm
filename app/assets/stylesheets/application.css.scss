@@ -51,6 +51,10 @@ dt {
   padding: 1em;
   text-align: center;
 
+  .timeline & {
+    text-align: left;
+  }
+
   &.stacked {
     margin-bottom: 1em;
   }
@@ -63,6 +67,11 @@ dt {
     left: 10px;
     width: 50%;
     top: 80%;
+
+    .timeline & {
+      top: 40%;
+    }
+
     max-width: 300px;
     background: rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);
@@ -134,8 +143,15 @@ a.icon {
 i[class^="icon-"], {
   font-size:  140px;
 
+  .timeline & {
+    font-size: 14px;
+  }
+
   @media only screen and (max-width: 767px) and (min-width: 480px) {
     font-size:  72px;
+    .timeline & {
+      font-size: 14px;
+    }
   }
 
   .vcard & {

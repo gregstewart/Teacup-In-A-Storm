@@ -37,7 +37,7 @@ describe PagesController do
       end
 
       it "should have 10 blog post links" do
-        matching = page.all('li.blog')
+        matching = page.all('li.wordpress')
         matching.size.should be(10)
       end
 
