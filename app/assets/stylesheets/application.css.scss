@@ -40,6 +40,16 @@ body {
   }
 }
 
+ul {
+  font-weight: bold;
+  .breadcrumb {
+    font-family: Junction;
+    display: inline;
+    color:  rgb(147,136,131);
+
+  }
+}
+
 dt {
   display: none;
 }
