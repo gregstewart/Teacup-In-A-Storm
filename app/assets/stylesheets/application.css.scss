@@ -171,6 +171,11 @@ i[class^="icon-"], {
 
 .feed {
   text-align: left;
+  ul {
+    li.github {
+      word-break: break-all;
+    }
+  }
 }
 
 .images {
