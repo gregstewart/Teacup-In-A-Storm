@@ -14,6 +14,25 @@ describe PagesController do
         visit root_path
       end
 
+      describe "locales" do
+        it "should have english content as the default" do
+          delicious = page.all('h3.delicious')
+          delicious[0].text.should =~ /\d most recent bookmarks/
+
+          wordpress = page.all('h3.wordpress')
+          wordpress[0].text.should =~ /\d most recent posts/
+
+          twitter = page.all('h3.twitter')
+          twitter[0].text.should == "Recent tweets"
+
+          foursquare = page.all('h3.foursquare')
+          foursquare[0].text.should == "Recent checkins"
+
+          instagram = page.all('h3.instagram')
+          instagram[0].text.should =~ /\d most recent images/
+        end
+      end
+
       it "should have the right title" do
         page.should have_selector("title",
                                       :content => "TCIAS | Home")

@@ -2,4 +2,11 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  recent:
+    bookmarks: "%{count} most recent bookmarks"
+    blog_posts: "%{count} most recent posts"
+    instagram_images: "%{count} most recent images"
+    tweets: "Recent tweets"
+    foursquare_checkins: "Recent checkins"
+  click_to_view: "Click to view my %{what} profile"
+  click_to_view_blog: "Click to view my blog"
