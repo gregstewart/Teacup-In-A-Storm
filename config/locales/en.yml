@@ -10,3 +10,9 @@ en:
     foursquare_checkins: "Recent checkins"
   click_to_view: "Click to view my %{what} profile"
   click_to_view_blog: "Click to view my blog"
+
+  time:
+    formats:
+      default: ! '%Y/%m/%d @ %H:%M'
+      long: ! '%d %B, %Y'
+      short: ! '%d %b'

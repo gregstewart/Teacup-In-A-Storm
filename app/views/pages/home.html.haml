@@ -57,7 +57,7 @@
               %li{:class => 'twitter'}
                 %a{:href=>entry[:url]}
                   =entry[:content]
-                =entry[:date]
+                =" - #{I18n.l entry[:date]}"
 
       .boxee.stacked{:data => {:cateogry => "foursquare"}}
         %a.url.icon{:href => "https://foursquare.com/user/13278548", :accesskey => "F", :tabindex => "6", :title => "#{I18n.t 'click_to_view', what: 'Foursquare'}"}
@@ -70,7 +70,7 @@
               %li{:class => 'foursquare'}
                 %a{:href=>entry[:url]}
                   =entry[:content]
-                =entry[:date]
+                =" - #{I18n.l entry[:date]}"
 
     .six.columns.isotope
       .boxee.stacked{:data => {:cateogry => "instagram"}}
@@ -103,7 +103,7 @@
               %li{:class => 'github'}
                 %a{:href => entry[:url]}
                   =entry[:content]
-                =entry[:date]
+                =" - #{I18n.l entry[:date]}"
       .boxee.stacked{:data => {:cateogry => "stackoverflow"}}
         %a.url.icon{:href => "http://stackoverflow.com/users/197825/greg-stewart", :accesskey => "D", :tabindex => "5", :title => "#{I18n.t 'click_to_view', what: 'StackOverflow'}"}
           %i.icon-stack-overflow{:title => "Stackoverflow icon"}
