@@ -1,7 +1,7 @@
 class FoursquareParser
 
   def initialize
-    @client = Foursquare2::Client.new(:oauth_token => APP_CONFIG['foursquare']['oauth_token'])
+    @client = Foursquare2::Client.new(:oauth_token => APP_CONFIG['foursquare']['oauth_token'], :api_version => '20120505')
   end
 
   def get_last_user_events number_of_items
