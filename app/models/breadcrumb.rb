@@ -56,9 +56,6 @@ class Breadcrumb
       @url.split("?")[0].split(@separator)
     end
 
-    def get_last_url_item
-      get_levels.last
-    end
   private :generate_link, :build_link_title, :convert_url_keywords_to_words, :generate_access_key, :generate_href_path,
-          :get_levels, :get_last_url_item
+          :get_levels
 end
