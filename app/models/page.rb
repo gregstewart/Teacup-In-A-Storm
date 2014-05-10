@@ -57,7 +57,7 @@ class Page
 
   def get_twitter
     # attrs.created_at (date), attrs.text (content), https://twitter.com/_greg_stewart_/status/#{entry.id} (url)
-    twitter_feed = Twitter.user_timeline("_greg_stewart_")
+    twitter_feed = TwitterClient.user_timeline("_greg_stewart_")
     twitter_items = twitter_feed[0..4]
 
     twitter_items.each do |item|

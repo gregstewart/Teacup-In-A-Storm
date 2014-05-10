@@ -15,7 +15,7 @@ gem 'rake', '10.0.4'
 gem 'haml'
 gem 'jquery-rails'
 
-gem 'feedzirra'
+gem 'feedjira'
 gem 'instagram'
 gem 'foursquare2'
 gem 'octokit'

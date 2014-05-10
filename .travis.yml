@@ -1,39 +1,29 @@
----
 language: ruby
 rvm:
-- 1.9.3
+- 2.1.1
 env:
   global:
-  - secure: ! 'O1kn3bBVqaTDm6Pu3uMp3+9caXQvk/tr9PHaQglZLyuocgTo+qe2Uopyx/y7
-      BA99zAR5vp+Vb7js4w1Qn82NtwJe2LS6VUjHQaj3sXROEXLout4QN/NfgZX2
-      9zwY8io9kNThkJLm/GlGJ9LoUGFyoE8v35XB9j03Z6g5bAK9mHE='
-  - secure: ! 'DxbmrNXZMfJ0EbTBvgLmuJxrMVjfBMmOQNprbwc0p4WYZ1ACeBssAphuT9ag
-      4KezlMGcbnYaH7YE3Bi+II2+ZN83PInSk5LTxWozaLb+RhAT8rmF2IzwmOeN
-      24K2EKPxeTF82iDZ0oiU6ap88zRYTLMnDDEHHfvHUxfg2lO8nOs='
-  - secure: ! 'HLAEpkuSRBFIvKpjcWjH1sSSDBANuyrDL7L96m7utj66ME0oYKRVvMGE+BX7
-      YNksgA9kB+ciljsEulpidcL5m1mznXJwojevf/3Zdgfio2BUUbYLgQdrubD0
-      8iqIs6XD44M13NovFgGQRzW2TgJOtFrXKqNe3427qBzLHdzn6FU='
-  - secure: ! 'bnQImgpqUypMVQFiFITAbq3ohOgOupcIPKurP2P5JgVPipc86Z5aXw/xEO5Q
-      SQSTwy2vukDTyH4hTcqneOK0RcHfdgWGP81SmkkLzrDk00AMvvGXt4SbUTXt
-      jaIu9BT7nnc4eaKCwg1BfMErPEo0EAr9TwU41acThLGCUZDo3/U='
-  - secure: ! 'C8fwPiL0ojrLagNb4sIEsnPNwrI6jjpu/KLMh1SSmxAp36ivljx4CIiW7dpo
-      msDppJN2OGBocmThh4v0CdAJK9vrPO5dSmCsnq9keS83FUhrR+MhPW0uaSpH
-      R5VvvU4E2i0T3/q9VSG3bcLJOdPa+BL5m89B+6MRfl1iHAURNFw='
-  - secure: ! 'iB04v++cVqINN7NK8kQhVPCIOC0HcE5ph3qDlPrc69VJZNopOkUSsHrPyFy9
-      9BF2T54StJmIknQCGqczuYSPGW0zzAL3CEQpUn1dYgoiDznVszD/u7OGcYPy
-      LRlYC3cRcvK8oaJkz2jnyqxV7VPkpkYm5A8CdGaZQghs9unRznA='
-  - secure: ! 'ilt4VnNaR6wQhiNk/7mwT81Yt0zlRmmxeZ6qU7oEcvNa7+KuLaflstle1bpO
-        de0bZicoItzjKYUr5k6kvmUYxD3vRbQ1H3/4RLCEag78OmDodLWJRKy2qBaA
-        zyQ8BYiMCFkvkVvIzQCazWS8nVg2XBV0wE3p1U6ZdANHXFBoWuQ='
-  - secure: ! 'XSUoHJZmOkaMicOfyc9uvb0EyAJJARXjGBYtzM35f6I5YZgB3013Y8iGbIWp
-        Q7nAD+1e4YkCALKyHANuj0d9oQKiHqwDuVjHdiHBfvIUxWCxfuA2mFmX4tI9
-        HvIE4yfOIvLoap8iicWRngf3GvWYfSbh2wR7J3YC2+Q51k9i8hk='
-  - secure: ! 'XZgqaT82sFoQ0fqaV/ym5JMW/ieeLPf93eBlwazFRQKJW/qGpHzqQ5nuehyp
-        Q9sbX2w3RakdGk3bDAP04Ge1YS1lmKd6lDfbKhFYFqjvgiRiG7M2WlzlJZG0
-        yzeFKQ+5vPcHqa+1yFLtP+WTjwJnaY9s/tLHbuYHsMUEVjK8WEM='
-  - secure: ! 'SswlxVO25qfd1twv2bnJMMgClfVgKG5QAqCtfgI0Htkj9LhtDayPkcHDiPfM
-        UJfqHV0txGXX96e4w9hN1BSjBVTBaGNlQSi7Yv8Vo48F3nNd+EGjxfwmwpvr
-        kWCOrRccftvRSX6s5PZZqYc/OdMrRTPLR5Jtsk5CTAOpdakrnic='
-
+  - secure: O1kn3bBVqaTDm6Pu3uMp3+9caXQvk/tr9PHaQglZLyuocgTo+qe2Uopyx/y7 BA99zAR5vp+Vb7js4w1Qn82NtwJe2LS6VUjHQaj3sXROEXLout4QN/NfgZX2
+      9zwY8io9kNThkJLm/GlGJ9LoUGFyoE8v35XB9j03Z6g5bAK9mHE=
+  - secure: DxbmrNXZMfJ0EbTBvgLmuJxrMVjfBMmOQNprbwc0p4WYZ1ACeBssAphuT9ag 4KezlMGcbnYaH7YE3Bi+II2+ZN83PInSk5LTxWozaLb+RhAT8rmF2IzwmOeN
+      24K2EKPxeTF82iDZ0oiU6ap88zRYTLMnDDEHHfvHUxfg2lO8nOs=
+  - secure: HLAEpkuSRBFIvKpjcWjH1sSSDBANuyrDL7L96m7utj66ME0oYKRVvMGE+BX7 YNksgA9kB+ciljsEulpidcL5m1mznXJwojevf/3Zdgfio2BUUbYLgQdrubD0
+      8iqIs6XD44M13NovFgGQRzW2TgJOtFrXKqNe3427qBzLHdzn6FU=
+  - secure: bnQImgpqUypMVQFiFITAbq3ohOgOupcIPKurP2P5JgVPipc86Z5aXw/xEO5Q SQSTwy2vukDTyH4hTcqneOK0RcHfdgWGP81SmkkLzrDk00AMvvGXt4SbUTXt
+      jaIu9BT7nnc4eaKCwg1BfMErPEo0EAr9TwU41acThLGCUZDo3/U=
+  - secure: C8fwPiL0ojrLagNb4sIEsnPNwrI6jjpu/KLMh1SSmxAp36ivljx4CIiW7dpo msDppJN2OGBocmThh4v0CdAJK9vrPO5dSmCsnq9keS83FUhrR+MhPW0uaSpH
+      R5VvvU4E2i0T3/q9VSG3bcLJOdPa+BL5m89B+6MRfl1iHAURNFw=
+  - secure: iB04v++cVqINN7NK8kQhVPCIOC0HcE5ph3qDlPrc69VJZNopOkUSsHrPyFy9 9BF2T54StJmIknQCGqczuYSPGW0zzAL3CEQpUn1dYgoiDznVszD/u7OGcYPy
+      LRlYC3cRcvK8oaJkz2jnyqxV7VPkpkYm5A8CdGaZQghs9unRznA=
+  - secure: ilt4VnNaR6wQhiNk/7mwT81Yt0zlRmmxeZ6qU7oEcvNa7+KuLaflstle1bpO de0bZicoItzjKYUr5k6kvmUYxD3vRbQ1H3/4RLCEag78OmDodLWJRKy2qBaA
+      zyQ8BYiMCFkvkVvIzQCazWS8nVg2XBV0wE3p1U6ZdANHXFBoWuQ=
+  - secure: XSUoHJZmOkaMicOfyc9uvb0EyAJJARXjGBYtzM35f6I5YZgB3013Y8iGbIWp Q7nAD+1e4YkCALKyHANuj0d9oQKiHqwDuVjHdiHBfvIUxWCxfuA2mFmX4tI9
+      HvIE4yfOIvLoap8iicWRngf3GvWYfSbh2wR7J3YC2+Q51k9i8hk=
+  - secure: XZgqaT82sFoQ0fqaV/ym5JMW/ieeLPf93eBlwazFRQKJW/qGpHzqQ5nuehyp Q9sbX2w3RakdGk3bDAP04Ge1YS1lmKd6lDfbKhFYFqjvgiRiG7M2WlzlJZG0
+      yzeFKQ+5vPcHqa+1yFLtP+WTjwJnaY9s/tLHbuYHsMUEVjK8WEM=
+  - secure: SswlxVO25qfd1twv2bnJMMgClfVgKG5QAqCtfgI0Htkj9LhtDayPkcHDiPfM UJfqHV0txGXX96e4w9hN1BSjBVTBaGNlQSi7Yv8Vo48F3nNd+EGjxfwmwpvr
+      kWCOrRccftvRSX6s5PZZqYc/OdMrRTPLR5Jtsk5CTAOpdakrnic=
+  - secure: Ey9FerNg75Jq1M7ufe8Zkb0OSn8tCT5NLuyQOrtl2EATzA4XcHmfACb7itahhjMLr/vJm1TJooOgLt7ooVmdXgzjvKcjJec0rTdU7RRULD3oBUELZ/5279oMM/A01dNgRx6migK6gMiJrP7NfsRodBrxlATZkCJAdlvxfSTfjkc=
+  - secure: WSENofARgBOlHXcmDgY9yIPxJfwAfKJsIO3LTfRNkrf69m7iHlFeiQqtQeY/Uf2YxQ8rgqJQngadue4G53qU/E9Cx3VYKHOYiohYy4EmpsZkBVQix+mlkxh90MeSIYbsTU9zEQb4uKcXk5I6kkLnc0oITB/z0ntwA5usq41BjGQ=
 before_install:
 - cp config/api_keys.example.yml config/api_keys.yml
