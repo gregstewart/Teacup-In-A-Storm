@@ -1,5 +1,6 @@
 {<img src="https://travis-ci.org/gregstewart/Teacup-In-A-Storm.png?branch=master" alt="Build Status" />}[https://travis-ci.org/gregstewart/Teacup-In-A-Storm]
 {<img src="https://coveralls.io/repos/gregstewart/Teacup-In-A-Storm/badge.png" alt="Coverage Status" />}[https://coveralls.io/r/gregstewart/Teacup-In-A-Storm]
 {<img src="https://codeclimate.com/github/gregstewart/Teacup-In-A-Storm.png" />}[https://codeclimate.com/github/gregstewart/Teacup-In-A-Storm]
+{<img src="https://www.codeship.io/projects/58e51eb0-ba82-0131-497c-2aa5de3a5663/status" />}[https://www.codeship.io/projects/58e51eb0-ba82-0131-497c-2aa5de3a5663/status]
 
 Not quite so static site anymore showing my contact details, various digital feeds and some of my previous work.
