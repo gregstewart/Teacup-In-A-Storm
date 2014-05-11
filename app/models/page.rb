@@ -39,7 +39,13 @@ class Page
     github_items = GithubParser.new.get_last_user_events(5)
 
     github_items.each do |item|
-      @items.push(set_page_item('github', item['created_at'], item['type'] + ' ' + item['repo']['name'], item['repo']['url'], '', nil))
+      if item[:payload][:commits]
+        commit_message = ' : ' + item[:payload][:commits][0][:message]
+      else
+        commit_message = ''
+      end
+
+      @items.push(set_page_item('github', item['created_at'], item['type'] + ' ' + item['repo']['name'] + ' ' + commit_message, item['repo']['url'], '', nil))
     end
   end
 
