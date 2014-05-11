@@ -4,8 +4,10 @@
     %title= full_title(yield(:title))
     = render 'partials/meta'
     = csrf_meta_tag
-    = stylesheet_link_tag    "application", :media => "all"
+    = stylesheet_link_tag "application", :media => "all"
     %link{:rel=>"shortcut icon", :href=>"favicon.ico"}
+    %script{:src => 'https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'}
+    %link{:href=>'https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css',  :rel=>'stylesheet'}
 %body
   = render 'partials/header'
 

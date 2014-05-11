@@ -10,3 +10,9 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+  (function() {
+    $('.map').each(function (index, el) {
+      L.mapbox.map(el, 'gregstewart.map-yz33o2sf');
+    })
+  })()

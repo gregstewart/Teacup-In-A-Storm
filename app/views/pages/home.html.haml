@@ -70,6 +70,7 @@
               %li{:class => 'foursquare'}
                 %a{:href=>entry[:url]}
                   =entry[:content]
+                .map{:data => {:lat => entry[:location][:lat], :lon => entry[:location][:lng]}}
                 =" - #{I18n.l entry[:date]}"
 
     .six.columns.isotope

@@ -39,7 +39,7 @@ class Page
     github_items = GithubParser.new.get_last_user_events(5)
 
     github_items.each do |item|
-      @items.push(set_page_item('github', item['created_at'], item['type'] + ' ' + item['repo']['name'], item['repo']['url'], ''))
+      @items.push(set_page_item('github', item['created_at'], item['type'] + ' ' + item['repo']['name'], item['repo']['url'], '', nil))
     end
   end
 
@@ -51,7 +51,7 @@ class Page
     instagram_items.each do |item|
       caption = item['caption']['text'] unless item['caption'].nil?
 
-      @items.push(set_page_item('instagram', item['created_time'], caption, item['link'], item['images']['thumbnail']['url']))
+      @items.push(set_page_item('instagram', item['created_time'], caption, item['link'], item['images']['thumbnail']['url'], nil))
     end
   end
 
@@ -62,7 +62,7 @@ class Page
 
     twitter_items.each do |item|
       @items.push(set_page_item('twitter', item.attrs[:created_at], item.attrs[:text],
-      'https://twitter.com/_greg_stewart_/status/#{item.attrs[:id]}', ''))
+      'https://twitter.com/_greg_stewart_/status/#{item.attrs[:id]}', '', nil))
     end
 
   end
@@ -73,7 +73,7 @@ class Page
     vimeo_items = vimeo_feed[0..1]
 
     vimeo_items.each do |item|
-      @items.push(set_page_item('vimeo', item['upload_date'], item['title'], item['url'], item['thumbnail_large']))
+      @items.push(set_page_item('vimeo', item['upload_date'], item['title'], item['url'], item['thumbnail_large'], nil))
     end
   end
 
@@ -81,7 +81,7 @@ class Page
     foursquare_items = FoursquareParser.new.get_last_user_events(10)
 
     foursquare_items.each do |item|
-      @items.push(set_page_item('foursquare', item['createdAt'], item['venue']['name'], item['venue']['canonicalUrl'], ''))
+      @items.push(set_page_item('foursquare', item['createdAt'], item['venue']['name'], item['venue']['canonicalUrl'], '', item['venue']['location']))
     end
   end
 
@@ -89,13 +89,14 @@ class Page
     @items.sort! { |x, y| y[:date] <=> x[:date] }
   end
 
-  def set_page_item(type, date, content, url, thumbnail)
+  def set_page_item(type, date, content, url, thumbnail, location)
       page_item = {}
       page_item[:type] = type
       page_item[:date] = (type == 'instagram' || type == 'foursquare') ? DateTime.parse(Time.at(date.to_i).to_s) : DateTime.parse(date.to_s)
       page_item[:content] = content
       page_item[:url] = url
       page_item[:thumbnail] = thumbnail
+      page_item[:location] = location
       page_item
     end
 
@@ -111,7 +112,7 @@ class Page
 
     def populate_page_items items, type
       items.each do |item|
-        @items.push(set_page_item(type, item.published, item.title, item.entry_id, ''))
+        @items.push(set_page_item(type, item.published, item.title, item.entry_id, '', nil))
       end
     end
 
