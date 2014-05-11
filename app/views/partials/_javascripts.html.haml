@@ -13,6 +13,23 @@
 
   (function() {
     $('.map').each(function (index, el) {
-      L.mapbox.map(el, 'gregstewart.map-yz33o2sf');
+      var map = L.mapbox.map(el, 'gregstewart.map-yz33o2sf').setView([$(el).attr('data-lat'), $(el).attr('data-lon')], 16);
+
+      //var myLayer = L.mapbox.featureLayer().addTo(map);
+      //
+      //var feature = {
+      //    type: 'Feature',
+      //    geometry: {
+      //        type: 'Point',
+      //        coordinates: [$(el).attr('data-lat'), $(el).attr('data-lon')]
+      //    },
+      //    properties: {
+      //        title: 'Example Marker',
+      //        description: 'This is a single marker.'
+      //    }
+      //};
+      //
+      //myLayer.setGeoJSON(feature);
+
     })
   })()

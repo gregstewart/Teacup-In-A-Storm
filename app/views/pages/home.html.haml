@@ -68,10 +68,10 @@
           %ul
             -@page.get_by_type('foursquare').each do |entry|
               %li{:class => 'foursquare'}
+                .map{:data => {:lat => entry[:location][:lat], :lon => entry[:location][:lng]}}
                 %a{:href=>entry[:url]}
                   =entry[:content]
-                .map{:data => {:lat => entry[:location][:lat], :lon => entry[:location][:lng]}}
-                =" - #{I18n.l entry[:date]}"
+                  =" - #{I18n.l entry[:date]}"
 
     .six.columns.isotope
       .boxee.stacked{:data => {:cateogry => "instagram"}}
