@@ -25,5 +25,6 @@ env:
       kWCOrRccftvRSX6s5PZZqYc/OdMrRTPLR5Jtsk5CTAOpdakrnic=
   - secure: Ey9FerNg75Jq1M7ufe8Zkb0OSn8tCT5NLuyQOrtl2EATzA4XcHmfACb7itahhjMLr/vJm1TJooOgLt7ooVmdXgzjvKcjJec0rTdU7RRULD3oBUELZ/5279oMM/A01dNgRx6migK6gMiJrP7NfsRodBrxlATZkCJAdlvxfSTfjkc=
   - secure: WSENofARgBOlHXcmDgY9yIPxJfwAfKJsIO3LTfRNkrf69m7iHlFeiQqtQeY/Uf2YxQ8rgqJQngadue4G53qU/E9Cx3VYKHOYiohYy4EmpsZkBVQix+mlkxh90MeSIYbsTU9zEQb4uKcXk5I6kkLnc0oITB/z0ntwA5usq41BjGQ=
+  - secure: R3OGNYRZumDC7g/b2o18GKD+S1XD5BLxGeQ2N0R6+bnWK7+DtUU/b2ANrqxLqKq9RxM3eyDcpvBuFRRPHAmn8nexTz0+gMCTnyq1v+M9pdaf+4sCXxJk/5VsFhMFjpqQnQdDIrsvxFU8/G09nG3SNecByjZNRptoOl3rWQekrw4=
 before_install:
 - cp config/api_keys.example.yml config/api_keys.yml
