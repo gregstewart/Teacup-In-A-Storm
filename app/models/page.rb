@@ -57,7 +57,7 @@ class Page
     instagram_items.each do |item|
       caption = item['caption']['text'] unless item['caption'].nil?
 
-      @items.push(set_page_item('instagram', item['created_time'], caption, item['link'], item['images']['thumbnail']['url'], nil))
+      @items.push(set_page_item('instagram', item['created_time'], caption, item['link'], item['images']['standard_resolution']['url'], nil))
     end
   end
 
