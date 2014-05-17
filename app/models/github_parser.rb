@@ -1,7 +1,7 @@
 class GithubParser
 
   def initialize
-    @client = Octokit::Client.new(:login => APP_CONFIG['github']['client_id'], :oauth_token => APP_CONFIG['github']['access_token'])
+    @client = Octokit::Client.new(:access_token => APP_CONFIG['github']['access_token'])
   end
 
   def get_last_user_events number_of_items
