@@ -54,7 +54,7 @@ end
 group :test do
   gem 'spork'
   gem 'simplecov'
-  gem 'codeclimate-test-reporter', require: nil
+  gem 'coveralls', require: false
   gem 'capybara', '1.1.2'
 end
 
