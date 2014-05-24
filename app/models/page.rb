@@ -51,8 +51,7 @@ class Page
 
   def get_instagram
     # created_time (date), caption.text unless entry.caption.nil? (content ), link (url), images.thumbnail.url (thumbnail)
-    instagram_feed = Instagram.user_recent_media(178138400)
-    instagram_items = instagram_feed[0..5]
+    instagram_items = InstagramParser.new.get_last_user_events 5
 
     instagram_items.each do |item|
       caption = item['caption']['text'] unless item['caption'].nil?
