@@ -9,6 +9,6 @@ class InstagramParser
   def get_last_user_events number_of_items
     instagram_feed = Instagram.user_recent_media(178138400)
 
-    instagram_feed[0..number_of_items]
+    instagram_feed[0..number_of_items - 1]
   end
 end
