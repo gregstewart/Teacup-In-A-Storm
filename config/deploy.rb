@@ -27,16 +27,10 @@ set :keep_releases, 2
 # RVM bootstrap: change to your Ruby and GemSet
 # make sure this gem is installed!
 set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"") # Read from local system
-require "rvm/capistrano"                               # Load RVM's capistrano plugin.
+require "rvm/capistrano"                              # Load RVM's capistrano plugin.
 set :rvm_type, :system
 
 namespace :deploy do
-  task :start do ; end
-  task :stop do ; end
-  #desc "Restart the application"
-  #task :restart, :roles => :app, :except => { :no_release => true } do
-  #  run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-  #end
   task :start, :roles => :app, :except => { :no_release => true } do
     run "cd #{current_path} && bundle exec unicorn -c #{unicorn_config} -E #{rails_env} -D"
   end
