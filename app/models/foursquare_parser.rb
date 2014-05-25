@@ -8,6 +8,20 @@ class FoursquareParser
     max_number_of_items = number_of_items - 1
     foursquare_feed = @client.user_checkins()
 
-    foursquare_feed.items[0..max_number_of_items]
+    format foursquare_feed.items[0..max_number_of_items]
+  end
+
+  def format foursquare_feed
+    # attrs.created_at (date), attrs.text (content), https://twitter.com/_greg_stewart_/status/#{entry.id} (url)
+
+    items = []
+
+    foursquare_feed.each do |item|
+      foursquare_item = {date: item['createdAt'], content: item['venue']['name'],
+                         url: item['venue']['canonicalUrl'], thumbnail: '', location: item['venue']['location']}
+      items.push(foursquare_item)
+    end
+
+    items
   end
 end

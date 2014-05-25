@@ -8,6 +8,23 @@ class GithubParser
     max_number_of_items = number_of_items - 1
     github_feed = @client.user_events(APP_CONFIG['github']['client_id'])
 
-    github_feed[0..max_number_of_items]
+    format github_feed[0..max_number_of_items]
+  end
+
+  def format github_feed
+    # created_at (date), type + repo.name (content), repo.url (url)
+    items = []
+    github_feed.each do |item|
+      if item[:payload][:commits]
+        commit_message = ' : ' + item[:payload][:commits][0][:message]
+      else
+        commit_message = ''
+      end
+      github_item = {date: item['created_at'], content: item['type'] + ' ' + item['repo']['name'] + ' ' + commit_message,
+                     url: item['repo']['url'], thumbnail: '', location: nil}
+      items.push(github_item)
+    end
+
+    items
   end
 end
