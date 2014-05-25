@@ -23,25 +23,24 @@ class Page
 
   end
 
-  def get_blog
-    # updated (date), title (content), entry_id (url)
-    feed_items = Feed.new("http://gregs.tcias.co.uk/atom.xml", "wordpress").get_last_user_events 10
+  def get_delicious
+    feed_items = DeliciousParser.new().get_last_user_events 5
 
     feed_items.each do |item|
-      page_item = set_page_item('wordpress', item[:date], item[:content], item[:url], item[:thumbnail], item[:location])
+      page_item = set_page_item("delicious", item[:date], item[:content], item[:url], item[:thumbnail], item[:location])
       @items.push(page_item)
     end
 
   end
 
-  def get_delicious
-    # published (date), title (content), url (url)
-    feed_items = Feed.new("http://feeds.delicious.com/v2/rss/wildcard1999", "delicious").get_last_user_events 5
+  def get_blog
+    feed_items = WordpressParser.new().get_last_user_events 10
 
     feed_items.each do |item|
-      page_item = set_page_item('delicious', item[:date], item[:content], item[:url], item[:thumbnail], item[:location])
+      page_item = set_page_item("wordpress", item[:date], item[:content], item[:url], item[:thumbnail], item[:location])
       @items.push(page_item)
     end
+
   end
 
   def get_github
