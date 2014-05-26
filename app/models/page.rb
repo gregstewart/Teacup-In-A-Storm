@@ -7,19 +7,19 @@ class Page
   end
 
   def fetch
-    page_items = {wordpress: {count: 10}, delicious: {count: 5}, instagram: {count: 6}, github: {count: 5},
+    parser_configurations = {wordpress: {count: 10}, delicious: {count: 5}, instagram: {count: 6}, github: {count: 5},
                   twitter: {count: 4}, vimeo: {count: 1}, foursquare: {count: 10}}
 
-    page_items.each do |page_item|
-      type = page_item[0]
-      count = page_item[1][:count]
+    parser_configurations.each do |parser_configuration|
+      parser_type = parser_configuration[0]
+      feed_item_count = parser_configuration[1][:count]
 
-      parser = @parser_factory.build(type)
-      feed_items = parser.get_last_user_events count
+      parser = @parser_factory.build parser_type
+      feed_items = parser.get_last_user_events feed_item_count
 
       feed_items.each do |item|
-        page_item = set_page_item(type, item[:date], item[:content], item[:url], item[:thumbnail], item[:location])
-        @items.push(page_item)
+        parser_configuration = set_page_item(parser_type, item[:date], item[:content], item[:url], item[:thumbnail], item[:location])
+        @items.push(parser_configuration)
       end
 
     end
