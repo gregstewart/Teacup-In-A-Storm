@@ -15,16 +15,21 @@ class GithubParser
     # created_at (date), type + repo.name (content), repo.url (url)
     items = []
     github_feed.each do |item|
-      if item[:payload][:commits]
-        commit_message = ' : ' + item[:payload][:commits][0][:message]
-      else
-        commit_message = ''
-      end
-      github_item = {date: item['created_at'], content: item['type'] + ' ' + item['repo']['name'] + ' ' + commit_message,
+      commit_message = commit_message_builder(item)
+      github_item = {date: item['created_at'], content: commit_message,
                      url: item['repo']['url'], thumbnail: '', location: nil}
       items.push(github_item)
     end
 
     items
+  end
+
+  def commit_message_builder(item)
+    if item[:payload][:commits]
+      commit_message = ' : ' + item[:payload][:commits][0][:message]
+    else
+      commit_message = ''
+    end
+    item['type'] + ' ' + item['repo']['name'] + ' ' + commit_message
   end
 end
