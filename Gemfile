@@ -11,7 +11,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'rake', '10.0.4'
+gem 'rake', '10.1.0'
 gem 'haml'
 gem 'jquery-rails'
 
