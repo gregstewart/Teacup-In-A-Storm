@@ -61,4 +61,5 @@ end
 group :production do
   # Use unicorn as the web server
   gem 'unicorn'
+  gem 'newrelic_rpm'
 end
