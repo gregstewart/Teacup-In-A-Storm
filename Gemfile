@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.21'
+gem 'rails', '4.2.0'
 gem 'rake', '10.1.0'
 gem 'haml'
 gem 'jquery-rails'
@@ -13,7 +13,7 @@ gem 'vimeo'
 gem 'whenever', :require => false
 
 group :assets do
-  gem 'sass-rails', '~> 3.2.3'
+  gem 'sass-rails', '5.0.1'
   gem 'uglifier', '>= 1.0.3'
 end
 
