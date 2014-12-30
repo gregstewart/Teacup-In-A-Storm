@@ -16,7 +16,7 @@ gem 'haml'
 gem 'jquery-rails'
 
 gem 'feedjira'
-gem 'instagram'
+gem 'instagram', '1.1.3'
 gem 'foursquare2'
 gem 'octokit'
 gem 'twitter'
