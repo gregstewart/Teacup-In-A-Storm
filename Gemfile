@@ -29,8 +29,10 @@ group :test do
   gem 'simplecov'
   gem 'coveralls', require: false
   gem 'capybara', '1.1.2'
-  gem 'rspec-rails', '2.8.1'
+  gem 'rspec-rails', '2.99.0'
   gem 'jasmine-rails'
+  gem 'sinatra'
+  gem 'webmock'
 end
 
 group :production do

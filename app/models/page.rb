@@ -33,12 +33,18 @@ class Page
   def set_page_item(type, date, content, url, thumbnail, location)
     page_item = {}
     page_item[:type] = type
-    page_item[:date] = (type == :instagram || type == :foursquare) ? DateTime.parse(Time.at(date.to_i).to_s) : DateTime.parse(date.to_s)
+    page_item[:date] = fix_date(date, type)
     page_item[:content] = content
     page_item[:url] = url
     page_item[:thumbnail] = thumbnail
     page_item[:location] = location
     page_item
+  end
+
+  def fix_date(date, type)
+    return DateTime.new if date.nil?
+
+    (type == :instagram || type == :foursquare) ? DateTime.parse(Time.at(date.to_i).to_s) : DateTime.parse(date.to_s)
   end
 
   def get_by_type(type)

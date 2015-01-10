@@ -79,12 +79,22 @@ end
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
+require 'webmock/rspec'
+WebMock.disable_net_connect!(allow_localhost: true)
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
 RSpec.configure do |config|
+  config.before(:each) do
+    stub_request(:any, /feeds.delicious.com/).to_rack(FakeDelicious)
+    stub_request(:any, /api.instagram.com/).to_rack(FakeInstagram)
+    stub_request(:get, /api.github.com/).to_rack(FakeGithub)
+    stub_request(:get, /api.twitter.com/).to_rack(FakeTwitter)
+    stub_request(:get, /vimeo.com/).to_rack(FakeVimeo)
+    stub_request(:get, /api.foursquare.com/).to_rack(FakeFoursquare)
+  end
   # == Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:
