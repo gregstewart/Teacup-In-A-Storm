@@ -9,15 +9,11 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  * = require_tree .
+ * = require_tree ./skeleton
+ * = require _font-awesome
+ * = require _fonts
  * = require_self
  */
-
-@import 'skeleton/base.css.scss';
-@import 'skeleton/layout.css.scss';
-@import 'skeleton/skeleton.css.scss';
-@import 'font-awesome.css.scss';
-@import 'fonts.css.scss';
-
 
 body {
   background-color: rgb(215,211,207);
