@@ -16,12 +16,6 @@ describe 'Page' do
     items[2][:content].should == 'some text 1'
   end
 
-  it 'should not throw an exception when nil dates are encountered' do
-    page = Page.new
-
-    expect page.set_page_item('type', nil, 'some text 1', 'some url', 'some thumbnail', nil).should_not raise_error
-  end
-
   it 'when nil dates are encountered should set a default date value' do
     page = Page.new
 
