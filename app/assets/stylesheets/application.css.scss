@@ -12,6 +12,8 @@
  * = require_tree ./skeleton
  * = require _font-awesome
  * = require _fonts
+ * = require _boxee
+ * = require _isotope
  * = require_self
  */
 
@@ -50,91 +52,6 @@ dt {
   display: none;
 }
 
-.boxee {
-  position: relative;
-  border:  1px solid rgb(147,136,131);
-  background-color: rgb(245,244,243);
-  padding: 1em;
-  text-align: center;
-
-  .timeline & {
-    text-align: left;
-  }
-
-  &.stacked {
-    margin-bottom: 1em;
-  }
-
-  &:before, &:after {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    bottom: 15px;
-    left: 10px;
-    width: 50%;
-    top: 80%;
-
-    .timeline & {
-      top: 40%;
-    }
-
-    max-width: 300px;
-    background: rgba(0, 0, 0, 0.7);
-    -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);
-    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-  }
-
-  &:after {
-    -webkit-transform: rotate(3deg);
-    -moz-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    transform: rotate(3deg);
-    right: 10px;
-    left: auto;
-  }
-
-
-  @media only screen and (max-width: 767px) and (min-width: 320px) {
-    margin: 0 0 2em 0;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-
-    &.vimeo {
-      border:  1px solid rgb(147,136,131);
-    }
-
-    &.instagram {
-      border: none;
-    }
-
-    @media only screen and (max-width: 767px) and (min-width: 320px) {
-      width: 50%;
-      height: 50%;
-    }
-
-    @media only screen and (max-width: 767px) and (min-width: 320px) {
-      &.instagram {
-        border: none;
-        width: 100%;
-        height: 100%;
-      }
-      &.vimeo {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-}
 
 a.icon {
   text-decoration: none;
@@ -200,54 +117,6 @@ i[class^="icon-"], {
 }
 
 
-/**** Isotope Filtering ****/
 
-.isotope-item {
-  z-index: 2;
-}
-
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
-}
-
-/**** Isotope CSS3 transitions ****/
-
-.isotope,
-.isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  -ms-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  transition-duration: 0.8s;
-}
-
-.isotope {
-  -webkit-transition-property: height, width;
-  -moz-transition-property: height, width;
-  -ms-transition-property: height, width;
-  -o-transition-property: height, width;
-  transition-property: height, width;
-}
-
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-  -moz-transition-property:    -moz-transform, opacity;
-  -ms-transition-property:     -ms-transform, opacity;
-  -o-transition-property:      -o-transform, opacity;
-  transition-property:         transform, opacity;
-}
-
-/**** disabling Isotope CSS3 transitions ****/
-
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-  -moz-transition-duration: 0s;
-  -ms-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  transition-duration: 0s;
-}
 
 .map { height: 155px; }
