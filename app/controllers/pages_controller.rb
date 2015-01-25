@@ -15,7 +15,7 @@ class PagesController < ApplicationController
   end
 
   def timeline
-    @title = "home"
+    @title = "timeline"
 
     @page = Page.new
     @page.fetch
