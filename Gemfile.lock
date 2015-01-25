@@ -286,7 +286,7 @@ DEPENDENCIES
   rake (= 10.1.0)
   rspec-rails (= 2.99.0)
   rvm-capistrano
-  sass-rails (~> 3.2.3)
+  sass-rails (~> 3.2.6)
   simplecov
   sinatra
   spork
