@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
-  caches_page :home, :timeline
+  caches_action :home
 
   def home
     @title = "home"
