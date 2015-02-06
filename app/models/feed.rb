@@ -8,10 +8,10 @@ class Feed
 
   def get_last_user_events number_of_items
     begin
-    feed = Feedjira::Feed.fetch_and_parse(@url)
+      feed = Feedjira::Feed.fetch_and_parse(@url)
 
-    max_number_of_items = number_of_items - 1
-    format feed.entries[0..max_number_of_items]
+      max_number_of_items = number_of_items - 1
+      format feed.entries[0..max_number_of_items]
     rescue
       items = []
       items.push({date: DateTime.new, content: "Oops an error occured with #{@type}", url: '', thumbnail: '', location: nil})

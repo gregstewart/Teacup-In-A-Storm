@@ -1,27 +1,28 @@
 class ParserFactory
 
   def build (type)
+    klass_for(type).new
+  end
 
+  def klass_for(type)
     case type
       when :foursquare
-        parser = FoursquareParser.new
+        FoursquareParser
       when :instagram
-        parser = InstagramParser.new
+        InstagramParser
       when :delicious
-        parser = DeliciousParser.new
+        DeliciousParser
       when :github
-        parser = GithubParser.new
+        GithubParser
       when :twitter
-        parser = TwitterParser.new
+        TwitterParser
       when :vimeo
-        parser = VimeoParser.new
+        VimeoParser
       when :wordpress
-        parser = WordpressParser.new
+        WordpressParser
       else
         raise 'Unknown parser requested'
     end
-
-    parser
   end
 
 end
