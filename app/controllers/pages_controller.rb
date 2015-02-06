@@ -6,7 +6,7 @@ class PagesController < ApplicationController
     @title = "home"
 
     @page = Page.new
-    @page.fetch
+    @page.fetch_page_items
 
     respond_to do |format|
       format.html
@@ -18,8 +18,7 @@ class PagesController < ApplicationController
     @title = "timeline"
 
     @page = Page.new
-    @page.fetch
-    @page.sort_by_date
+    @page.fetch_sorted_page_items
 
     respond_to do |format|
       format.html
