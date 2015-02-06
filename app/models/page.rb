@@ -18,8 +18,8 @@ class Page
       feed_items = parser.get_last_user_events feed_item_count
 
       feed_items.each do |item|
-        parser_configuration = set_page_item(parser_type, item[:date], item[:content], item[:url], item[:thumbnail], item[:location])
-        @items.push(parser_configuration)
+        parsed_page_item = set_page_item(parser_type, item[:date], item[:content], item[:url], item[:thumbnail], item[:location])
+        @items.push(parsed_page_item)
       end
     end
   end
@@ -34,14 +34,14 @@ class Page
   end
 
   def set_page_item(type, date, content, url, thumbnail, location)
-    page_item = {}
-    page_item[:type] = type
-    page_item[:date] = fix_date(date, type)
-    page_item[:content] = content
-    page_item[:url] = url
-    page_item[:thumbnail] = thumbnail
-    page_item[:location] = location
-    page_item
+    return {
+      :type => type,
+      :date => fix_date(date, type),
+      :content => content,
+      :url => url,
+      :thumbnail => thumbnail,
+      :location => location
+    }
   end
 
   def fix_date(date, type)
