@@ -1,12 +1,12 @@
 class PagesController < ApplicationController
 
-  caches_action :home
+  caches_page :home, :timeline
 
   def home
     @title = "home"
 
     @page = Page.new
-    @page.fetch_page_items
+    @page.fetch_page_items(feed_configurations)
 
     respond_to do |format|
       format.html
@@ -18,7 +18,7 @@ class PagesController < ApplicationController
     @title = "timeline"
 
     @page = Page.new
-    @page.fetch_sorted_page_items
+    @page.fetch_sorted_page_items(feed_configurations)
 
     respond_to do |format|
       format.html
@@ -40,4 +40,11 @@ class PagesController < ApplicationController
       format.html
     end
   end
+
+  private
+  def feed_configurations
+    { wordpress: {count: 10}, delicious: {count: 5}, instagram: {count: 6}, github: {count: 5},
+      twitter: {count: 4}, vimeo: {count: 1}, foursquare: {count: 10} }
+  end
+
 end
