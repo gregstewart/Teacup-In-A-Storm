@@ -6,6 +6,7 @@ class TwitterParser
       config.access_token = APP_CONFIG['twitter']['access_token']
       config.access_token_secret = APP_CONFIG['twitter']['access_token_secret']
     end
+    @type = :twitter
   end
 
   def get_last_user_events number_of_items
@@ -14,15 +15,8 @@ class TwitterParser
   end
 
   def format twitter_feed
-    # attrs.created_at (date), attrs.text (content), https://twitter.com/_greg_stewart_/status/#{entry.id} (url)
-
-    items = []
-    twitter_feed.each do |item|
-      twitter_item = {date: item.attrs[:created_at], content: item.attrs[:text],
-                        url: 'https://twitter.com/_greg_stewart_/status/#{item.attrs[:id]}', thumbnail: '', location: nil}
-      items.push(twitter_item)
+    twitter_feed.map do |item|
+      PageItem.new(@type, item.attrs[:created_at], item.attrs[:text], "https://twitter.com/_greg_stewart_/status/#{item.attrs[:id]}", '', nil)
     end
-
-    items
   end
 end

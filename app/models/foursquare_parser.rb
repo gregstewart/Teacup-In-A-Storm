@@ -2,6 +2,7 @@ class FoursquareParser
 
   def initialize
     @client = Foursquare2::Client.new(:oauth_token => APP_CONFIG['foursquare']['oauth_token'], :api_version => '20140715')
+    @type = :foursquare
   end
 
   def get_last_user_events number_of_items
@@ -12,16 +13,8 @@ class FoursquareParser
   end
 
   def format foursquare_feed
-    # attrs.created_at (date), attrs.text (content), https://twitter.com/_greg_stewart_/status/#{entry.id} (url)
-
-    items = []
-
-    foursquare_feed.each do |item|
-      foursquare_item = {date: item['createdAt'], content: item['venue']['name'],
-                         url: item['venue']['canonicalUrl'], thumbnail: '', location: item['venue']['location']}
-      items.push(foursquare_item)
+    foursquare_feed.map do |item|
+      PageItem.new(@type, item['createdAt'],item['venue']['name'], item['venue']['canonicalUrl'], '', item['venue']['location'])
     end
-
-    items
   end
 end

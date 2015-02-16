@@ -4,6 +4,7 @@ class InstagramParser
       config.client_id = APP_CONFIG['instagram']['client_id']
       config.access_token = APP_CONFIG['instagram']['access_token']
     end
+    @type = :instagram
   end
 
   def get_last_user_events number_of_items
@@ -13,17 +14,10 @@ class InstagramParser
   end
 
   def format instagram_feed
-    # created_time (date), caption.text unless entry.caption.nil? (content ), link (url), images.thumbnail.url (thumbnail)
-
-    items = []
-    instagram_feed.each do |item|
+    instagram_feed.map do |item|
       caption = item['caption']['text'] unless item['caption'].nil?
 
-      instagram_item = {date: item['created_time'], content: caption,
-                     url: item['link'], thumbnail: item['images']['standard_resolution']['url'], location: nil}
-      items.push(instagram_item)
+      PageItem.new(@type, item['created_time'], caption, item['link'], item['images']['standard_resolution']['url'], nil)
     end
-
-    items
   end
 end

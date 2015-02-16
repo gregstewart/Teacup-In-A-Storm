@@ -1,6 +1,7 @@
 class VimeoParser
   def initialize
     @client = Vimeo::Simple::User
+    @type = :vimeo
   end
 
   def get_last_user_events number_of_items
@@ -9,14 +10,8 @@ class VimeoParser
   end
 
   def format vimeo_feed
-    # upload_date (date), title (content), url (url), thumbnail_large (thumbnail)
-    items = []
-    vimeo_feed.each do |item|
-      vimeo_item = {date: item['upload_date'], content: item['title'],
-                      url: item['url'], thumbnail: item['thumbnail_large'], location: nil}
-      items.push(vimeo_item)
+    vimeo_feed.map do |item|
+      PageItem.new(@type, item['upload_date'], item['title'], item['url'], item['thumbnail_large'], nil)
     end
-
-    items
   end
 end
