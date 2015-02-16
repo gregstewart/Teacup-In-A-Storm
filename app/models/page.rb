@@ -6,9 +6,7 @@ class Page
     @wrapper_factory = WrapperFactory.new
   end
 
-  def fetch_page_items
-    feed_wrapper_configurations = {wordpress: {count: 10}, delicious: {count: 5}, instagram: {count: 6}, github: {count: 5},
-                  twitter: {count: 4}, vimeo: {count: 1}, foursquare: {count: 10}}
+  def fetch_page_items(feed_wrapper_configurations)
 
     feed_wrapper_configurations.each do |feed_wrapper_configuration|
       parser_type = feed_wrapper_configuration[0]
@@ -20,8 +18,8 @@ class Page
     end
   end
 
-  def fetch_sorted_page_items
-    fetch_page_items
+  def fetch_sorted_page_items(feed_configurations)
+    fetch_page_items(feed_configurations)
     sort_by_date
   end
 
