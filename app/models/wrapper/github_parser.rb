@@ -2,6 +2,7 @@ class GithubParser
 
   def initialize
     @client = Octokit::Client.new(:access_token => APP_CONFIG['github']['access_token'])
+    @type = :github
   end
 
   def get_last_user_events number_of_items
@@ -12,16 +13,10 @@ class GithubParser
   end
 
   def format github_feed
-    # created_at (date), type + repo.name (content), repo.url (url)
-    items = []
-    github_feed.each do |item|
+    github_feed.map do |item|
       commit_message = commit_message_builder(item)
-      github_item = {date: item['created_at'], content: commit_message,
-                     url: item['repo']['url'], thumbnail: '', location: nil}
-      items.push(github_item)
+      PageItem.new(@type, item['created_at'], commit_message, item['repo']['url'], '', nil)
     end
-
-    items
   end
 
   def commit_message_builder(item)

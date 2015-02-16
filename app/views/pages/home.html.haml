@@ -11,10 +11,10 @@
         .feed
           %h3{:class => 'delicious'}= "#{I18n.t 'recent.bookmarks', count: @page.get_by_type('delicious').length}"
           %ul
-            -@page.get_by_type('delicious').each do |entry|
-              %li{:class => entry[:type]}
-                %a{:href=>entry[:url]}
-                  =entry[:content]
+            -@page.get_by_type(:delicious).each do |entry|
+              %li{:class => entry.type}
+                %a{:href=>entry.url}
+                  =entry.content
 
     .six.columns.isotope
       .boxee{:data => {:cateogry => "wordpress"}}
@@ -24,10 +24,10 @@
         .feed
           %h3{:class => 'wordpress'}= "#{I18n.t 'recent.blog_posts', count: @page.get_by_type('wordpress').length}"
           %ul
-            -@page.get_by_type('wordpress').each do |entry|
+            -@page.get_by_type(:wordpress).each do |entry|
               %li{:class => 'wordpress'}
-                %a{:href=>entry[:url]}
-                  =entry[:content]
+                %a{:href=>entry.url}
+                  =entry.content
 
     .six.columns.omega.isotope
       .boxee{:data => {:cateogry => "vimeo"}}
@@ -36,13 +36,13 @@
 
         .feed
           %ul.images
-            -@page.get_by_type('vimeo').each do |entry|
+            -@page.get_by_type(:vimeo).each do |entry|
               %li{:class => 'vimeo'}
                 %div
-                  %a{:href=>entry[:url]}
-                    %img{:src=>entry[:thumbnail], :title =>entry[:content], :class=>"vimeo inset-shadow"}
+                  %a{:href=>entry.url}
+                    %img{:src=>entry.thumbnail, :title =>entry.content, :class=>"vimeo inset-shadow"}
                   %br
-                  =entry[:content]
+                  =entry.content
 
   .row.clearfix
     .six.columns.alpha.isotope
@@ -53,11 +53,11 @@
         .feed
           %h3{:class => 'twitter'}=I18n.t 'recent.tweets'
           %ul
-            -@page.get_by_type('twitter').each do |entry|
+            -@page.get_by_type(:twitter).each do |entry|
               %li{:class => 'twitter'}
-                %a{:href=>entry[:url]}
-                  =entry[:content]
-                =" - #{I18n.l entry[:date]}"
+                %a{:href=>entry.url}
+                  =entry.content
+                =" - #{I18n.l entry.date}"
 
       .boxee.stacked{:data => {:cateogry => "foursquare"}}
         %a.url.icon{:href => "https://foursquare.com/user/13278548", :accesskey => "F", :tabindex => "6", :title => "#{I18n.t 'click_to_view', what: 'Foursquare'}"}
@@ -66,12 +66,12 @@
         .feed
           %h3{:class => 'foursquare'}=I18n.t 'recent.foursquare_checkins'
           %ul
-            -@page.get_by_type('foursquare').each do |entry|
+            -@page.get_by_type(:foursquare).each do |entry|
               %li{:class => 'foursquare'}
-                .map{:data => {:lat => entry[:location][:lat], :lon => entry[:location][:lng]}}
-                %a{:href=>entry[:url]}
-                  =entry[:content]
-                  =" - #{I18n.l entry[:date]}"
+                .map{:data => {:lat => entry.location[:lat], :lon => entry.location[:lng]}}
+                %a{:href=>entry.url}
+                  =entry.content
+                  =" - #{I18n.l entry.date}"
 
     .six.columns.isotope
       .boxee.stacked{:data => {:cateogry => "instagram"}}
@@ -80,10 +80,10 @@
         .feed
           %h3{:class => 'instagram'}= "#{I18n.t 'recent.instagram_images', count: @page.get_by_type('instagram').length}"
           %ul.images
-            -@page.get_by_type('instagram').each do |entry|
+            -@page.get_by_type(:instagram).each do |entry|
               %li{:class => 'instagram'}
-                %a{:href=>entry[:url]}
-                  %img{:src=>entry[:thumbnail], :title =>entry[:content], :class=>"instagram"}
+                %a{:href=>entry.url}
+                  %img{:src=>entry.thumbnail, :title =>entry.content, :class=>"instagram"}
 
       .boxee.stacked{:data => {:cateogry => "lastfm"}}
         %a.url.icon{:href => "http://www.last.fm/user/greg_stewart", :accesskey => "I", :tabindex => "5", :title => "#{I18n.t 'click_to_view', what: 'Last.fm'}"}
@@ -100,11 +100,11 @@
 
         .feed
           %ul
-            -@page.get_by_type('github').each do |entry|
+            -@page.get_by_type(:github).each do |entry|
               %li{:class => 'github'}
-                %a{:href => entry[:url]}
-                  =entry[:content]
-                =" - #{I18n.l entry[:date]}"
+                %a{:href => entry.url}
+                  =entry.content
+                =" - #{I18n.l entry.date}"
       .boxee.stacked{:data => {:cateogry => "stackoverflow"}}
         %a.url.icon{:href => "http://stackoverflow.com/users/197825/greg-stewart", :accesskey => "D", :tabindex => "5", :title => "#{I18n.t 'click_to_view', what: 'StackOverflow'}"}
           %i.icon-stack-overflow{:title => "Stackoverflow icon"}
