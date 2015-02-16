@@ -3,7 +3,7 @@ class Page
 
   def initialize
     @items = []
-    @parser_factory = ParserFactory.new
+    @parser_factory = WrapperFactory.new
   end
 
   def fetch_page_items

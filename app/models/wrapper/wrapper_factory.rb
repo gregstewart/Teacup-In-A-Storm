@@ -1,4 +1,4 @@
-class ParserFactory
+class WrapperFactory
 
   def build (type)
     klass_for(type).new
