@@ -1,6 +1,6 @@
 class WordpressParser < Feed
   def initialize
     @url = "http://gregs.tcias.co.uk/atom.xml"
-    @type = "wordpress"
+    @type = :wordpress
   end
 end

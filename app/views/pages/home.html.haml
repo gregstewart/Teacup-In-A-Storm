@@ -11,7 +11,7 @@
         .feed
           %h3{:class => 'delicious'}= "#{I18n.t 'recent.bookmarks', count: @page.get_by_type('delicious').length}"
           %ul
-            -@page.get_by_type('delicious').each do |entry|
+            -@page.get_by_type(:delicious).each do |entry|
               %li{:class => entry.type}
                 %a{:href=>entry.url}
                   =entry.content
@@ -24,7 +24,7 @@
         .feed
           %h3{:class => 'wordpress'}= "#{I18n.t 'recent.blog_posts', count: @page.get_by_type('wordpress').length}"
           %ul
-            -@page.get_by_type('wordpress').each do |entry|
+            -@page.get_by_type(:wordpress).each do |entry|
               %li{:class => 'wordpress'}
                 %a{:href=>entry.url}
                   =entry.content
@@ -36,7 +36,7 @@
 
         .feed
           %ul.images
-            -@page.get_by_type('vimeo').each do |entry|
+            -@page.get_by_type(:vimeo).each do |entry|
               %li{:class => 'vimeo'}
                 %div
                   %a{:href=>entry.url}
@@ -53,7 +53,7 @@
         .feed
           %h3{:class => 'twitter'}=I18n.t 'recent.tweets'
           %ul
-            -@page.get_by_type('twitter').each do |entry|
+            -@page.get_by_type(:twitter).each do |entry|
               %li{:class => 'twitter'}
                 %a{:href=>entry.url}
                   =entry.content
@@ -66,7 +66,7 @@
         .feed
           %h3{:class => 'foursquare'}=I18n.t 'recent.foursquare_checkins'
           %ul
-            -@page.get_by_type('foursquare').each do |entry|
+            -@page.get_by_type(:foursquare).each do |entry|
               %li{:class => 'foursquare'}
                 .map{:data => {:lat => entry.location[:lat], :lon => entry.location[:lng]}}
                 %a{:href=>entry.url}
@@ -80,7 +80,7 @@
         .feed
           %h3{:class => 'instagram'}= "#{I18n.t 'recent.instagram_images', count: @page.get_by_type('instagram').length}"
           %ul.images
-            -@page.get_by_type('instagram').each do |entry|
+            -@page.get_by_type(:instagram).each do |entry|
               %li{:class => 'instagram'}
                 %a{:href=>entry.url}
                   %img{:src=>entry.thumbnail, :title =>entry.content, :class=>"instagram"}
@@ -100,7 +100,7 @@
 
         .feed
           %ul
-            -@page.get_by_type('github').each do |entry|
+            -@page.get_by_type(:github).each do |entry|
               %li{:class => 'github'}
                 %a{:href => entry.url}
                   =entry.content

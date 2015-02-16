@@ -15,12 +15,8 @@ class Page
       feed_item_count = parser_configuration[1][:count]
 
       parser = @parser_factory.build parser_type
-      feed_items = parser.get_last_user_events feed_item_count
 
-      feed_items.each do |item|
-        parsed_page_item = PageItem.new(parser_type, item[:date], item[:content], item[:url], item[:thumbnail], item[:location])
-        @items.push(parsed_page_item)
-      end
+      @items.concat(parser.get_last_user_events(feed_item_count))
     end
   end
 
@@ -34,7 +30,7 @@ class Page
   end
 
   def get_by_type(type)
-    @items.select { |v| v.type =~ Regexp.new(type) }
+    @items.select { |v| v.type == type }
   end
 
 end

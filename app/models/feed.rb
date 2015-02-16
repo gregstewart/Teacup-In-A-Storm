@@ -13,19 +13,13 @@ class Feed
       max_number_of_items = number_of_items - 1
       format feed.entries[0..max_number_of_items]
     rescue
-      items = []
-      items.push({date: DateTime.new, content: "Oops an error occured with #{@type}", url: '', thumbnail: '', location: nil})
+      [PageItem.new(@type, DateTime.new, "Oops an error occured with #{@type}",'', '', nil)]
     end
   end
 
   def format feed_items
-    items = []
-
-    feed_items.each do |item|
-      items.push({date: item.published, content: item.title, url: item.entry_id, thumbnail: '', location: nil})
+    feed_items.map do |item|
+      PageItem.new(@type, item.published, item.title, item.entry_id, '', nil)
     end
-
-    items
   end
-
 end
