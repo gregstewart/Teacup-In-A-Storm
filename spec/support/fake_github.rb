@@ -1,8 +1,7 @@
 require 'sinatra/base'
 
 class FakeGithub < Sinatra::Base
-  #get '/users/gregstewart/events' do
-  get '/users/events' do
+  get '/users/gregstewart/events' do
     json_response 200, 'github.json'
   end
 
