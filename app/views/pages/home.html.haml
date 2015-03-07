@@ -9,7 +9,7 @@
           %i.icon-delicious{:title => "Delicious icon"}
 
         .feed
-          %h3{:class => 'delicious'}= "#{I18n.t 'recent.bookmarks', count: @page.get_by_type('delicious').length}"
+          %h3{:class => 'delicious'}= "#{I18n.t 'recent.bookmarks', count: @page.get_by_type(:delicious).length}"
           %ul
             -@page.get_by_type(:delicious).each do |entry|
               %li{:class => entry.type}
@@ -22,7 +22,7 @@
           %i.icon-wordpress{:title => "Wordpress icon"}
 
         .feed
-          %h3{:class => 'wordpress'}= "#{I18n.t 'recent.blog_posts', count: @page.get_by_type('wordpress').length}"
+          %h3{:class => 'wordpress'}= "#{I18n.t 'recent.blog_posts', count: @page.get_by_type(:wordpress).length}"
           %ul
             -@page.get_by_type(:wordpress).each do |entry|
               %li{:class => 'wordpress'}
@@ -78,7 +78,7 @@
         %a.url.icon{:href => "http://instagram.com/_greg_stewart_", :accesskey => "I", :tabindex => "5", :title => "#{I18n.t 'click_to_view', what: 'Instagram'}"}
           %i.icon-instagram{:title => "Instagram icon"}
         .feed
-          %h3{:class => 'instagram'}= "#{I18n.t 'recent.instagram_images', count: @page.get_by_type('instagram').length}"
+          %h3{:class => 'instagram'}= "#{I18n.t 'recent.instagram_images', count: @page.get_by_type(:instagram).length}"
           %ul.images
             -@page.get_by_type(:instagram).each do |entry|
               %li{:class => 'instagram'}

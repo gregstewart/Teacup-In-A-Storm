@@ -1,6 +1,10 @@
 require 'spec_helper'
 
 describe PagesController do
+  DELICIOUS_COUNT = 5
+  BLOG_COUNT = 10
+  INSTAGRAM__COUNT = 6
+
   render_views
 
   describe "GET 'home'" do
@@ -17,10 +21,10 @@ describe PagesController do
       describe "locales" do
         it "should have english content as the default" do
           delicious = page.all('h3.delicious')
-          delicious[0].text.should =~ /\d most recent bookmarks/
+          delicious[0].text.should =~ /#{DELICIOUS_COUNT} most recent bookmarks/
 
           wordpress = page.all('h3.wordpress')
-          wordpress[0].text.should =~ /\d most recent posts/
+          wordpress[0].text.should =~ /#{BLOG_COUNT} most recent posts/
 
           twitter = page.all('h3.twitter')
           twitter[0].text.should == "Recent tweets"
@@ -29,7 +33,7 @@ describe PagesController do
           foursquare[0].text.should == "Recent checkins"
 
           instagram = page.all('h3.instagram')
-          instagram[0].text.should =~ /\d most recent images/
+          instagram[0].text.should =~ /#{INSTAGRAM__COUNT} most recent images/
         end
       end
 
@@ -49,13 +53,13 @@ describe PagesController do
       it "should have 5 delicious links" do
         matching = page.all('li.delicious')
         matching.should have_at_least(1).items
-        matching.should have_at_most(5).items
+        matching.should have_at_most(DELICIOUS_COUNT).items
       end
 
       it "should have 10 blog post links" do
         matching = page.all('li.wordpress')
         matching.should have_at_least(1).items
-        matching.should have_at_least(10).items
+        matching.should have_at_least(BLOG_COUNT).items
       end
 
       it "should have 2 vimeo links" do
@@ -73,7 +77,7 @@ describe PagesController do
       it "should have 6 instagram links" do
         matching = page.all('li.instagram')
         matching.should have_at_least(1).items
-        matching.should have_at_least(6).items
+        matching.should have_at_least(INSTAGRAM__COUNT).items
       end
 
       it "should have 5 github links" do
