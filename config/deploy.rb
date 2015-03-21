@@ -43,8 +43,12 @@ namespace :deploy do
   task :symlink_shared do
     run "ln -s #{shared_path}/api_keys.yml #{release_path}/config/"
   end
+  task :copy_rc_script do
+    run "chmod +x #{current_path}/script/unicorn-rc.sh"
+    run "ln -s #{current_path}/script/unicorn-rc.sh /etc/init.d/#{:application}"
+  end
 end
 
 before "deploy:assets:precompile", "deploy:symlink_shared"
 after "deploy:update_code", "deploy:cleanup"
-after "deploy:create_symlink", "deploy:restart"
+after "deploy:create_symlink", "deploy:copy_rc_script", "deploy:stop", "deploy:start"
