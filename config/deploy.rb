@@ -45,7 +45,6 @@ namespace :deploy do
   end
   task :copy_rc_script do
     run "chmod +x #{current_path}/script/unicorn-rc.sh"
-    run "ln -s #{current_path}/script/unicorn-rc.sh /etc/init.d/#{:application}"
   end
 end
 
