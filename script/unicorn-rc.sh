@@ -22,7 +22,7 @@ APP_ROOT="/home/$APP_NAME/current"
 PID="/home/$APP_NAME/shared/pids/unicorn.pid"
 ENV=production
 
-GEM_HOME="/home/$APP_NAME /app/shared/bundle/ruby/2.1.0/"
+GEM_HOME="/home/$APP_NAME/app/shared/bundle/ruby/2.1.0/"
 
 UNICORN_OPTS="-D -E $ENV -c $APP_ROOT/config/unicorn.rb"
 
