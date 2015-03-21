@@ -17,17 +17,17 @@ set -u
 set -e
 
 # Change these to match your app:
-APP_NAME="tcias"
+APP_NAME="tcias/app"
 APP_ROOT="/home/$APP_NAME/current"
 PID="/home/$APP_NAME/shared/pids/unicorn.pid"
 ENV=production
 
-GEM_HOME="/home/$APP_NAME/app/shared/bundle/ruby/2.1.0/"
+GEM_HOME="/home/$APP_NAME/shared/bundle/ruby/2.1.0/"
 
 UNICORN_OPTS="-D -E $ENV -c $APP_ROOT/config/unicorn.rb"
 
 SET_PATH="cd $APP_ROOT; rvm use 2.1.1; export GEM_HOME=$GEM_HOME"
-CMD="$SET_PATH; $GEM_HOME/bin/unicorn $UNICORN_OPTS"
+CMD="$SET_PATH; $GEM_HOME/bin/unicorn $UNICORN_OPTS" # This probably needs to be bundle exec
 
 old_pid="$PID.oldbin"
 
@@ -44,7 +44,7 @@ oldsig () {
 case ${1-help} in
 start)
 	sig 0 && echo >&2 "Already running" && exit 0
-	su - unicorn -c "$CMD"
+	su - unicorn -c "$CMD" # What user should be running this??
 	;;
 stop)
 	sig QUIT && exit 0
