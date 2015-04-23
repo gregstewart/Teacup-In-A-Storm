@@ -10,6 +10,6 @@
           %i{:class=> "icon-#{item.type}",:title => "#{item.type} icon"}
           %a{:href=>item.url}
             = item.content
-            = if !item.thumbnail.empty?
+            - if !item.thumbnail.empty?
               %div
                 %img{:src => item.thumbnail, :class=>"#{item.type} inset-shadow"}

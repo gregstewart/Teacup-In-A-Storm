@@ -20,6 +20,8 @@ class WrapperFactory
         VimeoParser
       when :wordpress
         WordpressParser
+      when :coderwall
+        CoderwallParser
       else
         raise 'Unknown parser requested'
     end

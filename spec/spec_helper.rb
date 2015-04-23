@@ -94,6 +94,7 @@ RSpec.configure do |config|
     stub_request(:get, /api.twitter.com/).to_rack(FakeTwitter)
     stub_request(:get, /vimeo.com/).to_rack(FakeVimeo)
     stub_request(:get, /api.foursquare.com/).to_rack(FakeFoursquare)
+    stub_request(:get, /coderwall.com/).to_rack(FakeCoderwall)
   end
   # == Mock Framework
   #
