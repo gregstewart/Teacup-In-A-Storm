@@ -11,3 +11,5 @@ github:
   access_token: '<%= ENV["github_access_token"] %>'
 foursquare:
   oauth_token: '<%= ENV["foursquare_oauth_token"] %>'
+coderwall:
+  username: '<%= ENV["username"] %>'

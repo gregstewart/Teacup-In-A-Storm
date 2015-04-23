@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-describe 'Foursquare Parser' do
+describe 'Coderwall Parser' do
 
-  it 'should return 10 items from Foursquare' do
-    foursquare_client = Foursquare.new
+  it 'should return 10 badges from Coder Wall' do
+    coderwall_client = CoderwallParser.new
 
-    foursquare_items = foursquare_client.get_last_user_events(10)
+    coderwall_items = coderwall_client.get_last_user_events(10)
 
-    foursquare_items.size.should == 10
+    coderwall_items.size.should == 10
   end
 end

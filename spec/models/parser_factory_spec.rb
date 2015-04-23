@@ -6,7 +6,7 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:foursquare)
 
-    parser.should be_a_kind_of(FoursquareParser)
+    parser.should be_a_kind_of(Foursquare)
   end
 
   it 'should return a instagram parser when passed a string of instagram' do
@@ -14,7 +14,7 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:instagram)
 
-    parser.should be_a_kind_of(InstagramParser)
+    parser.should be_a_kind_of(Instagram)
   end
 
   it 'should return a delicious parser when passed a string of delicious' do
@@ -22,7 +22,7 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:delicious)
 
-    parser.should be_a_kind_of(DeliciousParser)
+    parser.should be_a_kind_of(Delicious)
   end
 
   it 'should return a github parser when passed a string of github' do
@@ -30,7 +30,7 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:github)
 
-    parser.should be_a_kind_of(GithubParser)
+    parser.should be_a_kind_of(Github)
   end
 
   it 'should return a twitter parser when passed a string of twitter' do
@@ -38,7 +38,7 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:twitter)
 
-    parser.should be_a_kind_of(TwitterParser)
+    parser.should be_a_kind_of(Twitter)
   end
 
   it 'should return a vimeo parser when passed a string of vimeo' do
@@ -46,7 +46,7 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:vimeo)
 
-    parser.should be_a_kind_of(VimeoParser)
+    parser.should be_a_kind_of(Vimeo)
   end
 
   it 'should return a wordpress parser when passed a string of wordpress' do
@@ -54,7 +54,7 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:wordpress)
 
-    parser.should be_a_kind_of(WordpressParser)
+    parser.should be_a_kind_of(Wordpress)
   end
 
   it 'throws an exception when an unkown parser is requested' do

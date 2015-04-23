@@ -1,8 +1,8 @@
 require 'sinatra/base'
 
-class FakeVimeo < Sinatra::Base
-  get '/api/v2/user2724002/videos.json' do
-    json_response 200, 'vimeo.json'
+class FakeCoderwall < Sinatra::Base
+  get '/gregstewart.json' do
+    json_response 200, 'coderwall.json'
   end
 
   private
