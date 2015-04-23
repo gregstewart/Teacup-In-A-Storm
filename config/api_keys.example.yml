@@ -12,4 +12,4 @@ github:
 foursquare:
   oauth_token: '<%= ENV["foursquare_oauth_token"] %>'
 coderwall:
-  username: '<%= ENV["username"] %>'
+  username: '<%= ENV["coderwall_username"] %>'

@@ -57,7 +57,7 @@ describe 'WrapperFactory' do
     parser.should be_a_kind_of(WordpressParser)
   end
 
-  it 'should return a wordpress parser when passed a string of coderwall' do
+  it 'should return a coderwall parser when passed a string of coderwall' do
     parser_factory = WrapperFactory.new
 
     parser = parser_factory.build(:coderwall)
