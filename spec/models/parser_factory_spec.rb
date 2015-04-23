@@ -6,7 +6,7 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:foursquare)
 
-    parser.should be_a_kind_of(Foursquare)
+    parser.should be_a_kind_of(FoursquareParser)
   end
 
   it 'should return a instagram parser when passed a string of instagram' do
@@ -14,7 +14,7 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:instagram)
 
-    parser.should be_a_kind_of(Instagram)
+    parser.should be_a_kind_of(InstagramParser)
   end
 
   it 'should return a delicious parser when passed a string of delicious' do
@@ -22,7 +22,7 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:delicious)
 
-    parser.should be_a_kind_of(Delicious)
+    parser.should be_a_kind_of(DeliciousParser)
   end
 
   it 'should return a github parser when passed a string of github' do
@@ -30,7 +30,7 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:github)
 
-    parser.should be_a_kind_of(Github)
+    parser.should be_a_kind_of(GithubParser)
   end
 
   it 'should return a twitter parser when passed a string of twitter' do
@@ -38,7 +38,7 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:twitter)
 
-    parser.should be_a_kind_of(Twitter)
+    parser.should be_a_kind_of(TwitterParser)
   end
 
   it 'should return a vimeo parser when passed a string of vimeo' do
@@ -46,7 +46,7 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:vimeo)
 
-    parser.should be_a_kind_of(Vimeo)
+    parser.should be_a_kind_of(VimeoParser)
   end
 
   it 'should return a wordpress parser when passed a string of wordpress' do
@@ -54,7 +54,15 @@ describe 'WrapperFactory' do
 
     parser = parser_factory.build(:wordpress)
 
-    parser.should be_a_kind_of(Wordpress)
+    parser.should be_a_kind_of(WordpressParser)
+  end
+
+  it 'should return a wordpress parser when passed a string of coderwall' do
+    parser_factory = WrapperFactory.new
+
+    parser = parser_factory.build(:coderwall)
+
+    parser.should be_a_kind_of(CoderwallParser)
   end
 
   it 'throws an exception when an unkown parser is requested' do
