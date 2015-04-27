@@ -12,7 +12,7 @@ class Page
       parser_type = feed_wrapper_configuration[0]
       feed_item_count = feed_wrapper_configuration[1][:count]
 
-      wrapper = @wrapper_factory.build parser_type
+      wrapper = @wrapper_factory.build parser_type.to_s.capitalize
 
       @items.concat(wrapper.get_last_user_events(feed_item_count))
     end
