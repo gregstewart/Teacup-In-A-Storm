@@ -13,3 +13,5 @@ foursquare:
   oauth_token: '<%= ENV["foursquare_oauth_token"] %>'
 coderwall:
   username: '<%= ENV["coderwall_username"] %>'
+vimeo:
+  user_id: '<%= ENV["vimeo_user_id"] %>'

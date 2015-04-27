@@ -5,7 +5,7 @@ class VimeoParser
   end
 
   def get_last_user_events number_of_items
-    vimeo_feed = @client.videos("user2724002")
+    vimeo_feed = @client.videos(APP_CONFIG['vimeo']['user_id'])
     format vimeo_feed[0..number_of_items]
   end
 
