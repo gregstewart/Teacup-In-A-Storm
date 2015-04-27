@@ -1,29 +1,10 @@
 class WrapperFactory
 
   def build (type)
-    klass_for(type).new
-  end
-
-  def klass_for(type)
-    case type
-      when :foursquare
-        FoursquareParser
-      when :instagram
-        InstagramParser
-      when :delicious
-        DeliciousParser
-      when :github
-        GithubParser
-      when :twitter
-        TwitterParser
-      when :vimeo
-        VimeoParser
-      when :wordpress
-        WordpressParser
-      when :coderwall
-        CoderwallParser
-      else
-        raise 'Unknown parser requested'
+    begin
+      Object::const_get(type + "Parser").new
+    rescue
+      raise 'Unknown parser requested: ' + type
     end
   end
 
