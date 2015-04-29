@@ -6,11 +6,10 @@ class Page
     @wrapper_factory = WrapperFactory.new
   end
 
-  def fetch_page_items(feed_wrapper_configurations)
-
-    feed_wrapper_configurations.each do |feed_wrapper_configuration|
-      parser_type = feed_wrapper_configuration[0]
-      feed_item_count = feed_wrapper_configuration[1][:count]
+  def fetch_page_items
+    FEED_CONFIGS.each do |feed_configuration|
+      parser_type = feed_configuration[0]
+      feed_item_count = feed_configuration[1]['count']
 
       wrapper = @wrapper_factory.build parser_type.to_s.capitalize
 
@@ -18,8 +17,8 @@ class Page
     end
   end
 
-  def fetch_sorted_page_items(feed_configurations)
-    fetch_page_items(feed_configurations)
+  def fetch_sorted_page_items
+    fetch_page_items
     sort_by_date
   end
 
