@@ -1,4 +1,5 @@
 class GithubParser
+  require('date_wrapper')
 
   def initialize
     @client = Octokit::Client.new(:access_token => APP_CONFIG['github']['access_token'])
@@ -15,7 +16,7 @@ class GithubParser
   def format github_feed
     github_feed.map do |item|
       commit_message = commit_message_builder(item)
-      PageItem.new(@type, item['created_at'], commit_message, item['repo']['url'], '', nil)
+      PageItem.new(@type, DateWrapper.fix_date(item['created_at']), commit_message, item['repo']['url'], '', nil)
     end
   end
 

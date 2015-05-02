@@ -1,4 +1,6 @@
 class VimeoParser
+  require('date_wrapper')
+
   def initialize
     @client = Vimeo::Simple::User
     @type = :vimeo
@@ -11,7 +13,7 @@ class VimeoParser
 
   def format vimeo_feed
     vimeo_feed.map do |item|
-      PageItem.new(@type, item['upload_date'], item['title'], item['url'], item['thumbnail_large'], nil)
+      PageItem.new(@type, DateWrapper.fix_date(item['upload_date']), item['title'], item['url'], item['thumbnail_large'], nil)
     end
   end
 end

@@ -1,4 +1,5 @@
 class TwitterParser
+  require('date_wrapper')
   def initialize
     @client = Twitter::REST::Client.new do |config|
       config.consumer_key = APP_CONFIG['twitter']['consumer_key']
@@ -16,7 +17,7 @@ class TwitterParser
 
   def format twitter_feed
     twitter_feed.map do |item|
-      PageItem.new(@type, item.attrs[:created_at], item.attrs[:text], "https://twitter.com/_greg_stewart_/status/#{item.attrs[:id]}", '', nil)
+      PageItem.new(@type, DateWrapper.fix_date(item.attrs[:created_at]), item.attrs[:text], "https://twitter.com/_greg_stewart_/status/#{item.attrs[:id]}", '', nil)
     end
   end
 end

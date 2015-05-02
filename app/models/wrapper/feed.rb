@@ -1,5 +1,6 @@
 class Feed
   require 'feedjira'
+  require('date_wrapper')
 
   def initialize(url, type)
     @url = url
@@ -19,7 +20,7 @@ class Feed
 
   def format feed_items
     feed_items.map do |item|
-      PageItem.new(@type, item.published, item.title, item.entry_id, '', nil)
+      PageItem.new(@type, DateWrapper.fix_date(item.published), item.title, item.entry_id, '', nil)
     end
   end
 end

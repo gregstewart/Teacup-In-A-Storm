@@ -1,4 +1,5 @@
 class CoderwallParser
+  require('date_wrapper')
   def initialize
     @client = CoderWally::Client.new(APP_CONFIG['coderwall']['username'])
     @type = :coderwall
@@ -11,8 +12,8 @@ class CoderwallParser
 
   def format(coderwall_badges)
     coderwall_badges.map do |item|
-      content = item.created + ': ' + item.description
-      PageItem.new(@type, content, item.name, '', item.badge, '')
+      content = item.name + ': ' + item.description
+      PageItem.new(@type, DateWrapper.fix_date(item.created), content, '', item.badge, '')
     end
   end
 end
