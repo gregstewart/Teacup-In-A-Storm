@@ -1,4 +1,5 @@
 class InstagramParser
+  require('date_wrapper')
   def initialize
     Instagram.configure do |config|
       config.client_id = APP_CONFIG['instagram']['client_id']
@@ -17,7 +18,7 @@ class InstagramParser
     instagram_feed.map do |item|
       caption = item['caption']['text'] unless item['caption'].nil?
 
-      PageItem.new(@type, item['created_time'], caption, item['link'], item['images']['standard_resolution']['url'], nil)
+      PageItem.new(@type, DateWrapper.fix_date(item['created_time']), caption, item['link'], item['images']['standard_resolution']['url'], nil)
     end
   end
 end

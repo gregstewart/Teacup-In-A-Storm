@@ -1,5 +1,5 @@
 class FoursquareParser
-
+  require('date_wrapper')
   def initialize
     @client = Foursquare2::Client.new(:oauth_token => APP_CONFIG['foursquare']['oauth_token'], :api_version => '20140715')
     @type = :foursquare
@@ -14,7 +14,8 @@ class FoursquareParser
 
   def format foursquare_feed
     foursquare_feed.map do |item|
-      PageItem.new(@type, item['createdAt'],item['venue']['name'], item['venue']['canonicalUrl'], '', item['venue']['location'])
+      PageItem.new(@type, DateWrapper.fix_date(item['createdAt']), item['venue']['name'], item['venue']['canonicalUrl'], '', item['venue']['location'])
     end
   end
+
 end

@@ -16,11 +16,4 @@ describe 'Page' do
     items[2].content.should == 'some text 1'
   end
 
-  it 'when nil dates are encountered should set a default date value' do
-    page = Page.new
-
-    page_item = PageItem.new(:type, nil, 'some text 1', 'some url', 'some thumbnail', nil)
-
-    expect page_item.date.should be_a(DateTime)
-  end
 end
