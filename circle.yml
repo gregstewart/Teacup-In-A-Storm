@@ -1,4 +1,7 @@
 general:
+  artifacts:
+    - $CIRCLE_TEST_REPORTS
+    - coverag
   branches:
     only:
       - lambda-clojurescript-node
@@ -13,4 +16,4 @@ dependencies:
 
 test:
   override:
-    - cd javascript && npm test
+    - cd javascript && npm run coverage -- --reporter mocha-junit-reporter --reporter-options mochaFile=$CIRCLE_TEST_REPORTS/junit/results.xml
