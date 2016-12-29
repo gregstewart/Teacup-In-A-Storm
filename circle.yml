@@ -1,7 +1,7 @@
 general:
   artifacts:
     - $CIRCLE_TEST_REPORTS
-    - coverag
+    - coverage
   branches:
     only:
       - lambda-clojurescript-node
