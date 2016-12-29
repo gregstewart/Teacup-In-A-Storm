@@ -1,0 +1,16 @@
+general:
+  branches:
+    only:
+      - lambda-clojurescript-node
+
+machine:
+  node:
+    version: 4.3.2
+
+dependencies:
+  override:
+    - cd javascript && npm install
+
+test:
+  override:
+    - cd javascript && npm test
