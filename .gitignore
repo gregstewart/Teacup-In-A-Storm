@@ -7,4 +7,6 @@ log/
 tmp/
 lib/
 .sass-cache/
-config/api_keys.yml
+api_keys.yml
+node_modules/
+*.log
