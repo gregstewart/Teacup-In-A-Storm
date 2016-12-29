@@ -16,8 +16,6 @@ dependencies:
 
 test:
   override:
-    - cd javascript && npm test -- --reporter mocha-junit-reporter --reporter-options mochaFile=$CIRCLE_TEST_REPORTS/junit/results.xml
-    - cd javascript && npm run coverage
+    - cd javascript && npm run coverage -- --reporter mocha-junit-reporter --reporter-options mochaFile=$CIRCLE_TEST_REPORTS/junit/results.xml
     - if [ -f coverage/lcov.info ] ; then cd javascript && CODECLIMATE_REPO_TOKEN=$CODECLIMATE_REPO_TOKEN ./node_modules/.bin/codeclimate-test-reporter < coverage/lcov.info ; fi
-    - mkdir -p $CIRCLE_ARTIFACTS/coverage-report
-    - cd javascript && mv coverage/  $CIRCLE_ARTIFACTS/coverage-report
+    - cd javascript && mv coverage/  $CIRCLE_TEST_REPORTS/
