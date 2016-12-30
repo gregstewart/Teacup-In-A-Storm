@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint -c .eslintrc.json ./**/*.js",
     "test": "NODE_ENV=test ./node_modules/.bin/_mocha",
-    "coverage": "cross-env NODE_ENV=test nyc --no-cache --reporter=lcov --reporter=text ./node_modules/.bin/_mocha test/*.js",
+    "coverage": "cross-env NODE_ENV=test nyc --no-cache --reporter=lcov --reporter=text ./node_modules/.bin/_mocha",
     "prepush": "npm run lint && npm test"
   },
   "nyc": {
@@ -39,9 +39,12 @@
     "husky": "^0.12.0",
     "mocha": "^3.2.0",
     "mocha-junit-reporter": "^1.12.1",
+    "nock": "^9.0.2",
     "nyc": "^10.0.0"
   },
   "dependencies": {
-    "babel-runtime": "^6.20.0"
+    "babel-runtime": "^6.20.0",
+    "dotenv": "^2.0.0",
+    "twitter": "^1.7.0"
   }
 }
