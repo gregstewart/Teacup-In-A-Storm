@@ -4,7 +4,7 @@
   "description": "Aggregates a bunch of feeds",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint -c .eslintrc.json ./**/*.js",
+    "lint": "./node_modules/.bin/eslint -c .eslintrc.json ./**/*.js ./test/**/*.js",
     "test": "NODE_ENV=test ./node_modules/.bin/_mocha",
     "coverage": "cross-env NODE_ENV=test nyc --no-cache --reporter=lcov --reporter=text ./node_modules/.bin/_mocha",
     "prepush": "npm run lint && npm test"
@@ -45,6 +45,8 @@
   "dependencies": {
     "babel-runtime": "^6.20.0",
     "dotenv": "^2.0.0",
+    "node-fetch": "^1.6.3",
+    "pickup": "^5.0.1",
     "twitter": "^1.7.0"
   }
 }
