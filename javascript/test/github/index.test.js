@@ -6,11 +6,11 @@ import client from '../../github';
 
 describe('Github', () => {
   before(() => {
+    dotEnv.config();
     const gitHubResponse = JSON.parse(fs.readFileSync('./test/fixtures/github.json', 'utf-8'));
     nock('https://api.github.com/')
-      .get('/users/gregstewart/events?access_token=9adaf8a500696ccf0f0c7ed7c3701b9ea5c1ad28')
+      .get(`/users/gregstewart/events?access_token=${process.env.GITHUB_PERSONAL_TOKEN}`)
       .reply(200, gitHubResponse);
-    dotEnv.config();
   });
 
   it('fetches my events', (done) => {
