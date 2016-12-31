@@ -1,8 +1,8 @@
 import GitHubApi from 'github';
 import Promise from 'bluebird';
 
-const get = () => {
-  return new Promise((resolve, reject) => {
+const get = () => (
+  new Promise((resolve, reject) => {
     const github = new GitHubApi({
       Promise,
     });
@@ -13,13 +13,10 @@ const get = () => {
     });
 
     return github.activity.getEventsForUser({ username: 'gregstewart' })
-      .then((response) => {
-        return resolve(response);
-      }).catch((error) => {
-        return reject(error);
-      });
-  });
-};
+      .then(response => (resolve(response)))
+      .catch(error => (reject(error)));
+  })
+);
 
 export default {
   get,
