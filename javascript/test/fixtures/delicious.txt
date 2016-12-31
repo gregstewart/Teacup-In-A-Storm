@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" 
+     xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/" 
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+     xmlns:dc="http://purl.org/dc/elements/1.1/" 
+     xmlns:cc="http://web.resource.org/cc/">
+    <channel>
+        <title>Delicious/wildcard1999</title>
+        <link>https://del.icio.us/wildcard1999</link>
+        <description>links posted by wildcard1999</description>
+        <atom:link rel="self" type="application/rss+xml" href="https://feeds.del.icio.us/v2/rss/wildcard1999"/>
+        <item>
+            <title>Sponsored: 64% off Code Black Drone with HD Camera</title>
+            <pubDate>Sat, 31 Dec 2016 17:43:28 -0000</pubDate>
+            <guid isPermaLink="false">https://shop.icio.us/sales/the-limited-edition-black-hawk-drone-hd-camera?utm_source=del.icio.us&amp;utm_medium=referral&amp;utm_campaign=the-limited-edition-black-hawk-drone-hd-camera</guid>
+            <link>https://shop.icio.us/sales/the-limited-edition-black-hawk-drone-hd-camera?utm_source=del.icio.us&amp;utm_medium=referral&amp;utm_campaign=the-limited-edition-black-hawk-drone-hd-camera</link>
+            <dc:creator><![CDATA[delicious]]></dc:creator>
+            <comments>https://shop.icio.us/sales/the-limited-edition-black-hawk-drone-hd-camera?utm_source=del.icio.us&amp;utm_medium=referral&amp;utm_campaign=the-limited-edition-black-hawk-drone-hd-camera</comments>
+            <wfw:commentRss>https://shop.icio.us/sales/the-limited-edition-black-hawk-drone-hd-camera?utm_source=del.icio.us&amp;utm_medium=referral&amp;utm_campaign=the-limited-edition-black-hawk-drone-hd-camera</wfw:commentRss>
+            <source url="https://feeds.del.icio.us/v2/rss/wildcard1999">wildcard1999's links</source>
+            <description>Our #1 Best-Selling Drone--Meet the Dark Night of the Sky!</description>
+        </item>
+        
+        <item>
+            <title>Cypress.io: Testing, the way it should be.</title>
+            <pubDate>Thu, 27 Oct 2016 14:41:50 +0000</pubDate>
+            <guid isPermaLink="false">https://del.icio.us/url/244b3efa73bfe130c6e6acf8ff4f4393#wildcard1999</guid>
+            <link>https://www.cypress.io/</link>
+            <dc:creator><![CDATA[wildcard1999]]></dc:creator>
+            <comments>https://del.icio.us/url/244b3efa73bfe130c6e6acf8ff4f4393</comments>
+            <wfw:commentRss>https://feeds.del.icio.us/v2/rss/url/244b3efa73bfe130c6e6acf8ff4f4393</wfw:commentRss>
+            <source url="https://feeds.del.icio.us/v2/rss/wildcard1999">wildcard1999's links</source>
+            <description></description>
+            <category domain="https://del.icio.us/wildcard1999/"></category>
+            
+        </item>
+        
+        <item>
+            <title>Senior Engineers Reduce Risk — Medium</title>
+            <pubDate>Thu, 04 Aug 2016 20:19:23 +0000</pubDate>
+            <guid isPermaLink="false">https://del.icio.us/url/6de4592a88abc522a5084e393bd69bcf#wildcard1999</guid>
+            <link>https://medium.com/@ztellman/senior-engineers-reduce-risk-5ab2adc13c97#.kb5jr7kei</link>
+            <dc:creator><![CDATA[wildcard1999]]></dc:creator>
+            <comments>https://del.icio.us/url/6de4592a88abc522a5084e393bd69bcf</comments>
+            <wfw:commentRss>https://feeds.del.icio.us/v2/rss/url/6de4592a88abc522a5084e393bd69bcf</wfw:commentRss>
+            <source url="https://feeds.del.icio.us/v2/rss/wildcard1999">wildcard1999's links</source>
+            <description></description>
+            <category domain="https://del.icio.us/wildcard1999/">engineering</category>
+            
+        </item>
+        
+        <item>
+            <title>api-guidelines/Guidelines.md at master · Microsoft/api-guidelines</title>
+            <pubDate>Thu, 04 Aug 2016 20:11:56 +0000</pubDate>
+            <guid isPermaLink="false">https://del.icio.us/url/fed7763a752426445c4b25aaae822062#wildcard1999</guid>
+            <link>https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md?utm_source=hackernewsletter&amp;utm_medium=email&amp;utm_term=code</link>
+            <dc:creator><![CDATA[wildcard1999]]></dc:creator>
+            <comments>https://del.icio.us/url/fed7763a752426445c4b25aaae822062</comments>
+            <wfw:commentRss>https://feeds.del.icio.us/v2/rss/url/fed7763a752426445c4b25aaae822062</wfw:commentRss>
+            <source url="https://feeds.del.icio.us/v2/rss/wildcard1999">wildcard1999's links</source>
+            <description></description>
+            <category domain="https://del.icio.us/wildcard1999/">rest</category>
+            <category domain="https://del.icio.us/wildcard1999/">api</category>
+            <category domain="https://del.icio.us/wildcard1999/"></category>
+            <category domain="https://del.icio.us/wildcard1999/">guidelines</category>
+            
+        </item>
+        
+        <item>
+            <title>nervous-systems/cljs-lambda: Utilities around deploying Clojurescript functions to AWS Lambda</title>
+            <pubDate>Sun, 26 Jun 2016 21:21:32 +0000</pubDate>
+            <guid isPermaLink="false">https://del.icio.us/url/95e802bba6282c5aa3826ef30ea4fa01#wildcard1999</guid>
+            <link>https://github.com/nervous-systems/cljs-lambda</link>
+            <dc:creator><![CDATA[wildcard1999]]></dc:creator>
+            <comments>https://del.icio.us/url/95e802bba6282c5aa3826ef30ea4fa01</comments>
+            <wfw:commentRss>https://feeds.del.icio.us/v2/rss/url/95e802bba6282c5aa3826ef30ea4fa01</wfw:commentRss>
+            <source url="https://feeds.del.icio.us/v2/rss/wildcard1999">wildcard1999's links</source>
+            <description></description>
+            <category domain="https://del.icio.us/wildcard1999/">clojurescript</category>
+            <category domain="https://del.icio.us/wildcard1999/"></category>
+            <category domain="https://del.icio.us/wildcard1999/">lambda</category>
+            <category domain="https://del.icio.us/wildcard1999/"></category>
+            
+        </item>
+        
+        <item>
+            <title>Clojurescript &amp; Node on AWS Lambda – Nervous Systems</title>
+            <pubDate>Sun, 26 Jun 2016 21:20:54 +0000</pubDate>
+            <guid isPermaLink="false">https://del.icio.us/url/5e559a3d88ab8fa5079b59161f802609#wildcard1999</guid>
+            <link>https://nervous.io/clojure/clojurescript/aws/lambda/node/lein/2015/07/05/lambda/</link>
+            <dc:creator><![CDATA[wildcard1999]]></dc:creator>
+            <comments>https://del.icio.us/url/5e559a3d88ab8fa5079b59161f802609</comments>
+            <wfw:commentRss>https://feeds.del.icio.us/v2/rss/url/5e559a3d88ab8fa5079b59161f802609</wfw:commentRss>
+            <source url="https://feeds.del.icio.us/v2/rss/wildcard1999">wildcard1999's links</source>
+            <description></description>
+            <category domain="https://del.icio.us/wildcard1999/">lambda</category>
+            <category domain="https://del.icio.us/wildcard1999/"></category>
+            <category domain="https://del.icio.us/wildcard1999/">clojurescript</category>
+            <category domain="https://del.icio.us/wildcard1999/"></category>
+            
+        </item>
+        
+        <item>
+            <title>Test Double | Our Thinking | Isomorphic ClojureScript with Reagent and Node.js</title>
+            <pubDate>Sun, 26 Jun 2016 21:17:31 +0000</pubDate>
+            <guid isPermaLink="false">https://del.icio.us/url/9c55bc4d39fb6ba73ab1269cf7920174#wildcard1999</guid>
+            <link>http://blog.testdouble.com/posts/2016-01-21-isomorphic-clojurescript.html</link>
+            <dc:creator><![CDATA[wildcard1999]]></dc:creator>
+            <comments>https://del.icio.us/url/9c55bc4d39fb6ba73ab1269cf7920174</comments>
+            <wfw:commentRss>https://feeds.del.icio.us/v2/rss/url/9c55bc4d39fb6ba73ab1269cf7920174</wfw:commentRss>
+            <source url="https://feeds.del.icio.us/v2/rss/wildcard1999">wildcard1999's links</source>
+            <description></description>
+            <category domain="https://del.icio.us/wildcard1999/">clojurescript</category>
+            <category domain="https://del.icio.us/wildcard1999/"> isomorphic</category>
+            
+        </item>
+        
+        <item>
+            <title>Operational Best Practices #serverless – charity.wtf</title>
+            <pubDate>Mon, 20 Jun 2016 11:04:33 +0000</pubDate>
+            <guid isPermaLink="false">https://del.icio.us/url/6cdc2c14141fce0dd23054f52eb7d284#wildcard1999</guid>
+            <link>https://charity.wtf/2016/05/31/operational-best-practices-serverless/</link>
+            <dc:creator><![CDATA[wildcard1999]]></dc:creator>
+            <comments>https://del.icio.us/url/6cdc2c14141fce0dd23054f52eb7d284</comments>
+            <wfw:commentRss>https://feeds.del.icio.us/v2/rss/url/6cdc2c14141fce0dd23054f52eb7d284</wfw:commentRss>
+            <source url="https://feeds.del.icio.us/v2/rss/wildcard1999">wildcard1999's links</source>
+            <description></description>
+            <category domain="https://del.icio.us/wildcard1999/"></category>
+            
+        </item>
+        
+        <item>
+            <title>WTF is operations? #serverless – charity.wtf</title>
+            <pubDate>Mon, 20 Jun 2016 11:03:53 +0000</pubDate>
+            <guid isPermaLink="false">https://del.icio.us/url/2b0917d94bd714174845ee180fda2f68#wildcard1999</guid>
+            <link>https://charity.wtf/2016/05/31/wtf-is-operations-serverless/</link>
+            <dc:creator><![CDATA[wildcard1999]]></dc:creator>
+            <comments>https://del.icio.us/url/2b0917d94bd714174845ee180fda2f68</comments>
+            <wfw:commentRss>https://feeds.del.icio.us/v2/rss/url/2b0917d94bd714174845ee180fda2f68</wfw:commentRss>
+            <source url="https://feeds.del.icio.us/v2/rss/wildcard1999">wildcard1999's links</source>
+            <description></description>
+            <category domain="https://del.icio.us/wildcard1999/"></category>
+            
+        </item>
+        
+        <item>
+            <title>Serverless Architectures</title>
+            <pubDate>Mon, 20 Jun 2016 11:03:27 +0000</pubDate>
+            <guid isPermaLink="false">https://del.icio.us/url/dac0703732bb9bb34efba8205eb549cd#wildcard1999</guid>
+            <link>http://martinfowler.com/articles/serverless.html</link>
+            <dc:creator><![CDATA[wildcard1999]]></dc:creator>
+            <comments>https://del.icio.us/url/dac0703732bb9bb34efba8205eb549cd</comments>
+            <wfw:commentRss>https://feeds.del.icio.us/v2/rss/url/dac0703732bb9bb34efba8205eb549cd</wfw:commentRss>
+            <source url="https://feeds.del.icio.us/v2/rss/wildcard1999">wildcard1999's links</source>
+            <description></description>
+            <category domain="https://del.icio.us/wildcard1999/"></category>
+            
+        </item>
+        
+        <item>
+            <title>date-fns - modern JavaScript date utility library</title>
+            <pubDate>Fri, 20 May 2016 07:39:16 +0000</pubDate>
+            <guid isPermaLink="false">https://del.icio.us/url/680e1c195c9be62896b1bc5875f89453#wildcard1999</guid>
+            <link>https://date-fns.org/</link>
+            <dc:creator><![CDATA[wildcard1999]]></dc:creator>
+            <comments>https://del.icio.us/url/680e1c195c9be62896b1bc5875f89453</comments>
+            <wfw:commentRss>https://feeds.del.icio.us/v2/rss/url/680e1c195c9be62896b1bc5875f89453</wfw:commentRss>
+            <source url="https://feeds.del.icio.us/v2/rss/wildcard1999">wildcard1999's links</source>
+            <description></description>
+            <category domain="https://del.icio.us/wildcard1999/">javascript</category>
+            <category domain="https://del.icio.us/wildcard1999/"> date</category>
+            <category domain="https://del.icio.us/wildcard1999/"> library</category>
+            
+        </item>
+        
+    </channel>
+</rss>
