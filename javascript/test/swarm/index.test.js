@@ -21,7 +21,6 @@ describe('Swarm', () => {
           expect(response.response.checkins.items[0].id).to.equal('5867d042d25ded6f126780ca');
           done();
         }).catch((error) => {
-          console.log(error);
           expect(error).to.equal(undefined);
           done();
         });
