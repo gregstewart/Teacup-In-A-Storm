@@ -48,7 +48,9 @@
     "dotenv": "^2.0.0",
     "github": "^7.2.0",
     "node-fetch": "^1.6.3",
+    "node-instagram": "^1.3.6",
     "pickup": "^5.0.1",
+    "request": "^2.79.0",
     "twitter": "^1.7.0"
   }
 }
