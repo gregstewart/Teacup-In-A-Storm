@@ -5,25 +5,35 @@
 
 (def app-state (reagent/atom { :given-name "Greg "
                               :family-name "Stewart"
-                              :title "Consultant/Developer"
-                              :email "gregs@tcias.co.uk"
-                              :mailto "mailto:gregs@tcias.co.uk?subject=Hello from the web"
+                              :title "Chief Technical Officer"
+                              :home-email "gregs@tcias.co.uk"
+                              :home-mailto "mailto:gregs+personal-website@tcias.co.uk?subject=Hello from the web"
+                              :work-email "greg.stewart@red-badger.com"
+                              :work-mailto "mailto:greg.stewart+personal-website@red-badger.com?subject=Hello from the web"
                               :work-number "+44 208 2869246"
                               :mobile-number "+44 7891 032239"
                               :skype-number "skype:greg.stewart.work?call"}))
 
 (defn display-name []
-  [:h2.fn.n
+  [:h1.fn.n
     [:span.given-name (:given-name @app-state)]
     [:span.family-name (:family-name @app-state)]])
 
+(defn display-title []
+  [:h2.title (:title @app-state)])
+
 (defn email []
-  [:dl.info
-    [:dt.email
-      [:abbr.type {:title "email"} "Email"]]
+  [:dl.email
+    [:dt.home
+      [:abbr.type {:title "home"} "Email"]]
     [:dd
       [:i.icon-envelope
-        [:a {:href (:mailto @app-state) :title "Click to email me"} (:email @app-state)]]]])
+        [:a {:href (:home-mailto @app-state) :title "Click to email me"} (:home-email @app-state)]]]
+    [:dt.work
+      [:abbr.type {:title "work"} "Email"]]
+    [:dd
+      [:i.icon-envelope
+        [:a {:href (:work-mailto @app-state) :title "Click to email me"} (:work-email @app-state)]]]])
 
 (defn phone-details []
   [:dl.tel
@@ -42,29 +52,29 @@
     [:dd
       [:i.icon-skype
         [:a.url {:href (:skype-number @app-state)
-                  :accesskey "S"
-                  :tabindex "4"} "Skype me"]]]])
+                  :accessKey "S"
+                  :tabIndex "4"} "Skype me"]]]])
 
 (defn address-details []
-  [:div.address
-    [:i.icon-home]
-    [:span {:lang "en" :xml-lang "en"}
-      [:span.street-address "547 Kingston Road "]
-      [:span.locality "Raynes Park "]
-      [:span.region "London "]
-      [:span.postcal-code "SW20 8SF "]]])
+  [:dl.address
+    [:dt.home
+      [:abbr.type {:title "home"} "Home address"]]
+    [:dd
+      [:i.icon-home]
+      [:span {:lang "en" :xml-lang "en"}
+        [:span.street-address "547 Kingston Road "]
+        [:span.locality "Raynes Park "]
+        [:span.region "London "]
+        [:span.postcal-code "SW20 8SF "]]]])
 
 (defn contact-panel []
   [:div
     [:div.name {:lang "en"}
       (display-name)
-      [:h2.title (:title @app-state)]]
+      (display-title)]
     (email)
     (phone-details)
     (address-details)])
-
-
-
 
 (reagent/render-component [contact-panel];
                           (. js/document (getElementById "app")))
