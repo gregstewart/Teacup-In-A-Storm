@@ -24,8 +24,14 @@
                                                         {:link "http://del.icio.us/url/95e802bba6282c5aa3826ef30ea4fa01#wildcard1999"
                                                           :value "nervous-systems/cljs-lambda: Utilities around deploying Clojurescript functions to AWS Lambda"}
                                                         {:link "http://del.icio.us/url/5e559a3d88ab8fa5079b59161f802609#wildcard1999"
-                                                          :value "Clojurescript & Node on AWS Lambda – Nervous Systems"}]}}))
-
+                                                          :value "Clojurescript & Node on AWS Lambda – Nervous Systems"}]}
+                              :wordpress-items {
+                                                :type "wordpress"
+                                                :items [{:link "https://www.tcias.co.uk/blog/2015/08/07/your-organisation-should-adopt-an-open-source-model"
+                                                          :value "Your Organisation Should Adopt an Open Source Model"}
+                                                        {:link "https://www.tcias.co.uk/blog/2015/06/28/why-use-node-dot-js"
+                                                          :value "Why Use Node.js"}]}}))
+                                                          
 (defn lister
   [items-structure]
   (def style (get items-structure :type))
@@ -129,7 +135,19 @@
         [:h3.delicious "5 most recent bookmarks"]
         [lister (:delicious-items @app-state)]]]])
 
+(defn wordpress
+  []
+  [:div.six.columns.isotope
+    [:div.boxee {:data-category "wordpress"}
+      [:a.url.icon {:accessKey "W"
+                    :href "https://www.tcias.co.uk/blog"
+                    :tabIndex "6"
+                    :title "Click to view my blog"}
 
+          [:i {:class "icon-wordpress"}]]
+      [:div.feed
+        [:h3.wordpress "10 most recent posts"]
+        [lister (:wordpress-items @app-state)]]]])
 
 (defn layout []
   [:section.default
@@ -138,7 +156,8 @@
       [contact-panel]
       [linked-in]]
     [:div.row.clearfix
-      [delicious]]])
+      [delicious]
+      [wordpress]]])
 
 (reagent/render-component [layout];
                           (. js/document (getElementById "app")))

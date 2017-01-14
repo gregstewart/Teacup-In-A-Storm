@@ -13,7 +13,6 @@
 .boxee.stacked {
     margin-bottom: 1em
 }
-
 .boxee:before, .boxee:after {
     z-index: -1;
     position: absolute;
