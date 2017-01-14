@@ -1,461 +1,2556 @@
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
-
-/* Document
-   ========================================================================== */
-
-html {
-  font-family: sans-serif; /* 1 */
-  line-height: 1.15; /* 2 */
-  -ms-text-size-adjust: 100%; /* 3 */
-  -webkit-text-size-adjust: 100%; /* 3 */
+.boxee {
+    position: relative;
+    border: 1px solid #938883;
+    background-color: #f5f4f3;
+    padding: 1em;
+    text-align: center
 }
 
-/* Sections
-   ========================================================================== */
+.timeline .boxee {
+    text-align: left
+}
 
-/**
- * Remove the margin in all browsers (opinionated).
+.boxee.stacked {
+    margin-bottom: 1em
+}
+
+.boxee:before, .boxee:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg)
+}
+
+.timeline .boxee:before, .timeline .boxee:after {
+    top: 40%
+}
+
+.boxee:after {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .boxee {
+        margin: 0 0 2em 0
+    }
+}
+
+.boxee img {
+    width: 100%;
+    height: 100%
+}
+
+.boxee img.vimeo {
+    border: 1px solid #938883
+}
+
+.boxee img.instagram {
+    border: none
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .boxee img {
+        width: 50%;
+        height: 50%
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .boxee img.instagram {
+        border: none;
+        width: 100%;
+        height: 100%
+    }
+    .boxee img.vimeo {
+        width: 100%;
+        height: 100%
+    }
+}
+
+
+/*!
+ *  Font Awesome 3.0.2
+ *  the iconic font designed for use with Twitter Bootstrap
+ *  -------------------------------------------------------
+ *  The full suite of pictographic icons, examples, and documentation
+ *  can be found at: http://fortawesome.github.com/Font-Awesome/
+ *
+ *  License
+ *  -------------------------------------------------------
+ *  - The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL
+ *  - Font Awesome CSS, LESS, and SASS files are licensed under the MIT License -
+ *    http://opensource.org/licenses/mit-license.html
+ *  - The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
+ *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
+ *    "Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome"
+ *
+ *  Contact
+ *  -------------------------------------------------------
+ *  Email: dave@davegandy.com
+ *  Twitter: http://twitter.com/fortaweso_me
+ *  Work: Lead Product Designer @ http://kyruus.com
  */
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0
+}
+
+.icon-white, .nav-pills>.active>a>[class^="icon-"], .nav-pills>.active>a>[class*=" icon-"], .nav-list>.active>a>[class^="icon-"], .nav-list>.active>a>[class*=" icon-"], .navbar-inverse .nav>.active>a>[class^="icon-"], .navbar-inverse .nav>.active>a>[class*=" icon-"], .dropdown-menu>li>a:hover>[class^="icon-"], .dropdown-menu>li>a:hover>[class*=" icon-"], .dropdown-menu>.active>a>[class^="icon-"], .dropdown-menu>.active>a>[class*=" icon-"], .dropdown-submenu:hover>a>[class^="icon-"], .dropdown-submenu:hover>a>[class*=" icon-"] {
+    background-image: none
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    text-decoration: inherit;
+    display: inline-block;
+    speak: none
+}
+
+a [class^="icon-"], a [class*=" icon-"] {
+    display: inline-block
+}
+
+.icon-large:before {
+    vertical-align: -10%;
+    font-size: 1.3333333333333333em
+}
+
+.btn [class^="icon-"], .btn [class*=" icon-"], .nav [class^="icon-"], .nav [class*=" icon-"] {
+    display: inline
+}
+
+.btn [class^="icon-"].icon-large, .btn [class*=" icon-"].icon-large, .nav [class^="icon-"].icon-large, .nav [class*=" icon-"].icon-large {
+    line-height: .9em
+}
+
+.btn [class^="icon-"].icon-spin, .btn [class*=" icon-"].icon-spin, .nav [class^="icon-"].icon-spin, .nav [class*=" icon-"].icon-spin {
+    display: inline-block
+}
+
+.nav-tabs [class^="icon-"], .nav-tabs [class^="icon-"].icon-large, .nav-tabs [class*=" icon-"], .nav-tabs [class*=" icon-"].icon-large, .nav-pills [class^="icon-"], .nav-pills [class^="icon-"].icon-large, .nav-pills [class*=" icon-"], .nav-pills [class*=" icon-"].icon-large {
+    line-height: .9em
+}
+
+li [class^="icon-"], li [class*=" icon-"], .nav li [class^="icon-"], .nav li [class*=" icon-"] {
+    display: inline-block;
+    width: 1.25em;
+    text-align: center
+}
+
+li [class^="icon-"].icon-large, li [class*=" icon-"].icon-large, .nav li [class^="icon-"].icon-large, .nav li [class*=" icon-"].icon-large {
+    width: 1.5625em
+}
+
+ul.icons {
+    list-style-type: none;
+    text-indent: -.75em
+}
+
+ul.icons li [class^="icon-"], ul.icons li [class*=" icon-"] {
+    width: .75em
+}
+
+.icon-muted {
+    color: #eee
+}
+
+.icon-border {
+    border: solid 1px #eee;
+    padding: .2em .25em .15em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px
+}
+
+.icon-2x {
+    font-size: 2em
+}
+
+.icon-2x.icon-border {
+    border-width: 2px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px
+}
+
+.icon-3x {
+    font-size: 3em
+}
+
+.icon-3x.icon-border {
+    border-width: 3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+
+.icon-4x {
+    font-size: 4em
+}
+
+.icon-4x.icon-border {
+    border-width: 4px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px
+}
+
+.pull-right {
+    float: right
+}
+
+.pull-left {
+    float: left
+}
+
+[class^="icon-"].pull-left, [class*=" icon-"].pull-left {
+    margin-right: .3em
+}
+
+[class^="icon-"].pull-right, [class*=" icon-"].pull-right {
+    margin-left: .3em
+}
+
+.btn [class^="icon-"].pull-left.icon-2x, .btn [class^="icon-"].pull-right.icon-2x, .btn [class*=" icon-"].pull-left.icon-2x, .btn [class*=" icon-"].pull-right.icon-2x {
+    margin-top: .18em
+}
+
+.btn [class^="icon-"].icon-spin.icon-large, .btn [class*=" icon-"].icon-spin.icon-large {
+    line-height: .8em
+}
+
+.btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small [class^="icon-"].pull-right.icon-2x, .btn.btn-small [class*=" icon-"].pull-left.icon-2x, .btn.btn-small [class*=" icon-"].pull-right.icon-2x {
+    margin-top: .25em
+}
+
+.btn.btn-large [class^="icon-"], .btn.btn-large [class*=" icon-"] {
+    margin-top: 0
+}
+
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large [class*=" icon-"].pull-left.icon-2x, .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
+    margin-top: .05em
+}
+
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class*=" icon-"].pull-left.icon-2x {
+    margin-right: .2em
+}
+
+.btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
+    margin-left: .2em
+}
+
+.icon-spin {
+    display: inline-block;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    100% {
+        -moz-transform: rotate(359deg)
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(359deg)
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    100% {
+        -o-transform: rotate(359deg)
+    }
+}
+
+@-ms-keyframes spin {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    100% {
+        -ms-transform: rotate(359deg)
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+@-moz-document url-prefix() {
+    .icon-spin {
+        height: .9em
+    }
+    .btn .icon-spin {
+        height: auto
+    }
+    .icon-spin.icon-large {
+        height: 1.25em
+    }
+    .btn .icon-spin.icon-large {
+        height: .75em
+    }
+}
+
+.icon-glass:before {
+    content: "\f000"
+}
+
+.icon-music:before {
+    content: "\f001"
+}
+
+.icon-search:before {
+    content: "\f002"
+}
+
+.icon-envelope:before {
+    content: "\f003"
+}
+
+.icon-heart:before {
+    content: "\f004"
+}
+
+.icon-star:before {
+    content: "\f005"
+}
+
+.icon-star-empty:before {
+    content: "\f006"
+}
+
+.icon-user:before {
+    content: "\f007"
+}
+
+.icon-film:before {
+    content: "\f008"
+}
+
+.icon-th-large:before {
+    content: "\f009"
+}
+
+.icon-th:before {
+    content: "\f00a"
+}
+
+.icon-th-list:before {
+    content: "\f00b"
+}
+
+.icon-ok:before {
+    content: "\f00c"
+}
+
+.icon-remove:before {
+    content: "\f00d"
+}
+
+.icon-zoom-in:before {
+    content: "\f00e"
+}
+
+.icon-zoom-out:before {
+    content: "\f010"
+}
+
+.icon-off:before {
+    content: "\f011"
+}
+
+.icon-signal:before {
+    content: "\f012"
+}
+
+.icon-cog:before {
+    content: "\f013"
+}
+
+.icon-trash:before {
+    content: "\f014"
+}
+
+.icon-home:before {
+    content: "\f015"
+}
+
+.icon-file:before {
+    content: "\f016"
+}
+
+.icon-time:before {
+    content: "\f017"
+}
+
+.icon-road:before {
+    content: "\f018"
+}
+
+.icon-download-alt:before {
+    content: "\f019"
+}
+
+.icon-download:before {
+    content: "\f01a"
+}
+
+.icon-upload:before {
+    content: "\f01b"
+}
+
+.icon-inbox:before {
+    content: "\f01c"
+}
+
+.icon-play-circle:before {
+    content: "\f01d"
+}
+
+.icon-repeat:before {
+    content: "\f01e"
+}
+
+.icon-refresh:before {
+    content: "\f021"
+}
+
+.icon-list-alt:before {
+    content: "\f022"
+}
+
+.icon-lock:before {
+    content: "\f023"
+}
+
+.icon-flag:before {
+    content: "\f024"
+}
+
+.icon-headphones:before {
+    content: "\f025"
+}
+
+.icon-volume-off:before {
+    content: "\f026"
+}
+
+.icon-volume-down:before {
+    content: "\f027"
+}
+
+.icon-volume-up:before {
+    content: "\f028"
+}
+
+.icon-qrcode:before {
+    content: "\f029"
+}
+
+.icon-barcode:before {
+    content: "\f02a"
+}
+
+.icon-tag:before {
+    content: "\f02b"
+}
+
+.icon-tags:before {
+    content: "\f02c"
+}
+
+.icon-book:before {
+    content: "\f02d"
+}
+
+.icon-bookmark:before {
+    content: "\f02e"
+}
+
+.icon-print:before {
+    content: "\f02f"
+}
+
+.icon-camera:before {
+    content: "\f030"
+}
+
+.icon-font:before {
+    content: "\f031"
+}
+
+.icon-bold:before {
+    content: "\f032"
+}
+
+.icon-italic:before {
+    content: "\f033"
+}
+
+.icon-text-height:before {
+    content: "\f034"
+}
+
+.icon-text-width:before {
+    content: "\f035"
+}
+
+.icon-align-left:before {
+    content: "\f036"
+}
+
+.icon-align-center:before {
+    content: "\f037"
+}
+
+.icon-align-right:before {
+    content: "\f038"
+}
+
+.icon-align-justify:before {
+    content: "\f039"
+}
+
+.icon-list:before {
+    content: "\f03a"
+}
+
+.icon-indent-left:before {
+    content: "\f03b"
+}
+
+.icon-indent-right:before {
+    content: "\f03c"
+}
+
+.icon-facetime-video:before {
+    content: "\f03d"
+}
+
+.icon-picture:before {
+    content: "\f03e"
+}
+
+.icon-pencil:before {
+    content: "\f040"
+}
+
+.icon-map-marker:before {
+    content: "\f041"
+}
+
+.icon-adjust:before {
+    content: "\f042"
+}
+
+.icon-tint:before {
+    content: "\f043"
+}
+
+.icon-edit:before {
+    content: "\f044"
+}
+
+.icon-share:before {
+    content: "\f045"
+}
+
+.icon-check:before {
+    content: "\f046"
+}
+
+.icon-move:before {
+    content: "\f047"
+}
+
+.icon-step-backward:before {
+    content: "\f048"
+}
+
+.icon-fast-backward:before {
+    content: "\f049"
+}
+
+.icon-backward:before {
+    content: "\f04a"
+}
+
+.icon-play:before {
+    content: "\f04b"
+}
+
+.icon-pause:before {
+    content: "\f04c"
+}
+
+.icon-stop:before {
+    content: "\f04d"
+}
+
+.icon-forward:before {
+    content: "\f04e"
+}
+
+.icon-fast-forward:before {
+    content: "\f050"
+}
+
+.icon-step-forward:before {
+    content: "\f051"
+}
+
+.icon-eject:before {
+    content: "\f052"
+}
+
+.icon-chevron-left:before {
+    content: "\f053"
+}
+
+.icon-chevron-right:before {
+    content: "\f054"
+}
+
+.icon-plus-sign:before {
+    content: "\f055"
+}
+
+.icon-minus-sign:before {
+    content: "\f056"
+}
+
+.icon-remove-sign:before {
+    content: "\f057"
+}
+
+.icon-ok-sign:before {
+    content: "\f058"
+}
+
+.icon-question-sign:before {
+    content: "\f059"
+}
+
+.icon-info-sign:before {
+    content: "\f05a"
+}
+
+.icon-screenshot:before {
+    content: "\f05b"
+}
+
+.icon-remove-circle:before {
+    content: "\f05c"
+}
+
+.icon-ok-circle:before {
+    content: "\f05d"
+}
+
+.icon-ban-circle:before {
+    content: "\f05e"
+}
+
+.icon-arrow-left:before {
+    content: "\f060"
+}
+
+.icon-arrow-right:before {
+    content: "\f061"
+}
+
+.icon-arrow-up:before {
+    content: "\f062"
+}
+
+.icon-arrow-down:before {
+    content: "\f063"
+}
+
+.icon-share-alt:before {
+    content: "\f064"
+}
+
+.icon-resize-full:before {
+    content: "\f065"
+}
+
+.icon-resize-small:before {
+    content: "\f066"
+}
+
+.icon-plus:before {
+    content: "\f067"
+}
+
+.icon-minus:before {
+    content: "\f068"
+}
+
+.icon-asterisk:before {
+    content: "\f069"
+}
+
+.icon-exclamation-sign:before {
+    content: "\f06a"
+}
+
+.icon-gift:before {
+    content: "\f06b"
+}
+
+.icon-leaf:before {
+    content: "\f06c"
+}
+
+.icon-fire:before {
+    content: "\f06d"
+}
+
+.icon-eye-open:before {
+    content: "\f06e"
+}
+
+.icon-eye-close:before {
+    content: "\f070"
+}
+
+.icon-warning-sign:before {
+    content: "\f071"
+}
+
+.icon-plane:before {
+    content: "\f072"
+}
+
+.icon-calendar:before {
+    content: "\f073"
+}
+
+.icon-random:before {
+    content: "\f074"
+}
+
+.icon-comment:before {
+    content: "\f075"
+}
+
+.icon-magnet:before {
+    content: "\f076"
+}
+
+.icon-chevron-up:before {
+    content: "\f077"
+}
+
+.icon-chevron-down:before {
+    content: "\f078"
+}
+
+.icon-retweet:before {
+    content: "\f079"
+}
+
+.icon-shopping-cart:before {
+    content: "\f07a"
+}
+
+.icon-folder-close:before {
+    content: "\f07b"
+}
+
+.icon-folder-open:before {
+    content: "\f07c"
+}
+
+.icon-resize-vertical:before {
+    content: "\f07d"
+}
+
+.icon-resize-horizontal:before {
+    content: "\f07e"
+}
+
+.icon-bar-chart:before {
+    content: "\f080"
+}
+
+.icon-twitter-sign:before {
+    content: "\f081"
+}
+
+.icon-facebook-sign:before {
+    content: "\f082"
+}
+
+.icon-camera-retro:before {
+    content: "\f083"
+}
+
+.icon-key:before {
+    content: "\f084"
+}
+
+.icon-cogs:before {
+    content: "\f085"
+}
+
+.icon-comments:before {
+    content: "\f086"
+}
+
+.icon-thumbs-up:before {
+    content: "\f087"
+}
+
+.icon-thumbs-down:before {
+    content: "\f088"
+}
+
+.icon-star-half:before {
+    content: "\f089"
+}
+
+.icon-heart-empty:before {
+    content: "\f08a"
+}
+
+.icon-signout:before {
+    content: "\f08b"
+}
+
+.icon-linkedin-sign:before {
+    content: "\f08c"
+}
+
+.icon-pushpin:before {
+    content: "\f08d"
+}
+
+.icon-external-link:before {
+    content: "\f08e"
+}
+
+.icon-signin:before {
+    content: "\f090"
+}
+
+.icon-trophy:before {
+    content: "\f091"
+}
+
+.icon-github-sign:before {
+    content: "\f092"
+}
+
+.icon-upload-alt:before {
+    content: "\f093"
+}
+
+.icon-lemon:before {
+    content: "\f094"
+}
+
+.icon-phone:before {
+    content: "\f095"
+}
+
+.icon-check-empty:before {
+    content: "\f096"
+}
+
+.icon-bookmark-empty:before {
+    content: "\f097"
+}
+
+.icon-phone-sign:before {
+    content: "\f098"
+}
+
+.icon-twitter:before {
+    content: "\f099"
+}
+
+.icon-facebook:before {
+    content: "\f09a"
+}
+
+.icon-github:before {
+    content: "\f09b"
+}
+
+.icon-unlock:before {
+    content: "\f09c"
+}
+
+.icon-credit-card:before {
+    content: "\f09d"
+}
+
+.icon-rss:before {
+    content: "\f09e"
+}
+
+.icon-hdd:before {
+    content: "\f0a0"
+}
+
+.icon-bullhorn:before {
+    content: "\f0a1"
+}
+
+.icon-bell:before {
+    content: "\f0a2"
+}
+
+.icon-certificate:before {
+    content: "\f0a3"
+}
+
+.icon-hand-right:before {
+    content: "\f0a4"
+}
+
+.icon-hand-left:before {
+    content: "\f0a5"
+}
+
+.icon-hand-up:before {
+    content: "\f0a6"
+}
+
+.icon-hand-down:before {
+    content: "\f0a7"
+}
+
+.icon-circle-arrow-left:before {
+    content: "\f0a8"
+}
+
+.icon-circle-arrow-right:before {
+    content: "\f0a9"
+}
+
+.icon-circle-arrow-up:before {
+    content: "\f0aa"
+}
+
+.icon-circle-arrow-down:before {
+    content: "\f0ab"
+}
+
+.icon-globe:before {
+    content: "\f0ac"
+}
+
+.icon-wrench:before {
+    content: "\f0ad"
+}
+
+.icon-tasks:before {
+    content: "\f0ae"
+}
+
+.icon-filter:before {
+    content: "\f0b0"
+}
+
+.icon-briefcase:before {
+    content: "\f0b1"
+}
+
+.icon-fullscreen:before {
+    content: "\f0b2"
+}
+
+.icon-group:before {
+    content: "\f0c0"
+}
+
+.icon-link:before {
+    content: "\f0c1"
+}
+
+.icon-cloud:before {
+    content: "\f0c2"
+}
+
+.icon-beaker:before {
+    content: "\f0c3"
+}
+
+.icon-cut:before {
+    content: "\f0c4"
+}
+
+.icon-copy:before {
+    content: "\f0c5"
+}
+
+.icon-paper-clip:before {
+    content: "\f0c6"
+}
+
+.icon-save:before {
+    content: "\f0c7"
+}
+
+.icon-sign-blank:before {
+    content: "\f0c8"
+}
+
+.icon-reorder:before {
+    content: "\f0c9"
+}
+
+.icon-list-ul:before {
+    content: "\f0ca"
+}
+
+.icon-list-ol:before {
+    content: "\f0cb"
+}
+
+.icon-strikethrough:before {
+    content: "\f0cc"
+}
+
+.icon-underline:before {
+    content: "\f0cd"
+}
+
+.icon-table:before {
+    content: "\f0ce"
+}
+
+.icon-magic:before {
+    content: "\f0d0"
+}
+
+.icon-truck:before {
+    content: "\f0d1"
+}
+
+.icon-pinterest:before {
+    content: "\f0d2"
+}
+
+.icon-pinterest-sign:before {
+    content: "\f0d3"
+}
+
+.icon-google-plus-sign:before {
+    content: "\f0d4"
+}
+
+.icon-google-plus:before {
+    content: "\f0d5"
+}
+
+.icon-money:before {
+    content: "\f0d6"
+}
+
+.icon-caret-down:before {
+    content: "\f0d7"
+}
+
+.icon-caret-up:before {
+    content: "\f0d8"
+}
+
+.icon-caret-left:before {
+    content: "\f0d9"
+}
+
+.icon-caret-right:before {
+    content: "\f0da"
+}
+
+.icon-columns:before {
+    content: "\f0db"
+}
+
+.icon-sort:before {
+    content: "\f0dc"
+}
+
+.icon-sort-down:before {
+    content: "\f0dd"
+}
+
+.icon-sort-up:before {
+    content: "\f0de"
+}
+
+.icon-envelope-alt:before {
+    content: "\f0e0"
+}
+
+.icon-linkedin:before {
+    content: "\f0e1"
+}
+
+.icon-undo:before {
+    content: "\f0e2"
+}
+
+.icon-legal:before {
+    content: "\f0e3"
+}
+
+.icon-dashboard:before {
+    content: "\f0e4"
+}
+
+.icon-comment-alt:before {
+    content: "\f0e5"
+}
+
+.icon-comments-alt:before {
+    content: "\f0e6"
+}
+
+.icon-bolt:before {
+    content: "\f0e7"
+}
+
+.icon-sitemap:before {
+    content: "\f0e8"
+}
+
+.icon-umbrella:before {
+    content: "\f0e9"
+}
+
+.icon-paste:before {
+    content: "\f0ea"
+}
+
+.icon-lightbulb:before {
+    content: "\f0eb"
+}
+
+.icon-exchange:before {
+    content: "\f0ec"
+}
+
+.icon-cloud-download:before {
+    content: "\f0ed"
+}
+
+.icon-cloud-upload:before {
+    content: "\f0ee"
+}
+
+.icon-user-md:before {
+    content: "\f0f0"
+}
+
+.icon-stethoscope:before {
+    content: "\f0f1"
+}
+
+.icon-suitcase:before {
+    content: "\f0f2"
+}
+
+.icon-bell-alt:before {
+    content: "\f0f3"
+}
+
+.icon-coffee:before {
+    content: "\f0f4"
+}
+
+.icon-food:before {
+    content: "\f0f5"
+}
+
+.icon-file-alt:before {
+    content: "\f0f6"
+}
+
+.icon-building:before {
+    content: "\f0f7"
+}
+
+.icon-hospital:before {
+    content: "\f0f8"
+}
+
+.icon-ambulance:before {
+    content: "\f0f9"
+}
+
+.icon-medkit:before {
+    content: "\f0fa"
+}
+
+.icon-fighter-jet:before {
+    content: "\f0fb"
+}
+
+.icon-beer:before {
+    content: "\f0fc"
+}
+
+.icon-h-sign:before {
+    content: "\f0fd"
+}
+
+.icon-plus-sign-alt:before {
+    content: "\f0fe"
+}
+
+.icon-double-angle-left:before {
+    content: "\f100"
+}
+
+.icon-double-angle-right:before {
+    content: "\f101"
+}
+
+.icon-double-angle-up:before {
+    content: "\f102"
+}
+
+.icon-double-angle-down:before {
+    content: "\f103"
+}
+
+.icon-angle-left:before {
+    content: "\f104"
+}
+
+.icon-angle-right:before {
+    content: "\f105"
+}
+
+.icon-angle-up:before {
+    content: "\f106"
+}
+
+.icon-angle-down:before {
+    content: "\f107"
+}
+
+.icon-desktop:before {
+    content: "\f108"
+}
+
+.icon-laptop:before {
+    content: "\f109"
+}
+
+.icon-tablet:before {
+    content: "\f10a"
+}
+
+.icon-mobile-phone:before {
+    content: "\f10b"
+}
+
+.icon-circle-blank:before {
+    content: "\f10c"
+}
+
+.icon-quote-left:before {
+    content: "\f10d"
+}
+
+.icon-quote-right:before {
+    content: "\f10e"
+}
+
+.icon-spinner:before {
+    content: "\f110"
+}
+
+.icon-circle:before {
+    content: "\f111"
+}
+
+.icon-reply:before {
+    content: "\f112"
+}
+
+.icon-github-alt:before {
+    content: "\f113"
+}
+
+.icon-folder-close-alt:before {
+    content: "\f114"
+}
+
+.icon-folder-open-alt:before {
+    content: "\f115"
+}
+
+.icon-blogger-sign:before, .icon-blogger:before, .icon-delicious:before, .icon-dribbble-sign:before, .icon-dribbble:before, .icon-dropbox:before, .icon-drupal:before, .icon-evernote-sign:before, .icon-evernote:before, .icon-flickr-sign:before, .icon-flickr:before, .icon-forrst-sign:before, .icon-forrst:before, .icon-foursquare-sign:before, .icon-foursquare:before, .icon-git-fork:before, .icon-hacker-news:before, .icon-instagram:before, .icon-lastfm-sign:before, .icon-lastfm:before, .icon-paypal:before, .icon-picasa-sign:before, .icon-picasa:before, .icon-reddit:before, .icon-share-this-sign:before, .icon-share-this:before, .icon-skype:before, .icon-soundcloud:before, .icon-spotify:before, .icon-stack-overflow:before, .icon-tumblr-sign:before, .icon-tumblr:before, .icon-vimeo-sign:before, .icon-vimeo:before, .icon-wordpress-sign:before, .icon-wordpress:before, .icon-yelp-sign:before, .icon-yelp:before, .icon-youtube-sign:before, .icon-youtube:before {
+    font-family: 'Font-Awesome-Social';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0
+}
+
+.icon-dropbox:before {
+    content: "\f300"
+}
+
+.icon-drupal:before {
+    content: "\f301"
+}
+
+.icon-git-fork:before {
+    content: "\f302"
+}
+
+.icon-instagram:before {
+    content: "\f303"
+}
+
+.icon-share-this-sign:before {
+    content: "\f304"
+}
+
+.icon-share-this:before {
+    content: "\f305"
+}
+
+.icon-foursquare-sign:before {
+    content: "\f306"
+}
+
+.icon-foursquare:before {
+    content: "\f307"
+}
+
+.icon-hacker-news:before {
+    content: "\f308"
+}
+
+.icon-skype:before {
+    content: "\f309"
+}
+
+.icon-spotify:before {
+    content: "\f30a"
+}
+
+.icon-soundcloud:before {
+    content: "\f30b"
+}
+
+.icon-paypal:before {
+    content: "\f30c"
+}
+
+.icon-youtube-sign:before {
+    content: "\f30d"
+}
+
+.icon-youtube:before {
+    content: "\f30e"
+}
+
+.icon-reddit:before {
+    content: "\f30f"
+}
+
+.icon-blogger-sign:before {
+    content: "\f310"
+}
+
+.icon-blogger:before {
+    content: "\f311"
+}
+
+.icon-dribbble-sign:before {
+    content: "\f312"
+}
+
+.icon-dribbble:before {
+    content: "\f313"
+}
+
+.icon-evernote-sign:before {
+    content: "\f314"
+}
+
+.icon-evernote:before {
+    content: "\f315"
+}
+
+.icon-flickr-sign:before {
+    content: "\f316"
+}
+
+.icon-flickr:before {
+    content: "\f317"
+}
+
+.icon-forrst-sign:before {
+    content: "\f318"
+}
+
+.icon-forrst:before {
+    content: "\f319"
+}
+
+.icon-delicious:before {
+    content: "\f31a"
+}
+
+.icon-lastfm-sign:before {
+    content: "\f31b"
+}
+
+.icon-lastfm:before {
+    content: "\f31c"
+}
+
+.icon-picasa-sign:before {
+    content: "\f31d"
+}
+
+.icon-picasa:before {
+    content: "\f31e"
+}
+
+.icon-stack-overflow:before {
+    content: "\f320"
+}
+
+.icon-tumblr-sign:before {
+    content: "\f321"
+}
+
+.icon-tumblr:before {
+    content: "\f322"
+}
+
+.icon-vimeo-sign:before {
+    content: "\f323"
+}
+
+.icon-vimeo:before {
+    content: "\f324"
+}
+
+.icon-wordpress-sign:before {
+    content: "\f325"
+}
+
+.icon-wordpress:before {
+    content: "\f326"
+}
+
+.icon-yelp-sign:before {
+    content: "\f327"
+}
+
+.icon-yelp:before {
+    content: "\f328"
+}
+
+.icon-accessibility-sign:before, .icon-bike-sign:before, .icon-bus-sign:before, .icon-car-sign:before, .icon-taxi-sign:before, .icon-truck-sign:before, .icon-adobe-pdf:before, .icon-ms-excel:before, .icon-ms-ppt:before, .icon-ms-word:before, .icon-zip-file:before, .icon-css3:before, .icon-html5:before, .icon-layers:before, .icon-map:before, .icon-chrome:before, .icon-firefox:before, .icon-ie:before, .icon-opera:before, .icon-safari:before, .icon-rss-sign:before {
+    font-family: 'Font-Awesome-Ext';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0
+}
+
+.icon-accessibility-sign:before {
+    content: "\f200"
+}
+
+.icon-bike-sign:before {
+    content: "\f201"
+}
+
+.icon-bus-sign:before {
+    content: "\f202"
+}
+
+.icon-car-sign:before {
+    content: "\f203"
+}
+
+.icon-taxi-sign:before {
+    content: "\f204"
+}
+
+.icon-truck-sign:before {
+    content: "\f205"
+}
+
+.icon-adobe-pdf:before {
+    content: "\f206"
+}
+
+.icon-ms-excel:before {
+    content: "\f207"
+}
+
+.icon-ms-ppt:before {
+    content: "\f208"
+}
+
+.icon-ms-word:before {
+    content: "\f209"
+}
+
+.icon-zip-file:before {
+    content: "\f20a"
+}
+
+.icon-css3:before {
+    content: "\f20b"
+}
+
+.icon-html5:before {
+    content: "\f20c"
+}
+
+.icon-layers:before {
+    content: "\f20d"
+}
+
+.icon-map:before {
+    content: "\f20e"
+}
+
+.icon-chrome:before {
+    content: "\f210"
+}
+
+.icon-firefox:before {
+    content: "\f211"
+}
+
+.icon-ie:before {
+    content: "\f212"
+}
+
+.icon-opera:before {
+    content: "\f213"
+}
+
+.icon-safari:before {
+    content: "\f214"
+}
+
+.icon-rss-sign:before {
+    content: "\f215"
+}
+
+.icon-amazon-sign:before, .icon-amazon:before, .icon-android:before, .icon-apple-itunes:before, .icon-apple:before, .icon-aws:before, .icon-bing-sign:before, .icon-bing:before, .icon-duck-duck-go:before, .icon-google-sign:before, .icon-google:before, .icon-sparrow-sign:before, .icon-sparrow:before, .icon-windows:before, .icon-windows8:before, .icon-yahoo:before {
+    font-family: 'Font-Awesome-Corp';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0
+}
+
+.icon-amazon-sign:before {
+    content: "\f340"
+}
+
+.icon-amazon-sign:before {
+    content: "\f340"
+}
+
+.icon-amazon:before {
+    content: "\f341"
+}
+
+.icon-android:before {
+    content: "\f342"
+}
+
+.icon-apple-itunes:before {
+    content: "\f343"
+}
+
+.icon-apple:before {
+    content: "\f344"
+}
+
+.icon-aws:before {
+    content: "\f345"
+}
+
+.icon-bing-sign:before {
+    content: "\f346"
+}
+
+.icon-bing:before {
+    content: "\f347"
+}
+
+.icon-duck-duck-go:before {
+    content: "\f348"
+}
+
+.icon-google-sign:before {
+    content: "\f349"
+}
+
+.icon-google:before {
+    content: "\f34a"
+}
+
+.icon-sparrow-sign:before {
+    content: "\f34b"
+}
+
+.icon-sparrow:before {
+    content: "\f34c"
+}
+
+.icon-windows:before {
+    content: "\f34d"
+}
+
+.icon-windows8:before {
+    content: "\f34e"
+}
+
+.icon-yahoo:before {
+    content: "\f34f"
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url("/assets/fontawesome-webfont.eot?v=3.0.1");
+    src: url("/assets/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("/assets/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("/assets/fontawesome-webfont.ttf?v=3.0.1") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Font-Awesome-Social';
+    src: url("/assets/social/fontawesome-social-webfont.eot?v=3.0.1");
+    src: url("/assets/social/fontawesome-social-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("/assets/social/fontawesome-social-webfont.woff?v=3.0.1") format("woff"), url("/assets/social/fontawesome-social-webfont.ttf?v=3.0.1") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Font-Awesome-Ext';
+    src: url("/assets/social/fontawesome-ext-webfont.eot?v=3.0.1");
+    src: url("/assets/social/fontawesome-ext-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("/assets/social/fontawesome-ext-webfont.woff?v=3.0.1") format("woff"), url("/assets/social/fontawesome-ext-webfont.ttf?v=3.0.1") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Font-Awesome-Corp';
+    src: url("/assets/social/fontawesome-corp-webfont.eot?v=3.0.1");
+    src: url("/assets/social/fontawesome-corp-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("/assets/social/fontawesome-corp-webfont.woff?v=3.0.1") format("woff"), url("/assets/social/fontawesome-corp-webfont.ttf?v=3.0.1") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Junction';
+    src: url("/assets/Junction-webfont.eot?v=3.0.1");
+    src: url("/assets/Junction-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("/assets/Junction-webfont.woff?v=3.0.1") format("woff"), url("/assets/Junction-webfont.ttf?v=3.0.1") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
 
 body {
-  margin: 0;
+    line-height: 1
 }
 
-/**
- * Add the correct display in IE 9-.
- */
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
+ol, ul {
+    list-style: none
 }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+body {
+    background: #fff;
+    font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #181818;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-weight: normal
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    font-weight: inherit
+}
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+    font-size: 46px;
+    line-height: 50px;
+    margin-bottom: 14px
 }
 
-/* Grouping content
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
-
-figcaption,
-figure,
-main { /* 1 */
-  display: block;
+h2 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 10px
 }
 
-/**
- * Add the correct margin in IE 8.
- */
-
-figure {
-  margin: 1em 40px;
+h3 {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 8px
 }
 
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+h4 {
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 4px
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+h5 {
+    font-size: 17px;
+    line-height: 24px
 }
 
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-
-a {
-  background-color: transparent; /* 1 */
-  -webkit-text-decoration-skip: objects; /* 2 */
+h6 {
+    font-size: 14px;
+    line-height: 21px
 }
 
-/**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-
-a:active,
-a:hover {
-  outline-width: 0;
+.subheader {
+    color: #777
 }
 
-/**
- * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+p {
+    margin: 0 0 20px 0
 }
 
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
+p img {
+    margin: 0
+}
 
-b,
+p.lead {
+    font-size: 21px;
+    line-height: 27px;
+    color: #777
+}
+
+em {
+    font-style: italic
+}
+
 strong {
-  font-weight: inherit;
+    font-weight: bold;
+    color: #333
 }
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct font style in Android 4.3-.
- */
-
-dfn {
-  font-style: italic;
-}
-
-/**
- * Add the correct background and color in IE 9-.
- */
-
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-
-/**
- * Add the correct font size in all browsers.
- */
 
 small {
-  font-size: 80%;
+    font-size: 80%
 }
 
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+blockquote, blockquote p {
+    font-size: 17px;
+    line-height: 24px;
+    color: #777;
+    font-style: italic
 }
 
-sub {
-  bottom: -0.25em;
+blockquote {
+    margin: 0 0 20px;
+    padding: 9px 20px 0 19px;
+    border-left: 1px solid #ddd
 }
 
-sup {
-  top: -0.5em;
+blockquote cite {
+    display: block;
+    font-size: 12px;
+    color: #555
 }
 
-/* Embedded content
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- */
-
-audio,
-video {
-  display: inline-block;
+blockquote cite:before {
+    content: "\2014 \0020"
 }
 
-/**
- * Add the correct display in iOS 4-7.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
+    color: #555
 }
 
-/**
- * Remove the border on images inside links in IE 10-.
- */
-
-img {
-  border-style: none;
+hr {
+    border: solid #ddd;
+    border-width: 1px 0 0;
+    clear: both;
+    margin: 10px 0 30px;
+    height: 0
 }
 
-/**
- * Hide the overflow in IE.
- */
-
-svg:not(:root) {
-  overflow: hidden;
+a, a:visited {
+    color: #333;
+    text-decoration: underline;
+    outline: 0
 }
 
-/* Forms
-   ========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: sans-serif; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+a:hover, a:focus {
+    color: #000
 }
 
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-button,
-input { /* 1 */
-  overflow: visible;
+p a, p a:visited {
+    line-height: inherit
 }
 
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
-button,
-select { /* 1 */
-  text-transform: none;
+ul, ol {
+    margin-bottom: 20px
 }
 
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-html [type="button"], /* 1 */
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; /* 2 */
+ul {
+    list-style: none outside
 }
 
-/**
- * Remove the inner border and padding in Firefox.
- */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+ol {
+    list-style: decimal
 }
 
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+ol, ul.square, ul.circle, ul.disc {
+    margin-left: 30px
 }
 
-/**
- * Change the border, margin, and padding in all browsers (opinionated).
- */
+ul.square {
+    list-style: square outside
+}
+
+ul.circle {
+    list-style: circle outside
+}
+
+ul.disc {
+    list-style: disc outside
+}
+
+ul ul, ul ol, ol ol, ol ul {
+    margin: 4px 0 5px 30px;
+    font-size: 90%
+}
+
+ul ul li, ul ol li, ol ol li, ol ul li {
+    margin-bottom: 6px
+}
+
+li {
+    line-height: 18px;
+    margin-bottom: 12px
+}
+
+ul.large li {
+    line-height: 21px
+}
+
+li p {
+    line-height: 21px
+}
+
+img.scale-with-grid {
+    max-width: 100%;
+    height: auto
+}
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    background: #eee;
+    background: #eee -moz-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background: #eee -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.2)));
+    background: #eee -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background: #eee -o-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background: #eee -ms-linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background: #eee linear-gradient(top, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    border: 1px solid #aaa;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #444;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    margin-bottom: 20px;
+    line-height: normal;
+    padding: 8px 10px;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    color: #222;
+    background: #ddd;
+    background: #ddd -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: #ddd -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.3)));
+    background: #ddd -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: #ddd -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: #ddd -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: #ddd linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    border: 1px solid #888;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa
+}
+
+.button:active, button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active {
+    border: 1px solid #666;
+    background: #ccc;
+    background: #ccc -moz-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+    background: #ccc -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.35)), color-stop(100%, rgba(10, 10, 10, 0.4)));
+    background: #ccc -webkit-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+    background: #ccc -o-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+    background: #ccc -ms-linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%);
+    background: #ccc linear-gradient(top, rgba(255, 255, 255, 0.35) 0%, rgba(10, 10, 10, 0.4) 100%)
+}
+
+.button.full-width, button.full-width, input[type="submit"].full-width, input[type="reset"].full-width, input[type="button"].full-width {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+form {
+    margin-bottom: 20px
+}
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+    margin-bottom: 20px
 }
 
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+    border: 1px solid #ccc;
+    padding: 6px 4px;
+    outline: none;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #777;
+    margin: 0;
+    width: 210px;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    background: #fff
 }
 
-/**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
+select {
+    padding: 0
 }
 
-/**
- * Remove the default vertical scrollbar in IE.
- */
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
+    border: 1px solid #aaa;
+    color: #444;
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2)
+}
 
 textarea {
-  overflow: auto;
+    min-height: 60px
 }
 
-/**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+label, legend {
+    display: block;
+    font-weight: bold;
+    font-size: 13px
 }
 
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
+select {
+    width: 220px
 }
 
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+input[type="checkbox"] {
+    display: inline
 }
 
-/**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
- */
-
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+label span, legend span {
+    font-weight: normal;
+    font-size: 13px;
+    color: #444
 }
 
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+.remove-bottom {
+    margin-bottom: 0 !important
 }
 
-/* Interactive
-   ========================================================================== */
-
-/*
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- */
-
-details, /* 1 */
-menu {
-  display: block;
+.half-bottom {
+    margin-bottom: 10px !important
 }
 
-/*
- * Add the correct display in all browsers.
- */
-
-summary {
-  display: list-item;
+.add-bottom {
+    margin-bottom: 20px !important
 }
 
-/* Scripting
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- */
-
-canvas {
-  display: inline-block;
+.container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0
 }
 
-/**
- * Add the correct display in IE.
- */
-
-template {
-  display: none;
+.container .column, .container .columns {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px
 }
 
-/* Hidden
-   ========================================================================== */
+.row {
+    margin-bottom: 20px
+}
 
-/**
- * Add the correct display in IE 10-.
- */
+.column.alpha, .columns.alpha {
+    margin-left: 0
+}
 
-[hidden] {
-  display: none;
+.column.omega, .columns.omega {
+    margin-right: 0
+}
+
+.container .one.column, .container .one.columns {
+    width: 40px
+}
+
+.container .two.columns {
+    width: 100px
+}
+
+.container .three.columns {
+    width: 160px
+}
+
+.container .four.columns {
+    width: 220px
+}
+
+.container .five.columns {
+    width: 280px
+}
+
+.container .six.columns {
+    width: 340px
+}
+
+.container .seven.columns {
+    width: 400px
+}
+
+.container .eight.columns {
+    width: 460px
+}
+
+.container .nine.columns {
+    width: 520px
+}
+
+.container .ten.columns {
+    width: 580px
+}
+
+.container .eleven.columns {
+    width: 640px
+}
+
+.container .twelve.columns {
+    width: 700px
+}
+
+.container .thirteen.columns {
+    width: 760px
+}
+
+.container .fourteen.columns {
+    width: 820px
+}
+
+.container .fifteen.columns {
+    width: 880px
+}
+
+.container .sixteen.columns {
+    width: 940px
+}
+
+.container .one-third.column {
+    width: 300px
+}
+
+.container .two-thirds.column {
+    width: 620px
+}
+
+.container .offset-by-one {
+    padding-left: 60px
+}
+
+.container .offset-by-two {
+    padding-left: 120px
+}
+
+.container .offset-by-three {
+    padding-left: 180px
+}
+
+.container .offset-by-four {
+    padding-left: 240px
+}
+
+.container .offset-by-five {
+    padding-left: 300px
+}
+
+.container .offset-by-six {
+    padding-left: 360px
+}
+
+.container .offset-by-seven {
+    padding-left: 420px
+}
+
+.container .offset-by-eight {
+    padding-left: 480px
+}
+
+.container .offset-by-nine {
+    padding-left: 540px
+}
+
+.container .offset-by-ten {
+    padding-left: 600px
+}
+
+.container .offset-by-eleven {
+    padding-left: 660px
+}
+
+.container .offset-by-twelve {
+    padding-left: 720px
+}
+
+.container .offset-by-thirteen {
+    padding-left: 780px
+}
+
+.container .offset-by-fourteen {
+    padding-left: 840px
+}
+
+.container .offset-by-fifteen {
+    padding-left: 900px
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container {
+        width: 768px
+    }
+    .container .column, .container .columns {
+        margin-left: 10px;
+        margin-right: 10px
+    }
+    .column.alpha, .columns.alpha {
+        margin-left: 0;
+        margin-right: 10px
+    }
+    .column.omega, .columns.omega {
+        margin-right: 0;
+        margin-left: 10px
+    }
+    .alpha.omega {
+        margin-left: 0;
+        margin-right: 0
+    }
+    .container .one.column, .container .one.columns {
+        width: 28px
+    }
+    .container .two.columns {
+        width: 76px
+    }
+    .container .three.columns {
+        width: 124px
+    }
+    .container .four.columns {
+        width: 172px
+    }
+    .container .five.columns {
+        width: 220px
+    }
+    .container .six.columns {
+        width: 268px
+    }
+    .container .seven.columns {
+        width: 316px
+    }
+    .container .eight.columns {
+        width: 364px
+    }
+    .container .nine.columns {
+        width: 412px
+    }
+    .container .ten.columns {
+        width: 460px
+    }
+    .container .eleven.columns {
+        width: 508px
+    }
+    .container .twelve.columns {
+        width: 556px
+    }
+    .container .thirteen.columns {
+        width: 604px
+    }
+    .container .fourteen.columns {
+        width: 652px
+    }
+    .container .fifteen.columns {
+        width: 700px
+    }
+    .container .sixteen.columns {
+        width: 748px
+    }
+    .container .one-third.column {
+        width: 236px
+    }
+    .container .two-thirds.column {
+        width: 492px
+    }
+    .container .offset-by-one {
+        padding-left: 48px
+    }
+    .container .offset-by-two {
+        padding-left: 96px
+    }
+    .container .offset-by-three {
+        padding-left: 144px
+    }
+    .container .offset-by-four {
+        padding-left: 192px
+    }
+    .container .offset-by-five {
+        padding-left: 240px
+    }
+    .container .offset-by-six {
+        padding-left: 288px
+    }
+    .container .offset-by-seven {
+        padding-left: 336px
+    }
+    .container .offset-by-eight {
+        padding-left: 384px
+    }
+    .container .offset-by-nine {
+        padding-left: 432px
+    }
+    .container .offset-by-ten {
+        padding-left: 480px
+    }
+    .container .offset-by-eleven {
+        padding-left: 528px
+    }
+    .container .offset-by-twelve {
+        padding-left: 576px
+    }
+    .container .offset-by-thirteen {
+        padding-left: 624px
+    }
+    .container .offset-by-fourteen {
+        padding-left: 672px
+    }
+    .container .offset-by-fifteen {
+        padding-left: 720px
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 300px
+    }
+    .container .columns, .container .column {
+        margin: 0
+    }
+    .container .one.column, .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns, .container .thirteen.columns, .container .fourteen.columns, .container .fifteen.columns, .container .sixteen.columns, .container .one-third.column, .container .two-thirds.column {
+        width: 300px
+    }
+    .container .offset-by-one, .container .offset-by-two, .container .offset-by-three, .container .offset-by-four, .container .offset-by-five, .container .offset-by-six, .container .offset-by-seven, .container .offset-by-eight, .container .offset-by-nine, .container .offset-by-ten, .container .offset-by-eleven, .container .offset-by-twelve, .container .offset-by-thirteen, .container .offset-by-fourteen, .container .offset-by-fifteen {
+        padding-left: 0
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 420px
+    }
+    .container .columns, .container .column {
+        margin: 0
+    }
+    .container .one.column, .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns, .container .thirteen.columns, .container .fourteen.columns, .container .fifteen.columns, .container .sixteen.columns, .container .one-third.column, .container .two-thirds.column {
+        width: 420px
+    }
+}
+
+.container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clearfix:before, .clearfix:after, .row:before, .row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.row:after, .clearfix:after {
+    clear: both
+}
+
+.row, .clearfix {
+    zoom: 1
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+body {
+    background-color: #d7d3cf
+}
+
+body header {
+    padding: 2em 0 0 0;
+    background-color: #f5f4f3;
+    text-align: center
+}
+
+body h1, body h2, body h3, body h4 {
+    font-family: Junction;
+    color: #938883
+}
+
+body h1 span, body h2 span, body h3 span, body h4 span {
+    color: #f66013;
+    text-transform: uppercase
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    body h1, body h2, body h3, body h4 {
+        font-size: 24px
+    }
+}
+
+ul {
+    font-weight: bold
+}
+
+ul .breadcrumb {
+    font-family: Junction;
+    display: inline;
+    color: #938883
+}
+
+dt {
+    display: none
+}
+
+a.icon {
+    text-decoration: none;
+    color: #938883;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8), 3px 3px 5px #fff
+}
+
+a.icon:hover {
+    color: #9cf
+}
+
+i[class^="icon-"] {
+    font-size: 140px
+}
+
+.timeline i[class^="icon-"] {
+    font-size: 14px
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    i[class^="icon-"] {
+        font-size: 72px
+    }
+    .timeline i[class^="icon-"] {
+        font-size: 14px
+    }
+}
+
+.vcard i[class^="icon-"] {
+    font-size: 100%
+}
+
+.feed {
+    text-align: left
+}
+
+.feed ul li.github {
+    word-break: break-all
+}
+
+.images li {
+    display: inline-block
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .images li {
+        display: block;
+        text-align: center
+    }
+}
+
+.images li a {
+    color: transparent
+}
+
+.inset-shadow {
+    -moz-box-shadow: inset 0 0 9px #000;
+    -webkit-box-shadow: inset 0 0 9px #000;
+    box-shadow: inset 0 0 9px #000
+}
+
+.one-edge-shadow {
+    -webkit-box-shadow: 0 6px 10px -6px #000;
+    -moz-box-shadow: 0 6px 10px -6px #000;
+    box-shadow: 0 6px 10px -6px #000
+}
+
+.map {
+    height: 155px
+}
+
+.coderwall {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
