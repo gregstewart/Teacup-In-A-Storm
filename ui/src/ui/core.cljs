@@ -30,17 +30,41 @@
                                                 :items [{:link "https://www.tcias.co.uk/blog/2015/08/07/your-organisation-should-adopt-an-open-source-model"
                                                           :value "Your Organisation Should Adopt an Open Source Model"}
                                                         {:link "https://www.tcias.co.uk/blog/2015/06/28/why-use-node-dot-js"
-                                                          :value "Why Use Node.js"}]}}))
-                                                          
+                                                          :value "Why Use Node.js"}]}
+                              :vimeo-items {
+                                                :type "vimeo"
+                                                :items [{:link "https://vimeo.com/93167466"
+                                                          :value "Portland vs Houston - drummers"
+                                                          :image "https://i.vimeocdn.com/video/473143901_640.jpg"}
+                                                        {:link "https://vimeo.com/93167206"
+                                                          :value "Portland vs Houston - opening"
+                                                          :image "https://i.vimeocdn.com/video/473143582_640.jpg"}]}}))
+
+(defn default-list-component
+  [item style]
+  ^{:key item} [:li {:className style}
+                  [:a {:href (get item :link)}
+                    (get item :value)]])
+
+(defn default-image-list-component
+  [item style]
+  ^{:key item} [:li {:className style}
+                [:div
+                  [:a {:href (get item :link)}
+                    [:img.vimeo.inset-shadow {:src (get item :image) :title (get item :value)}]]
+                  [:br]
+                  (get item :value)]])
 (defn lister
-  [items-structure]
+  [items-structure top-level-style]
   (def style (get items-structure :type))
   (def items (get items-structure :items))
-  [:ul
+  
+  [:ul {:className (or top-level-style :default)}
     (for [item items]
-        ^{:key item} [:li {:className style}
-                        [:a {:href (get item :link)}
-                          (get item :value)]])])
+      (cond
+        (= top-level-style "images") (default-image-list-component item style)
+        :else (default-list-component item style)))])
+
 
 (defn display-name []
   [:h1.fn.n
@@ -148,7 +172,18 @@
       [:div.feed
         [:h3.wordpress "10 most recent posts"]
         [lister (:wordpress-items @app-state)]]]])
+(defn vimeo
+  []
+  [:div.six.columns.omega.isotope
+    [:div.boxee {:data-category "vimeo"}
+      [:a.url.icon {:accessKey "V"
+                    :href "https://vimeo.com/user2724002/videos"
+                    :tabIndex "7"
+                    :title "Click to view my Vimeo Profile"}
 
+        [:i {:class "icon-vimeo-sign"}]]
+      [:div.feed
+        [lister (:vimeo-items @app-state) "images"]]]])
 (defn layout []
   [:section.default
     [:div.row.clearfix
@@ -157,7 +192,8 @@
       [linked-in]]
     [:div.row.clearfix
       [delicious]
-      [wordpress]]])
+      [wordpress]
+      [vimeo]]])
 
 (reagent/render-component [layout];
                           (. js/document (getElementById "app")))
