@@ -38,13 +38,22 @@
                                                           :image "https://i.vimeocdn.com/video/473143901_640.jpg"}
                                                         {:link "https://vimeo.com/93167206"
                                                           :value "Portland vs Houston - opening"
-                                                          :image "https://i.vimeocdn.com/video/473143582_640.jpg"}]}}))
+                                                          :image "https://i.vimeocdn.com/video/473143582_640.jpg"}]}
+                              :twitter-items {
+                                                :type "twitter"
+                                                :items [{:link "https://twitter.com/_greg_stewart_/status/761244885571821568"
+                                                          :value "RT @KentBeck: Paint drip people, a successor to T-shaped people: https://t.co/Sm1cNOZYfV"
+                                                          :date " - 2016/08/04 @ 16:58"}
+                                                        {:link "https://twitter.com/_greg_stewart_/status/761242585612574721"
+                                                          :value "RT @redbadgerteam: Interested in joining our BRILLIANT team? We are hiring! Check out our vacancies here- https://t.co/OXah9qF7xe #jobs htt…"
+                                                          :date " - 2016/08/04 @ 16:49"}]}}))
 
 (defn default-list-component
   [item style]
   ^{:key item} [:li {:className style}
                   [:a {:href (get item :link)}
-                    (get item :value)]])
+                    (get item :value)]
+                  (get item :date)])
 
 (defn default-image-list-component
   [item style]
@@ -58,7 +67,7 @@
   [items-structure top-level-style]
   (def style (get items-structure :type))
   (def items (get items-structure :items))
-  
+
   [:ul {:className (or top-level-style :default)}
     (for [item items]
       (cond
@@ -172,6 +181,7 @@
       [:div.feed
         [:h3.wordpress "10 most recent posts"]
         [lister (:wordpress-items @app-state)]]]])
+
 (defn vimeo
   []
   [:div.six.columns.omega.isotope
@@ -184,6 +194,21 @@
         [:i {:class "icon-vimeo-sign"}]]
       [:div.feed
         [lister (:vimeo-items @app-state) "images"]]]])
+
+(defn twitter-foursquare-stack
+  []
+  [:div.six.columns.alpha.isotope
+    [:div.boxee.stacked {:data-category "twitter"}
+      [:a.url.icon {:accessKey "T"
+                      :href "https://twitter.com/_greg_stewart_"
+                      :tabIndex "8"
+                      :title "Click to view my Twitter Profile"}
+
+                [:i {:class "icon-twitter"}]]
+      [:div.feed
+        [lister (:twitter-items @app-state)]]]])
+    
+
 (defn layout []
   [:section.default
     [:div.row.clearfix
@@ -193,7 +218,9 @@
     [:div.row.clearfix
       [delicious]
       [wordpress]
-      [vimeo]]])
+      [vimeo]]
+    [:div.row.clearfix
+      [twitter-foursquare-stack]]])
 
 (reagent/render-component [layout];
                           (. js/document (getElementById "app")))
