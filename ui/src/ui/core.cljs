@@ -5,7 +5,7 @@
 
 (def app-state (reagent/atom { :given-name "Greg "
                               :family-name "Stewart"
-                              :title "Chief Technical Officer"
+                              :title "Chief Technology Officer"
                               :home-email "gregs@tcias.co.uk"
                               :home-mailto "mailto:gregs+personal-website@tcias.co.uk?subject=Hello from the web"
                               :work-email "greg.stewart@red-badger.com"
@@ -110,6 +110,14 @@
         (= top-level-style "map-list") (map-list-component item style)
         :else (standard-list-component item style)))])
 
+(defn masthead-component
+  [access-key link tab-index title icon]
+  [:a.url.icon {:accessKey access-key
+                :href link
+                :tabIndex tab-index
+                :title title}
+
+        [:i {:class icon}]])
 
 (defn display-name []
   [:h1.fn.n
@@ -183,23 +191,13 @@
 (defn linked-in []
   [:div.four.columns.omega
     [:div.boxee
-      [:a.url.icon {:accessKey "L"
-                    :href "http://www.linkedin.com/in/gregstewart"
-                    :tabIndex "3"
-                    :title "Click to view my LinkedIn profile"}
-
-            [:i {:class "icon-linkedin-sign"}]]]])
+      [masthead-component "L" "http://www.linkedin.com/in/gregstewart" 3 "Click to view my LinkedIn profile" "icon-linkedin-sign"]]])
 
 (defn delicious
   []
   [:div.four.columns.alpha.isotope
     [:div.boxee {:data-category "delicious"}
-      [:a.url.icon {:accessKey "D"
-                    :href "https://delicious.com/wildcard1999"
-                    :tabIndex "5"
-                    :title "Click to view my Delicious profile"}
-
-          [:i {:class "icon-delicious "}]]
+      [masthead-component "D" "https://delicious.com/wildcard1999" 5 "Click to view my Delicious profile" "icon-delicious"]
       [:div.feed
         [:h3.delicious "5 most recent bookmarks"]
         [lister (:delicious-items @app-state)]]]])
@@ -222,12 +220,7 @@
   []
   [:div.six.columns.omega.isotope
     [:div.boxee {:data-category "vimeo"}
-      [:a.url.icon {:accessKey "V"
-                    :href "https://vimeo.com/user2724002/videos"
-                    :tabIndex "7"
-                    :title "Click to view my Vimeo profile"}
-
-        [:i {:class "icon-vimeo-sign"}]]
+      [masthead-component "V" "https://vimeo.com/user2724002/videos" 7 "Click to view my Vimeo profile" "icon-vimeo-sign"]
       [:div.feed
         [lister (:vimeo-items @app-state) "images"]]]])
 
@@ -235,74 +228,43 @@
   []
   [:div.six.columns.alpha.isotope
     [:div.boxee.stacked {:data-category "twitter"}
-      [:a.url.icon {:accessKey "T"
-                      :href "https://twitter.com/_greg_stewart_"
-                      :tabIndex "8"
-                      :title "Click to view my Twitter profile"}
-
-                [:i {:class "icon-twitter"}]]
+      [masthead-component "T" "https://twitter.com/_greg_stewart_" 8 "Click to view my Twitter profile" "icon-twitter"]
       [:div.feed
         [:h3.twitter "Recent tweets"]
         [lister (:twitter-items @app-state)]]]
     [:div.boxee.stacked {:data-category "foursquare"}
-      [:a.url.icon {:accessKey "F"
-                      :href "https://foursquare.com/user/13278548"
-                      :tabIndex "9"
-                      :title "Click to view my Foursquare profile"}
-
-                [:i {:class "icon-foursquare"}]]
+      [masthead-component "F" "https://foursquare.com/user/13278548" 9 "Click to view my Foursquare profile" "icon-foursquare"]
       [:div.feed
         [:h3.foursquare "Recent checkins"]
         [lister (:foursquare-items @app-state) "map-list"]]]])
 
 (defn last-fm []
   [:div.boxee.stacked {:data-category "last-fm"}
-    [:a.url.icon {:accessKey "L"
-                  :href "http://www.last.fm/user/greg_stewart"
-                  :tabIndex "11"
-                  :title "Click to view my Last.fm profile"}
-          [:i {:class "icon-lastfm-sign"}]]])
+    [masthead-component "L" "http://www.last.fm/user/greg_stewart" 11 "Click to view my Last.fm profile" "icon-lastfm-sign"]])
 
 (defn flickr
   []
   [:div.boxee.stacked {:data-category "Flickr"}
-    [:a.url.icon {:accessKey "F"
-                  :href "http://www.flickr.com/photos/greg_and_jodie/"
-                  :tabIndex "12"
-                  :title "Click to view my Flickr profile"}
-          [:i {:class "icon-flickr-sign"}]]])
+    [masthead-component "R" "http://www.flickr.com/photos/greg_and_jodie/" 12 "Click to view my Flickr profile" "icon-flickr-sign"]])
 
 (defn stackoverflow
   []
-  [:div.boxee.stacked {:data-category "Stackoverflow"}
-    [:a.url.icon {:accessKey "O"
-                  :href "http://stackoverflow.com/users/197825/greg-stewart"
-                  :tabIndex "14"
-                  :title "Click to view my Stackoverflow profile"}
-          [:i {:class "icon-stack-overflow"}]]])
+  [:div.boxee.stacked {:data-category "stackover-flow"}
+    [masthead-component "O" "http://stackoverflow.com/users/197825/greg-stewart" 14 "Click to view my Stackoverflow profile" "icon-stack-overflow"]])
 
 (defn google-plus
   []
-  [:div.boxee.stacked {:data-category "Google Plus"}
-    [:a.url.icon {:accessKey "O"
-                  :href "https://plus.google.com/110643069434566075441"
-                  :tabIndex "15"
-                  :title "Click to view my Google+ profile"}
-          [:i {:class "icon-google-plus"}]]])
+  [:div.boxee.stacked {:data-category "google-plus"}
+    [masthead-component "G" "https://plus.google.com/110643069434566075441" 15 "Click to view my Google+ profile" "icon-google-plus"]])
 
 (defn instagram-lastfm-flickr
   []
   [:div.six.columns.isotope
     [:div.boxee.stacked {:data-category "instagram"}
-      [:a.url.icon {:accessKey "I"
-                    :href "http://instagram.com/_greg_stewart_"
-                    :tabIndex "10"
-                    :title "Click to view my Instagram profile"}
-
-              [:i {:class "icon-instagram"}]]
-      [:div.feed]
-      [:h3.twitter "6 most recent images"]
-      [lister (:instagram-items @app-state) "images"]]
+      [masthead-component "I" "http://instagram.com/_greg_stewart_" 10 "Click to view my Instagram profile" "icon-instagram"]
+      [:div.feed
+        [:h3.twitter "6 most recent images"]
+        [lister (:instagram-items @app-state) "images"]]]
     [last-fm]
     [flickr]])
 
@@ -310,15 +272,10 @@
   []
   [:div.four.columns.omega.isotope
     [:div.boxee.stacked {:data-category "github"}
-      [:a.url.icon {:accessKey "G"
-                    :href "https://github.com/gregstewart"
-                    :tabIndex "13"
-                    :title "Click to view my GitHub profile"}
-
-              [:i {:class "icon-github"}]]
-      [:div.feed]
-      [:h3.twitter "5 most recent events"]
-      [lister (:github-items @app-state)]]
+      [masthead-component "H" "https://github.com/gregstewart" 13 "Click to view my GitHub profile" "icon-github"]
+      [:div.feed
+        [:h3.twitter "5 most recent events"]
+        [lister (:github-items @app-state)]]]
     [stackoverflow]
     [google-plus]])
 
