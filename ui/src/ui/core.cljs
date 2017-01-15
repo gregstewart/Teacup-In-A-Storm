@@ -63,7 +63,15 @@
                                                 :items [{:link "https://www.instagram.com/p/BJMrkkDhgFE/"
                                                           :image "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13703165_486634748282966_1570166956_n.jpg?ig_cache_key=MTMxODYyMDQxOTUyNzY3MjEzMg%3D%3D.2"}
                                                         {:link "https://www.instagram.com/p/BJDBPllh0lQ/"
-                                                          :image "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13687050_1212816692061982_1717695137_n.jpg?ig_cache_key=MTMxNTkwMDk4NTMxOTA0OTU1Mg%3D%3D.2"}]}}))
+                                                          :image "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13687050_1212816692061982_1717695137_n.jpg?ig_cache_key=MTMxNTkwMDk4NTMxOTA0OTU1Mg%3D%3D.2"}]}
+                              :github-items {
+                                                :type "github"
+                                                :items [{:link "https://api.github.com/repos/gregstewart/hearthstone-tracker"
+                                                          :value "CreateEvent gregstewart/hearthstone-tracker"
+                                                          :date " - 2016/08/19 @ 19:32"}
+                                                        {:link "https://api.github.com/repos/gregstewart/hearthstone-tracker"
+                                                          :value "CreateEvent gregstewart/hearthstone-tracker"
+                                                          :date " - 2016/08/19 @ 19:18"}]}}))
 
 (defn standard-list-component
   [item style]
@@ -282,6 +290,20 @@
     [last-fm]
     [flickr]])
 
+(defn github-stack0verflow-google-plus
+  []
+  [:div.four.columns.omega.isotope
+    [:div.boxee.stacked {:data-category "github"}
+      [:a.url.icon {:accessKey "G"
+                    :href "https://github.com/gregstewart"
+                    :tabIndex "13"
+                    :title "Click to view my GitHub profile"}
+
+              [:i {:class "icon-github"}]]
+      [:div.feed]
+      [:h3.twitter "5 most recent events"]
+      [lister (:github-items @app-state)]]])
+
 (defn layout []
   [:section.default
     [:div.row.clearfix
@@ -293,9 +315,9 @@
       [wordpress]
       [vimeo]]
     [:div.row.clearfix
-      [twitter-foursquare-stack]]
-    [:div.row.clearfix
-      [instagram-lastfm-flickr]]])
+      [twitter-foursquare-stack]
+      [instagram-lastfm-flickr]
+      [github-stack0verflow-google-plus]]])
 
 (reagent/render-component [layout];
                           (. js/document (getElementById "app")))
