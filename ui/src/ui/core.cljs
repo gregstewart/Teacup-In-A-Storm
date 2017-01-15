@@ -91,7 +91,6 @@
 
 (defn map-list-component
   [item style]
-  (console.log "jere")
   ^{:key item} [:li {:className style}
                   [:div.map.leaflet-container.leaflet-fade-anim
                     {:data-lat (get item :lat)
@@ -104,7 +103,6 @@
   [items-structure top-level-style]
   (def style (get items-structure :type))
   (def items (get items-structure :items))
-  (console.log top-level-style (= top-level-style "map-list"))
   [:ul {:className (or top-level-style :default)}
     (for [item items]
       (cond
@@ -258,7 +256,7 @@
         [lister (:foursquare-items @app-state) "map-list"]]]])
 
 (defn last-fm []
-  [:div.boxee.stacked
+  [:div.boxee.stacked {:data-category "last-fm"}
     [:a.url.icon {:accessKey "L"
                   :href "http://www.last.fm/user/greg_stewart"
                   :tabIndex "11"
@@ -267,12 +265,30 @@
 
 (defn flickr
   []
-  [:div.boxee.stacked
+  [:div.boxee.stacked {:data-category "Flickr"}
     [:a.url.icon {:accessKey "F"
                   :href "http://www.flickr.com/photos/greg_and_jodie/"
                   :tabIndex "12"
                   :title "Click to view my Flickr profile"}
           [:i {:class "icon-flickr-sign"}]]])
+
+(defn stackoverflow
+  []
+  [:div.boxee.stacked {:data-category "Stackoverflow"}
+    [:a.url.icon {:accessKey "O"
+                  :href "http://stackoverflow.com/users/197825/greg-stewart"
+                  :tabIndex "14"
+                  :title "Click to view my Stackoverflow profile"}
+          [:i {:class "icon-stack-overflow"}]]])
+
+(defn google-plus
+  []
+  [:div.boxee.stacked {:data-category "Google Plus"}
+    [:a.url.icon {:accessKey "O"
+                  :href "https://plus.google.com/110643069434566075441"
+                  :tabIndex "15"
+                  :title "Click to view my Google+ profile"}
+          [:i {:class "icon-google-plus"}]]])
 
 (defn instagram-lastfm-flickr
   []
@@ -290,7 +306,7 @@
     [last-fm]
     [flickr]])
 
-(defn github-stack0verflow-google-plus
+(defn github-stackoverflow-google-plus
   []
   [:div.four.columns.omega.isotope
     [:div.boxee.stacked {:data-category "github"}
@@ -302,7 +318,9 @@
               [:i {:class "icon-github"}]]
       [:div.feed]
       [:h3.twitter "5 most recent events"]
-      [lister (:github-items @app-state)]]])
+      [lister (:github-items @app-state)]]
+    [stackoverflow]
+    [google-plus]])
 
 (defn layout []
   [:section.default
@@ -317,7 +335,7 @@
     [:div.row.clearfix
       [twitter-foursquare-stack]
       [instagram-lastfm-flickr]
-      [github-stack0verflow-google-plus]]])
+      [github-stackoverflow-google-plus]]])
 
 (reagent/render-component [layout];
                           (. js/document (getElementById "app")))
