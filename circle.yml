@@ -12,10 +12,10 @@ machine:
 
 dependencies:
   override:
-    - cd javascript && npm install
+    - cd data && npm install
 
 test:
   override:
-    - cd javascript && npm run coverage -- --reporter mocha-junit-reporter --reporter-options mochaFile=$CIRCLE_TEST_REPORTS/junit/results.xml
-    - if [ -f coverage/lcov.info ] ; then cd javascript && CODECLIMATE_REPO_TOKEN=$CODECLIMATE_REPO_TOKEN ./node_modules/.bin/codeclimate-test-reporter < coverage/lcov.info ; fi
-    - cd javascript && mv coverage/  $CIRCLE_TEST_REPORTS/
+    - cd data && npm run coverage -- --reporter mocha-junit-reporter --reporter-options mochaFile=$CIRCLE_TEST_REPORTS/junit/results.xml
+    - if [ -f coverage/lcov.info ] ; then cd data && CODECLIMATE_REPO_TOKEN=$CODECLIMATE_REPO_TOKEN ./node_modules/.bin/codeclimate-test-reporter < coverage/lcov.info ; fi
+    - cd data && mv coverage/  $CIRCLE_TEST_REPORTS/
