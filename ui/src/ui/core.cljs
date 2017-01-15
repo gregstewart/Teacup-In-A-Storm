@@ -56,7 +56,14 @@
                                                           {:lat "51.505386536427"
                                                             :lon "-0.09778078814608747"
                                                             :value "Itsu"
-                                                            :date " - 2016/08/19 @ 12:08"}]}}))
+                                                            :date " - 2016/08/19 @ 12:08"}]}
+
+                              :instagram-items {
+                                                :type "instagram"
+                                                :items [{:link "https://www.instagram.com/p/BJMrkkDhgFE/"
+                                                          :image "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13703165_486634748282966_1570166956_n.jpg?ig_cache_key=MTMxODYyMDQxOTUyNzY3MjEzMg%3D%3D.2"}
+                                                        {:link "https://www.instagram.com/p/BJDBPllh0lQ/"
+                                                          :image "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13687050_1212816692061982_1717695137_n.jpg?ig_cache_key=MTMxNTkwMDk4NTMxOTA0OTU1Mg%3D%3D.2"}]}}))
 
 (defn standard-list-component
   [item style]
@@ -242,6 +249,39 @@
         [:h3.foursquare "Recent checkins"]
         [lister (:foursquare-items @app-state) "map-list"]]]])
 
+(defn last-fm []
+  [:div.boxee.stacked
+    [:a.url.icon {:accessKey "L"
+                  :href "http://www.last.fm/user/greg_stewart"
+                  :tabIndex "11"
+                  :title "Click to view my Last.fm profile"}
+          [:i {:class "icon-lastfm-sign"}]]])
+
+(defn flickr
+  []
+  [:div.boxee.stacked
+    [:a.url.icon {:accessKey "F"
+                  :href "http://www.flickr.com/photos/greg_and_jodie/"
+                  :tabIndex "12"
+                  :title "Click to view my Flickr profile"}
+          [:i {:class "icon-flickr-sign"}]]])
+
+(defn instagram-lastfm-flickr
+  []
+  [:div.six.columns.isotope
+    [:div.boxee.stacked {:data-category "instagram"}
+      [:a.url.icon {:accessKey "I"
+                    :href "http://instagram.com/_greg_stewart_"
+                    :tabIndex "10"
+                    :title "Click to view my Instagram profile"}
+
+              [:i {:class "icon-instagram"}]]
+      [:div.feed]
+      [:h3.twitter "6 most recent images"]
+      [lister (:instagram-items @app-state) "images"]]
+    [last-fm]
+    [flickr]])
+
 (defn layout []
   [:section.default
     [:div.row.clearfix
@@ -253,7 +293,9 @@
       [wordpress]
       [vimeo]]
     [:div.row.clearfix
-      [twitter-foursquare-stack]]])
+      [twitter-foursquare-stack]]
+    [:div.row.clearfix
+      [instagram-lastfm-flickr]]])
 
 (reagent/render-component [layout];
                           (. js/document (getElementById "app")))
