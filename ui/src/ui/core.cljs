@@ -206,12 +206,7 @@
   []
   [:div.six.columns.isotope
     [:div.boxee {:data-category "wordpress"}
-      [:a.url.icon {:accessKey "W"
-                    :href "https://www.tcias.co.uk/blog"
-                    :tabIndex "6"
-                    :title "Click to view my blog"}
-
-          [:i {:class "icon-wordpress"}]]
+      [masthead-component "W" "https://www.tcias.co.uk/blog" 6 "Click to view my blog" "icon-wordpress"]
       [:div.feed
         [:h3.wordpress "10 most recent posts"]
         [lister (:wordpress-items @app-state)]]]])
@@ -244,7 +239,7 @@
 
 (defn flickr
   []
-  [:div.boxee.stacked {:data-category "Flickr"}
+  [:div.boxee.stacked {:data-category "flickr"}
     [masthead-component "R" "http://www.flickr.com/photos/greg_and_jodie/" 12 "Click to view my Flickr profile" "icon-flickr-sign"]])
 
 (defn stackoverflow
@@ -263,7 +258,7 @@
     [:div.boxee.stacked {:data-category "instagram"}
       [masthead-component "I" "http://instagram.com/_greg_stewart_" 10 "Click to view my Instagram profile" "icon-instagram"]
       [:div.feed
-        [:h3.twitter "6 most recent images"]
+        [:h3.instagram "6 most recent images"]
         [lister (:instagram-items @app-state) "images"]]]
     [last-fm]
     [flickr]])
@@ -274,7 +269,7 @@
     [:div.boxee.stacked {:data-category "github"}
       [masthead-component "H" "https://github.com/gregstewart" 13 "Click to view my GitHub profile" "icon-github"]
       [:div.feed
-        [:h3.twitter "5 most recent events"]
+        [:h3.github "5 most recent events"]
         [lister (:github-items @app-state)]]]
     [stackoverflow]
     [google-plus]])
