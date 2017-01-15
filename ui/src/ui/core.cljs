@@ -46,16 +46,26 @@
                                                           :date " - 2016/08/04 @ 16:58"}
                                                         {:link "https://twitter.com/_greg_stewart_/status/761242585612574721"
                                                           :value "RT @redbadgerteam: Interested in joining our BRILLIANT team? We are hiring! Check out our vacancies here- https://t.co/OXah9qF7xe #jobs htt…"
-                                                          :date " - 2016/08/04 @ 16:49"}]}}))
+                                                          :date " - 2016/08/04 @ 16:49"}]}
+                              :foursquare-items {
+                                                  :type "foursquare"
+                                                  :items [{:lat "51.50746113725417"
+                                                            :lon "-0.0963776918662706"
+                                                            :value "Porky's"
+                                                            :date " - 2016/08/19 @ 17:43"}
+                                                          {:lat "51.505386536427"
+                                                            :lon "-0.09778078814608747"
+                                                            :value "Itsu"
+                                                            :date " - 2016/08/19 @ 12:08"}]}}))
 
-(defn default-list-component
+(defn standard-list-component
   [item style]
   ^{:key item} [:li {:className style}
                   [:a {:href (get item :link)}
                     (get item :value)]
                   (get item :date)])
 
-(defn default-image-list-component
+(defn image-list-component
   [item style]
   ^{:key item} [:li {:className style}
                 [:div
@@ -63,16 +73,29 @@
                     [:img.vimeo.inset-shadow {:src (get item :image) :title (get item :value)}]]
                   [:br]
                   (get item :value)]])
+
+(defn map-list-component
+  [item style]
+  (console.log "jere")
+  ^{:key item} [:li {:className style}
+                  [:div.map.leaflet-container.leaflet-fade-anim
+                    {:data-lat (get item :lat)
+                      :data-lon (get item :lon)}]
+                  [:a
+                    (get item :value)]
+                  (get item :date)])
+
 (defn lister
   [items-structure top-level-style]
   (def style (get items-structure :type))
   (def items (get items-structure :items))
-
+  (console.log top-level-style (= top-level-style "map-list"))
   [:ul {:className (or top-level-style :default)}
     (for [item items]
       (cond
-        (= top-level-style "images") (default-image-list-component item style)
-        :else (default-list-component item style)))])
+        (= top-level-style "images") (image-list-component item style)
+        (= top-level-style "map-list") (map-list-component item style)
+        :else (standard-list-component item style)))])
 
 
 (defn display-name []
@@ -189,7 +212,7 @@
       [:a.url.icon {:accessKey "V"
                     :href "https://vimeo.com/user2724002/videos"
                     :tabIndex "7"
-                    :title "Click to view my Vimeo Profile"}
+                    :title "Click to view my Vimeo profile"}
 
         [:i {:class "icon-vimeo-sign"}]]
       [:div.feed
@@ -202,12 +225,22 @@
       [:a.url.icon {:accessKey "T"
                       :href "https://twitter.com/_greg_stewart_"
                       :tabIndex "8"
-                      :title "Click to view my Twitter Profile"}
+                      :title "Click to view my Twitter profile"}
 
                 [:i {:class "icon-twitter"}]]
       [:div.feed
-        [lister (:twitter-items @app-state)]]]])
-    
+        [:h3.twitter "Recent tweets"]
+        [lister (:twitter-items @app-state)]]]
+    [:div.boxee.stacked {:data-category "foursquare"}
+      [:a.url.icon {:accessKey "F"
+                      :href "https://foursquare.com/user/13278548"
+                      :tabIndex "9"
+                      :title "Click to view my Foursquare profile"}
+
+                [:i {:class "icon-foursquare"}]]
+      [:div.feed
+        [:h3.foursquare "Recent checkins"]
+        [lister (:foursquare-items @app-state) "map-list"]]]])
 
 (defn layout []
   [:section.default
