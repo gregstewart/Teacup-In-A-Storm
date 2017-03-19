@@ -53,13 +53,13 @@
         [:span.region "London "]
         [:span.postcal-code "SW20 8SF "]]]])
 
-(defn contact-panel-renderer [state]
-  [:div.eight.columns
-    [:div.boxee
-      [:div.lhs.vcard
-        [:div.name {:lang "en"}
-          (display-name state)
-          (display-title state)]
-        (email state)
-        (phone-details state)
-        (address-details)]]])
+(defn contact-panel-renderer
+  [state]
+  [:div.boxee
+    [:div.lhs.vcard
+      [:div.name {:lang "en"}
+        (display-name state)
+        (display-title state)]
+      (email state)
+      (phone-details state)
+      (address-details)]])
