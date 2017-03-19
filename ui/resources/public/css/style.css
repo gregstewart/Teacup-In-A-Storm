@@ -1701,40 +1701,40 @@ ul.icons li [class^="icon-"], ul.icons li [class*=" icon-"] {
 
 @font-face {
     font-family: 'FontAwesome';
-    src: url("/assets/fonts/fontawesome-webfont.eot?v=3.0.1");
-    src: url("/assets/fonts/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("/assets/fonts/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("/assets/fonts/fontawesome-webfont.ttf?v=3.0.1") format("truetype");
+    src: url("../assets/fonts/fontawesome-webfont.eot?v=3.0.1");
+    src: url("../assets/fonts/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../assets/fonts/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("../assets/fonts/fontawesome-webfont.ttf?v=3.0.1") format("truetype");
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Font-Awesome-Social';
-    src: url("/assets/fonts/social/fontawesome-social-webfont.eot?v=3.0.1");
-    src: url("/assets/fonts/social/fontawesome-social-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("/assets/fonts/social/fontawesome-social-webfont.woff?v=3.0.1") format("woff"), url("/assets/fonts/social/fontawesome-social-webfont.ttf?v=3.0.1") format("truetype");
+    src: url("../assets/fonts/social/fontawesome-social-webfont.eot?v=3.0.1");
+    src: url("../assets/fonts/social/fontawesome-social-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../assets/fonts/social/fontawesome-social-webfont.woff?v=3.0.1") format("woff"), url("../assets/fonts/social/fontawesome-social-webfont.ttf?v=3.0.1") format("truetype");
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Font-Awesome-Ext';
-    src: url("/assets/fonts/social/fontawesome-ext-webfont.eot?v=3.0.1");
-    src: url("/assets/fonts/social/fontawesome-ext-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("/assets/fonts/social/fontawesome-ext-webfont.woff?v=3.0.1") format("woff"), url("/assets/fonts/social/fontawesome-ext-webfont.ttf?v=3.0.1") format("truetype");
+    src: url("../assets/fonts/social/fontawesome-ext-webfont.eot?v=3.0.1");
+    src: url("../assets/fonts/social/fontawesome-ext-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../assets/fonts/social/fontawesome-ext-webfont.woff?v=3.0.1") format("woff"), url("../assets/fonts/social/fontawesome-ext-webfont.ttf?v=3.0.1") format("truetype");
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Font-Awesome-Corp';
-    src: url("/assets/fonts/social/fontawesome-corp-webfont.eot?v=3.0.1");
-    src: url("/assets/fonts/social/fontawesome-corp-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("/assets/fonts/social/fontawesome-corp-webfont.woff?v=3.0.1") format("woff"), url("/assets/fonts/social/fontawesome-corp-webfont.ttf?v=3.0.1") format("truetype");
+    src: url("../assets/fonts/social/fontawesome-corp-webfont.eot?v=3.0.1");
+    src: url("../assets/fonts/social/fontawesome-corp-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../assets/fonts/social/fontawesome-corp-webfont.woff?v=3.0.1") format("woff"), url("../assets/fonts/social/fontawesome-corp-webfont.ttf?v=3.0.1") format("truetype");
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Junction';
-    src: url("/assets/fonts/Junction-webfont.eot?v=3.0.1");
-    src: url("/assets/fonts/Junction-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("/assets/fonts/Junction-webfont.woff?v=3.0.1") format("woff"), url("/assets/fonts/Junction-webfont.ttf?v=3.0.1") format("truetype");
+    src: url("../assets/fonts/Junction-webfont.eot?v=3.0.1");
+    src: url("../assets/fonts/Junction-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../assets/fonts/Junction-webfont.woff?v=3.0.1") format("woff"), url("../assets/fonts/Junction-webfont.ttf?v=3.0.1") format("truetype");
     font-weight: normal;
     font-style: normal
 }
