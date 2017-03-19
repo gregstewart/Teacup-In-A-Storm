@@ -21,6 +21,7 @@
     [:img {:src "assets/logo.png"}]])
 
 (defn box
+  "Returns a boxee component taking the following values as a vector: class-names category masthead and optional feed component. Actually feels like it should be able to just take any old component"
   [classNames category masthead-details & feed]
   [:div {:class classNames :data-category category}
     [masthead-component masthead-details]
