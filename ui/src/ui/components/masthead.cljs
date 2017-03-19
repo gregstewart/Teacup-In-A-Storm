@@ -1,10 +1,11 @@
 (ns ui.components.masthead)
 
 (defn masthead-component
-  [access-key link tab-index title icon]
-  [:a.url.icon {:accessKey access-key
-                :href link
-                :tabIndex tab-index
-                :title title}
+  "Returns a masthead component taking the following values as a vector: access-key link tab-index title icon"
+  [props]
+  [:a.url.icon {:accessKey (get props 0)
+                :href (get props 1)
+                :tabIndex (get props 2)
+                :title (get props 3)}
 
-        [:i {:class icon}]])
+        [:i {:class (get props 4)}]])
