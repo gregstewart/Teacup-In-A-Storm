@@ -1,17 +1,10 @@
-import dotEnv from 'dotenv';
-import nock from 'nock';
-import fs from 'fs';
-
+import { swarm, invalidSwarm } from '../mocks';
 import client from '../../swarm';
 
 describe('Swarm', () => {
   describe('authorised request', () => {
     beforeEach(() => {
-      dotEnv.config();
-      const swarmFeed = fs.readFileSync('./test/fixtures/swarm.json', 'utf-8');
-      nock('https://api.foursquare.com')
-        .get(`/v2/users/self/checkins?v=${process.env.SWARM_API_VERSION}&oauth_token=${process.env.SWARM_ACCESS_TOKEN}`)
-        .reply(200, swarmFeed);
+      swarm();
     });
 
     it('fetches my feed', (done) => {
@@ -30,7 +23,6 @@ describe('Swarm', () => {
   describe('unauthorised request', () => {
     let invalidAuth;
     beforeEach(() => {
-      dotEnv.config();
       invalidAuth = {
         meta: {
           code: 401,
@@ -38,10 +30,7 @@ describe('Swarm', () => {
           errorDetail: 'OAuth token invalid or revoked.' },
         response: {},
       };
-      process.env.SWARM_ACCESS_TOKEN = 'foo';
-      nock('https://api.foursquare.com')
-        .get(`/v2/users/self/checkins?v=${process.env.SWARM_API_VERSION}&oauth_token=foo`)
-        .reply(401, invalidAuth);
+      invalidSwarm(invalidAuth);
     });
     it('returns an invlaid response', (done) => {
       client.get('/users/self/checkins')

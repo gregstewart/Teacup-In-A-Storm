@@ -1,20 +1,12 @@
-import fs from 'fs';
-import nock from 'nock';
-
 import client from '../../feeds';
+import { blog, delicious } from '../mocks';
 
 describe('Feeds', () => {
   before(() => {
-    const blogFeed = fs.readFileSync('./test/fixtures/atom.xml', 'utf-8');
-    const deliciousFeed = fs.readFileSync('./test/fixtures/delicious.txt', 'utf-8');
-    nock('https://www.tcias.co.uk')
-      .get('/blog/atom.xml')
-      .reply(200, blogFeed);
-
-    nock('http://feeds.del.icio.us')
-      .get('/v2/rss/wildcard1999')
-      .reply(200, deliciousFeed);
+    blog();
+    delicious();
   });
+
   describe('Blog', () => {
     it('throws an exception if the url is missing', (done) => {
       client.get()

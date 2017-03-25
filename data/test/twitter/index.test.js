@@ -1,15 +1,10 @@
-import dotEnv from 'dotenv';
-import nock from 'nock';
-
+import { twitter } from '../mocks';
 import fakeResponse from '../fixtures/twitter';
 import client from '../../twitter';
 
 describe('Twitter', () => {
   before(() => {
-    nock('https://api.twitter.com')
-      .get('/1.1/statuses/user_timeline.json?screen_name=_greg_stewart_')
-      .reply(200, fakeResponse);
-    dotEnv.config();
+    twitter(fakeResponse);
   });
 
   it('fetches my stream', (done) => {

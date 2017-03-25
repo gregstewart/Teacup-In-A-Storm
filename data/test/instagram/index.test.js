@@ -1,17 +1,10 @@
-import dotEnv from 'dotenv';
-import nock from 'nock';
-import fs from 'fs';
+import { instagram } from '../mocks';
 
 import client from '../../instagram';
 
 describe('Instagram', () => {
   before(() => {
-    dotEnv.config();
-    const instagramFeed = fs.readFileSync('./test/fixtures/instagram.json', 'utf-8');
-
-    nock('https://api.instagram.com')
-      .get(`/v1/users/self/media/recent?access_token=${process.env.INSTAGRAM_ACCESS_TOKEN}`)
-      .reply(200, instagramFeed);
+    instagram();
   });
 
   it('fetches my feed', (done) => {
