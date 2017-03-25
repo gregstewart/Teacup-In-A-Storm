@@ -1,0 +1,98 @@
+linked-in:
+    details:
+      shortcut: L
+      url: http://www.linkedin.com/in/gregstewart
+      tab-index: 3
+      link-title: Click to view my LinkedIn profile
+      icon: icon-linkedin-sign
+last-fm:
+  details:
+    shortcut: L
+    url: http://www.last.fm/user/greg_stewart:
+    tab-index: 11
+    link-title: Click to view my Last.fm profile
+    icon: icon-lastfm-sign
+flickr:
+  details:
+    shortcut: R
+    url: http://www.flickr.com/photos/greg_and_jodie/
+    tab-index: 12
+    link-title: Click to view my Flickr profile
+    icon: icon-flickr-sign
+stackoverflow:
+  details:
+    shortcut: O
+    url: http://stackoverflow.com/users/197825/greg-stewart
+    tab-index: 14
+    link-title: Click to view my Stackoverflow profile
+    icon: icon-stack-overflow
+google-plus:
+  details:
+    shortcut: G
+    url: https://plus.google.com/110643069434566075441
+    tab-index: 15
+    link-title: Click to view my Google+ profile
+    icon: icon-google-plus
+wordpress:
+  details:
+    shortcut: W
+    url: https://www.tcias.co.uk/blog
+    tab-index: 6
+    link-title: Click to view my blog
+    icon: icon-wordpress
+  url: https://www.tcias.co.uk/blog/atom.xml
+  count: 10
+delicious:
+  details:
+    shortcut: D
+    url: https://delicious.com/wildcard1999
+    tab-index: 5
+    link-title: Click to view my Delicious profile
+    icon: icon-delicious
+  url: http://feeds.del.icio.us/v2/rss/wildcard1999
+  count: 5
+instagram:
+  details:
+    shortcut: I
+    url: http://instagram.com/_greg_stewart_
+    tab-index: 10
+    link-title: Click to view my Instagram profile
+    icon: icon-instagram
+  url: https://api.instagram.com/v1/users/self/media/recent
+  count: 6
+github:
+  details:
+    shortcut: H
+    url: https://github.com/gregstewart
+    tab-index: 13
+    link-title: Click to view my GitHub profile
+    icon: icon-github
+  url: https://api.github.com/users/gregstewart/events
+  count: 5
+twitter:
+  details:
+    shortcut: T
+    url: https://twitter.com/_greg_stewart_
+    tab-index: 8
+    link-title: Click to view my Twitter profile
+    icon: icon-twitter
+  url: https://api.twitter.com/statuses/user_timeline.json
+  count: 4
+vimeo:
+  details:
+    shortcut: V
+    url: https://vimeo.com/user2724002/videos
+    tab-index: 7
+    link-title: Click to view my Vimeo profile
+    icon: icon-vimeo-sign
+  url: https://api.vimeo.com/me/videos
+  count: 1
+foursquare:
+  details:
+    shortcut: F
+    url: https://foursquare.com/user/13278548
+    tab-index: 9
+    link-title: Click to view my Foursquare profile
+    icon: icon-foursquare
+  url: https://api.foursquare.com/v2/users/self/checkins
+  count: 10
