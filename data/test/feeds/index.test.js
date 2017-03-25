@@ -1,5 +1,5 @@
 import client from '../../feeds';
-import { blog, delicious } from '../mocks';
+import { blog, delicious } from '../mocks.test';
 
 describe('Feeds', () => {
   before(() => {

@@ -1,4 +1,4 @@
-import { twitter } from '../mocks';
+import { twitter } from '../mocks.test';
 import fakeResponse from '../fixtures/twitter';
 import client from '../../twitter';
 

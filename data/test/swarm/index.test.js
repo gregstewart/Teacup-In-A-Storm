@@ -1,4 +1,4 @@
-import { swarm, invalidSwarm } from '../mocks';
+import { swarm, invalidSwarm } from '../mocks.test';
 import client from '../../swarm';
 
 describe('Swarm', () => {

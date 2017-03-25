@@ -1,4 +1,4 @@
-import { vimeo, invalidVimeo } from '../mocks';
+import { vimeo, invalidVimeo } from '../mocks.test';
 
 import client from '../../vimeo';
 

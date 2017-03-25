@@ -1,4 +1,4 @@
-import { instagram } from '../mocks';
+import { instagram } from '../mocks.test';
 
 import client from '../../instagram';
 

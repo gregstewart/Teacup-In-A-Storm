@@ -1,4 +1,4 @@
-import { github } from '../mocks';
+import { github } from '../mocks.test';
 import client from '../../github';
 
 describe('Github', () => {
