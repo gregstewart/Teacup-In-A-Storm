@@ -1,8 +1,11 @@
+import yaml from 'js-yaml';
+import fs from 'fs';
+
 import client from '../../feeds';
 import { blog, delicious } from '../mocks.test';
 
 describe('Feeds', () => {
-  before(() => {
+  beforeEach(() => {
     blog();
     delicious();
   });
@@ -52,6 +55,40 @@ describe('Feeds', () => {
         expect(error).to.equal(undefined);
         done();
       });
+    });
+
+    it('builds my data structure', (done) => {
+      const expected = {
+        details: ['D', 'https://delicious.com/wildcard1999', 5, 'Click to view my Delicious profile', 'icon-delicious'],
+        listItems: {
+          type: 'delicious',
+          items: [{ link: 'https://shop.icio.us/sales/the-limited-edition-black-hawk-drone-hd-camera?utm_source=del.icio.us&utm_medium=referral&utm_campaign=the-limited-edition-black-hawk-drone-hd-camera',
+            value: 'Sponsored: 64% off Code Black Drone with HD Camera',
+            date: '2016/12/31 @ 17:43' },
+          { link: 'https://www.cypress.io/',
+            value: 'Cypress.io: Testing, the way it should be.',
+            date: '2016/10/27 @ 15:41' },
+          { link: 'https://medium.com/@ztellman/senior-engineers-reduce-risk-5ab2adc13c97#.kb5jr7kei',
+            value: 'Senior Engineers Reduce Risk — Medium',
+            date: '2016/08/04 @ 21:19' },
+          { link: 'https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md?utm_source=hackernewsletter&utm_medium=email&utm_term=code',
+            value: 'api-guidelines/Guidelines.md at master · Microsoft/api-guidelines',
+            date: '2016/08/04 @ 21:11' },
+          { link: 'https://github.com/nervous-systems/cljs-lambda',
+            value: 'nervous-systems/cljs-lambda: Utilities around deploying Clojurescript functions to AWS Lambda',
+            date: '2016/06/26 @ 22:21' }] } };
+
+      const doc = yaml.safeLoad(fs.readFileSync('./feed-config.yml', 'utf8'));
+
+      client.build(doc.delicious)
+        .then((response) => {
+          expect(response).to.deep.equal(expected);
+          done();
+        })
+        .catch((error) => {
+          expect(error).to.equal(undefined);
+          done();
+        });
     });
   });
 });

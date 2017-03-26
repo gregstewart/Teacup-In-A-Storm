@@ -44,11 +44,11 @@ wordpress:
   count: 10
 delicious:
   details:
-    shortcut: D
-    url: https://delicious.com/wildcard1999
-    tab-index: 5
-    link-title: Click to view my Delicious profile
-    icon: icon-delicious
+    - D
+    - https://delicious.com/wildcard1999
+    - 5
+    - Click to view my Delicious profile
+    - icon-delicious
   url: http://feeds.del.icio.us/v2/rss/wildcard1999
   count: 5
 instagram:

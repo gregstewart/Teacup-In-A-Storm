@@ -48,7 +48,6 @@ describe('Github', () => {
     client.build(doc.github)
       .then((response) => {
         expect(response).to.deep.equal(expected);
-        expect(response).to.deep.equal(expected);
         done();
       })
       .catch((error) => {

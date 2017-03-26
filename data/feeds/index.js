@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 import pickup from 'pickup';
+import format from 'date-fns/format';
 
 const get = url => (
   new Promise((resolve, reject) => {
@@ -36,6 +37,29 @@ const get = url => (
   })
 );
 
+const formatter = item => (
+  { link: item.link,
+    value: item.title,
+    date: format(new Date(item.updated), 'YYYY/MM/DD @ HH:mm') }
+);
+
+const build = config => (
+  new Promise((resolve) => {
+    get(config.url).then((response) => {
+      const items = response.slice(0, config.count).map(formatter);
+      return resolve({
+        details: config.details,
+        listItems: {
+          type: 'delicious',
+          items,
+        },
+      });
+    });
+  })
+
+);
+
 export default {
   get,
+  build,
 };
