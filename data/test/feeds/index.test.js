@@ -61,7 +61,6 @@ describe('Feeds', () => {
       const expected = {
         details: ['D', 'https://delicious.com/wildcard1999', 5, 'Click to view my Delicious profile', 'icon-delicious'],
         listItems: {
-          type: 'delicious',
           items: [{ link: 'https://shop.icio.us/sales/the-limited-edition-black-hawk-drone-hd-camera?utm_source=del.icio.us&utm_medium=referral&utm_campaign=the-limited-edition-black-hawk-drone-hd-camera',
             value: 'Sponsored: 64% off Code Black Drone with HD Camera',
             date: '2016/12/31 @ 17:43' },

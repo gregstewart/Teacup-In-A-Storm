@@ -26,7 +26,6 @@ describe('Github', () => {
     const expected = {
       details: ['H', 'https://github.com/gregstewart', 13, 'Click to view my GitHub profile', 'icon-github'],
       listItems: {
-        type: 'github',
         items: [{ link: 'https://api.github.com/repos/gregstewart/Teacup-In-A-Storm',
           value: 'PushEvent gregstewart/Teacup-In-A-Storm',
           date: '2016/12/31 @ 17:49' },

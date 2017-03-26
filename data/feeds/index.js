@@ -50,7 +50,6 @@ const build = config => (
       return resolve({
         details: config.details,
         listItems: {
-          type: 'delicious',
           items,
         },
       });
