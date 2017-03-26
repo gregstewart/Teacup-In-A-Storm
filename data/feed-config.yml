@@ -8,7 +8,7 @@ linked-in:
 last-fm:
   details:
     shortcut: L
-    url: http://www.last.fm/user/greg_stewart:
+    url: http://www.last.fm/user/greg_stewart
     tab-index: 11
     link-title: Click to view my Last.fm profile
     icon: icon-lastfm-sign
@@ -62,11 +62,11 @@ instagram:
   count: 6
 github:
   details:
-    shortcut: H
-    url: https://github.com/gregstewart
-    tab-index: 13
-    link-title: Click to view my GitHub profile
-    icon: icon-github
+    - H
+    - https://github.com/gregstewart
+    - 13
+    - Click to view my GitHub profile
+    - icon-github
   url: https://api.github.com/users/gregstewart/events
   count: 5
 twitter:
