@@ -14,7 +14,7 @@
   [class title list-data list-style]
   [:div.feed
     [:h3 {:className class} title]
-    [list-renderer list-data list-style]])
+    [list-renderer list-data list-style class]])
 
 (defn logo
   []

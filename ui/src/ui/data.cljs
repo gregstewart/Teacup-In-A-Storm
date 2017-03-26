@@ -15,7 +15,6 @@
             :delicious {
                         :details ["D" "https://delicious.com/wildcard1999" 5 "Click to view my Delicious profile" "icon-delicious"]
                         :list-items {
-                                      :type "delicious"
                                       :items [{:link "https://shop.icio.us/sales/the-limited-edition-black-hawk-drone-hd-camera?utm_source=del.icio.us&utm_medium=referral&utm_campaign=the-limited-edition-black-hawk-drone-hd-camera"
                                                 :value "Sponsored: 64% off Code Black Drone with HD Camera"}
                                               {:link "http://del.icio.us/url/6de4592a88abc522a5084e393bd69bcf#wildcard1999"
@@ -29,7 +28,6 @@
             :wordpress {
                         :details ["W" "https://www.tcias.co.uk/blog" 6 "Click to view my blog" "icon-wordpress"]
                         :list-items {
-                                      :type "wordpress"
                                       :items [{:link "https://www.tcias.co.uk/blog/2015/08/07/your-organisation-should-adopt-an-open-source-model"
                                                 :value "Your Organisation Should Adopt an Open Source Model"}
                                               {:link "https://www.tcias.co.uk/blog/2015/06/28/why-use-node-dot-js"
@@ -37,7 +35,6 @@
             :vimeo {
                     :details ["V" "https://vimeo.com/user2724002/videos" 7 "Click to view my Vimeo profile" "icon-vimeo-sign"]
                     :list-items {
-                                  :type "vimeo"
                                   :items [{:link "https://vimeo.com/93167466"
                                             :value "Portland vs Houston - drummers"
                                             :image "https://i.vimeocdn.com/video/473143901_640.jpg"}
@@ -47,7 +44,6 @@
             :twitter {
                       :details ["T" "https://twitter.com/_greg_stewart_" 8 "Click to view my Twitter profile" "icon-twitter"]
                       :list-items {
-                                    :type "twitter"
                                     :items [{:link "https://twitter.com/_greg_stewart_/status/761244885571821568"
                                               :value "RT @KentBeck: Paint drip people, a successor to T-shaped people: https://t.co/Sm1cNOZYfV"
                                               :date " - 2016/08/04 @ 16:58"}
@@ -57,7 +53,6 @@
             :foursquare {
                           :details ["F" "https://foursquare.com/user/13278548" 9 "Click to view my Foursquare profile" "icon-foursquare"]
                           :list-items {
-                                        :type "foursquare"
                                         :items [{:lat "51.50746113725417"
                                                   :lon "-0.0963776918662706"
                                                   :value "Porky's"
@@ -69,7 +64,6 @@
             :instagram {
                         :details ["I" "http://instagram.com/_greg_stewart_" 10 "Click to view my Instagram profile" "icon-instagram"]
                         :list-items {
-                                      :type "instagram"
                                       :items [{:link "https://www.instagram.com/p/BJMrkkDhgFE/"
                                                 :image "https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13703165_486634748282966_1570166956_n.jpg?ig_cache_key=MTMxODYyMDQxOTUyNzY3MjEzMg%3D%3D.2"}
                                               {:link "https://www.instagram.com/p/BJDBPllh0lQ/"
@@ -85,7 +79,6 @@
             :github {
                       :details ["H" "https://github.com/gregstewart" 13 "Click to view my GitHub profile" "icon-github"]
                       :list-items {
-                                    :type "github"
                                     :items [{:link "https://api.github.com/repos/gregstewart/hearthstone-tracker"
                                               :value "CreateEvent gregstewart/hearthstone-tracker"
                                               :date " - 2016/08/19 @ 19:32"}

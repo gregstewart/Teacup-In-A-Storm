@@ -28,12 +28,11 @@
 
 
 (defn list-renderer
-  [items-structure top-level-style]
-  (def style (get items-structure :type))
+  [items-structure top-level-style type]
   (def items (get items-structure :items))
   [:ul {:className (or top-level-style :default)}
     (for [item items]
       (cond
-        (= top-level-style "images") (image-list-component item style)
-        (= top-level-style "map-list") (map-list-component item style)
-        :else (standard-list-component item style)))])
+        (= top-level-style "images") (image-list-component item type)
+        (= top-level-style "map-list") (map-list-component item type)
+        :else (standard-list-component item type)))])
