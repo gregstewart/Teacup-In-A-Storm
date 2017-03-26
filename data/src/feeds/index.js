@@ -43,16 +43,18 @@ const formatter = item => (
     date: format(new Date(item.updated), 'YYYY/MM/DD @ HH:mm') }
 );
 
-const build = config => (
+const build = (key, config) => (
   new Promise((resolve) => {
     get(config.url).then((response) => {
       const items = response.slice(0, config.count).map(formatter);
-      return resolve({
+      const outcome = {};
+      outcome[key] = {
         details: config.details,
         listItems: {
           items,
         },
-      });
+      };
+      return resolve(outcome);
     });
   })
 

@@ -25,16 +25,18 @@ const formatter = item => ({
   date: format(item.created_at, 'YYYY/MM/DD @ HH:mm'),
 });
 
-const build = config => (
+const build = (key, config) => (
   new Promise((resolve) => {
     get().then((response) => {
       const items = response.slice(0, config.count).map(formatter);
-      return resolve({
+      const outcome = {};
+      outcome[key] = {
         details: config.details,
         listItems: {
           items,
         },
-      });
+      };
+      return resolve(outcome);
     });
   })
 );

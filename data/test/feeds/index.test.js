@@ -58,7 +58,8 @@ describe('Feeds', () => {
     });
 
     it('builds my data structure', (done) => {
-      const expected = {
+      const expected = { delicious:
+      {
         details: ['D', 'https://delicious.com/wildcard1999', 5, 'Click to view my Delicious profile', 'icon-delicious'],
         listItems: {
           items: [{ link: 'https://shop.icio.us/sales/the-limited-edition-black-hawk-drone-hd-camera?utm_source=del.icio.us&utm_medium=referral&utm_campaign=the-limited-edition-black-hawk-drone-hd-camera',
@@ -75,11 +76,12 @@ describe('Feeds', () => {
             date: '2016/08/04 @ 21:11' },
           { link: 'https://github.com/nervous-systems/cljs-lambda',
             value: 'nervous-systems/cljs-lambda: Utilities around deploying Clojurescript functions to AWS Lambda',
-            date: '2016/06/26 @ 22:21' }] } };
+            date: '2016/06/26 @ 22:21' }] } },
+      };
 
       const doc = yaml.safeLoad(fs.readFileSync('./feed-config.yml', 'utf8'));
 
-      client.build(doc.delicious)
+      client.build('delicious', doc.delicious)
         .then((response) => {
           expect(response).to.deep.equal(expected);
           done();

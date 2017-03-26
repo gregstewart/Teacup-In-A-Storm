@@ -23,7 +23,8 @@ describe('Github', () => {
   });
 
   it('builds my data structure', (done) => {
-    const expected = {
+    const expected = { github:
+    {
       details: ['H', 'https://github.com/gregstewart', 13, 'Click to view my GitHub profile', 'icon-github'],
       listItems: {
         items: [{ link: 'https://api.github.com/repos/gregstewart/Teacup-In-A-Storm',
@@ -40,11 +41,12 @@ describe('Github', () => {
           date: '2016/12/31 @ 03:40' },
         { link: 'https://api.github.com/repos/gregstewart/Teacup-In-A-Storm',
           value: 'PushEvent gregstewart/Teacup-In-A-Storm',
-          date: '2016/12/30 @ 22:50' }] } };
+          date: '2016/12/30 @ 22:50' }] } },
+    };
 
     const doc = yaml.safeLoad(fs.readFileSync('./feed-config.yml', 'utf8'));
 
-    client.build(doc.github)
+    client.build('github', doc.github)
       .then((response) => {
         expect(response).to.deep.equal(expected);
         done();
