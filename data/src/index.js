@@ -19,8 +19,8 @@ export default () => {
     }
   });
   return Promise.all(promiseArray).then(values => (
-    values.reduce((acc, val) => (
-      Object.assign(acc, val)
+    values.reduce((object, item) => (
+      Object.assign(object, item)
     ), {})
   ));
 };
