@@ -1,6 +1,6 @@
 import { twitter } from '../mocks.test';
 import fakeResponse from '../fixtures/twitter';
-import client from '../../twitter';
+import client from '../../src/twitter';
 
 describe('Twitter', () => {
   before(() => {

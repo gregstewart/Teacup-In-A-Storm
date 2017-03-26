@@ -1,7 +1,7 @@
 import yaml from 'js-yaml';
 import fs from 'fs';
 
-import client from '../../feeds';
+import client from '../../src/feeds';
 import { blog, delicious } from '../mocks.test';
 
 describe('Feeds', () => {

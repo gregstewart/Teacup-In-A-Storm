@@ -1,5 +1,5 @@
 import { swarm, invalidSwarm } from '../mocks.test';
-import client from '../../swarm';
+import client from '../../src/swarm';
 
 describe('Swarm', () => {
   describe('authorised request', () => {

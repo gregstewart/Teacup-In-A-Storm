@@ -1,4 +1,4 @@
-import main from '../index';
+import main from '../src/index';
 
 describe('Array', () => {
   describe('#indexOf()', () => {

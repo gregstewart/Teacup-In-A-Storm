@@ -2,7 +2,7 @@ import yaml from 'js-yaml';
 import fs from 'fs';
 import { github } from '../mocks.test';
 
-import client from '../../github';
+import client from '../../src/github';
 
 describe('Github', () => {
   beforeEach(() => {

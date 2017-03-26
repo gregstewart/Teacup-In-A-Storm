@@ -1,6 +1,6 @@
 import { instagram } from '../mocks.test';
 
-import client from '../../instagram';
+import client from '../../src/instagram';
 
 describe('Instagram', () => {
   before(() => {

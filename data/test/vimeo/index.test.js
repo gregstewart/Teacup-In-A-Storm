@@ -1,6 +1,6 @@
 import { vimeo, invalidVimeo } from '../mocks.test';
 
-import client from '../../vimeo';
+import client from '../../src/vimeo';
 
 describe('Vimeo', () => {
   describe('authorised request', () => {
