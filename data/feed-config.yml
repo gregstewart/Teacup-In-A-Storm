@@ -86,7 +86,7 @@ vimeo:
     - Click to view my Vimeo profile
     - icon-vimeo-sign
   url: https://api.vimeo.com/me/videos
-  count: 1
+  count: 2
 foursquare:
   details:
     - F

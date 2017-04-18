@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import format from 'date-fns/format';
 
 const get = endpoint => (
   new Promise((resolve, reject) => {
@@ -28,6 +29,29 @@ const get = endpoint => (
   })
 );
 
+const formatter = item => ({
+  link: item.link,
+  value: item.name,
+  date: format(item.release_time, 'YYYY/MM/DD @ HH:mm'),
+});
+
+const build = (key, config) => (
+  new Promise((resolve) => {
+    get('/me/videos').then((response) => {
+      const items = response.data.slice(0, config.count).map(formatter);
+      const outcome = {};
+      outcome[key] = {
+        details: config.details,
+        listItems: {
+          items,
+        },
+      };
+      return resolve(outcome);
+    });
+  })
+);
+
 export default {
   get,
+  build,
 };

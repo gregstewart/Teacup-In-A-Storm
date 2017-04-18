@@ -1,12 +1,13 @@
 import main from '../src/index';
 
-import { blog, delicious, github } from './mocks.test';
+import { blog, delicious, github, vimeo } from './mocks.test';
 
 describe('Index', () => {
   beforeEach(() => {
     blog();
     delicious();
     github();
+    vimeo();
   });
   describe('default', () => {
     it('returns my complete UI data structure', (done) => {
@@ -28,8 +29,8 @@ describe('Index', () => {
           expect(response.stackoverflow).not.to.have.property('listItems');
           expect(response['google-plus']).to.have.property('details');
           expect(response['google-plus']).not.to.have.property('listItems');
-          expect(response.stackoverflow).to.have.property('details');
-          expect(response.stackoverflow).not.to.have.property('listItems');
+          expect(response.vimeo).to.have.property('details');
+          expect(response.vimeo).to.have.property('listItems');
           done();
         })
         .catch((error) => {

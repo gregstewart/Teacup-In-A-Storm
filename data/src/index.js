@@ -2,6 +2,7 @@ import yaml from 'js-yaml';
 import fs from 'fs';
 import feeds from './feeds';
 import github from './github';
+import vimeo from './vimeo';
 import justDetails from './just-details';
 
 export default () => {
@@ -17,6 +18,9 @@ export default () => {
         break;
       case 'github':
         promiseArray.push(github.build(key, doc[key]));
+        break;
+      case 'vimeo':
+        promiseArray.push(vimeo.build(key, doc[key]));
         break;
       default:
         promiseArray.push(justDetails.build(key, doc[key]));
