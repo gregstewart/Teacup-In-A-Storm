@@ -33,7 +33,6 @@ describe('Index', () => {
           done();
         })
         .catch((error) => {
-          console.log(error);
           expect(error).to.equal(undefined);
           done();
         });
