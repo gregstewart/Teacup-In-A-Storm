@@ -2,6 +2,7 @@ import yaml from 'js-yaml';
 import fs from 'fs';
 import feeds from './feeds';
 import github from './github';
+import justDetails from './just-details';
 
 export default () => {
   const doc = yaml.safeLoad(fs.readFileSync('./feed-config.yml', 'utf8'));
@@ -11,11 +12,14 @@ export default () => {
       case 'delicious':
         promiseArray.push(feeds.build(key, doc[key]));
         break;
+      case 'wordpress':
+        promiseArray.push(feeds.build(key, doc[key]));
+        break;
       case 'github':
         promiseArray.push(github.build(key, doc[key]));
         break;
       default:
-        // not sure how to handle this just yet
+        promiseArray.push(justDetails.build(key, doc[key]));
     }
   });
   return Promise.all(promiseArray).then(values => (
