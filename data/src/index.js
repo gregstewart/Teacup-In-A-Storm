@@ -34,6 +34,7 @@ export default () => {
         promiseArray.push(justDetails.build(key, doc[key]));
     }
   });
+  // TODO: if a promise fails, they all get rejected, this is not what we want
   return Promise.all(promiseArray)
     .then(values => (
       values.reduce((object, item) => (

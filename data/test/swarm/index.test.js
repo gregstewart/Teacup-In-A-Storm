@@ -23,7 +23,7 @@ describe('Swarm', () => {
     });
 
     it('builds my data structure', (done) => {
-      //dates look wrong
+      // TODO: dates look wrong
       const expected = { foursquare: {
         details: ['F', 'https://foursquare.com/user/13278548', 9, 'Click to view my Foursquare profile', 'icon-foursquare'],
         listItems: {
