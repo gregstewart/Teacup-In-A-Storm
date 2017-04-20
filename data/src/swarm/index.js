@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import format from 'date-fns/format';
 
 const get = endpoint => (
   new Promise((resolve, reject) => {
@@ -17,6 +18,31 @@ const get = endpoint => (
   })
 );
 
+const formatter = item => ({
+  link: item.venue.url ? item.venue.url : '',
+  value: item.venue.name,
+  date: format(item.createdAt, 'YYYY/MM/DD @ HH:mm'),
+  lat: item.venue.location.lat,
+  lon: item.venue.location.lng,
+});
+
+const build = (key, config) => (
+  new Promise((resolve) => {
+    get('/users/self/checkins')
+      .then((response) => {
+        const items = response.response.checkins.items.slice(0, config.count).map(formatter);
+        const outcome = {};
+        outcome[key] = {
+          details: config.details,
+          listItems: {
+            items,
+          },
+        };
+        return resolve(outcome);
+      });
+  })
+);
 export default {
   get,
+  build,
 };

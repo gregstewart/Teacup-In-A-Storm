@@ -4,6 +4,7 @@ import feeds from './feeds';
 import github from './github';
 import vimeo from './vimeo';
 import twitter from './twitter';
+import swarm from './swarm';
 import justDetails from './just-details';
 
 export default () => {
@@ -25,6 +26,9 @@ export default () => {
         break;
       case 'twitter':
         promiseArray.push(twitter.build(key, doc[key]));
+        break;
+      case 'foursquare':
+        promiseArray.push(swarm.build(key, doc[key]));
         break;
       default:
         promiseArray.push(justDetails.build(key, doc[key]));

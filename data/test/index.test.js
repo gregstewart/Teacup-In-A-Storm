@@ -1,7 +1,7 @@
 import main from '../src/index';
 
 import twitterFakeResponse from './fixtures/twitter';
-import { blog, delicious, github, vimeo, twitter } from './mocks.test';
+import { blog, delicious, github, vimeo, twitter, swarm } from './mocks.test';
 
 describe('Index', () => {
   beforeEach(() => {
@@ -10,6 +10,7 @@ describe('Index', () => {
     github();
     vimeo();
     twitter(twitterFakeResponse);
+    swarm();
   });
   describe('default', () => {
     it('returns my complete UI data structure', (done) => {
@@ -35,6 +36,8 @@ describe('Index', () => {
           expect(response.vimeo).to.have.property('listItems');
           expect(response.twitter).to.have.property('details');
           expect(response.twitter).to.have.property('listItems');
+          expect(response.foursquare).to.have.property('details');
+          expect(response.foursquare).to.have.property('listItems');
           done();
         })
         .catch((error) => {
