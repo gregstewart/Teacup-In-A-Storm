@@ -1,6 +1,7 @@
 import main from '../src/index';
 
-import { blog, delicious, github, vimeo } from './mocks.test';
+import twitterFakeResponse from './fixtures/twitter';
+import { blog, delicious, github, vimeo, twitter } from './mocks.test';
 
 describe('Index', () => {
   beforeEach(() => {
@@ -8,6 +9,7 @@ describe('Index', () => {
     delicious();
     github();
     vimeo();
+    twitter(twitterFakeResponse);
   });
   describe('default', () => {
     it('returns my complete UI data structure', (done) => {
@@ -31,6 +33,8 @@ describe('Index', () => {
           expect(response['google-plus']).not.to.have.property('listItems');
           expect(response.vimeo).to.have.property('details');
           expect(response.vimeo).to.have.property('listItems');
+          expect(response.twitter).to.have.property('details');
+          expect(response.twitter).to.have.property('listItems');
           done();
         })
         .catch((error) => {
