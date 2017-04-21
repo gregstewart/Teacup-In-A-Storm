@@ -1,13 +1,14 @@
 import Twitter from 'twitter';
 import format from 'date-fns/format';
 
-const twitter = new Twitter({
-  consumer_key: process.env.TWITTER_CONSUMER_KEY,
-  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
-  bearer_token: process.env.TWITTER_BEARER_TOKEN,
-});
-
-const get = (url, base) => (twitter.get(url, base));
+const get = (url, base) => {
+  const twitter = new Twitter({
+    consumer_key: process.env.TWITTER_CONSUMER_KEY,
+    consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+    bearer_token: process.env.TWITTER_BEARER_TOKEN,
+  });
+  return twitter.get(url, base);
+};
 
 const formatter = item => ({
   link: `https://twitter.com/_greg_stewart_/status/${item.id}`,
