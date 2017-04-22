@@ -13,9 +13,10 @@ export default () => {
   const promiseArray = [];
   Object.keys(doc).forEach((key) => {
     switch (key) {
-      case 'delicious':
-        promiseArray.push(feeds.build(key, doc[key]));
-        break;
+      // TODO: currently broken
+      // case 'delicious':
+      //   promiseArray.push(feeds.build(key, doc[key]));
+      //   break;
       case 'wordpress':
         promiseArray.push(feeds.build(key, doc[key]));
         break;
