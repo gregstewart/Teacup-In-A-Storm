@@ -13,7 +13,7 @@ const get = (url) => {
 const formatter = item => ({
   link: item.link,
   image: item.images.standard_resolution.url,
-  value: item.caption.text,
+  value: (item.caption && item.caption.text) ? item.caption.text : '',
   date: format(parseInt(item.created_time, 10), 'YYYY/MM/DD @ HH:mm'),
 });
 
