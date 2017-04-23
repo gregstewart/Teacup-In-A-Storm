@@ -71,7 +71,7 @@ describe('Feeds', () => {
           details: ['D', 'https://delicious.com/wildcard1999', 5, 'Click to view my Delicious profile', 'icon-delicious'],
           listItems: {
             items: [{ link: 'https://delicious.com/wildcard1999',
-              value: 'Delicious feed could not be fetched',
+              value: 'delicious feed could not be fetched',
               date: format(new Date(), 'YYYY/MM/DD @ HH:mm') }] } },
         };
 
