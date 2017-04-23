@@ -30,9 +30,11 @@ describe('Vimeo', () => {
         listItems: {
           items: [{ link: 'https://vimeo.com/93167466',
             value: 'Portland vs Houston - drummers',
+            image: 'https://i.vimeocdn.com/video/473143901_960x540.jpg?r=pad',
             date: '2014/04/28 @ 18:10' },
           { link: 'https://vimeo.com/93167206',
             value: 'Portland vs Houston - opening',
+            image: 'https://i.vimeocdn.com/video/473143582_960x540.jpg?r=pad',
             date: '2014/04/28 @ 18:08' }] } },
       };
 

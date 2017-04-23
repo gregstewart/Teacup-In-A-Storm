@@ -31,6 +31,7 @@ const get = endpoint => (
 
 const formatter = item => ({
   link: item.link,
+  image: item.pictures.sizes[4].link,
   value: item.name,
   date: format(item.release_time, 'YYYY/MM/DD @ HH:mm'),
 });
