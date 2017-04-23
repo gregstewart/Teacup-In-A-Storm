@@ -3,33 +3,34 @@
 (defn standard-list-component
   [item style]
   ^{:key item} [:li {:className style}
-                  [:a {:href (get item :link)}
-                    (get item :value)]
-                  (get item :date)])
+                  [:a {:href (get item "link")}
+                    (get item "value")]
+                  (get item "date")])
 
 (defn image-list-component
   [item style]
   ^{:key item} [:li {:className style}
                 [:div
-                  [:a {:href (get item :link)}
-                    [:img.vimeo.inset-shadow {:src (get item :image) :title (get item :value)}]]
+                  [:a {:href (get item "link")}
+                    [:img.vimeo.inset-shadow {:src (get item "image") :title (get item "value")}]]
                   [:br]
-                  (get item :value)]])
+                  (get item "value")]])
 
 (defn map-list-component
   [item style]
   ^{:key item} [:li {:className style}
                   [:div.map.leaflet-container.leaflet-fade-anim
-                    {:data-lat (get item :lat)
-                      :data-lon (get item :lon)}]
+                    {:data-lat (get item "lat")
+                      :data-lon (get item "lon")}]
                   [:a
-                    (get item :value)]
-                  (get item :date)])
+                    (get item "value")]
+                  (get item "date")])
 
 
 (defn list-renderer
   [items-structure top-level-style type]
-  (def items (get items-structure :items))
+  (println items-structure)
+  (def items (get items-structure "items"))
   [:ul {:className (or top-level-style :default)}
     (for [item items]
       (cond
