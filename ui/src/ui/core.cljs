@@ -1,13 +1,21 @@
 (ns ui.core
   (:require [reagent.core :as reagent :refer [atom]]
-            [ui.data :as ui-data :refer [data]]
+            [ui.data :as ui-data :refer [get-data]]
             [ui.components.lists :as lists :refer [list-renderer]]
             [ui.components.masthead :as masthead :refer [masthead-component]]
             [ui.components.contact-panel :as contact-panel :refer [contact-panel-renderer]]))
 
 (enable-console-print!)
 
-(def app-state (reagent/atom data))
+(defn get-attribute
+  [element]
+  (.-innerHTML element))
+
+(defn get-element
+  []
+  (. js/document (getElementById "data")))
+
+(def app-state (reagent/atom (get-data (get-attribute (get-element)))))
 
 (defn feed-renderer
   "Returns a feed component based of the data and styling"
