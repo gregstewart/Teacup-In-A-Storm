@@ -1,4 +1,3 @@
-import dotEnv from 'dotenv';
 import fs from 'fs';
 import nock from 'nock';
 
@@ -23,7 +22,6 @@ export function notFoundDelicious() {
 }
 
 export function github() {
-  dotEnv.config();
   const gitHubResponse = JSON.parse(fs.readFileSync('./test/fixtures/github.json', 'utf-8'));
   return nock('https://api.github.com/')
     .get(`/users/gregstewart/events?access_token=${process.env.GITHUB_PERSONAL_TOKEN}`)
@@ -31,7 +29,6 @@ export function github() {
 }
 
 export function swarm() {
-  dotEnv.config();
   const swarmFeed = fs.readFileSync('./test/fixtures/swarm.json', 'utf-8');
   return nock('https://api.foursquare.com')
     .get(`/v2/users/self/checkins?v=${process.env.SWARM_API_VERSION}&oauth_token=${process.env.SWARM_ACCESS_TOKEN}`)
@@ -39,7 +36,6 @@ export function swarm() {
 }
 
 export function invalidSwarm(invalidAuth) {
-  dotEnv.config();
   process.env.SWARM_ACCESS_TOKEN = 'foo';
   return nock('https://api.foursquare.com')
     .get(`/v2/users/self/checkins?v=${process.env.SWARM_API_VERSION}&oauth_token=foo`)
@@ -47,7 +43,6 @@ export function invalidSwarm(invalidAuth) {
 }
 
 export function instagram() {
-  dotEnv.config();
   const instagramFeed = fs.readFileSync('./test/fixtures/instagram.json', 'utf-8');
 
   return nock('https://api.instagram.com')
@@ -62,7 +57,6 @@ export function twitter(fakeResponse) {
 }
 
 export function vimeo() {
-  dotEnv.config();
   const feed = fs.readFileSync('./test/fixtures/vimeo.json', 'utf-8');
   return nock('https://api.vimeo.com')
     .get('/me/videos?page=1&per_page=10')
@@ -70,7 +64,6 @@ export function vimeo() {
 }
 
 export function invalidVimeo(invalidAuth) {
-  dotEnv.config();
   process.env.VIMEO_ACCESS_TOKEN = 'foo';
   return nock('https://api.vimeo.com')
     .get('/me/videos?page=1&per_page=10')
