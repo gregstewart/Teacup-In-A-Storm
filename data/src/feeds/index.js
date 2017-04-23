@@ -43,15 +43,38 @@ const formatter = item => (
     date: format(new Date(item.updated), 'YYYY/MM/DD @ HH:mm') }
 );
 
+const handleError = (key, link) => (
+  [{ link,
+    value: `${key} feed could not be fetched`,
+    date: format(new Date(), 'YYYY/MM/DD @ HH:mm'),
+  }]
+);
+
 const build = (key, config) => (
   new Promise((resolve) => {
-    get(config.url).then((response) => {
-      const items = response.slice(0, config.count).map(formatter);
+    get(config.url)
+    .then((response) => {
+      let items;
+      if (response[0] === null) {
+        items = handleError(key, config.details[1]);
+      } else {
+        items = response.slice(0, config.count).map(formatter);
+      }
+
       const outcome = {};
       outcome[key] = {
         details: config.details,
         listItems: {
           items,
+        },
+      };
+      return resolve(outcome);
+    }).catch(() => {
+      const outcome = {};
+      outcome[key] = {
+        details: config.details,
+        listItems: {
+          items: handleError(key, config.details[1]),
         },
       };
       return resolve(outcome);

@@ -1,5 +1,5 @@
 import dotEnv from 'dotenv';
-import jsonFile from 'jsonfile'
+import jsonFile from 'jsonfile';
 import main from '../src/index';
 
 dotEnv.config();

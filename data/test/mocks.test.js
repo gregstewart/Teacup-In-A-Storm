@@ -16,6 +16,12 @@ export function delicious() {
     .reply(200, deliciousFeed);
 }
 
+export function notFoundDelicious() {
+  return nock('http://feeds.del.icio.us')
+    .get('/v2/rss/wildcard1999')
+    .reply(404);
+}
+
 export function github() {
   dotEnv.config();
   const gitHubResponse = JSON.parse(fs.readFileSync('./test/fixtures/github.json', 'utf-8'));
