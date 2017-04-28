@@ -1,5 +1,6 @@
 import yaml from 'js-yaml';
 import fs from 'fs';
+import { format } from 'date-fns';
 
 import { vimeo, invalidVimeo } from '../mocks.test';
 
@@ -31,11 +32,11 @@ describe('Vimeo', () => {
           items: [{ link: 'https://vimeo.com/93167466',
             value: 'Portland vs Houston - drummers',
             image: 'https://i.vimeocdn.com/video/473143901_960x540.jpg?r=pad',
-            date: '2014/04/28 @ 18:10' },
+            date: format(new Date('2014-04-28T17:10:50+00:00'), 'YYYY/MM/DD @ HH:mm') },
           { link: 'https://vimeo.com/93167206',
             value: 'Portland vs Houston - opening',
             image: 'https://i.vimeocdn.com/video/473143582_960x540.jpg?r=pad',
-            date: '2014/04/28 @ 18:08' }] } },
+            date: format(new Date('2014-04-28T17:08:25+00:00'), 'YYYY/MM/DD @ HH:mm') }] } },
       };
 
       const doc = yaml.safeLoad(fs.readFileSync('./feed-config.yml', 'utf8'));

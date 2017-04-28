@@ -116,19 +116,19 @@ describe('Feeds', () => {
           listItems: {
             items: [{ link: 'https://shop.icio.us/sales/the-limited-edition-black-hawk-drone-hd-camera?utm_source=del.icio.us&utm_medium=referral&utm_campaign=the-limited-edition-black-hawk-drone-hd-camera',
               value: 'Sponsored: 64% off Code Black Drone with HD Camera',
-              date: '2016/12/31 @ 17:43' },
+              date: format(new Date('Sat, 31 Dec 2016 17:43:28 -0000'), 'YYYY/MM/DD @ HH:mm') },
             { link: 'https://www.cypress.io/',
               value: 'Cypress.io: Testing, the way it should be.',
-              date: '2016/10/27 @ 15:41' },
+              date: format(new Date('Thu, 27 Oct 2016 14:41:50 +0000'), 'YYYY/MM/DD @ HH:mm') },
             { link: 'https://medium.com/@ztellman/senior-engineers-reduce-risk-5ab2adc13c97#.kb5jr7kei',
               value: 'Senior Engineers Reduce Risk — Medium',
-              date: '2016/08/04 @ 21:19' },
+              date: format(new Date('Thu, 04 Aug 2016 20:19:23 +0000'), 'YYYY/MM/DD @ HH:mm') },
             { link: 'https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md?utm_source=hackernewsletter&utm_medium=email&utm_term=code',
               value: 'api-guidelines/Guidelines.md at master · Microsoft/api-guidelines',
-              date: '2016/08/04 @ 21:11' },
+              date: format(new Date('Thu, 04 Aug 2016 20:11:56 +0000'), 'YYYY/MM/DD @ HH:mm') },
             { link: 'https://github.com/nervous-systems/cljs-lambda',
               value: 'nervous-systems/cljs-lambda: Utilities around deploying Clojurescript functions to AWS Lambda',
-              date: '2016/06/26 @ 22:21' }] } },
+              date: format(new Date('Sun, 26 Jun 2016 21:21:32 +0000'), 'YYYY/MM/DD @ HH:mm') }] } },
         };
 
         const doc = yaml.safeLoad(fs.readFileSync('./feed-config.yml', 'utf8'));
