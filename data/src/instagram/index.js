@@ -14,7 +14,7 @@ const formatter = item => ({
   link: item.link,
   image: item.images.standard_resolution.url,
   value: (item.caption && item.caption.text) ? item.caption.text : '',
-  date: format(parseInt(item.created_time, 10), 'YYYY/MM/DD @ HH:mm'),
+  date: format(parseInt(item.created_time, 10) * 1000, 'YYYY/MM/DD @ HH:mm'),
 });
 
 const build = (key, config) => (
