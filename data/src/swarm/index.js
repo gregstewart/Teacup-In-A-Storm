@@ -21,7 +21,7 @@ const get = endpoint => (
 const formatter = item => ({
   link: item.venue.url ? item.venue.url : '',
   value: item.venue.name,
-  date: format(item.createdAt, 'YYYY/MM/DD @ HH:mm'),
+  date: format(parseInt(item.createdAt, 10) * 1000, 'YYYY/MM/DD @ HH:mm'),
   lat: item.venue.location.lat,
   lon: item.venue.location.lng,
 });
