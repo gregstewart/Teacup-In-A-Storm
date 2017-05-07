@@ -13,6 +13,7 @@ machine:
 dependencies:
   override:
     - cd data && npm install
+    - cd build && npm install
 
 test:
   override:
