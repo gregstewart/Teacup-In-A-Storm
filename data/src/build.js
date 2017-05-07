@@ -1,8 +1,11 @@
+import isCI from 'is-ci';
 import dotEnv from 'dotenv';
 import jsonFile from 'jsonfile';
 import main from '../src/index';
 
-dotEnv.config();
+if (!isCI) {
+  dotEnv.config();
+}
 
 const build = () => (
   main()
