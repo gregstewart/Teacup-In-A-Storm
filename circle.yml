@@ -25,5 +25,5 @@ deployment:
     branch: lambda-clojurescript-node
     commands:
 #      - aws s3 sync jekyll/_site/docs s3://circle-production-static-site/docs/ --delete
-      - cd data && npm start && cd ../
+      - cd build && npm start && cd ../
       - cd ui && lein cljsbuild once min

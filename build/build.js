@@ -1,7 +1,7 @@
 import isCI from 'is-ci';
 import dotEnv from 'dotenv';
 import jsonFile from 'jsonfile';
-import main from '../src/index';
+import main from '../data/src/index';
 
 if (!isCI) {
   dotEnv.config();

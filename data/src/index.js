@@ -1,5 +1,6 @@
 import yaml from 'js-yaml';
 import fs from 'fs';
+import path from 'path';
 import feeds from './feeds';
 import github from './github';
 import vimeo from './vimeo';
@@ -9,7 +10,7 @@ import instagram from './instagram';
 import justDetails from './just-details';
 
 export default () => {
-  const doc = yaml.safeLoad(fs.readFileSync('./feed-config.yml', 'utf8'));
+  const doc = yaml.safeLoad(fs.readFileSync(path.join(__dirname, '../feed-config.yml'), 'utf8'));
   const promiseArray = [];
   Object.keys(doc).forEach((key) => {
     switch (key) {
