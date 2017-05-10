@@ -18,5 +18,10 @@ fs.readFile(htmlPath, {encoding: 'utf8'}, (error, data) => {
     const $ = cheerio.load(data); // load in the HTML into cheerio
 
     $('#data').attr( "data-json", JSON.stringify(jsonResponse) );
-    fs.writeFile(outPath, $.html());
+    fs.writeFile(outPath, $.html(), (error) => {
+      if (error) {
+        console.log(error);
+      }
+      console.log('file was replaced');
+    });
 });
