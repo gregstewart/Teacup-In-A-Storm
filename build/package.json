@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node ./build"
+    "start": "babel-node ./build",
+    "replace": "babel-node ./replace"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,7 @@
     "is-ci": "^1.0.10",
     "jsonfile": "^3.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "cheerio": "^0.22.0"
+  }
 }
