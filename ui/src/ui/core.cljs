@@ -9,7 +9,7 @@
 
 (defn get-attribute
   [element]
-  (.-innerHTML element))
+  (.getAttribute element "data-json"))
 
 (defn get-element
   []
