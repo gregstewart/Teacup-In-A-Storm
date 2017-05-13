@@ -2,9 +2,6 @@ general:
   artifacts:
     - $CIRCLE_TEST_REPORTS
     - coverage
-  branches:
-    only:
-      - lambda-clojurescript-node
 
 machine:
   node:
@@ -23,7 +20,7 @@ test:
 
 deployment:
   prod:
-    branch: lambda-clojurescript-node
+    branch: master
     commands:
       - cd ui && lein cljsbuild once min
       - cd build && npm start && cd ../
