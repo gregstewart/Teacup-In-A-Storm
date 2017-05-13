@@ -28,4 +28,4 @@ deployment:
       - cd ui && lein cljsbuild once min
       - cd build && npm start && cd ../
       - cd build && npm run replace && cd ../
-#      - aws s3 sync jekyll/_site/docs s3://circle-production-static-site/docs/ --delete
+      - sh ./bin/deploy.sh
