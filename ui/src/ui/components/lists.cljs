@@ -1,11 +1,16 @@
 (ns ui.components.lists)
 
+(defn date-component
+  [date]
+  [:div
+    date])
+
 (defn standard-list-component
   [item style]
   ^{:key item} [:li {:className style}
                   [:a {:href (get item "link")}
                     (get item "value")]
-                  (get item "date")])
+                  (date-component (get item "date"))])
 
 (defn image-list-component
   [item style]
@@ -24,7 +29,7 @@
                       :data-lon (get item "lon")}]
                   [:a
                     (get item "value")]
-                  (get item "date")])
+                  (date-component (get item "date"))])
 
 
 (defn list-renderer
