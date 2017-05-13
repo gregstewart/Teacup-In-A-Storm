@@ -1,0 +1,98 @@
+linked-in:
+    details:
+      - L
+      - http://www.linkedin.com/in/gregstewart
+      - 3
+      - Click to view my LinkedIn profile
+      - icon-linkedin-sign
+last-fm:
+  details:
+    - L
+    - http://www.last.fm/user/greg_stewart
+    - 11
+    - Click to view my Last.fm profile
+    - icon-lastfm-sign
+flickr:
+  details:
+    - R
+    - http://www.flickr.com/photos/greg_and_jodie/
+    - 12
+    - Click to view my Flickr profile
+    - icon-flickr-sign
+stackoverflow:
+  details:
+    - O
+    - http://stackoverflow.com/users/197825/greg-stewart
+    - 14
+    - Click to view my Stackoverflow profile
+    - icon-stack-overflow
+google-plus:
+  details:
+    - G
+    - https://plus.google.com/110643069434566075441
+    - 15
+    - Click to view my Google+ profile
+    - icon-google-plus
+wordpress:
+  details:
+    - W
+    - https://www.tcias.co.uk/blog
+    - 6
+    - Click to view my blog
+    - icon-wordpress
+  url: https://www.tcias.co.uk/blog/atom.xml
+  count: 10
+delicious:
+  details:
+    - D
+    - https://delicious.com/wildcard1999
+    - 5
+    - Click to view my Delicious profile
+    - icon-delicious
+  url: http://feeds.del.icio.us/v2/rss/wildcard1999
+  count: 5
+instagram:
+  details:
+    - I
+    - http://instagram.com/_greg_stewart_
+    - 10
+    - Click to view my Instagram profile
+    - icon-instagram
+  url: https://api.instagram.com/v1/users/self/media/recent
+  count: 6
+github:
+  details:
+    - H
+    - https://github.com/gregstewart
+    - 13
+    - Click to view my GitHub profile
+    - icon-github
+  url: https://api.github.com/users/gregstewart/events
+  count: 5
+twitter:
+  details:
+    - T
+    - https://twitter.com/_greg_stewart_
+    - 8
+    - Click to view my Twitter profile
+    - icon-twitter
+  url: https://api.twitter.com/statuses/user_timeline.json
+  count: 4
+vimeo:
+  details:
+    - V
+    - https://vimeo.com/user2724002/videos
+    - 7
+    - Click to view my Vimeo profile
+    - icon-vimeo-sign
+  url: https://api.vimeo.com/me/videos
+  count: 2
+foursquare:
+  details:
+    - F
+    - https://foursquare.com/user/13278548
+    - 9
+    - Click to view my Foursquare profile
+    - icon-foursquare
+  url: https://api.foursquare.com/v2/users/self/checkins
+  count: 10

@@ -1,0 +1,60 @@
+{
+  "name": "feed-aggregator",
+  "version": "1.0.0",
+  "description": "Aggregates a bunch of feeds",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint -c .eslintrc.json ./**/*.js ./test/**/*.js",
+    "test": "NODE_ENV=test ./node_modules/.bin/_mocha",
+    "coverage": "cross-env NODE_ENV=test nyc --no-cache --reporter=lcov --reporter=text ./node_modules/.bin/_mocha",
+    "prepush": "npm run lint && npm test"
+  },
+  "nyc": {
+    "sourceMap": false,
+    "instrument": false
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregstewart/Teacup-In-A-Storm/tree/master/javascript"
+  },
+  "keywords": [
+    "feed",
+    "aggregator",
+    "parsing"
+  ],
+  "author": "Greg Stewart",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-istanbul": "^3.0.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-env": "^1.1.4",
+    "babel-register": "^6.18.0",
+    "chai": "^3.5.0",
+    "codeclimate-test-reporter": "^0.4.0",
+    "cross-env": "^3.1.3",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "husky": "^0.12.0",
+    "is-ci": "^1.0.10",
+    "mocha": "^3.2.0",
+    "mocha-junit-reporter": "^1.12.1",
+    "nock": "^9.0.2",
+    "nyc": "^10.0.0",
+    "sinon": "^2.1.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "bluebird": "^3.4.7",
+    "date-fns": "^1.28.1",
+    "dotenv": "^2.0.0",
+    "github": "^7.2.0",
+    "js-yaml": "^3.8.2",
+    "node-fetch": "^1.6.3",
+    "node-instagram": "^1.3.6",
+    "pickup": "^5.0.1",
+    "request": "^2.79.0",
+    "twitter": "^1.7.0"
+  }
+}

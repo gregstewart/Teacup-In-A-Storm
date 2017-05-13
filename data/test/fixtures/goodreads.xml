@@ -1,0 +1,1191 @@
+<!-- HTTP/1.1 200 OK
+Server: Server
+Date: Sun, 01 Jan 2017 20:13:29 GMT
+Content-Type: application/xml; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Status: 200 OK
+X-Frame-Options: ALLOWALL
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Vary: User-Agent,Accept-Encoding
+X-Request-Id: S8GPGN5YT12BZ86F4E4H
+ETag: W/"ca444b37f1b2708d816a39f63155f38f"
+Cache-Control: max-age=0, private, must-revalidate
+X-Runtime: 1.068000
+X-Content-Type-Options: nosniff
+Set-Cookie: csid=BAhJIhg1MjQtNTU4NDY0OC0zMDg4NDk0BjoGRVQ%3D--1ecb4623a11a283a8c61182e1db0c5f32b33d3a3; path=/; expires=Thu, 01 Jan 2037 20:13:27 -0000
+Set-Cookie: locale=fr; path=/
+Set-Cookie: _session_id2=f661f1f951d4d47bf09906485a3ce81b; path=/; expires=Mon, 02 Jan 2017 02:13:29 -0000; HttpOnly -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+  <Request>
+    <authentication>true</authentication>
+      <key><![CDATA[Lbe7nDXZZsf60RWNjsr2Q]]></key>
+    <method><![CDATA[user_show]]></method>
+  </Request>
+  <user>
+  <id>18152669</id>
+  <name>Greg Stewart</name>
+  <user_name>gregstewart</user_name>
+  <link><![CDATA[https://www.goodreads.com/user/show/18152669-greg-stewart]]></link>
+  <image_url><![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_111x148-9394ebedbb3c6c218f64be9549657029.png]]></image_url>
+  <small_image_url><![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]></small_image_url>
+    <about></about>
+    <age></age>
+    <gender></gender>
+    <location>The United Kingdom</location>
+    <website></website>
+    <joined>03/2013</joined>
+    <last_active>12/2016</last_active>
+    <interests></interests>
+    <favorite_books></favorite_books>
+    <favorite_authors>
+    </favorite_authors>
+    <updates_rss_url><![CDATA[https://www.goodreads.com/user/updates_rss/18152669?key=nOB51niaD-DANjQNkX3cgGkSQAIznTh-KdEtMOR3yfgCImgi]]></updates_rss_url>
+    <reviews_rss_url><![CDATA[https://www.goodreads.com/review/list_rss/18152669?key=nOB51niaD-DANjQNkX3cgGkSQAIznTh-KdEtMOR3yfgCImgi&shelf=%23ALL%23]]></reviews_rss_url>
+    <friends_count type="integer">13</friends_count>
+    <groups_count>0</groups_count>
+    <reviews_count type="integer">99</reviews_count>
+    <user_shelves type="array">
+  <user_shelf>
+    <id type="integer">58322038</id>
+    <name>read</name>
+    <book_count type="integer">70</book_count>
+    <exclusive_flag type="boolean">true</exclusive_flag>
+    <description nil="true"/>
+    <sort nil="true"/>
+    <order nil="true"/>
+    <per_page type="integer" nil="true"/>
+    <display_fields></display_fields>
+    <featured type="boolean">true</featured>
+    <recommend_for type="boolean">false</recommend_for>
+    <sticky type="boolean" nil="true"/>
+  </user_shelf>
+  <user_shelf>
+    <id type="integer">58322037</id>
+    <name>currently-reading</name>
+    <book_count type="integer">9</book_count>
+    <exclusive_flag type="boolean">true</exclusive_flag>
+    <description nil="true"/>
+    <sort nil="true"/>
+    <order nil="true"/>
+    <per_page type="integer" nil="true"/>
+    <display_fields></display_fields>
+    <featured type="boolean">false</featured>
+    <recommend_for type="boolean">false</recommend_for>
+    <sticky type="boolean" nil="true"/>
+  </user_shelf>
+  <user_shelf>
+    <id type="integer">58322036</id>
+    <name>to-read</name>
+    <book_count type="integer">20</book_count>
+    <exclusive_flag type="boolean">true</exclusive_flag>
+    <description nil="true"/>
+    <sort nil="true"/>
+    <order>a</order>
+    <per_page type="integer" nil="true"/>
+    <display_fields></display_fields>
+    <featured type="boolean">false</featured>
+    <recommend_for type="boolean">true</recommend_for>
+    <sticky type="boolean" nil="true"/>
+  </user_shelf>
+</user_shelves>
+      <updates type="array">
+      <update type="userchallenge">
+      <action_text><![CDATA[wants to read 12 books in the <a href="https://www.goodreads.com/challenges/5493-2017-reading-challenge">2017 Reading Challenge</a>]]></action_text>
+      <link>https://www.goodreads.com/user_challenges/7079590</link>
+      <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+        <actor>
+  <id type="integer">18152669</id>
+  <name>Greg Stewart</name>
+  <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+  <link>https://www.goodreads.com/user/show/18152669-greg-stewart</link>
+</actor>
+      <updated_at>Sun, 01 Jan 2017 11:12:02 -0800</updated_at>
+    </update>
+      <update type="userstatus">
+      <action_text><![CDATA[is on page 42 of 624 of <a href="https://www.goodreads.com/book/show/34897.The_Dragon_Reborn">The Dragon Reborn</a>]]></action_text>
+      <link>https://www.goodreads.com/user_status/show/116451356</link>
+      <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+        <actor>
+  <id type="integer">18152669</id>
+  <name>Greg Stewart</name>
+  <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+  <link>https://www.goodreads.com/user/show/18152669-greg-stewart</link>
+</actor>
+      <updated_at>Thu, 29 Dec 2016 02:35:09 -0800</updated_at>
+        <object>
+          <user_status>
+  <id type="integer">116451356</id>
+  <user_id type="integer">18152669</user_id>
+  <book_id type="integer">34897</book_id>
+  <page type="integer">42</page>
+  <chapter type="integer" nil="true"/>
+  <comments_count type="integer">0</comments_count>
+  <body></body>
+  <created_at type="datetime">2016-12-29T10:35:09+00:00</created_at>
+  <updated_at type="datetime">2016-12-29T10:35:09+00:00</updated_at>
+  <last_comment_at type="datetime" nil="true"/>
+  <ratings_count type="integer">0</ratings_count>
+  <percent type="integer">6</percent>
+  <work_id type="integer">791061</work_id>
+  <note_uri nil="true"/>
+  <note_updated_at type="datetime" nil="true"/>
+  <review_id type="integer">1855101948</review_id>
+  <book>
+    <id type="integer">34897</id>
+    <work_id type="integer">791061</work_id>
+    <isbn>0765305119</isbn>
+    <isbn13>9780765305114</isbn13>
+    <title>The Dragon Reborn (Wheel of Time, #3)</title>
+    <sort_by_title>dragon reborn (wheel of time, #3), the</sort_by_title>
+    <author_id type="integer">6252</author_id>
+    <author_role nil="true"/>
+    <asin nil="true"/>
+    <description>&lt;i&gt;The Dragon Reborn&lt;/i&gt;—the leader long prophesied who will save the world, but in the saving destroy it; the savior who will run mad and kill all those dearest to him—is on the run from his destiny.&lt;br&gt;&lt;br&gt;Able to touch the One Power, but unable to control it, and with no one to teach him how—for no man has done it in three thousand years—Rand al'Thor knows only that he must face the Dark One. But how?&lt;br&gt;&lt;br&gt;Winter has stopped the war—almost—yet men are dying, calling out for the Dragon. But where is he?&lt;br&gt;&lt;br&gt;Perrin Aybara is in pursuit with Moiraine Sedai, her Warder Lan, and Loial the Ogier. Bedeviled by dreams, Perrin is grappling with another deadly problem—how is he to escape the loss of his own humanity?&lt;br&gt;&lt;br&gt;Egwene, Elayne and Nynaeve are approaching Tar Valon, where Mat will be healed—if he lives until they arrive. But who will tell the Amyrlin their news—that the Black Ajah, long thought only a hideous rumor, is all too real? They cannot know that in Tar Valon far worse awaits...&lt;br&gt;&lt;br&gt;Ahead, for all of them, in the Heart of the Stone, lies the next great test of the Dragon reborn....&lt;br&gt;</description>
+    <format>Paperback</format>
+    <publication_year type="integer">2002</publication_year>
+    <publication_month type="integer">9</publication_month>
+    <publication_day type="integer">14</publication_day>
+    <num_pages type="integer">624</num_pages>
+    <publisher>Tor Fantasy</publisher>
+    <language_code>eng</language_code>
+    <edition_information nil="true"/>
+    <url nil="true"/>
+    <source_url nil="true"/>
+    <image_uploaded_at type="datetime">2016-11-25T17:56:20+00:00</image_uploaded_at>
+    <s3_image_at type="datetime">2016-11-25T17:56:21+00:00</s3_image_at>
+    <reviews_count type="integer">178712</reviews_count>
+    <ratings_sum type="integer">621874</ratings_sum>
+    <ratings_count type="integer">147212</ratings_count>
+    <text_reviews_count type="integer">1786</text_reviews_count>
+    <book_authors_count type="integer">0</book_authors_count>
+    <updated_at type="datetime">2016-11-25T17:56:21+00:00</updated_at>
+    <created_at type="datetime">2007-01-12T03:45:28+00:00</created_at>
+    <author_id_updater_user_id type="integer">-9</author_id_updater_user_id>
+    <author_role_updater_user_id type="integer">834216</author_role_updater_user_id>
+    <description_updater_user_id type="integer">1899624</description_updater_user_id>
+    <edition_information_updater_user_id type="integer" nil="true"/>
+    <format_updater_user_id type="integer">-9</format_updater_user_id>
+    <image_updater_user_id type="integer">2602702</image_updater_user_id>
+    <isbn_updater_user_id type="integer">-9</isbn_updater_user_id>
+    <isbn13_updater_user_id type="integer">-9</isbn13_updater_user_id>
+    <language_updater_user_id type="integer">2602702</language_updater_user_id>
+    <num_pages_updater_user_id type="integer">-9</num_pages_updater_user_id>
+    <publication_date_updater_user_id type="integer">-9</publication_date_updater_user_id>
+    <publisher_updater_user_id type="integer">-9</publisher_updater_user_id>
+    <title_updater_user_id type="integer">834216</title_updater_user_id>
+    <url_updater_user_id type="integer" nil="true"/>
+    <title_language_code nil="true"/>
+    <publisher_language_code nil="true"/>
+    <description_language_code nil="true"/>
+    <asin_updater_user_id type="integer" nil="true"/>
+    <author>
+      <id type="integer">6252</id>
+      <name>Robert Jordan</name>
+      <updated_at type="datetime">2017-01-01T15:10:59+00:00</updated_at>
+      <created_at type="datetime">2006-12-13T16:41:06+00:00</created_at>
+      <searched_for_at type="datetime">2007-02-03T13:21:38+00:00</searched_for_at>
+      <image_uploaded_at type="datetime">2007-04-02T01:01:55+00:00</image_uploaded_at>
+      <user_id type="integer" nil="true"/>
+      <gender>M</gender>
+      <country_code>US</country_code>
+      <born_at type="date">1948-10-17</born_at>
+      <died_at type="date">2007-09-16</died_at>
+      <about>&lt;i&gt;Librarian Note: There is more than one author in the Goodreads database with this name.&lt;/i&gt;
+
+Robert Jordan was the pen name of James Oliver Rigney, Jr., under which he was best known as the author of the bestselling The Wheel of Time fantasy series. He also wrote under the names &lt;a href="http://www.goodreads.com/author/show/108933.Reagan_O_Neal"&gt;Reagan O'Neal&lt;/a&gt; and [a:Jackson O'Reilly|943931].
+
+Jordan was born in Charleston, South Carolina. He served two tours in Vietnam (from 1968 to 1970) with the United States Army as a helicopter gunner. He was awarded the Distinguished Flying Cross with bronze oak leaf cluster, the Bronze Star with "V" and bronze oak leaf cluster, and two Vietnamese Gallantry Crosses with palm. After returning from Vietnam he attended The Citadel where he received an undergraduate degree in physics. After graduating he was employed by the United States Navy as a nuclear engineer. He began writing in 1977. He was a history buff and enjoyed hunting, fishing, sailing, poker, chess, pool, and pipe collecting.
+
+He described himself as a "High Church" Episcopalian and received communion more than once a week. He lived with his wife Harriet McDougal, who works as a book editor (currently with Tor Books; she was also Jordan's editor) in a house built in 1797.
+
+Responding to queries on the similarity of some of the concepts in his Wheel of Time books with Freemasonry concepts, Jordan admitted that he was a Freemason. However, "like his father and grandfather," he preferred not to advertise, possibly because of the negative propaganda against Freemasonry. In his own words, "no man in this country should feel in danger because of his beliefs."
+
+On March 23, 2006, Jordan disclosed in a statement that he had been diagnosed with cardiac amyloidosis, and that with treatment, his median life expectancy was four years, though he said he intended to beat the statistics. He later posted on his Dragonmount blog to encourage his fans not to worry about him and that he intended to have a long and fully creative life.
+
+He began chemotherapy treatment at Mayo Clinic in Rochester, Minnesota, in early April 2006. Jordan was enrolled in a study using the drug Revlimid just approved for multiple myeloma but not yet tested on primary amyloidosis.
+
+Jordan died at approximately 2:45 p.m. EDT on September 16, 2007, and a funeral service was held for him on Wednesday, September 19, 2007. Jordan was cremated and his ashes buried in the churchyard of St. James Church in Goose Creek, outside Charleston. </about>
+      <uploader_user_id type="integer">33670</uploader_user_id>
+      <image_copyright>http://www.comic-con.org/cci2005/guests/jordan_robert.jpg</image_copyright>
+      <influences></influences>
+      <url></url>
+      <genre1>Fantasy</genre1>
+      <genre2></genre2>
+      <genre3></genre3>
+      <books_count type="integer">1797</books_count>
+      <reviews_count type="integer">2288561</reviews_count>
+      <ratings_sum type="integer">6877662</ratings_sum>
+      <works_count type="integer">256</works_count>
+      <hometown>Charleston, South Carolina</hometown>
+      <rating_dist>5:79578|4:82670|3:50226|2:12807|1:3497|total:228778</rating_dist>
+      <s3_image_at type="datetime">2015-05-14T22:56:58+00:00</s3_image_at>
+      <ratings_count type="integer">1655769</ratings_count>
+      <text_reviews_count type="integer">36899</text_reviews_count>
+      <author_program_at type="datetime" nil="true"/>
+      <postal_code nil="true"/>
+      <fanships_count type="integer">6396</fanships_count>
+      <best_book_id type="integer">228665</best_book_id>
+      <name_language_code nil="true"/>
+      <sort_by_name>jordan, robert</sort_by_name>
+      <shelf_display_name>Jordan, Robert</shelf_display_name>
+      <gender_custom nil="true"/>
+      <gender_pronoun nil="true"/>
+    </author>
+  </book>
+</user_status>
+        </object>
+    </update>
+      <update type="readstatus">
+      <action_text><![CDATA[is currently reading <a only_path="false" href="https://www.goodreads.com/review/show/1855101948">The Dragon Reborn (Wheel of Time, #3)</a>]]></action_text>
+      <link>https://www.goodreads.com/read_statuses/1635826977</link>
+      <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+        <actor>
+  <id type="integer">18152669</id>
+  <name>Greg Stewart</name>
+  <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+  <link>https://www.goodreads.com/user/show/18152669-greg-stewart</link>
+</actor>
+      <updated_at>Thu, 29 Dec 2016 02:34:58 -0800</updated_at>
+        <object>
+          <read_status>
+  <id type="integer">1635826977</id>
+  <review_id type="integer">1855101948</review_id>
+  <user_id type="integer">18152669</user_id>
+  <old_status nil="true"/>
+  <status>currently-reading</status>
+  <updated_at type="datetime">2016-12-29T10:34:58+00:00</updated_at>
+  <review>
+    <id type="integer">1855101948</id>
+    <user_id type="integer">18152669</user_id>
+    <book_id type="integer">34897</book_id>
+    <rating type="integer">0</rating>
+    <read_status>currently-reading</read_status>
+    <sell_flag type="boolean">false</sell_flag>
+    <review nil="true"/>
+    <recommendation nil="true"/>
+    <read_at type="datetime" nil="true"/>
+    <updated_at type="datetime">2016-12-29T10:34:58+00:00</updated_at>
+    <created_at type="datetime">2016-12-29T10:34:58+00:00</created_at>
+    <comments_count type="integer">0</comments_count>
+    <weight type="integer">0</weight>
+    <ratings_sum type="integer">0</ratings_sum>
+    <ratings_count type="integer">0</ratings_count>
+    <notes nil="true"/>
+    <spoiler_flag type="boolean">false</spoiler_flag>
+    <recommender_user_id1 type="integer">0</recommender_user_id1>
+    <recommender_user_name1 nil="true"/>
+    <work_id type="integer">791061</work_id>
+    <read_count nil="true"/>
+    <last_comment_at type="datetime" nil="true"/>
+    <started_at type="datetime">2016-12-29T10:34:58+00:00</started_at>
+    <hidden_flag type="boolean">false</hidden_flag>
+    <language_code type="integer" nil="true"/>
+    <last_revision_at type="datetime">2016-12-29T10:34:58+00:00</last_revision_at>
+    <non_friends_rating_count type="integer">0</non_friends_rating_count>
+    <book>
+      <id type="integer">34897</id>
+      <work_id type="integer">791061</work_id>
+      <isbn>0765305119</isbn>
+      <isbn13>9780765305114</isbn13>
+      <title>The Dragon Reborn (Wheel of Time, #3)</title>
+      <sort_by_title>dragon reborn (wheel of time, #3), the</sort_by_title>
+      <author_id type="integer">6252</author_id>
+      <author_role nil="true"/>
+      <asin nil="true"/>
+      <description>&lt;i&gt;The Dragon Reborn&lt;/i&gt;—the leader long prophesied who will save the world, but in the saving destroy it; the savior who will run mad and kill all those dearest to him—is on the run from his destiny.&lt;br&gt;&lt;br&gt;Able to touch the One Power, but unable to control it, and with no one to teach him how—for no man has done it in three thousand years—Rand al'Thor knows only that he must face the Dark One. But how?&lt;br&gt;&lt;br&gt;Winter has stopped the war—almost—yet men are dying, calling out for the Dragon. But where is he?&lt;br&gt;&lt;br&gt;Perrin Aybara is in pursuit with Moiraine Sedai, her Warder Lan, and Loial the Ogier. Bedeviled by dreams, Perrin is grappling with another deadly problem—how is he to escape the loss of his own humanity?&lt;br&gt;&lt;br&gt;Egwene, Elayne and Nynaeve are approaching Tar Valon, where Mat will be healed—if he lives until they arrive. But who will tell the Amyrlin their news—that the Black Ajah, long thought only a hideous rumor, is all too real? They cannot know that in Tar Valon far worse awaits...&lt;br&gt;&lt;br&gt;Ahead, for all of them, in the Heart of the Stone, lies the next great test of the Dragon reborn....&lt;br&gt;</description>
+      <format>Paperback</format>
+      <publication_year type="integer">2002</publication_year>
+      <publication_month type="integer">9</publication_month>
+      <publication_day type="integer">14</publication_day>
+      <num_pages type="integer">624</num_pages>
+      <publisher>Tor Fantasy</publisher>
+      <language_code>eng</language_code>
+      <edition_information nil="true"/>
+      <url nil="true"/>
+      <source_url nil="true"/>
+      <image_uploaded_at type="datetime">2016-11-25T17:56:20+00:00</image_uploaded_at>
+      <s3_image_at type="datetime">2016-11-25T17:56:21+00:00</s3_image_at>
+      <reviews_count type="integer">178712</reviews_count>
+      <ratings_sum type="integer">621874</ratings_sum>
+      <ratings_count type="integer">147212</ratings_count>
+      <text_reviews_count type="integer">1786</text_reviews_count>
+      <book_authors_count type="integer">0</book_authors_count>
+      <updated_at type="datetime">2016-11-25T17:56:21+00:00</updated_at>
+      <created_at type="datetime">2007-01-12T03:45:28+00:00</created_at>
+      <author_id_updater_user_id type="integer">-9</author_id_updater_user_id>
+      <author_role_updater_user_id type="integer">834216</author_role_updater_user_id>
+      <description_updater_user_id type="integer">1899624</description_updater_user_id>
+      <edition_information_updater_user_id type="integer" nil="true"/>
+      <format_updater_user_id type="integer">-9</format_updater_user_id>
+      <image_updater_user_id type="integer">2602702</image_updater_user_id>
+      <isbn_updater_user_id type="integer">-9</isbn_updater_user_id>
+      <isbn13_updater_user_id type="integer">-9</isbn13_updater_user_id>
+      <language_updater_user_id type="integer">2602702</language_updater_user_id>
+      <num_pages_updater_user_id type="integer">-9</num_pages_updater_user_id>
+      <publication_date_updater_user_id type="integer">-9</publication_date_updater_user_id>
+      <publisher_updater_user_id type="integer">-9</publisher_updater_user_id>
+      <title_updater_user_id type="integer">834216</title_updater_user_id>
+      <url_updater_user_id type="integer" nil="true"/>
+      <title_language_code nil="true"/>
+      <publisher_language_code nil="true"/>
+      <description_language_code nil="true"/>
+      <asin_updater_user_id type="integer" nil="true"/>
+      <author>
+        <id type="integer">6252</id>
+        <name>Robert Jordan</name>
+        <updated_at type="datetime">2017-01-01T15:10:59+00:00</updated_at>
+        <created_at type="datetime">2006-12-13T16:41:06+00:00</created_at>
+        <searched_for_at type="datetime">2007-02-03T13:21:38+00:00</searched_for_at>
+        <image_uploaded_at type="datetime">2007-04-02T01:01:55+00:00</image_uploaded_at>
+        <user_id type="integer" nil="true"/>
+        <gender>M</gender>
+        <country_code>US</country_code>
+        <born_at type="date">1948-10-17</born_at>
+        <died_at type="date">2007-09-16</died_at>
+        <about>&lt;i&gt;Librarian Note: There is more than one author in the Goodreads database with this name.&lt;/i&gt;
+
+Robert Jordan was the pen name of James Oliver Rigney, Jr., under which he was best known as the author of the bestselling The Wheel of Time fantasy series. He also wrote under the names &lt;a href="http://www.goodreads.com/author/show/108933.Reagan_O_Neal"&gt;Reagan O'Neal&lt;/a&gt; and [a:Jackson O'Reilly|943931].
+
+Jordan was born in Charleston, South Carolina. He served two tours in Vietnam (from 1968 to 1970) with the United States Army as a helicopter gunner. He was awarded the Distinguished Flying Cross with bronze oak leaf cluster, the Bronze Star with "V" and bronze oak leaf cluster, and two Vietnamese Gallantry Crosses with palm. After returning from Vietnam he attended The Citadel where he received an undergraduate degree in physics. After graduating he was employed by the United States Navy as a nuclear engineer. He began writing in 1977. He was a history buff and enjoyed hunting, fishing, sailing, poker, chess, pool, and pipe collecting.
+
+He described himself as a "High Church" Episcopalian and received communion more than once a week. He lived with his wife Harriet McDougal, who works as a book editor (currently with Tor Books; she was also Jordan's editor) in a house built in 1797.
+
+Responding to queries on the similarity of some of the concepts in his Wheel of Time books with Freemasonry concepts, Jordan admitted that he was a Freemason. However, "like his father and grandfather," he preferred not to advertise, possibly because of the negative propaganda against Freemasonry. In his own words, "no man in this country should feel in danger because of his beliefs."
+
+On March 23, 2006, Jordan disclosed in a statement that he had been diagnosed with cardiac amyloidosis, and that with treatment, his median life expectancy was four years, though he said he intended to beat the statistics. He later posted on his Dragonmount blog to encourage his fans not to worry about him and that he intended to have a long and fully creative life.
+
+He began chemotherapy treatment at Mayo Clinic in Rochester, Minnesota, in early April 2006. Jordan was enrolled in a study using the drug Revlimid just approved for multiple myeloma but not yet tested on primary amyloidosis.
+
+Jordan died at approximately 2:45 p.m. EDT on September 16, 2007, and a funeral service was held for him on Wednesday, September 19, 2007. Jordan was cremated and his ashes buried in the churchyard of St. James Church in Goose Creek, outside Charleston. </about>
+        <uploader_user_id type="integer">33670</uploader_user_id>
+        <image_copyright>http://www.comic-con.org/cci2005/guests/jordan_robert.jpg</image_copyright>
+        <influences></influences>
+        <url></url>
+        <genre1>Fantasy</genre1>
+        <genre2></genre2>
+        <genre3></genre3>
+        <books_count type="integer">1797</books_count>
+        <reviews_count type="integer">2288561</reviews_count>
+        <ratings_sum type="integer">6877662</ratings_sum>
+        <works_count type="integer">256</works_count>
+        <hometown>Charleston, South Carolina</hometown>
+        <rating_dist>5:79578|4:82670|3:50226|2:12807|1:3497|total:228778</rating_dist>
+        <s3_image_at type="datetime">2015-05-14T22:56:58+00:00</s3_image_at>
+        <ratings_count type="integer">1655769</ratings_count>
+        <text_reviews_count type="integer">36899</text_reviews_count>
+        <author_program_at type="datetime" nil="true"/>
+        <postal_code nil="true"/>
+        <fanships_count type="integer">6396</fanships_count>
+        <best_book_id type="integer">228665</best_book_id>
+        <name_language_code nil="true"/>
+        <sort_by_name>jordan, robert</sort_by_name>
+        <shelf_display_name>Jordan, Robert</shelf_display_name>
+        <gender_custom nil="true"/>
+        <gender_pronoun nil="true"/>
+      </author>
+    </book>
+  </review>
+</read_status>
+
+        </object>
+    </update>
+      <update type="review">
+      <action_text><![CDATA[gave 4 stars to <a href="https://www.goodreads.com/book/show/233649.The_Great_Hunt">The Great Hunt (Wheel of Time, #2)</a> by <a href="https://www.goodreads.com/author/show/6252.Robert_Jordan">Robert Jordan</a>]]></action_text>
+      <link>https://www.goodreads.com/review/show/1782637058</link>
+      <image_url>https://images.gr-assets.com/books/1437870280s/233649.jpg</image_url>
+        <actor>
+  <id type="integer">18152669</id>
+  <name>Greg Stewart</name>
+  <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+  <link>https://www.goodreads.com/user/show/18152669-greg-stewart</link>
+</actor>
+      <updated_at>Fri, 23 Dec 2016 06:15:41 -0800</updated_at>
+          <action type="rating">
+            <rating>4</rating>
+          </action>
+        <object>
+          <book>
+            <id>233649</id>
+            <title><![CDATA[The Great Hunt (Wheel of Time, #2)]]></title>
+            <link>https://www.goodreads.com/book/show/233649.The_Great_Hunt</link>
+            <authors>
+<author>
+<id>6252</id>
+<name>Robert Jordan</name>
+<role></role>
+<image_url nophoto='false'>
+<![CDATA[https://images.gr-assets.com/authors/1175475715p5/6252.jpg]]>
+</image_url>
+<small_image_url nophoto='false'>
+<![CDATA[https://images.gr-assets.com/authors/1175475715p2/6252.jpg]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/6252.Robert_Jordan]]></link>
+<average_rating>4.15</average_rating>
+<ratings_count>1655769</ratings_count>
+<text_reviews_count>36899</text_reviews_count>
+</author>
+</authors>
+          </book>
+        </object>
+    </update>
+      <update type="readstatus">
+      <action_text><![CDATA[is currently reading <a only_path="false" href="https://www.goodreads.com/review/show/1816220463">Dinopants</a>]]></action_text>
+      <link>https://www.goodreads.com/read_statuses/1585770736</link>
+      <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+        <actor>
+  <id type="integer">18152669</id>
+  <name>Greg Stewart</name>
+  <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+  <link>https://www.goodreads.com/user/show/18152669-greg-stewart</link>
+</actor>
+      <updated_at>Sat, 19 Nov 2016 11:16:56 -0800</updated_at>
+        <object>
+          <read_status>
+  <id type="integer">1585770736</id>
+  <review_id type="integer">1816220463</review_id>
+  <user_id type="integer">18152669</user_id>
+  <old_status nil="true"/>
+  <status>currently-reading</status>
+  <updated_at type="datetime">2016-11-19T19:16:55+00:00</updated_at>
+  <review>
+    <id type="integer">1816220463</id>
+    <user_id type="integer">18152669</user_id>
+    <book_id type="integer">6598106</book_id>
+    <rating type="integer">0</rating>
+    <read_status>currently-reading</read_status>
+    <sell_flag type="boolean">false</sell_flag>
+    <review nil="true"/>
+    <recommendation nil="true"/>
+    <read_at type="datetime" nil="true"/>
+    <updated_at type="datetime">2016-11-19T19:16:55+00:00</updated_at>
+    <created_at type="datetime">2016-11-19T19:16:55+00:00</created_at>
+    <comments_count type="integer">0</comments_count>
+    <weight type="integer">0</weight>
+    <ratings_sum type="integer">0</ratings_sum>
+    <ratings_count type="integer">0</ratings_count>
+    <notes nil="true"/>
+    <spoiler_flag type="boolean">false</spoiler_flag>
+    <recommender_user_id1 type="integer">0</recommender_user_id1>
+    <recommender_user_name1 nil="true"/>
+    <work_id type="integer">6791897</work_id>
+    <read_count nil="true"/>
+    <last_comment_at type="datetime" nil="true"/>
+    <started_at type="datetime">2016-11-19T19:16:55+00:00</started_at>
+    <hidden_flag type="boolean">false</hidden_flag>
+    <language_code type="integer" nil="true"/>
+    <last_revision_at type="datetime">2016-11-19T19:16:55+00:00</last_revision_at>
+    <non_friends_rating_count type="integer">0</non_friends_rating_count>
+    <book>
+      <id type="integer">6598106</id>
+      <work_id type="integer">6791897</work_id>
+      <isbn>1848120516</isbn>
+      <isbn13>9781848120518</isbn13>
+      <title>Dinopants</title>
+      <sort_by_title>dinopants</sort_by_title>
+      <author_id type="integer">2979973</author_id>
+      <author_role nil="true"/>
+      <asin nil="true"/>
+      <description>Caveboy Charlie Flint is fed up with all the dinosaurs pooing all over his hometown of Sabreton. When he finds his brand new club covered in dinopoo it's the last straw. He comes up with a fabulous new invention—dinopants! They fast become the must-have fashion accessory among all the dinosaurs—except for the terrifying T. Rex, who wants to make Charlie and his pants history!</description>
+      <format>Paperback</format>
+      <publication_year type="integer">2014</publication_year>
+      <publication_month type="integer">1</publication_month>
+      <publication_day type="integer">1</publication_day>
+      <num_pages type="integer">160</num_pages>
+      <publisher>Bonnier Zaffre</publisher>
+      <language_code>eng</language_code>
+      <edition_information nil="true"/>
+      <url nil="true"/>
+      <source_url nil="true"/>
+      <image_uploaded_at type="datetime">2010-08-10T17:10:43+00:00</image_uploaded_at>
+      <s3_image_at type="datetime">2015-06-15T22:56:39+00:00</s3_image_at>
+      <reviews_count type="integer">10</reviews_count>
+      <ratings_sum type="integer">18</ratings_sum>
+      <ratings_count type="integer">4</ratings_count>
+      <text_reviews_count type="integer">0</text_reviews_count>
+      <book_authors_count type="integer">1</book_authors_count>
+      <updated_at type="datetime">2016-07-04T00:23:25+00:00</updated_at>
+      <created_at type="datetime">2009-07-07T14:23:09+00:00</created_at>
+      <author_id_updater_user_id type="integer">-44</author_id_updater_user_id>
+      <author_role_updater_user_id type="integer">600035</author_role_updater_user_id>
+      <description_updater_user_id type="integer">-44</description_updater_user_id>
+      <edition_information_updater_user_id type="integer" nil="true"/>
+      <format_updater_user_id type="integer">-44</format_updater_user_id>
+      <image_updater_user_id type="integer">600035</image_updater_user_id>
+      <isbn_updater_user_id type="integer">-44</isbn_updater_user_id>
+      <isbn13_updater_user_id type="integer">-44</isbn13_updater_user_id>
+      <language_updater_user_id type="integer">-110</language_updater_user_id>
+      <num_pages_updater_user_id type="integer">-44</num_pages_updater_user_id>
+      <publication_date_updater_user_id type="integer">-44</publication_date_updater_user_id>
+      <publisher_updater_user_id type="integer">-44</publisher_updater_user_id>
+      <title_updater_user_id type="integer">-44</title_updater_user_id>
+      <url_updater_user_id type="integer" nil="true"/>
+      <title_language_code nil="true"/>
+      <publisher_language_code nil="true"/>
+      <description_language_code nil="true"/>
+      <asin_updater_user_id type="integer" nil="true"/>
+      <author>
+        <id type="integer">2979973</id>
+        <name>Ciaran Murtagh</name>
+        <updated_at type="datetime">2016-12-31T23:43:40+00:00</updated_at>
+        <created_at type="datetime">2009-07-07T14:23:09+00:00</created_at>
+        <searched_for_at type="datetime">2009-10-08T16:37:33+00:00</searched_for_at>
+        <image_uploaded_at type="datetime">2015-03-08T19:52:23+00:00</image_uploaded_at>
+        <user_id type="integer">2174568</user_id>
+        <gender>M</gender>
+        <country_code></country_code>
+        <born_at type="datetime" nil="true"/>
+        <died_at type="datetime" nil="true"/>
+        <about></about>
+        <uploader_user_id type="integer">2174568</uploader_user_id>
+        <image_copyright>Steve Ullathorne</image_copyright>
+        <influences></influences>
+        <url></url>
+        <genre1>Children's</genre1>
+        <genre2>Humor and Comedy</genre2>
+        <genre3></genre3>
+        <books_count type="integer">26</books_count>
+        <reviews_count type="integer">311</reviews_count>
+        <ratings_sum type="integer">299</ratings_sum>
+        <works_count type="integer">23</works_count>
+        <hometown></hometown>
+        <rating_dist>5:4|4:0|3:0|2:0|1:0|total:4</rating_dist>
+        <s3_image_at type="datetime">2015-05-15T03:51:10+00:00</s3_image_at>
+        <ratings_count type="integer">68</ratings_count>
+        <text_reviews_count type="integer">5</text_reviews_count>
+        <author_program_at type="datetime">2010-01-19T21:04:46+00:00</author_program_at>
+        <postal_code nil="true"/>
+        <fanships_count type="integer">1</fanships_count>
+        <best_book_id type="integer">14897523</best_book_id>
+        <name_language_code nil="true"/>
+        <sort_by_name>murtagh, ciaran</sort_by_name>
+        <shelf_display_name>Murtagh, Ciaran</shelf_display_name>
+        <gender_custom nil="true"/>
+        <gender_pronoun nil="true"/>
+      </author>
+    </book>
+  </review>
+</read_status>
+
+        </object>
+    </update>
+      <update type="review">
+      <action_text><![CDATA[gave 3 stars to <a href="https://www.goodreads.com/book/show/21282690-skalda-the-soul-stealer">Skalda the Soul Stealer (Sea Quest: Special, #2)</a> by <a href="https://www.goodreads.com/author/show/170985.Adam_Blade">Adam Blade</a>]]></action_text>
+      <link>https://www.goodreads.com/review/show/1798345317</link>
+      <image_url>https://images.gr-assets.com/books/1394335424s/21282690.jpg</image_url>
+        <actor>
+  <id type="integer">18152669</id>
+  <name>Greg Stewart</name>
+  <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+  <link>https://www.goodreads.com/user/show/18152669-greg-stewart</link>
+</actor>
+      <updated_at>Sat, 19 Nov 2016 00:51:29 -0800</updated_at>
+          <action type="rating">
+            <rating>3</rating>
+          </action>
+        <object>
+          <book>
+            <id>21282690</id>
+            <title><![CDATA[Skalda the Soul Stealer (Sea Quest: Special, #2)]]></title>
+            <link>https://www.goodreads.com/book/show/21282690-skalda-the-soul-stealer</link>
+            <authors>
+<author>
+<id>170985</id>
+<name>Adam Blade</name>
+<role></role>
+<image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_200x266-e183445fd1a1b5cc7075bb1cf7043306.png]]>
+</image_url>
+<small_image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/170985.Adam_Blade]]></link>
+<average_rating>4.10</average_rating>
+<ratings_count>20179</ratings_count>
+<text_reviews_count>775</text_reviews_count>
+</author>
+</authors>
+          </book>
+        </object>
+    </update>
+      <update type="review">
+      <action_text><![CDATA[gave 5 stars to <a href="https://www.goodreads.com/book/show/25916740-your-code-as-a-crime-scene">Your Code as a Crime Scene: Use Forensic Techniques to Arrest Defects, Bottlenecks, and Bad Design in Your Programs (The Pragmatic Programmers)</a> by <a href="https://www.goodreads.com/author/show/8029301.Adam_Tornhill">Adam Tornhill</a>]]></action_text>
+      <link>https://www.goodreads.com/review/show/1347041342</link>
+      <image_url>https://images.gr-assets.com/books/1436996784s/25916740.jpg</image_url>
+        <actor>
+  <id type="integer">18152669</id>
+  <name>Greg Stewart</name>
+  <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+  <link>https://www.goodreads.com/user/show/18152669-greg-stewart</link>
+</actor>
+      <updated_at>Sun, 06 Nov 2016 09:07:40 -0800</updated_at>
+          <action type="rating">
+            <rating>5</rating>
+          </action>
+        <object>
+          <book>
+            <id>25916740</id>
+            <title><![CDATA[Your Code as a Crime Scene: Use Forensic Techniques to Arrest Defects, Bottlenecks, and Bad Design in Your Programs (The Pragmatic Programmers)]]></title>
+            <link>https://www.goodreads.com/book/show/25916740-your-code-as-a-crime-scene</link>
+            <authors>
+<author>
+<id>8029301</id>
+<name>Adam Tornhill</name>
+<role></role>
+<image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_200x266-e183445fd1a1b5cc7075bb1cf7043306.png]]>
+</image_url>
+<small_image_url nophoto='true'>
+<![CDATA[https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]>
+</small_image_url>
+<link><![CDATA[https://www.goodreads.com/author/show/8029301.Adam_Tornhill]]></link>
+<average_rating>3.53</average_rating>
+<ratings_count>77</ratings_count>
+<text_reviews_count>19</text_reviews_count>
+</author>
+</authors>
+          </book>
+        </object>
+    </update>
+      <update type="readstatus">
+      <action_text><![CDATA[is currently reading <a only_path="false" href="https://www.goodreads.com/review/show/1798345317">Skalda the Soul Stealer (Sea Quest: Special, #2)</a>]]></action_text>
+      <link>https://www.goodreads.com/read_statuses/1562634936</link>
+      <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+        <actor>
+  <id type="integer">18152669</id>
+  <name>Greg Stewart</name>
+  <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+  <link>https://www.goodreads.com/user/show/18152669-greg-stewart</link>
+</actor>
+      <updated_at>Sun, 30 Oct 2016 12:38:42 -0700</updated_at>
+        <object>
+          <read_status>
+  <id type="integer">1562634936</id>
+  <review_id type="integer">1798345317</review_id>
+  <user_id type="integer">18152669</user_id>
+  <old_status nil="true"/>
+  <status>currently-reading</status>
+  <updated_at type="datetime">2016-10-30T19:38:42+00:00</updated_at>
+  <review>
+    <id type="integer">1798345317</id>
+    <user_id type="integer">18152669</user_id>
+    <book_id type="integer">21282690</book_id>
+    <rating type="integer">3</rating>
+    <read_status>read</read_status>
+    <sell_flag type="boolean">false</sell_flag>
+    <review nil="true"/>
+    <recommendation nil="true"/>
+    <read_at type="datetime">2016-11-19T08:51:29+00:00</read_at>
+    <updated_at type="datetime">2016-11-19T08:51:29+00:00</updated_at>
+    <created_at type="datetime">2016-10-30T19:38:41+00:00</created_at>
+    <comments_count type="integer">0</comments_count>
+    <weight type="integer">0</weight>
+    <ratings_sum type="integer">0</ratings_sum>
+    <ratings_count type="integer">0</ratings_count>
+    <notes nil="true"/>
+    <spoiler_flag type="boolean">false</spoiler_flag>
+    <recommender_user_id1 type="integer">0</recommender_user_id1>
+    <recommender_user_name1 nil="true"/>
+    <work_id type="integer">40602094</work_id>
+    <read_count nil="true"/>
+    <last_comment_at type="datetime" nil="true"/>
+    <started_at type="datetime">2016-10-30T19:38:42+00:00</started_at>
+    <hidden_flag type="boolean">false</hidden_flag>
+    <language_code type="integer" nil="true"/>
+    <last_revision_at type="datetime">2016-11-19T08:51:29+00:00</last_revision_at>
+    <non_friends_rating_count type="integer">0</non_friends_rating_count>
+    <book>
+      <id type="integer">21282690</id>
+      <work_id type="integer">40602094</work_id>
+      <isbn>1408328518</isbn>
+      <isbn13>9781408328514</isbn13>
+      <title>Skalda the Soul Stealer (Sea Quest: Special, #2)</title>
+      <sort_by_title>skalda the soul stealer (sea quest: special, #2)</sort_by_title>
+      <author_id type="integer">170985</author_id>
+      <author_role nil="true"/>
+      <asin nil="true"/>
+      <description nil="true"/>
+      <format>Paperback</format>
+      <publication_year type="integer">2014</publication_year>
+      <publication_month type="integer">6</publication_month>
+      <publication_day type="integer">5</publication_day>
+      <num_pages type="integer">192</num_pages>
+      <publisher>Orchard Books</publisher>
+      <language_code>eng</language_code>
+      <edition_information nil="true"/>
+      <url nil="true"/>
+      <source_url nil="true"/>
+      <image_uploaded_at type="datetime">2014-03-09T03:23:44+00:00</image_uploaded_at>
+      <s3_image_at type="datetime">2015-06-16T06:38:02+00:00</s3_image_at>
+      <reviews_count type="integer">24</reviews_count>
+      <ratings_sum type="integer">40</ratings_sum>
+      <ratings_count type="integer">10</ratings_count>
+      <text_reviews_count type="integer">0</text_reviews_count>
+      <book_authors_count type="integer">0</book_authors_count>
+      <updated_at type="datetime">2015-06-16T06:38:02+00:00</updated_at>
+      <created_at type="datetime">2014-03-06T18:59:01+00:00</created_at>
+      <author_id_updater_user_id type="integer">-10</author_id_updater_user_id>
+      <author_role_updater_user_id type="integer">-10</author_role_updater_user_id>
+      <description_updater_user_id type="integer">104823</description_updater_user_id>
+      <edition_information_updater_user_id type="integer" nil="true"/>
+      <format_updater_user_id type="integer">-10</format_updater_user_id>
+      <image_updater_user_id type="integer">-10</image_updater_user_id>
+      <isbn_updater_user_id type="integer">-10</isbn_updater_user_id>
+      <isbn13_updater_user_id type="integer">-10</isbn13_updater_user_id>
+      <language_updater_user_id type="integer">104823</language_updater_user_id>
+      <num_pages_updater_user_id type="integer">-10</num_pages_updater_user_id>
+      <publication_date_updater_user_id type="integer">-10</publication_date_updater_user_id>
+      <publisher_updater_user_id type="integer">-10</publisher_updater_user_id>
+      <title_updater_user_id type="integer">104823</title_updater_user_id>
+      <url_updater_user_id type="integer" nil="true"/>
+      <title_language_code nil="true"/>
+      <publisher_language_code nil="true"/>
+      <description_language_code nil="true"/>
+      <asin_updater_user_id type="integer" nil="true"/>
+      <author>
+        <id type="integer">170985</id>
+        <name>Adam Blade</name>
+        <updated_at type="datetime">2016-12-30T12:53:23+00:00</updated_at>
+        <created_at type="datetime">2007-03-09T23:10:05+00:00</created_at>
+        <searched_for_at type="datetime">2007-09-19T20:17:41+00:00</searched_for_at>
+        <image_uploaded_at type="datetime" nil="true"/>
+        <user_id type="integer" nil="true"/>
+        <gender nil="true"/>
+        <country_code></country_code>
+        <born_at type="datetime" nil="true"/>
+        <died_at type="datetime" nil="true"/>
+        <about>&lt;i&gt;Adam Blade is the &lt;a href=http://en.wikipedia.org/wiki/Pen_name#Collective_names&gt;house name&lt;/a&gt; for the Working Partners Ltd. ghostwriters who write the &lt;u&gt;Beast Quest&lt;/u&gt; and &lt;u&gt;Sea Quest&lt;/u&gt; series.&lt;/i&gt;
+
+Adam Blade is in his late twenties, and was born in Kent, England. His parents were both history teachers and amateur artists, and Adam grew up surrounded by his father’s paintings of historic English battles – which left a lifelong mark on his imagination. He was also fascinated by the ancient sword and shield that hung in his father’s office. Adam’s father said they were a Blade family heirloom.
+
+As a boy, Adam would spend days imagining who could have first owned the sword and shield. Eventually, he created a character – Tom, the bravest boy warrior of them all. The idea for Beast Quest was born.
+
+When Adam grew up and decided that he wanted to be a writer, he was stuck for ideas – until he remembered the old sword and shield, and the imaginary boy he had created when he was young. Adam decided to bring Tom fully to life so that readers could go on the kind of adventures that he always wanted to when he was that age… And still does, even though he’s grown up!
+
+When he’s not writing Beast Quest books, Adam enjoys visiting museums and ancient battle sites. His main hobbies are fencing and football. He also spends a lot of time at home running around after his two exotic pets – a tarantula named Ziggy, and a capuchin monkey named Omar. These little rascals were the inspiration for two of the Beasts that Tom faces on his Quest – Arachnid and Claw.
+
+Sadly, Adam does not have his own Fire-Dragon or Horse-Man. But he really wishes he did!</about>
+        <uploader_user_id type="integer">5263888</uploader_user_id>
+        <image_copyright>http://www.beastquest.co.uk/</image_copyright>
+        <influences></influences>
+        <url>http://www.beastquest.co.uk/</url>
+        <genre1></genre1>
+        <genre2></genre2>
+        <genre3></genre3>
+        <books_count type="integer">1118</books_count>
+        <reviews_count type="integer">43150</reviews_count>
+        <ratings_sum type="integer">82713</ratings_sum>
+        <works_count type="integer">384</works_count>
+        <hometown></hometown>
+        <rating_dist>5:625|4:243|3:170|2:82|1:38|total:1158</rating_dist>
+        <s3_image_at type="datetime" nil="true"/>
+        <ratings_count type="integer">20179</ratings_count>
+        <text_reviews_count type="integer">775</text_reviews_count>
+        <author_program_at type="datetime" nil="true"/>
+        <postal_code nil="true"/>
+        <fanships_count type="integer">54</fanships_count>
+        <best_book_id type="integer">592807</best_book_id>
+        <name_language_code nil="true"/>
+        <sort_by_name>blade, adam</sort_by_name>
+        <shelf_display_name>Blade, Adam</shelf_display_name>
+        <gender_custom nil="true"/>
+        <gender_pronoun nil="true"/>
+      </author>
+    </book>
+  </review>
+</read_status>
+
+        </object>
+    </update>
+      <update type="readstatus">
+      <action_text><![CDATA[started reading <a only_path="false" href="https://www.goodreads.com/review/show/1782637058">The Great Hunt (Wheel of Time, #2)</a>]]></action_text>
+      <link>https://www.goodreads.com/read_statuses/1560025591</link>
+      <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+        <actor>
+  <id type="integer">18152669</id>
+  <name>Greg Stewart</name>
+  <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+  <link>https://www.goodreads.com/user/show/18152669-greg-stewart</link>
+</actor>
+      <updated_at>Fri, 28 Oct 2016 00:50:10 -0700</updated_at>
+        <object>
+          <read_status>
+  <id type="integer">1560025591</id>
+  <review_id type="integer">1782637058</review_id>
+  <user_id type="integer">18152669</user_id>
+  <old_status>to-read</old_status>
+  <status>currently-reading</status>
+  <updated_at type="datetime">2016-10-28T07:50:10+00:00</updated_at>
+  <review>
+    <id type="integer">1782637058</id>
+    <user_id type="integer">18152669</user_id>
+    <book_id type="integer">233649</book_id>
+    <rating type="integer">4</rating>
+    <read_status>read</read_status>
+    <sell_flag type="boolean">false</sell_flag>
+    <review nil="true"/>
+    <recommendation nil="true"/>
+    <read_at type="datetime">2016-12-23T14:15:40+00:00</read_at>
+    <updated_at type="datetime">2016-12-23T14:15:40+00:00</updated_at>
+    <created_at type="datetime">2016-10-12T17:24:26+00:00</created_at>
+    <comments_count type="integer">0</comments_count>
+    <weight type="integer">0</weight>
+    <ratings_sum type="integer">0</ratings_sum>
+    <ratings_count type="integer">0</ratings_count>
+    <notes nil="true"/>
+    <spoiler_flag type="boolean">false</spoiler_flag>
+    <recommender_user_id1 type="integer">0</recommender_user_id1>
+    <recommender_user_name1 nil="true"/>
+    <work_id type="integer">1574475</work_id>
+    <read_count nil="true"/>
+    <last_comment_at type="datetime" nil="true"/>
+    <started_at type="datetime">2016-10-28T07:50:09+00:00</started_at>
+    <hidden_flag type="boolean">false</hidden_flag>
+    <language_code type="integer" nil="true"/>
+    <last_revision_at type="datetime">2016-12-23T14:15:40+00:00</last_revision_at>
+    <non_friends_rating_count type="integer">0</non_friends_rating_count>
+    <book>
+      <id type="integer">233649</id>
+      <work_id type="integer">1574475</work_id>
+      <isbn>0812517725</isbn>
+      <isbn13>9780812517729</isbn13>
+      <title>The Great Hunt (Wheel of Time, #2)</title>
+      <sort_by_title>great hunt (wheel of time, #2), the</sort_by_title>
+      <author_id type="integer">6252</author_id>
+      <author_role nil="true"/>
+      <asin nil="true"/>
+      <description nil="true"/>
+      <format>Mass Market Paperback</format>
+      <publication_year type="integer">1991</publication_year>
+      <publication_month type="integer">10</publication_month>
+      <publication_day type="integer">15</publication_day>
+      <num_pages type="integer">705</num_pages>
+      <publisher>Tor Fantasy</publisher>
+      <language_code>eng</language_code>
+      <edition_information nil="true"/>
+      <url nil="true"/>
+      <source_url nil="true"/>
+      <image_uploaded_at type="datetime">2015-07-26T00:24:40+00:00</image_uploaded_at>
+      <s3_image_at type="datetime">2015-07-26T00:24:40+00:00</s3_image_at>
+      <reviews_count type="integer">191714</reviews_count>
+      <ratings_sum type="integer">650708</ratings_sum>
+      <ratings_count type="integer">155113</ratings_count>
+      <text_reviews_count type="integer">2355</text_reviews_count>
+      <book_authors_count type="integer">0</book_authors_count>
+      <updated_at type="datetime">2016-12-04T01:49:12+00:00</updated_at>
+      <created_at type="datetime">2007-03-03T23:25:08+00:00</created_at>
+      <author_id_updater_user_id type="integer">-9</author_id_updater_user_id>
+      <author_role_updater_user_id type="integer">2075644</author_role_updater_user_id>
+      <description_updater_user_id type="integer">3192371</description_updater_user_id>
+      <edition_information_updater_user_id type="integer" nil="true"/>
+      <format_updater_user_id type="integer">1173726</format_updater_user_id>
+      <image_updater_user_id type="integer">-9</image_updater_user_id>
+      <isbn_updater_user_id type="integer">-9</isbn_updater_user_id>
+      <isbn13_updater_user_id type="integer">-9</isbn13_updater_user_id>
+      <language_updater_user_id type="integer">17061542</language_updater_user_id>
+      <num_pages_updater_user_id type="integer">18844431</num_pages_updater_user_id>
+      <publication_date_updater_user_id type="integer">-9</publication_date_updater_user_id>
+      <publisher_updater_user_id type="integer">-9</publisher_updater_user_id>
+      <title_updater_user_id type="integer">834216</title_updater_user_id>
+      <url_updater_user_id type="integer" nil="true"/>
+      <title_language_code nil="true"/>
+      <publisher_language_code nil="true"/>
+      <description_language_code nil="true"/>
+      <asin_updater_user_id type="integer" nil="true"/>
+      <author>
+        <id type="integer">6252</id>
+        <name>Robert Jordan</name>
+        <updated_at type="datetime">2017-01-01T15:10:59+00:00</updated_at>
+        <created_at type="datetime">2006-12-13T16:41:06+00:00</created_at>
+        <searched_for_at type="datetime">2007-02-03T13:21:38+00:00</searched_for_at>
+        <image_uploaded_at type="datetime">2007-04-02T01:01:55+00:00</image_uploaded_at>
+        <user_id type="integer" nil="true"/>
+        <gender>M</gender>
+        <country_code>US</country_code>
+        <born_at type="date">1948-10-17</born_at>
+        <died_at type="date">2007-09-16</died_at>
+        <about>&lt;i&gt;Librarian Note: There is more than one author in the Goodreads database with this name.&lt;/i&gt;
+
+Robert Jordan was the pen name of James Oliver Rigney, Jr., under which he was best known as the author of the bestselling The Wheel of Time fantasy series. He also wrote under the names &lt;a href="http://www.goodreads.com/author/show/108933.Reagan_O_Neal"&gt;Reagan O'Neal&lt;/a&gt; and [a:Jackson O'Reilly|943931].
+
+Jordan was born in Charleston, South Carolina. He served two tours in Vietnam (from 1968 to 1970) with the United States Army as a helicopter gunner. He was awarded the Distinguished Flying Cross with bronze oak leaf cluster, the Bronze Star with "V" and bronze oak leaf cluster, and two Vietnamese Gallantry Crosses with palm. After returning from Vietnam he attended The Citadel where he received an undergraduate degree in physics. After graduating he was employed by the United States Navy as a nuclear engineer. He began writing in 1977. He was a history buff and enjoyed hunting, fishing, sailing, poker, chess, pool, and pipe collecting.
+
+He described himself as a "High Church" Episcopalian and received communion more than once a week. He lived with his wife Harriet McDougal, who works as a book editor (currently with Tor Books; she was also Jordan's editor) in a house built in 1797.
+
+Responding to queries on the similarity of some of the concepts in his Wheel of Time books with Freemasonry concepts, Jordan admitted that he was a Freemason. However, "like his father and grandfather," he preferred not to advertise, possibly because of the negative propaganda against Freemasonry. In his own words, "no man in this country should feel in danger because of his beliefs."
+
+On March 23, 2006, Jordan disclosed in a statement that he had been diagnosed with cardiac amyloidosis, and that with treatment, his median life expectancy was four years, though he said he intended to beat the statistics. He later posted on his Dragonmount blog to encourage his fans not to worry about him and that he intended to have a long and fully creative life.
+
+He began chemotherapy treatment at Mayo Clinic in Rochester, Minnesota, in early April 2006. Jordan was enrolled in a study using the drug Revlimid just approved for multiple myeloma but not yet tested on primary amyloidosis.
+
+Jordan died at approximately 2:45 p.m. EDT on September 16, 2007, and a funeral service was held for him on Wednesday, September 19, 2007. Jordan was cremated and his ashes buried in the churchyard of St. James Church in Goose Creek, outside Charleston. </about>
+        <uploader_user_id type="integer">33670</uploader_user_id>
+        <image_copyright>http://www.comic-con.org/cci2005/guests/jordan_robert.jpg</image_copyright>
+        <influences></influences>
+        <url></url>
+        <genre1>Fantasy</genre1>
+        <genre2></genre2>
+        <genre3></genre3>
+        <books_count type="integer">1797</books_count>
+        <reviews_count type="integer">2288561</reviews_count>
+        <ratings_sum type="integer">6877662</ratings_sum>
+        <works_count type="integer">256</works_count>
+        <hometown>Charleston, South Carolina</hometown>
+        <rating_dist>5:79578|4:82670|3:50226|2:12807|1:3497|total:228778</rating_dist>
+        <s3_image_at type="datetime">2015-05-14T22:56:58+00:00</s3_image_at>
+        <ratings_count type="integer">1655769</ratings_count>
+        <text_reviews_count type="integer">36899</text_reviews_count>
+        <author_program_at type="datetime" nil="true"/>
+        <postal_code nil="true"/>
+        <fanships_count type="integer">6396</fanships_count>
+        <best_book_id type="integer">228665</best_book_id>
+        <name_language_code nil="true"/>
+        <sort_by_name>jordan, robert</sort_by_name>
+        <shelf_display_name>Jordan, Robert</shelf_display_name>
+        <gender_custom nil="true"/>
+        <gender_pronoun nil="true"/>
+      </author>
+    </book>
+  </review>
+</read_status>
+
+        </object>
+    </update>
+      <update type="readstatus">
+      <action_text><![CDATA[wants to read <a only_path="false" href="https://www.goodreads.com/review/show/1782637058">The Great Hunt (Wheel of Time, #2)</a>]]></action_text>
+      <link>https://www.goodreads.com/read_statuses/1542028765</link>
+      <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+        <actor>
+  <id type="integer">18152669</id>
+  <name>Greg Stewart</name>
+  <image_url>https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png</image_url>
+  <link>https://www.goodreads.com/user/show/18152669-greg-stewart</link>
+</actor>
+      <updated_at>Wed, 12 Oct 2016 10:24:27 -0700</updated_at>
+        <object>
+          <read_status>
+  <id type="integer">1542028765</id>
+  <review_id type="integer">1782637058</review_id>
+  <user_id type="integer">18152669</user_id>
+  <old_status nil="true"/>
+  <status>to-read</status>
+  <updated_at type="datetime">2016-10-12T17:24:27+00:00</updated_at>
+  <review>
+    <id type="integer">1782637058</id>
+    <user_id type="integer">18152669</user_id>
+    <book_id type="integer">233649</book_id>
+    <rating type="integer">4</rating>
+    <read_status>read</read_status>
+    <sell_flag type="boolean">false</sell_flag>
+    <review nil="true"/>
+    <recommendation nil="true"/>
+    <read_at type="datetime">2016-12-23T14:15:40+00:00</read_at>
+    <updated_at type="datetime">2016-12-23T14:15:40+00:00</updated_at>
+    <created_at type="datetime">2016-10-12T17:24:26+00:00</created_at>
+    <comments_count type="integer">0</comments_count>
+    <weight type="integer">0</weight>
+    <ratings_sum type="integer">0</ratings_sum>
+    <ratings_count type="integer">0</ratings_count>
+    <notes nil="true"/>
+    <spoiler_flag type="boolean">false</spoiler_flag>
+    <recommender_user_id1 type="integer">0</recommender_user_id1>
+    <recommender_user_name1 nil="true"/>
+    <work_id type="integer">1574475</work_id>
+    <read_count nil="true"/>
+    <last_comment_at type="datetime" nil="true"/>
+    <started_at type="datetime">2016-10-28T07:50:09+00:00</started_at>
+    <hidden_flag type="boolean">false</hidden_flag>
+    <language_code type="integer" nil="true"/>
+    <last_revision_at type="datetime">2016-12-23T14:15:40+00:00</last_revision_at>
+    <non_friends_rating_count type="integer">0</non_friends_rating_count>
+    <book>
+      <id type="integer">233649</id>
+      <work_id type="integer">1574475</work_id>
+      <isbn>0812517725</isbn>
+      <isbn13>9780812517729</isbn13>
+      <title>The Great Hunt (Wheel of Time, #2)</title>
+      <sort_by_title>great hunt (wheel of time, #2), the</sort_by_title>
+      <author_id type="integer">6252</author_id>
+      <author_role nil="true"/>
+      <asin nil="true"/>
+      <description nil="true"/>
+      <format>Mass Market Paperback</format>
+      <publication_year type="integer">1991</publication_year>
+      <publication_month type="integer">10</publication_month>
+      <publication_day type="integer">15</publication_day>
+      <num_pages type="integer">705</num_pages>
+      <publisher>Tor Fantasy</publisher>
+      <language_code>eng</language_code>
+      <edition_information nil="true"/>
+      <url nil="true"/>
+      <source_url nil="true"/>
+      <image_uploaded_at type="datetime">2015-07-26T00:24:40+00:00</image_uploaded_at>
+      <s3_image_at type="datetime">2015-07-26T00:24:40+00:00</s3_image_at>
+      <reviews_count type="integer">191714</reviews_count>
+      <ratings_sum type="integer">650708</ratings_sum>
+      <ratings_count type="integer">155113</ratings_count>
+      <text_reviews_count type="integer">2355</text_reviews_count>
+      <book_authors_count type="integer">0</book_authors_count>
+      <updated_at type="datetime">2016-12-04T01:49:12+00:00</updated_at>
+      <created_at type="datetime">2007-03-03T23:25:08+00:00</created_at>
+      <author_id_updater_user_id type="integer">-9</author_id_updater_user_id>
+      <author_role_updater_user_id type="integer">2075644</author_role_updater_user_id>
+      <description_updater_user_id type="integer">3192371</description_updater_user_id>
+      <edition_information_updater_user_id type="integer" nil="true"/>
+      <format_updater_user_id type="integer">1173726</format_updater_user_id>
+      <image_updater_user_id type="integer">-9</image_updater_user_id>
+      <isbn_updater_user_id type="integer">-9</isbn_updater_user_id>
+      <isbn13_updater_user_id type="integer">-9</isbn13_updater_user_id>
+      <language_updater_user_id type="integer">17061542</language_updater_user_id>
+      <num_pages_updater_user_id type="integer">18844431</num_pages_updater_user_id>
+      <publication_date_updater_user_id type="integer">-9</publication_date_updater_user_id>
+      <publisher_updater_user_id type="integer">-9</publisher_updater_user_id>
+      <title_updater_user_id type="integer">834216</title_updater_user_id>
+      <url_updater_user_id type="integer" nil="true"/>
+      <title_language_code nil="true"/>
+      <publisher_language_code nil="true"/>
+      <description_language_code nil="true"/>
+      <asin_updater_user_id type="integer" nil="true"/>
+      <author>
+        <id type="integer">6252</id>
+        <name>Robert Jordan</name>
+        <updated_at type="datetime">2017-01-01T15:10:59+00:00</updated_at>
+        <created_at type="datetime">2006-12-13T16:41:06+00:00</created_at>
+        <searched_for_at type="datetime">2007-02-03T13:21:38+00:00</searched_for_at>
+        <image_uploaded_at type="datetime">2007-04-02T01:01:55+00:00</image_uploaded_at>
+        <user_id type="integer" nil="true"/>
+        <gender>M</gender>
+        <country_code>US</country_code>
+        <born_at type="date">1948-10-17</born_at>
+        <died_at type="date">2007-09-16</died_at>
+        <about>&lt;i&gt;Librarian Note: There is more than one author in the Goodreads database with this name.&lt;/i&gt;
+
+Robert Jordan was the pen name of James Oliver Rigney, Jr., under which he was best known as the author of the bestselling The Wheel of Time fantasy series. He also wrote under the names &lt;a href="http://www.goodreads.com/author/show/108933.Reagan_O_Neal"&gt;Reagan O'Neal&lt;/a&gt; and [a:Jackson O'Reilly|943931].
+
+Jordan was born in Charleston, South Carolina. He served two tours in Vietnam (from 1968 to 1970) with the United States Army as a helicopter gunner. He was awarded the Distinguished Flying Cross with bronze oak leaf cluster, the Bronze Star with "V" and bronze oak leaf cluster, and two Vietnamese Gallantry Crosses with palm. After returning from Vietnam he attended The Citadel where he received an undergraduate degree in physics. After graduating he was employed by the United States Navy as a nuclear engineer. He began writing in 1977. He was a history buff and enjoyed hunting, fishing, sailing, poker, chess, pool, and pipe collecting.
+
+He described himself as a "High Church" Episcopalian and received communion more than once a week. He lived with his wife Harriet McDougal, who works as a book editor (currently with Tor Books; she was also Jordan's editor) in a house built in 1797.
+
+Responding to queries on the similarity of some of the concepts in his Wheel of Time books with Freemasonry concepts, Jordan admitted that he was a Freemason. However, "like his father and grandfather," he preferred not to advertise, possibly because of the negative propaganda against Freemasonry. In his own words, "no man in this country should feel in danger because of his beliefs."
+
+On March 23, 2006, Jordan disclosed in a statement that he had been diagnosed with cardiac amyloidosis, and that with treatment, his median life expectancy was four years, though he said he intended to beat the statistics. He later posted on his Dragonmount blog to encourage his fans not to worry about him and that he intended to have a long and fully creative life.
+
+He began chemotherapy treatment at Mayo Clinic in Rochester, Minnesota, in early April 2006. Jordan was enrolled in a study using the drug Revlimid just approved for multiple myeloma but not yet tested on primary amyloidosis.
+
+Jordan died at approximately 2:45 p.m. EDT on September 16, 2007, and a funeral service was held for him on Wednesday, September 19, 2007. Jordan was cremated and his ashes buried in the churchyard of St. James Church in Goose Creek, outside Charleston. </about>
+        <uploader_user_id type="integer">33670</uploader_user_id>
+        <image_copyright>http://www.comic-con.org/cci2005/guests/jordan_robert.jpg</image_copyright>
+        <influences></influences>
+        <url></url>
+        <genre1>Fantasy</genre1>
+        <genre2></genre2>
+        <genre3></genre3>
+        <books_count type="integer">1797</books_count>
+        <reviews_count type="integer">2288561</reviews_count>
+        <ratings_sum type="integer">6877662</ratings_sum>
+        <works_count type="integer">256</works_count>
+        <hometown>Charleston, South Carolina</hometown>
+        <rating_dist>5:79578|4:82670|3:50226|2:12807|1:3497|total:228778</rating_dist>
+        <s3_image_at type="datetime">2015-05-14T22:56:58+00:00</s3_image_at>
+        <ratings_count type="integer">1655769</ratings_count>
+        <text_reviews_count type="integer">36899</text_reviews_count>
+        <author_program_at type="datetime" nil="true"/>
+        <postal_code nil="true"/>
+        <fanships_count type="integer">6396</fanships_count>
+        <best_book_id type="integer">228665</best_book_id>
+        <name_language_code nil="true"/>
+        <sort_by_name>jordan, robert</sort_by_name>
+        <shelf_display_name>Jordan, Robert</shelf_display_name>
+        <gender_custom nil="true"/>
+        <gender_pronoun nil="true"/>
+      </author>
+    </book>
+  </review>
+</read_status>
+
+        </object>
+    </update>
+</updates>
+    <user_statuses>
+        <user_status>
+  <id type="integer">116451356</id>
+  <page type="integer">42</page>
+  <chapter type="integer" nil="true"/>
+  <comments_count type="integer">0</comments_count>
+  <body></body>
+  <created_at type="datetime">2016-12-29T10:35:09+00:00</created_at>
+  <updated_at type="datetime">2016-12-29T10:35:09+00:00</updated_at>
+  <last_comment_at type="datetime" nil="true"/>
+  <ratings_count type="integer">0</ratings_count>
+  <percent type="integer">6</percent>
+  <work_id type="integer">791061</work_id>
+  <note_uri nil="true"/>
+  <note_updated_at type="datetime" nil="true"/>
+  <review_id type="integer">1855101948</review_id>
+  <book>
+    <id type="integer">34897</id>
+    <title>The Dragon Reborn (Wheel of Time, #3)</title>
+    <num_pages type="integer">624</num_pages>
+    <image_url>https://images.gr-assets.com/books/1480096580m/34897.jpg</image_url>
+    <small_image_url>https://images.gr-assets.com/books/1480096580s/34897.jpg</small_image_url>
+<authors><author>    <id>6252</id>
+    <name>Robert Jordan</name>
+</author></authors>  </book>
+</user_status>
+        <user_status>
+  <id type="integer">113285592</id>
+  <page type="integer">54</page>
+  <chapter type="integer" nil="true"/>
+  <comments_count type="integer">0</comments_count>
+  <body></body>
+  <created_at type="datetime">2016-11-19T19:25:21+00:00</created_at>
+  <updated_at type="datetime">2016-11-19T19:25:21+00:00</updated_at>
+  <last_comment_at type="datetime" nil="true"/>
+  <ratings_count type="integer">0</ratings_count>
+  <percent type="integer">33</percent>
+  <work_id type="integer">6791897</work_id>
+  <note_uri nil="true"/>
+  <note_updated_at type="datetime" nil="true"/>
+  <review_id type="integer">1816220463</review_id>
+  <book>
+    <id type="integer">6598106</id>
+    <title>Dinopants</title>
+    <num_pages type="integer">160</num_pages>
+    <image_url>https://images.gr-assets.com/books/1281460243m/6598106.jpg</image_url>
+    <small_image_url>https://images.gr-assets.com/books/1281460243s/6598106.jpg</small_image_url>
+<authors><author>    <id>888196</id>
+    <name>Richard Morgan</name>
+</author><author>    <id>2979973</id>
+    <name>Ciaran Murtagh</name>
+</author></authors>  </book>
+</user_status>
+        <user_status>
+  <id type="integer">116451331</id>
+  <page type="integer">170</page>
+  <chapter type="integer" nil="true"/>
+  <comments_count type="integer">0</comments_count>
+  <body></body>
+  <created_at type="datetime">2016-12-29T10:34:26+00:00</created_at>
+  <updated_at type="datetime">2016-12-29T10:34:26+00:00</updated_at>
+  <last_comment_at type="datetime" nil="true"/>
+  <ratings_count type="integer">0</ratings_count>
+  <percent type="integer">34</percent>
+  <work_id type="integer">16402639</work_id>
+  <note_uri nil="true"/>
+  <note_updated_at type="datetime" nil="true"/>
+  <review_id type="integer">1087949739</review_id>
+  <book>
+    <id type="integer">11468377</id>
+    <title>Thinking, Fast and Slow</title>
+    <num_pages type="integer">499</num_pages>
+    <image_url>https://images.gr-assets.com/books/1317793965m/11468377.jpg</image_url>
+    <small_image_url>https://images.gr-assets.com/books/1317793965s/11468377.jpg</small_image_url>
+<authors><author>    <id>72401</id>
+    <name>Daniel Kahneman</name>
+</author></authors>  </book>
+</user_status>
+    </user_statuses>
+</user>

@@ -1,0 +1,1675 @@
+{
+    "meta": {
+        "code": 200,
+        "requestId": "58690feb4c1f676cb450acf9"
+    },
+    "notifications": [{
+        "type": "notificationTray",
+        "item": {
+            "unreadCount": 2
+        }
+    }],
+    "response": {
+        "checkins": {
+            "count": 1945,
+            "items": [{
+                "id": "5867d042d25ded6f126780ca",
+                "createdAt": 1483198530,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "4c5439ac30f92d7f5bb912ba",
+                    "name": "Plage des Sables-d'Olonne",
+                    "contact": {},
+                    "location": {
+                        "address": "Promenade de l'Amiral Lafargue",
+                        "lat": 46.49456311235442,
+                        "lng": -1.7843691882828938,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.49456311235442,
+                            "lng": -1.7843691882828938
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Les Sables-d'Olonne",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["Promenade de l'Amiral Lafargue", "85100 Les Sables-d'Olonne"]
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d1e2941735",
+                        "name": "Beach",
+                        "pluralName": "Beaches",
+                        "shortName": "Beach",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/parks_outdoors\/beach_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 2224,
+                        "usersCount": 993,
+                        "tipCount": 6
+                    },
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "58678582db6cd62488d8250c",
+                "createdAt": 1483179394,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "586242a0abc6d60cc37547bf",
+                    "name": "Le Longchamp",
+                    "contact": {},
+                    "location": {
+                        "lat": 46.493572,
+                        "lng": -1.776645,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.493572,
+                            "lng": -1.776645
+                        }],
+                        "cc": "FR",
+                        "country": "France"
+                    },
+                    "categories": [{
+                        "id": "4f04ad622fb6e1c99f3db0b9",
+                        "name": "Newsstand",
+                        "pluralName": "Newsstands",
+                        "shortName": "Newsstand",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/shops\/newsstand_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 4,
+                        "usersCount": 1,
+                        "tipCount": 0
+                    },
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "58678577126ae84b8bb5d646",
+                "createdAt": 1483179383,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "52187bb511d244d695970398",
+                    "name": "L'atelier De Saint Pierre",
+                    "contact": {
+                        "phone": "+33244415005",
+                        "formattedPhone": "+33 2 44 41 50 05"
+                    },
+                    "location": {
+                        "address": "9 RUE SAINT PIERRE",
+                        "lat": 46.492671966552734,
+                        "lng": -1.7750288248062134,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.492671966552734,
+                            "lng": -1.7750288248062134
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Vendée",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["9 RUE SAINT PIERRE", "85100 Vendée"]
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d16a941735",
+                        "name": "Bakery",
+                        "pluralName": "Bakeries",
+                        "shortName": "Bakery",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/bakery_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 10,
+                        "usersCount": 1,
+                        "tipCount": 0
+                    },
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "54b59bdfe50851c96b4e8c8c",
+                    "name": "Baked",
+                    "image": {
+                        "prefix": "https:\/\/irs2.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/croissant_e21bc6.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 70
+                    },
+                    "pickerPosition": {
+                        "page": 2,
+                        "index": 22
+                    },
+                    "teaseText": "This sticker\u2019s in the bag-guette!",
+                    "unlockText": "Is that freshly baked bread and croissants you smell? Good thing you always roll with butter in your fifth pocket. That IS what it\u2019s for, right??",
+                    "bonusText": "Use at Bakeries for a bonus.",
+                    "points": 2,
+                    "bonusStatus": "Use once per week. Recharges Sunday at midnight."
+                },
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "58666d5618384c177fdd6e72",
+                "createdAt": 1483107670,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "4c5439ac30f92d7f5bb912ba",
+                    "name": "Plage des Sables-d'Olonne",
+                    "contact": {},
+                    "location": {
+                        "address": "Promenade de l'Amiral Lafargue",
+                        "lat": 46.49456311235442,
+                        "lng": -1.7843691882828938,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.49456311235442,
+                            "lng": -1.7843691882828938
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Les Sables-d'Olonne",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["Promenade de l'Amiral Lafargue", "85100 Les Sables-d'Olonne"]
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d1e2941735",
+                        "name": "Beach",
+                        "pluralName": "Beaches",
+                        "shortName": "Beach",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/parks_outdoors\/beach_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 2224,
+                        "usersCount": 993,
+                        "tipCount": 6
+                    },
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "52a659800000000000000017",
+                    "name": "Beach Bum",
+                    "image": {
+                        "prefix": "https:\/\/irs1.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/surfer_ed6932.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 45
+                    },
+                    "pickerPosition": {
+                        "page": 1,
+                        "index": 21
+                    },
+                    "teaseText": "Life\u2019s a beach. Then you unlock. ",
+                    "unlockText": "Sand in your drink, brutal sunburns, that old dude who clearly shouldn\u2019t be wearing a Speedo. Nothing can keep you from the beach."
+                },
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "586652fe9168020f5c6c630c",
+                "createdAt": 1483100926,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "4bee575be24d20a1c9d77214",
+                    "name": "Marché Arago",
+                    "contact": {},
+                    "location": {
+                        "address": "Boulevard Arago",
+                        "lat": 46.49457467428361,
+                        "lng": -1.7735906201786265,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.49457467428361,
+                            "lng": -1.7735906201786265
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Les Sables-d'Olonne",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["Boulevard Arago", "85100 Les Sables-d'Olonne"]
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d10e951735",
+                        "name": "Fish Market",
+                        "pluralName": "Fish Markets",
+                        "shortName": "Fish Market",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/shops\/food_fishmarket_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 158,
+                        "usersCount": 74,
+                        "tipCount": 3
+                    },
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "55563bd52beaa0fbc4d1dc3f",
+                    "name": "Baggs",
+                    "image": {
+                        "prefix": "https:\/\/irs1.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/groceries_2a2425.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 85
+                    },
+                    "pickerPosition": {
+                        "page": 3,
+                        "index": 13
+                    },
+                    "teaseText": "Paper or plastic?",
+                    "unlockText": "They're out of milk, your cart's wheel is busted, and that lady has way more than 10 items! Here's hoping Baggs doesn't dump your eggs on the ground.",
+                    "bonusText": "Use at Grocery Stores and Markets for a bonus.",
+                    "points": 2,
+                    "bonusStatus": "Use once per week. Recharges Sunday at midnight."
+                },
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "586652ee7b43b441a440b728",
+                "createdAt": 1483100910,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "52187bb511d244d695970398",
+                    "name": "L'atelier De Saint Pierre",
+                    "contact": {
+                        "phone": "+33244415005",
+                        "formattedPhone": "+33 2 44 41 50 05"
+                    },
+                    "location": {
+                        "address": "9 RUE SAINT PIERRE",
+                        "lat": 46.492671966552734,
+                        "lng": -1.7750288248062134,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.492671966552734,
+                            "lng": -1.7750288248062134
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Vendée",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["9 RUE SAINT PIERRE", "85100 Vendée"]
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d16a941735",
+                        "name": "Bakery",
+                        "pluralName": "Bakeries",
+                        "shortName": "Bakery",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/bakery_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 10,
+                        "usersCount": 1,
+                        "tipCount": 0
+                    },
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "54b59bdfe50851c96b4e8c8c",
+                    "name": "Baked",
+                    "image": {
+                        "prefix": "https:\/\/irs2.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/croissant_e21bc6.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 70
+                    },
+                    "pickerPosition": {
+                        "page": 2,
+                        "index": 22
+                    },
+                    "teaseText": "This sticker\u2019s in the bag-guette!",
+                    "unlockText": "Is that freshly baked bread and croissants you smell? Good thing you always roll with butter in your fifth pocket. That IS what it\u2019s for, right??",
+                    "bonusText": "Use at Bakeries for a bonus.",
+                    "points": 2,
+                    "bonusStatus": "Use once per week. Recharges Sunday at midnight."
+                },
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "586528fba6118c7f7f48027e",
+                "createdAt": 1483024635,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "4fd3a1bee4b0b3abb3680d44",
+                    "name": "La Cuisine De Bertrand",
+                    "contact": {},
+                    "location": {
+                        "lat": 46.499155,
+                        "lng": -1.790772,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.499155,
+                            "lng": -1.790772
+                        }],
+                        "cc": "FR",
+                        "country": "France"
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d10c941735",
+                        "name": "French Restaurant",
+                        "pluralName": "French Restaurants",
+                        "shortName": "French",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/french_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 5,
+                        "usersCount": 5,
+                        "tipCount": 1
+                    },
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "53fe77d24b9048855b3648b4",
+                    "name": "Tasty",
+                    "image": {
+                        "prefix": "https:\/\/irs3.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/knifefork_fad538.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 6
+                    },
+                    "pickerPosition": {
+                        "page": 0,
+                        "index": 6
+                    },
+                    "teaseText": "Mmmmm Mmmmm Mmmmm Mmmmm Mmmmm",
+                    "unlockText": "You sure love dining out. Can we interest you in today\u2019s special? It\u2019s a gluten-free, grass-fed, farm-to-table sticker. Enjoy!",
+                    "bonusText": "Use at Restaurants for a bonus.",
+                    "points": 2,
+                    "bonusStatus": "Use once per week. Recharges Sunday at midnight."
+                },
+                "isMayor": false,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "586528e5c0c89b65694e0dc8",
+                "createdAt": 1483024613,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "4c5439ac30f92d7f5bb912ba",
+                    "name": "Plage des Sables-d'Olonne",
+                    "contact": {},
+                    "location": {
+                        "address": "Promenade de l'Amiral Lafargue",
+                        "lat": 46.49456311235442,
+                        "lng": -1.7843691882828938,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.49456311235442,
+                            "lng": -1.7843691882828938
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Les Sables-d'Olonne",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["Promenade de l'Amiral Lafargue", "85100 Les Sables-d'Olonne"]
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d1e2941735",
+                        "name": "Beach",
+                        "pluralName": "Beaches",
+                        "shortName": "Beach",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/parks_outdoors\/beach_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 2224,
+                        "usersCount": 993,
+                        "tipCount": 6
+                    },
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "52a659800000000000000017",
+                    "name": "Beach Bum",
+                    "image": {
+                        "prefix": "https:\/\/irs1.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/surfer_ed6932.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 45
+                    },
+                    "pickerPosition": {
+                        "page": 1,
+                        "index": 21
+                    },
+                    "teaseText": "Life\u2019s a beach. Then you unlock. ",
+                    "unlockText": "Sand in your drink, brutal sunburns, that old dude who clearly shouldn\u2019t be wearing a Speedo. Nothing can keep you from the beach."
+                },
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "5864e68f966e557fe5dd15e1",
+                "createdAt": 1483007631,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "586242a0abc6d60cc37547bf",
+                    "name": "Le Longchamp",
+                    "contact": {},
+                    "location": {
+                        "lat": 46.493572,
+                        "lng": -1.776645,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.493572,
+                            "lng": -1.776645
+                        }],
+                        "cc": "FR",
+                        "country": "France"
+                    },
+                    "categories": [{
+                        "id": "4f04ad622fb6e1c99f3db0b9",
+                        "name": "Newsstand",
+                        "pluralName": "Newsstands",
+                        "shortName": "Newsstand",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/shops\/newsstand_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 4,
+                        "usersCount": 1,
+                        "tipCount": 0
+                    },
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "5864e67fcc05d16362814cf8",
+                "createdAt": 1483007615,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "52187bb511d244d695970398",
+                    "name": "L'atelier De Saint Pierre",
+                    "contact": {
+                        "phone": "+33244415005",
+                        "formattedPhone": "+33 2 44 41 50 05"
+                    },
+                    "location": {
+                        "address": "9 RUE SAINT PIERRE",
+                        "lat": 46.492671966552734,
+                        "lng": -1.7750288248062134,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.492671966552734,
+                            "lng": -1.7750288248062134
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Vendée",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["9 RUE SAINT PIERRE", "85100 Vendée"]
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d16a941735",
+                        "name": "Bakery",
+                        "pluralName": "Bakeries",
+                        "shortName": "Bakery",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/bakery_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 10,
+                        "usersCount": 1,
+                        "tipCount": 0
+                    },
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "54b59bdfe50851c96b4e8c8c",
+                    "name": "Baked",
+                    "image": {
+                        "prefix": "https:\/\/irs2.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/croissant_e21bc6.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 70
+                    },
+                    "pickerPosition": {
+                        "page": 2,
+                        "index": 22
+                    },
+                    "teaseText": "This sticker\u2019s in the bag-guette!",
+                    "unlockText": "Is that freshly baked bread and croissants you smell? Good thing you always roll with butter in your fifth pocket. That IS what it\u2019s for, right??",
+                    "bonusText": "Use at Bakeries for a bonus.",
+                    "points": 2,
+                    "bonusStatus": "Use once per week. Recharges Sunday at midnight."
+                },
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "5863d35d00841a266f37f660",
+                "createdAt": 1482937181,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "4c5439ac30f92d7f5bb912ba",
+                    "name": "Plage des Sables-d'Olonne",
+                    "contact": {},
+                    "location": {
+                        "address": "Promenade de l'Amiral Lafargue",
+                        "lat": 46.49456311235442,
+                        "lng": -1.7843691882828938,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.49456311235442,
+                            "lng": -1.7843691882828938
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Les Sables-d'Olonne",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["Promenade de l'Amiral Lafargue", "85100 Les Sables-d'Olonne"]
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d1e2941735",
+                        "name": "Beach",
+                        "pluralName": "Beaches",
+                        "shortName": "Beach",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/parks_outdoors\/beach_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 2224,
+                        "usersCount": 993,
+                        "tipCount": 6
+                    },
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "52a659800000000000000017",
+                    "name": "Beach Bum",
+                    "image": {
+                        "prefix": "https:\/\/irs1.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/surfer_ed6932.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 45
+                    },
+                    "pickerPosition": {
+                        "page": 1,
+                        "index": 21
+                    },
+                    "teaseText": "Life\u2019s a beach. Then you unlock. ",
+                    "unlockText": "Sand in your drink, brutal sunburns, that old dude who clearly shouldn\u2019t be wearing a Speedo. Nothing can keep you from the beach."
+                },
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "5863a00ca913301bc9856122",
+                "createdAt": 1482924044,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "4dc120e6b0fb1c18ee5b95fc",
+                    "name": "La Comete Les Sables D Olonne",
+                    "contact": {},
+                    "location": {
+                        "address": "37 Promenade Georges Clemenceau",
+                        "lat": 46.493629,
+                        "lng": -1.778845,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.493629,
+                            "lng": -1.778845
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Les Sables-d'Olonne",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["37 Promenade Georges Clemenceau", "85100 Les Sables-d'Olonne"]
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d121941735",
+                        "name": "Lounge",
+                        "pluralName": "Lounges",
+                        "shortName": "Lounge",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/nightlife\/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 49,
+                        "usersCount": 35,
+                        "tipCount": 2
+                    },
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "52a659800000000000000009",
+                    "name": "Suds McGee",
+                    "image": {
+                        "prefix": "https:\/\/irs0.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/drunk_9978e9.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 8
+                    },
+                    "pickerPosition": {
+                        "page": 0,
+                        "index": 8
+                    },
+                    "teaseText": "Giving you a hint would only lower the bar.",
+                    "unlockText": "The expression rings true: \u201cBeer before liquor\u2026 unlock a new sticker!\u201d Get home safe. And remember, friends don\u2019t let friends do Jägerbombs.",
+                    "bonusText": "Use at Bars for a bonus.",
+                    "points": 2,
+                    "bonusStatus": "Use once per week. Recharges Sunday at midnight."
+                },
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "5863906cc45ee33a8e269d78",
+                "createdAt": 1482920044,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "586242a0abc6d60cc37547bf",
+                    "name": "Le Longchamp",
+                    "contact": {},
+                    "location": {
+                        "lat": 46.493572,
+                        "lng": -1.776645,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.493572,
+                            "lng": -1.776645
+                        }],
+                        "cc": "FR",
+                        "country": "France"
+                    },
+                    "categories": [{
+                        "id": "4f04ad622fb6e1c99f3db0b9",
+                        "name": "Newsstand",
+                        "pluralName": "Newsstands",
+                        "shortName": "Newsstand",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/shops\/newsstand_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 4,
+                        "usersCount": 1,
+                        "tipCount": 0
+                    },
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "5863905fcf11d45a45190ca4",
+                "createdAt": 1482920031,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "52187bb511d244d695970398",
+                    "name": "L'atelier De Saint Pierre",
+                    "contact": {
+                        "phone": "+33244415005",
+                        "formattedPhone": "+33 2 44 41 50 05"
+                    },
+                    "location": {
+                        "address": "9 RUE SAINT PIERRE",
+                        "lat": 46.492671966552734,
+                        "lng": -1.7750288248062134,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.492671966552734,
+                            "lng": -1.7750288248062134
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Vendée",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["9 RUE SAINT PIERRE", "85100 Vendée"]
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d16a941735",
+                        "name": "Bakery",
+                        "pluralName": "Bakeries",
+                        "shortName": "Bakery",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/bakery_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 10,
+                        "usersCount": 1,
+                        "tipCount": 0
+                    },
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "54b59bdfe50851c96b4e8c8c",
+                    "name": "Baked",
+                    "image": {
+                        "prefix": "https:\/\/irs2.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/croissant_e21bc6.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 70
+                    },
+                    "pickerPosition": {
+                        "page": 2,
+                        "index": 22
+                    },
+                    "teaseText": "This sticker\u2019s in the bag-guette!",
+                    "unlockText": "Is that freshly baked bread and croissants you smell? Good thing you always roll with butter in your fifth pocket. That IS what it\u2019s for, right??",
+                    "bonusText": "Use at Bakeries for a bonus.",
+                    "points": 2,
+                    "bonusStatus": "Use once per week. Recharges Sunday at midnight."
+                },
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "5862823ffb549a4a7dae437f",
+                "createdAt": 1482850879,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "4c5439ac30f92d7f5bb912ba",
+                    "name": "Plage des Sables-d'Olonne",
+                    "contact": {},
+                    "location": {
+                        "address": "Promenade de l'Amiral Lafargue",
+                        "lat": 46.49456311235442,
+                        "lng": -1.7843691882828938,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.49456311235442,
+                            "lng": -1.7843691882828938
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Les Sables-d'Olonne",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["Promenade de l'Amiral Lafargue", "85100 Les Sables-d'Olonne"]
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d1e2941735",
+                        "name": "Beach",
+                        "pluralName": "Beaches",
+                        "shortName": "Beach",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/parks_outdoors\/beach_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 2224,
+                        "usersCount": 993,
+                        "tipCount": 6
+                    },
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "554149287b28d289d6e8e7eb",
+                    "name": "Swimmies",
+                    "image": {
+                        "prefix": "https:\/\/irs0.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/lifering_434aea.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 75
+                    },
+                    "pickerPosition": {
+                        "page": 3,
+                        "index": 3
+                    },
+                    "teaseText": "Make sure there\u2019s a lifeguard on duty.",
+                    "unlockText": "Remember, if you drop your phone into the water, just put it in a bag with Condoleezza Rice. We're pretty sure that\u2019s right. Yeah, that\u2019s right.",
+                    "bonusText": "Use at Beaches, Lakes, or Pools for a bonus.",
+                    "points": 2,
+                    "bonusStatus": "Use once per week. Recharges Sunday at midnight."
+                },
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "58624e7683622d6b9c4a04d0",
+                "createdAt": 1482837622,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "4eafef6861af6ac5880a23ac",
+                    "name": "Notre Dame De Bon Port",
+                    "contact": {},
+                    "location": {
+                        "lat": 46.49580610870424,
+                        "lng": -1.7861165102269185,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.49580610870424,
+                            "lng": -1.7861165102269185
+                        }],
+                        "cc": "FR",
+                        "country": "France"
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d132941735",
+                        "name": "Church",
+                        "pluralName": "Churches",
+                        "shortName": "Church",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/building\/religious_church_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 29,
+                        "usersCount": 23,
+                        "tipCount": 3
+                    },
+                    "venueRatingBlacklisted": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "isMayor": false,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "58624e43964d780ed2ec0d91",
+                "createdAt": 1482837571,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "4dc120e6b0fb1c18ee5b95fc",
+                    "name": "La Comete Les Sables D Olonne",
+                    "contact": {},
+                    "location": {
+                        "address": "37 Promenade Georges Clemenceau",
+                        "lat": 46.493629,
+                        "lng": -1.778845,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.493629,
+                            "lng": -1.778845
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Les Sables-d'Olonne",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["37 Promenade Georges Clemenceau", "85100 Les Sables-d'Olonne"]
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d121941735",
+                        "name": "Lounge",
+                        "pluralName": "Lounges",
+                        "shortName": "Lounge",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/nightlife\/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 49,
+                        "usersCount": 35,
+                        "tipCount": 2
+                    },
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "52a659800000000000000009",
+                    "name": "Suds McGee",
+                    "image": {
+                        "prefix": "https:\/\/irs0.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/drunk_9978e9.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 8
+                    },
+                    "pickerPosition": {
+                        "page": 0,
+                        "index": 8
+                    },
+                    "teaseText": "Giving you a hint would only lower the bar.",
+                    "unlockText": "The expression rings true: \u201cBeer before liquor\u2026 unlock a new sticker!\u201d Get home safe. And remember, friends don\u2019t let friends do Jägerbombs.",
+                    "bonusText": "Use at Bars for a bonus.",
+                    "points": 2,
+                    "bonusStatus": "Use once per week. Recharges Sunday at midnight."
+                },
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "586242a625911e4fc9bdef53",
+                "createdAt": 1482834598,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "586242a0abc6d60cc37547bf",
+                    "name": "Le Longchamp",
+                    "contact": {},
+                    "location": {
+                        "lat": 46.493572,
+                        "lng": -1.776645,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.493572,
+                            "lng": -1.776645
+                        }],
+                        "cc": "FR",
+                        "country": "France"
+                    },
+                    "categories": [{
+                        "id": "4f04ad622fb6e1c99f3db0b9",
+                        "name": "Newsstand",
+                        "pluralName": "Newsstands",
+                        "shortName": "Newsstand",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/shops\/newsstand_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 4,
+                        "usersCount": 1,
+                        "tipCount": 0
+                    },
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "586241dd58c4d13ff7f9beb1",
+                "createdAt": 1482834397,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "563c7f85cd10c5b6a63abfc3",
+                    "name": "Carrefour Market Les Sables D'Olonne Castelnau",
+                    "contact": {
+                        "phone": "+33251320207",
+                        "formattedPhone": "+33 2 51 32 02 07"
+                    },
+                    "location": {
+                        "address": "99 boulevard Castelnau",
+                        "lat": 46.49493,
+                        "lng": -1.77647,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.49493,
+                            "lng": -1.77647
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Les Sables-d'Olonne",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["99 boulevard Castelnau", "85100 Les Sables-d'Olonne"]
+                    },
+                    "categories": [{
+                        "id": "52f2ab2ebcbc57f1066b8b46",
+                        "name": "Supermarket",
+                        "pluralName": "Supermarkets",
+                        "shortName": "Supermarket",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/shops\/food_grocery_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": true,
+                    "stats": {
+                        "checkinsCount": 2,
+                        "usersCount": 2,
+                        "tipCount": 0
+                    },
+                    "url": "http:\/\/www.carrefour.fr\/magasin\/market-les-sables-d-olonne-castelnau",
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "53f2863b4b90933f78c3a694",
+                    "name": "Retail Therapy",
+                    "image": {
+                        "prefix": "https:\/\/irs0.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/shopping_866748.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 23
+                    },
+                    "pickerPosition": {
+                        "page": 0,
+                        "index": 23
+                    },
+                    "teaseText": "All stickers sales are final.",
+                    "unlockText": "Shop till you drop! This shopping bag will help you carry all your finds. How much did you spend? Who cares! You still have your ex\u2019s card.",
+                    "bonusText": "Use at various Shopping Places for a bonus.",
+                    "points": 2,
+                    "bonusStatus": "Use once per week. Recharges Sunday at midnight."
+                },
+                "isMayor": false,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }, {
+                "id": "586241c392789f55d1fc8b9d",
+                "createdAt": 1482834371,
+                "type": "checkin",
+                "timeZoneOffset": 60,
+                "venue": {
+                    "id": "52187bb511d244d695970398",
+                    "name": "L'atelier De Saint Pierre",
+                    "contact": {
+                        "phone": "+33244415005",
+                        "formattedPhone": "+33 2 44 41 50 05"
+                    },
+                    "location": {
+                        "address": "9 RUE SAINT PIERRE",
+                        "lat": 46.492671966552734,
+                        "lng": -1.7750288248062134,
+                        "labeledLatLngs": [{
+                            "label": "display",
+                            "lat": 46.492671966552734,
+                            "lng": -1.7750288248062134
+                        }],
+                        "postalCode": "85100",
+                        "cc": "FR",
+                        "city": "Vendée",
+                        "state": "Pays de la Loire",
+                        "country": "France",
+                        "formattedAddress": ["9 RUE SAINT PIERRE", "85100 Vendée"]
+                    },
+                    "categories": [{
+                        "id": "4bf58dd8d48988d16a941735",
+                        "name": "Bakery",
+                        "pluralName": "Bakeries",
+                        "shortName": "Bakery",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/bakery_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }],
+                    "verified": false,
+                    "stats": {
+                        "checkinsCount": 10,
+                        "usersCount": 1,
+                        "tipCount": 0
+                    },
+                    "allowMenuUrlEdit": true,
+                    "beenHere": {
+                        "lastCheckinExpiredAt": 0
+                    }
+                },
+                "likes": {
+                    "count": 0,
+                    "groups": []
+                },
+                "like": false,
+                "sticker": {
+                    "id": "54b59bdfe50851c96b4e8c8c",
+                    "name": "Baked",
+                    "image": {
+                        "prefix": "https:\/\/irs2.4sqi.net\/img\/sticker\/",
+                        "sizes": [60, 94],
+                        "name": "\/croissant_e21bc6.png"
+                    },
+                    "stickerType": "unlockable",
+                    "group": {
+                        "name": "collectible",
+                        "index": 70
+                    },
+                    "pickerPosition": {
+                        "page": 2,
+                        "index": 22
+                    },
+                    "teaseText": "This sticker\u2019s in the bag-guette!",
+                    "unlockText": "Is that freshly baked bread and croissants you smell? Good thing you always roll with butter in your fifth pocket. That IS what it\u2019s for, right??",
+                    "bonusText": "Use at Bakeries for a bonus.",
+                    "points": 2,
+                    "bonusStatus": "Use once per week. Recharges Sunday at midnight."
+                },
+                "isMayor": true,
+                "photos": {
+                    "count": 0,
+                    "items": []
+                },
+                "posts": {
+                    "count": 0,
+                    "textCount": 0
+                },
+                "comments": {
+                    "count": 0
+                },
+                "source": {
+                    "name": "Swarm for iOS",
+                    "url": "https:\/\/www.swarmapp.com"
+                }
+            }]
+        }
+    }
+}

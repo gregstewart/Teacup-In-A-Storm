@@ -1,0 +1,2036 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Greg's Blog]]></title>
+  <link href="www.tcias.co.uk/blog/atom.xml" rel="self"/>
+  <link href="www.tcias.co.uk/blog/"/>
+  <updated>2016-12-30T18:00:37+00:00</updated>
+  <id>www.tcias.co.uk/blog/</id>
+  <author>
+    <name><![CDATA[Greg Stewart]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Your Organisation Should Adopt an Open Source Model]]></title>
+    <link href="www.tcias.co.uk/blog/2015/08/07/your-organisation-should-adopt-an-open-source-model/"/>
+    <updated>2015-08-07T10:25:04+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/08/07/your-organisation-should-adopt-an-open-source-model</id>
+    <content type="html"><![CDATA[<p>If I reflect on how things have changed over the last 15 years, and I look at where we are now as developers, then I believe we are in a golden age. Actually it feels like a succession of golden ages. When I first started doing development, it was a quite solitary activity. The internet had only just hit the mainstream. You expanded your knowledge by reading books. The search engine of choice was Alta Vista. Open Source software was something that lived on SourceForge, was difficult to get a hold-off, and even more difficult to build and run. You were really out of luck if you were running Windows. Trying to install Linux was not for the feint of heart. Scrap that, you had to almost be downright masochistic to give it a go. Open Source was equated to <code>free as in beer</code> by most and that was awesome in its own right. If you could get it to work.</p>
+
+<p>Fast forward 15 years and Open Source has changed the way we plan, build, collaborate and consume software. With it&rsquo;s widespread adoption Open Source has reached a new level, that we developers, product owners and companies have benefitted so much from. While it&rsquo;s unfair to point to one singular thing that has made this happen, in my mind there is little doubt that one particular innovation has had the greatest impact and has led to this current golden age: <a href="https://github.com/">Github</a>.</p>
+
+<p>Not because it is easier to find packages/tools/software and use them. No, because it has changed the way we talk about, interact and collaborate on software projects. As a result, I believe that <strong>you and your organisation should embrace the same model</strong>.</p>
+
+<p>All too often we focus on the <a href="http://www.bbc.co.uk/news/business-18466270">cost savings of using Open Source</a>. Put aside this obvious and quite frankly hollow benefit of using Open Source in your products and look at what the Open Source model combined with GitHub can bring to your development practices, your team(s) and your product(s).</p>
+
+<p>While I have been using Github for a number of years, I didn&rsquo;t grasp its true power. I would have told you the flow was nicer than TFS and Bitbucket. At <a href="http://wwww.red-badger.com/">Red Badger</a> we love Github, not just because it is a great Git interface. It allows us to collaborate easily and effectively. In the last 5 months, I have worked with it every day: committing code, opening Pull Requests, discussing/reviewing mine and those of my colleagues and ultimately improving the code of our project and my capabilities as a developer.</p>
+
+<p>The other thing it has brought us is transparency. I used to read through the documentation and then try and get things working. When I got stuck, well I would search a little bit, if unsuccessful I would give up and move on. Now though? I look at the repo, the issues, look at the code, usually starting with tests (the hidden gem of documentation and the first client for your code). The answer to any question usually lies at the intersection of the code and tests. No need demos/examples&hellip; Well actually demos are still a good thing <code>:)</code> Open Source and Github has made this so accessible.</p>
+
+<p>While I wanted to focus on Open Source and the model in this post, I realise I have spoken more about Github. To be truly effective in adopting such a model, you can&rsquo;t really do it without using Github. Just switching to Git will not have the same impact. When we engage with clients, we usually recommend using Github, and the response usually is:</p>
+
+<blockquote><p>Oh yes we already use Git.</p></blockquote>
+
+<p>If this is how you view GitHub you are missing a trick (or a dozen tricks).</p>
+
+<h3>Individuals</h3>
+
+<p>Consider the individual in this model. Just think of how many people use and contribute to your favourite Open Source project. The collective power of this community that is using, reviewing and providing feedback makes the project successful and resilient.</p>
+
+<p>Now think of your code and project, imagine having folks providing you with that feedback, suggestions and feature ideas? Would you not grow as a developer? Would your code not be better? Would your project not benefit?</p>
+
+<h3>Teams</h3>
+
+<p>Many of the things, that are true for the individual are true for teams as well. The added benefit is the greater level of collaboration and communication within the team and potentially other teams in your organisation as well since they now have visibility of your work too. Again code quality goes up.</p>
+
+<p>At <a href="https://www.talentbuddy.co/blog/building-with-node-js-at-ebay">eBay</a>, they found that people on different teams became more involved in other projects, more willing to lend a helping hand.</p>
+
+<p>The other statement in the eBay post around modules developed in a vacuum and left to die when there was a re-org is also true. The team or individual was moved to another part of the organisation with no way to hand it over. I can attest to this on more than one occasion during my time at Microsoft, which made us reluctant to make use of internally developed modules. That usually led us to re-inventing the wheel, instead of contributing and making it better. I don&rsquo;t mean to imply that there was no platform for sharing, it was simply inadequate.</p>
+
+<p>An Open Source model coupled with a dependency management solution like NPM should lead to less re-inventing of the wheel. Instead, folks across the organisation can contribute to the solution. When they contribute and collaborate on the solution, the knowledge is no longer siloed, this leads to a shared understanding of the code. For the organisation, there&rsquo;s now less risk, as the knowledge no longer resides with just one or a few individuals. As with knowledge, skills are also sharpened, by being able to see how others tackle problems and find solutions, by discussing these outcomes. These are all obvious benefits.</p>
+
+<h3>Products</h3>
+
+<p>Building on the individual and the teams and their growth, products are almost naturally better designed, more resilient and more secure.</p>
+
+<h3>Companies</h3>
+
+<p>If your products are successful, built on an open source model and your developers can share their experiences, then your profile is raised. Better yet share your code, your modules, your libraries with the community and get the benefit of yet more people collaborating and contributing to these. With your profile now raised and individuals having visibility of your contributions, it is much easier to hire new developers: like-minded individuals that want to grow, contribute and collaborate.</p>
+
+<p><strong>The benefits to you, your team, your product and your company are in itself self-perpetuating when you adopt the Open Source model.</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why Use Node.js]]></title>
+    <link href="www.tcias.co.uk/blog/2015/06/28/why-use-node-dot-js/"/>
+    <updated>2015-06-28T14:35:22+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/06/28/why-use-node-dot-js</id>
+    <content type="html"><![CDATA[<p>Recently we were asked why we recommend the use of <a href="https://nodejs.org/">Node.js</a> on our project. While <a href="https://twitter.com/stuartharris">Stuart</a> and I are putting together a presentation and working on a blog post, it got me wondering what it is about Node.js that I like so much and why we should use it.</p>
+
+<p>To be honest, I do have a love/intense dislike relationship with JavaScript; however having adopted a functional programming paradigm and buying into immutable data, JavaScript development has been given a fresh impetus. Combine that with <a href="http://facebook.github.io/react/">React</a> and our <a href="http://archjs.org">Arch framework</a>, and I am having fun building a front end application. I even enjoy working with <a href="http://hapijs.com/">Hapi.js</a> at our API layer, but I think that maybe we should opt for another language there. Don&rsquo;t get me wrong this combination has allowed us to get out of the blocks quickly.</p>
+
+<p>When looking for arguments into why we should use Node.js in the enterprise, the following benefits get attributed to using it, in brackets are the companies that have attested these benefits:</p>
+
+<ul>
+<li>Massive performance gains (<a href="https://engineering.linkedin.com/nodejs/blazing-fast-nodejs-10-performance-tips-linkedin-mobile">LinkedIn</a>, <a href="https://engineering.groupon.com/2013/misc/i-tier-dismantling-the-monoliths/">Groupon</a>, <a href="https://www.paypal-engineering.com/2013/11/22/node-js-at-paypal/">PayPal</a>, Walmart and Ebay)</li>
+<li>Great for Mobile development (Walmart and Yahoo)</li>
+<li>Vibrant community</li>
+<li>Built from day one around Async model and event driven</li>
+<li>Easier to find people that can work on Node than say Erlang</li>
+<li>Contributors are maturing</li>
+</ul>
+
+
+<p>When it comes to the performance claims, we need to put together a pretty consistent story that backs a lot of these statements and disavows the others. When looking into this for our presentation, the information is spread across tweets and blog posts. To convince Enterprise decision makers, I think we would need something more cohesive.</p>
+
+<p>While <a href="http://blog.parse.com/learn/how-we-moved-our-api-from-ruby-to-go-and-saved-our-sanity/?utm_source=rubyweekly&amp;utm_medium=email">this quote</a> relates to Go it&rsquo;s still relevant as it relates to async programming:</p>
+
+<blockquote><p>An asynchronous model had many other benefits. We were also able to instrument everything the API was doing with counters and metrics, because these were no longer blocking operations that interfered with communicating to other services. We could downsize our provisioned API server pool by about 90%. And we were also able to remove silos of isolated Rails API servers from our stack, drastically simplifying our architecture.</p></blockquote>
+
+<p>This is one of those facts that backs the productivity increase and total cost of ownership reduction by choosing the right tool for the job. As said this is for Go, however there are many quotes to be found that back these claims in the JavaScript and Node.Js space, given it&rsquo;s event based non-blocking architecture. Of course performance gains from this architecture are not a guaranteed outcome, bad coding practice can undo these advantages easily.</p>
+
+<p>There still are some big challenges to be overcome to make an even stronger argument for enterprise users: logging and monitoring. If you can use tools like <a href="http://newrelic.com/">New Relic</a>, then then conversation has become a lot easier. If you can&rsquo;t, then there&rsquo;s some work ahead for you.</p>
+
+<p>The vibrant community claim are both a benefit and a detriment. I find the rate of change and churn dizzying at times. I think <a href="http://devchat.tv/ruby-rogues/195-rr-building-your-technology-radar-with-neal-ford">Neal Ford</a> put it well when discussing the ThoughtWorks&#8217; Technology Radar:</p>
+
+<blockquote><p>Well, we find that places, technology locations that have a lot of churn ends up getting a lot ofin Asses that never make it into Trial. So, we went through this recently with <strong>JavaScript frameworks because they’re like mushrooms after a rainstorm. They keep popping up and going away</strong>. So, one of the things we do for every Radar is call out themes that we’ve seen across all the blips. And one of the themes that we called out then was churn in the JavaScript space. Because at the time I think there were two common build and dependency management tools. And one was in the process of replacing the other one and you needed all three of them to get something to work. And so, there was just a lot of craziness in that space.</p></blockquote>
+
+<p>It is proving difficult to ignore the new shiny and this is compounded by other people&rsquo;s enthusiasm for experimenting with new tools and frameworks. This can have an impact on productivity as you can be forever adopting and re-writing things and it requires discipline to evaluate the tools and when to apply them to a project. On the plus side, it shows the community is driving change and improvements.</p>
+
+<p>On the flip side there are however still a lot of common misconceptions:</p>
+
+<ul>
+<li>Just a JS Dev, which is clearly not true. JS Devs are just as Software Engineering focused as Java Developers. This is evident in the maturing of contributors to Open Source projects</li>
+<li>It&rsquo;s a server. Again not true, it&rsquo;s more akin to a JVM or runtime</li>
+<li>It&rsquo;s just JavaScript &ndash; look to the advances of ES6 and the future of the language. It supports TDD and DI, Static Code analysis, Error handling/Logging all the stuff the Enterprise loves</li>
+<li>It is slow. I think those days are behind us &ndash; measure it &ndash; V8 is fast, as are many other engines (Shakra/Spidermonkey, etc&hellip;), Nashorn JVM based JS engine is also available</li>
+</ul>
+
+
+<p>Let&rsquo;s consider some other advantages:</p>
+
+<ul>
+<li>Cross skilling between front end and back end teams, between the whole team. We blur the boundaries between front and back  end specialists, and this to me is a good thing. It also helps with pluging knowledge gaps and knowledge being concentrated with one team member or area of the team</li>
+<li>It has a pretty decent package management system with NPM</li>
+<li>It&rsquo;s a foundation (backed by Joyent, IBM, PayPal, Microsoft, Fidelity and the Linux Foundation)</li>
+</ul>
+
+
+<p>To expand a little on the NPM point. If you consider <a href="https://www.talentbuddy.co/blog/building-with-node-js-at-the-new-york-times/?utm_source=nodeweekly&amp;utm_medium=email">Modularisation and NPM</a>, you find yourself in a win win situation.</p>
+
+<blockquote><p>Modularization via Node Modules was a big win as well, as we were able to share components across teams and easily manage them through a NPM</p></blockquote>
+
+<p>Smaller/modular code is easier to maintain and debug. More modular code, is more composable and more re-usable.</p>
+
+<p>I touched on this briefly at the top, but when you consider the ability to write code that runs on both the server and client (as you do with with Isomorphic apps), you add great value for your clients. Time to first render using JavaScript that was rendered on the server is good for the user experience. People all to often focus on the value this approach offers to SEO (it does add value by the way), however I think if you consider Single Page Applications that can seemlessly fall back to a Request/Response model you have a real winner on your hands. While turning off JavaScript on the client is an argument as well, the reality is very few people do this. <em>BUT</em> a lot of devices have poor JavaScript support, to the point where they might as well be categorised as having JavaScript turned off (I am looking at you BlackBerry in the enterprise). Having an isomorphic solution up your sleeve in these situations is worth it&rsquo;s weight in gold.</p>
+
+<p>Looking for quick feedback during development is an important factor. Anyone how has worked on the fornt end side of things on either a C# or Java project can attest to how slow it can be to view your changes in the browser (build/compile steps are notoriously slow). While there&rsquo;s still some overhead in doing so on a Node.js project, the tooling around re-building/<a href="https://www.youtube.com/watch?v=ulKrG1me-Ss">hot loading</a> changes is fantastic by comparison.</p>
+
+<p>There are many things that speak to Node.js being a great choice for developing and delivering applications across the spectrum of businesses. I hope I have also made a few points that back up why this is a great platform to work and have fun delivering solutions with.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Are You Using Docker?]]></title>
+    <link href="www.tcias.co.uk/blog/2015/06/07/are-you-using-docker/"/>
+    <updated>2015-06-07T21:51:43+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/06/07/are-you-using-docker</id>
+    <content type="html"><![CDATA[<p>Are you using <a href="//www.docker.com/">Docker</a> for development? For continous integration? For deployment? No? Why not? This is not an inflamatory question, I am genuinely interested in hearing why you would not embrace Docker or more broadly speaking: containers.</p>
+
+<h2>Development</h2>
+
+<p>We have been using Docker on our most recent project and it&rsquo;s been an awesome experience. I am sure you have experienced this at least once on every porject:</p>
+
+<p><img src="//cdn.meme.am/instances/500x/48009108.jpg" alt="Works on my machine" /></p>
+
+<p>Using containers has almost completely eliminated the old adage <code>but it works on my machine</code>. Eliminating variance of any kind in developer machine setup is very important and by adopting containers we are very close to almost having next to zero variance. I say next to zero, because the hardware is still likely to be different; however the in terms of dependencies and system configruation thanks to Docker we can eliminate the variance. All configuration for the container resides in our repository and any issues encountered so far have usually been resolved by installing dependencies after a pull or updating the container by executing the build command.</p>
+
+<p><img src="//cdn.meme.am/instances/500x/55497481.jpg" alt="Clueless" /></p>
+
+<p>Getting new team members onboarded is incredibly efficient as well: check the repo out, run <code>npm i</code> (install dependencies) and our <code>docker run</code> script (build the container) and you are up and running. I think this alone should convince you to use Docker now. The days of spending hours tinkering with the setup, debugging and pouring over out dated documentation are numbered!</p>
+
+<h2>CI</h2>
+
+<p>So your devevelopment machine setup and environment differences are basically eliminated. What about getting ready for deployment? Using this configuration, you can now confidently and easily build your code/app on your CI sever as well. No need for extra configurations between CI and dev environments, it&rsquo;s the same container. Always want a clean base line for each build? Yout got it, since on re-build, your whole stack is clean with each build. Sure it adds a little time to your build, however I think the extra couple of minutes it takes to re-build the container and push it to a registry after a successful build, are definitely worth it.</p>
+
+<p>At time of writing, it takes us on average 8 minutes to build, test and deploy to AWS after merging a Pull Request. Granted your mileage may vary but to give you some idea we run some 200 unit tests, 30 integration tests and 10 feature tests (and yes we need to improve our coverage&hellip;) and it&rsquo;s all written in Node.js.</p>
+
+<p><img src="//cdn.meme.am/instances/500x/59833717.jpg" alt="Continuous delivery" /></p>
+
+<p>Another thing to consider is: does your CI environment not support your language of choice to build your product(s)? Containers can help here as well.</p>
+
+<h2>Application deployment</h2>
+
+<p>Your dev envinronment is consistent, your build is consistent and now we come to the top of the chain: deploying your application.</p>
+
+<p><img src="//www.quickmeme.com/img/91/91937cf37ba5d6727302ec24851b9a1ff46ae5cdaf1578b7bc7dc2c31a7746b5.jpg" alt="Dev ops problem now" /></p>
+
+<p>So far I have avoided using <a href="https://highops.com/insights/immutable-infrastructure-6-questions-6-experts/">Immutable Infrastructure</a> to describe containerisation, but it is another key aspect here. A quick search for Immutable Infrastructure throws up tons of results, maybe just the sign of a fad, but I believe there is so much more to it. The focus is on dev ops in a lot of these posts and rightfully so; however I think the chaps over at <a href="https://blog.codeship.com/immutable-infrastructure/">CodeShip sum up the points best</a>.</p>
+
+<p>So being able to develop against what will be in production, then confidently, reliably and repeatedly build and deploy your application and environment is no longer a pipe dream.</p>
+
+<p>All configuration is held in one place, so spinning up new instances to support increased demand is now so much easier, than any other provisioning mechanism I have seen. Just check out this video:</p>
+
+<p><a href="//www.youtube.com/watch?v=e76a50ZgzxM"><img src="//img.youtube.com/vi/e76a50ZgzxM/0.jpg" alt="Docker On Diego" /></a></p>
+
+<p>In a similar managing and moving toward Blue/green deployments has also never been easier either, especially when you add to it the tooling behind AWS.</p>
+
+<h2>Is it perfect?</h2>
+
+<p>Well truth be told: No. Not yet at least&hellip; As I mentioned variance still exists; after all the container has to run on some machine in some data center. Docker on Windows and OS X has a few kinks and runs inside a VM. We have come across a few issues, dealing with the file system (watching for file changes in development and read/writes across shared volumes on the host and containers). DNS going walk about on the host VM have also plagued each of us at least once on this project.</p>
+
+<p>Given that the code runs inside of a container, debugging has had a few challenges. Having said that it pushed a focus on logging to the start of the cycle rather than leaving it to later stages.</p>
+
+<p>So there are a few issues, but this should not deter you from seriously looking into using Docker.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Two Cool Use Cases for Vagrant]]></title>
+    <link href="www.tcias.co.uk/blog/2015/06/01/two-cool-use-cases-for-vagrant/"/>
+    <updated>2015-06-01T20:56:48+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/06/01/two-cool-use-cases-for-vagrant</id>
+    <content type="html"><![CDATA[<p>I have been using <a href="https://www.vagrantup.com/">Vagrant</a> on and off for a couple of years now to set up dev environments. Admittedly <a href="https://www.docker.com/">Docker</a> has recently been my prefered way for setting up such environments. Last week I came across two other uses cases for Vagrant that I wanted to share.</p>
+
+<p>We were tasked with setting up <a href="https://jenkins-ci.org/">Jenkins</a> on a server and while we were waiting for the environment to be made available, <a href="https://twitter.com/stuartharris">Stuart</a> went ahead and built a box using the same target OS to work through and document the steps needed to install Jenkins. Once done, we just ran <code>vagrant destroy</code> and <code>vagrant up</code> to quickly repeat and validate that the steps we had jotted down were correct and that we had everything we needed. Such a quick and easy to prepare and validate an install. As a result installing <a href="https://jenkins-ci.org/">Jenkins</a> on the target environment only took me about 20 minutes.</p>
+
+<p>The other use I came across was, when working with a <a href="https://www.ng.bluemix.net/docs/#starters/byob.html">Bluemix buildpack</a>. I was setting up a <a href="http://nginx.org/">Nginx</a> based reverse proxy for our app, but I wanted to upgrade the Nginx version. Reading through the documentation for the <a href="https://github.com/cloudfoundry/staticfile-buildpack">buildpack</a>, I saw probably the coolest use yet for Vagrant. Simply run <code>vagrant up</code> and it spins up two instance of Ubuntu (<a href="http://releases.ubuntu.com/10.04/">Lucid</a> and <a href="http://releases.ubuntu.com/14.04/">Trusty</a>), patches itself, builds the Nginx binaries and moves them to a distribution folder once done. To upgrade Nginx was a doddle as a result: simply update the target version (and the <a href="http://www.gammon.com.au/pcre/index.html">PCRE</a> version), run <code>vagrant up</code> and a few minutes later you have two new sets of binaries that can be pushed to <a href="https://console.ng.bluemix.net/">Bluemix</a> with the community buildpack. Be sure to also check out the tests!</p>
+
+<p>So there you have it, Vagrant is not only great for solo devs and dev teams as a sandboxed dev environment, but you can try out installations and build binaries with a few simple commands.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Clojure Data Structures]]></title>
+    <link href="www.tcias.co.uk/blog/2015/05/17/clojure-data-structures/"/>
+    <updated>2015-05-17T11:15:14+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/05/17/clojure-data-structures</id>
+    <content type="html"><![CDATA[<p>Always easier to remember things when you write them down <code>:)</code>.</p>
+
+<p><strong>Syntax</strong></p>
+
+<p>Operations follow this pattern:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(operator operand1 operand2 operandn)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>No commas between operands, just whitespace.</p>
+
+<p>Clojure uses prefix notation as opposed to infix notation which is more familiar in other languages</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(+ 1 1)
+</span><span class='line'>=&gt; 2</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Equality</strong></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(= 1 1)
+</span><span class='line'>=&gt; true
+</span><span class='line'>(= "test" "test")
+</span><span class='line'>=&gt; true
+</span><span class='line'>(= [1 2 3] [1 2 3])
+</span><span class='line'>=&gt; true</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Strings</strong></p>
+
+<p>Use double quotes to delineate strings, e.g. : <code>"This is a string"</code></p>
+
+<p>For concatenation use <code>str</code> function:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(def name "string")
+</span><span class='line'>(str "This is a " name)
+</span><span class='line'>=&gt; "This is a string"</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Maps</strong></p>
+
+<p>Map values can be of any type and can be nested.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{:first 1
+</span><span class='line'> :second {:name "Greg" :surname "Stewart"}
+</span><span class='line'> :third "My name"}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Use <code>get</code> to look up values and <code>get-in</code> to look up values in nested maps. Instead of <code>get</code> you can treat it as a function with the key as a parameter.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(def my_map {:first 1
+</span><span class='line'>#_=&gt;  :second {:name "Greg" :surname "Stewart"}
+</span><span class='line'>#_=&gt;  :third "My name"})
+</span><span class='line'>
+</span><span class='line'>(get my_map :first)
+</span><span class='line'>=&gt; 1
+</span><span class='line'>(get-in my_map [:second :name])
+</span><span class='line'>=&gt; "Greg"
+</span><span class='line'>(my_map :first)
+</span><span class='line'>=&gt; 1</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Keywords</strong></p>
+
+<p>In these examples <code>:first</code> is a keyword. Key words can be used as functions:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(:first my map)
+</span><span class='line'>=&gt; 1</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Vectors</strong></p>
+
+<p>Think array in other languages. Elements of a Vector can be of any type and you can retrieve values using get as well.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(def my_vector [1 "a" {:name "Greg"}])
+</span><span class='line'>(get my_vector 0)
+</span><span class='line'>=&gt; 1</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Can also be created using <code>vector</code> function:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(vector "hello" "world" "!")
+</span><span class='line'>=&gt; ["hello" "world" "!"]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Using <code>conj</code> you add elements to a vector. Elements get added to the <em>end</em> of a vector.</p>
+
+<p><strong>Lists</strong></p>
+
+<p>Like vectors, however you can&rsquo;t use <code>get</code> to retrieve values. Use <code>nth</code> instead</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(def my_list '("foo" "bar" "baz"))
+</span><span class='line'>(nth my_list 1)
+</span><span class='line'>=&gt; "bar"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Lists can be created using the <code>list</code> function. Use <code>conj</code> to add items to a list. Unlike vectors they get added to the <em>beginning</em> of the list.</p>
+
+<p><strong>Sets</strong></p>
+
+<p>Collection of unique values. Created either using <code>#{}</code> or <code>set</code>.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(set [3 3 3 4 4])
+</span><span class='line'>#{4 3}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Use <code>get</code> to retrieve values. You can create sets using <code>hash-set</code> or <code>sorted-set</code> as well:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(hash-set 3 1 3 3 2 4 4)
+</span><span class='line'>=&gt; #{1 4 3 2}
+</span><span class='line'>(sorted-set 3 1 3 3 2 4 4)
+</span><span class='line'>=&gt; #{1 2 3 4}</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><strong>Symbols</strong></p>
+
+<p>Another assignment method, however apparently we can manipulate them as if they were data. Not sure what that means yet.</p>
+
+<p><strong>Quoting</strong></p>
+
+<p><code>'</code> is referred to as quoting. Used this to define a list. Used in <code>macros</code>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Exploring the Open Closed Principle]]></title>
+    <link href="www.tcias.co.uk/blog/2015/05/02/exploring-the-open-closed-principle/"/>
+    <updated>2015-05-02T15:29:33+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/05/02/exploring-the-open-closed-principle</id>
+    <content type="html"><![CDATA[<p>At the start of the year I watched sandy Metz&rsquo;s talk: <a href="//www.youtube.com/watch?v=8bZh5LMaSmE">All the Little Things</a>. It&rsquo;s an absolutely brilliant and once again inspiring talk.</p>
+
+<p><a href="//www.youtube.com/watch?v=8bZh5LMaSmE"><img src="//img.youtube.com/vi/8bZh5LMaSmE/0.jpg" alt="RailsConf 2014 - All the Little Things by Sandi Metz" /></a></p>
+
+<p>She touches on many interesting and thought provoking topcis. The one I would like to focus on with this post is the <a href="http://en.wikipedia.org/wiki/Open/closed_principle">open closed principle</a>:</p>
+
+<blockquote><p>In object-oriented programming, the open/closed principle states &ldquo;software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification&rdquo;; that is, such an entity can allow its behaviour to be extended without modifying its source code.</p></blockquote>
+
+<p>In essence you should be able to add a feature to a certain part of your application without having to modify the existing code. When I first came across this idea, at first this seems unachievable. How can you add a feature without touching existing code? The talk got me thinking about some of my code and I was keen to explore applying this to my code.</p>
+
+<p>So toward the backend of February I embarked on a refactoring exercise of the core feature of my site <a href="//www.tcias.co.uk/">Teacupinastorm</a>. For some time I had been meaning to add a few new feeds to the page, but adding them was a bit of a slog, as I needed to touch way to many files in order to add one feed. Sounded like a prime candidate to explore the Open Close principle in practical manner.</p>
+
+<p>As I mentioned, in order to add a feed I needed to edit at least two files and then create a new object to fetch and format the feed data it into a standard structure that my view could use. What really helped me with this exercise was that the functionality had decent test coverage.</p>
+
+<p>At the heart we have the <code>Page</code> Object, which basically co-ordinates the calls to the various APIs and quite a bit more. This is a another smell, it goes against the Single responsibility principle. This is what it used to look like:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>class Page
+</span><span class='line'>  attr_reader :items
+</span><span class='line'>
+</span><span class='line'>  def initialize
+</span><span class='line'>    @items = []
+</span><span class='line'>    @parser_factory = ParserFactory.new
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>  def fetch
+</span><span class='line'>    parser_configurations = {wordpress: {count: 10}, delicious: {count: 5}, instagram: {count: 6}, github: {count: 5},
+</span><span class='line'>                  twitter: {count: 4}, vimeo: {count: 1}, foursquare: {count: 10}}
+</span><span class='line'>
+</span><span class='line'>    parser_configurations.each do |parser_configuration|
+</span><span class='line'>      parser_type = parser_configuration[0]
+</span><span class='line'>      feed_item_count = parser_configuration[1][:count]
+</span><span class='line'>
+</span><span class='line'>      parser = @parser_factory.build parser_type
+</span><span class='line'>      feed_items = parser.get_last_user_events feed_item_count
+</span><span class='line'>
+</span><span class='line'>      feed_items.each do |item|
+</span><span class='line'>        parser_configuration = set_page_item(parser_type, item[:date], item[:content], item[:url], item[:thumbnail], item[:location])
+</span><span class='line'>        @items.push(parser_configuration)
+</span><span class='line'>      end
+</span><span class='line'>
+</span><span class='line'>    end
+</span><span class='line'>
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>  def sort_by_date
+</span><span class='line'>    @items.sort! { |x, y| y[:date] &lt;=&gt; x[:date] }
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>  def set_page_item(type, date, content, url, thumbnail, location)
+</span><span class='line'>    page_item = {}
+</span><span class='line'>    page_item[:type] = type
+</span><span class='line'>    page_item[:date] = fix_date(date, type)
+</span><span class='line'>    page_item[:content] = content
+</span><span class='line'>    page_item[:url] = url
+</span><span class='line'>    page_item[:thumbnail] = thumbnail
+</span><span class='line'>    page_item[:location] = location
+</span><span class='line'>    page_item
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>  def fix_date(date, type)
+</span><span class='line'>    return DateTime.new if date.nil?
+</span><span class='line'>
+</span><span class='line'>    (type == :instagram || type == :foursquare) ? DateTime.parse(Time.at(date.to_i).to_s) : DateTime.parse(date.to_s)
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>  def get_by_type(type)
+</span><span class='line'>    @items.select { |v| v[:type] =~ Regexp.new(type) }
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>It does a lot and it also had some inefficiencies. It also had a high churn rate. All smells asking to be improved upon.</p>
+
+<p>One of the first things I did was move the <code>parser_configuration</code> out of this object. It&rsquo;s a perfect canditate for a configuration object. So I moved that into it&rsquo;s own yaml file and let rails load that into application scope. Now when I add a new feed, I no longer need to touch this file, but just add it to the yaml file.</p>
+
+<p>Next I looked at the <code>ParserFactory</code>. Basically it took a type and and returned an object that would fetch the data. Another candidate to refactor so that I would not need to edit this file when I added a new feed.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>class ParserFactory
+</span><span class='line'>
+</span><span class='line'>  def build (type)
+</span><span class='line'>
+</span><span class='line'>    case type
+</span><span class='line'>      when :foursquare
+</span><span class='line'>        parser = FoursquareParser.new
+</span><span class='line'>      when :instagram
+</span><span class='line'>        parser = InstagramParser.new
+</span><span class='line'>      when :delicious
+</span><span class='line'>        parser = DeliciousParser.new
+</span><span class='line'>      when :github
+</span><span class='line'>        parser = GithubParser.new
+</span><span class='line'>      when :twitter
+</span><span class='line'>        parser = TwitterParser.new
+</span><span class='line'>      when :vimeo
+</span><span class='line'>        parser = VimeoParser.new
+</span><span class='line'>      when :wordpress
+</span><span class='line'>        parser = WordpressParser.new
+</span><span class='line'>      else
+</span><span class='line'>        raise 'Unknown parser requested'
+</span><span class='line'>    end
+</span><span class='line'>
+</span><span class='line'>    parser
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The individual parsers were actually fecthing the data and formatting the response into a standard format for the view. If you watched Sandy&rsquo;s video you will recognise the pattern here. Once a new feed was added I had to add a new case. I re-worked the code to this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>class WrapperFactory
+</span><span class='line'>
+</span><span class='line'>  def build (type)
+</span><span class='line'>    begin
+</span><span class='line'>      Object::const_get(type + "Wrapper").new
+</span><span class='line'>    rescue
+</span><span class='line'>      raise 'Unknown parser requested: ' + type
+</span><span class='line'>    end
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>They objects themselves were more wrappers, so I re-named the factory object and the individual objects. I can&rsquo;t quite get rid the &ldquo;Wrapper&rdquo; part as some the gem names would clash with the class names. Need to work on that some more.</p>
+
+<p>So the wrappers massaged the content of the response into the right format by looping over the result set and return the collection to the <code>Page</code> object. Then I would loop again in the <code>Page</code> object to set the page item. Redundant looping, let&rsquo;s address this.</p>
+
+<p>I looked at the <code>set_page_item</code> and <code>fix_date</code> methods. For starters they seemed related and did not belong in this object so I extracted them into a <code>PageItem</code> object. Furthermore <code>fix_date</code> checked the feed type to format the date. I decided to move the responsibility for creating this object into the individual wrappers and then just appending the result to the items collection.</p>
+
+<p>Now the <code>Page</code> object looks like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>class Page
+</span><span class='line'>  attr_reader :items
+</span><span class='line'>
+</span><span class='line'>  def initialize
+</span><span class='line'>    @items = []
+</span><span class='line'>    @wrapper_factory = WrapperFactory.new
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>  def fetch_page_items
+</span><span class='line'>
+</span><span class='line'>    FEED_CONFIGS.each do |feed_configuration|
+</span><span class='line'>      parser_type = feed_configuration[0]
+</span><span class='line'>      feed_item_count = feed_configuration[1]['count']
+</span><span class='line'>
+</span><span class='line'>      wrapper = @wrapper_factory.build parser_type.to_s.capitalize
+</span><span class='line'>
+</span><span class='line'>      @items.concat(wrapper.get_last_user_events(feed_item_count))
+</span><span class='line'>    end
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>  def fetch_sorted_page_items
+</span><span class='line'>    fetch_page_items
+</span><span class='line'>    sort_by_date
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>  def sort_by_date
+</span><span class='line'>    @items.sort! { |x, y| y.date &lt;=&gt; x.date }
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>  def get_by_type(type)
+</span><span class='line'>    @items.select { |v| v.type == type }
+</span><span class='line'>  end
+</span><span class='line'>
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>A little simpler, but more importantly when it comes to adding a new feed I no longer need to edit this file or indeed the Factory object. It&rsquo;s safe to say that both <code>WrapperFactory</code> and <code>Page</code> are now open for extension and closed for modification. The next time I add a feed, I do not need to touch these two objects. I simply update my configuration file and create a feed type wrapper.</p>
+
+<p>However now <code>PageItem</code> is not open closed. What if I add a new feed and I need fix the date? Now I would need to adjust the <code>fix_date</code> method in that object. So I decided to extract that method from the <code>PageItem</code> into it&rsquo;s own module. I adjusted the code to be more generic and put the responsibility on parsing the date back on the individual feed wrappers. Ultimately they have more knowledge about the data they are handling and it&rsquo;s certainly not the <code>PageItem</code>&rsquo;s responsibility to that job.</p>
+
+<p>The code overall is better to reason about and each object has a more concrete responsibility now and more importantly when I add a new feed I no longer have to touch <code>Page</code>, <code>PageItem</code> or <code>WrapperFactory</code>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Quarter of the Way In]]></title>
+    <link href="www.tcias.co.uk/blog/2015/04/23/a-quarter-of-the-way-in/"/>
+    <updated>2015-04-23T15:27:42+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/04/23/a-quarter-of-the-way-in</id>
+    <content type="html"><![CDATA[<p>So here we are a quarter of the way into 2015 already, the sun is out and it is getting warmer in London.</p>
+
+<p><a href="//www.tcias.co.uk/blog/2015/01/08/new-years-resolution/">In January</a>, I spelt out some goals I wanted to achieve for 2015 and four months into the year seems like a good moment to take stock of things.</p>
+
+<p>The first thing I wanted to achieve was to write one blog post a week. So far I have posted 15 times (including this one) and we are up to 16 weeks into the year &ndash; only 1 post behind! That&rsquo;s actually not too bad. I haven&rsquo;t chalked up as many analytical posts as I wanted to, but I am pleased to have gotten into the habit of writing one post a week.</p>
+
+<p>On the book front &ndash; I had set myself a goal of reading one book a month. To date I have finished three, so once again a little behind the set expectation:</p>
+
+<ul>
+<li><a href="https://www.goodreads.com/book/show/1069827.Release_It_">Release it</a></li>
+<li><a href="https://www.goodreads.com/book/show/9850098-essential-skills-for-the-agile-developer">Essential Skills for the Agile Developer</a></li>
+<li><a href="https://www.goodreads.com/book/show/20901022-scope-and-closures">Scope and Closures (You Don&rsquo;t Know JS)</a></li>
+</ul>
+
+
+<p> I am in the process of reading:</p>
+
+<ul>
+<li><a href="https://www.goodreads.com/book/show/22221108-you-don-t-know-js">This &amp; Object Prototypes (You Don&rsquo;t Know JS)</a></li>
+<li><a href="https://www.goodreads.com/book/show/7912517-seven-languages-in-seven-weeks">Seven Languages in Seven Weeks</a></li>
+<li><a href="https://www.goodreads.com/book/show/17707707-the-doodle-revolution">The Doodle Revolution: Unlock the Power to Think Differently</a></li>
+<li><a href="https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests">Growing Object-Oriented Software, Guided by Tests</a></li>
+</ul>
+
+
+<p>My own book writing though has languished&hellip; I am not even sure I want to go into the whys and whats and I probably should to get the ball rolling again. Let&rsquo;s add that one to the <em>TODO</em> list.</p>
+
+<p>On the side project front, I surprised myself a little and released <a href="https://rubygems.org/gems/coder_wally">a gem</a> &ndash; which has been downloaded 2557 times to date. I suspect the majority are mine <code>;)</code> That was an interesting experiment and I blogged about it quite a bit.</p>
+
+<p>I also left <a href="https://www.skype.com/">Skype</a> after 2 years and releasing the <a href="https://web.skype.com/">Skype for Web</a> experience (which actually had it&rsquo;s first and to that point only release back in November). I now work for <a href="http://red-badger.com/">Red Badger</a> as a <a href="http://www.linkedin.com/in/gregstewart">Technical Architect</a> and I am having a lot of fun again. A upcoming blog post will describe how we are building and continously shipping an isomorphic app using <a href="http://facebook.github.io/react/">React</a>, <a href="https://github.com/redbadger/arch">Arch</a> and <a href="https://www.docker.com/">Docker</a> to <a href="http://aws.amazon.com/">AWS</a> using <a href="circleci.com">Circle CI</a>. I cannot emphasies enough, how much changing your tooling and being able to use the best in breed tools can mean to your personal (<strong>/developer</strong>) happiness, productivity and enthusiasm.</p>
+
+<p>So in summary, a little behind the content output and intake I wanted to achieve. I did release one side project. I have migrated things around on my site a little to make the refresh a little easier. Changed jobs. On a personal note, my son James got his British citizenship and Jodie got her indefinite leave to remain. So far 2015 has been kind to us, let&rsquo;s hope it continues &ndash; knock on wood!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Picking a New Language to Learn]]></title>
+    <link href="www.tcias.co.uk/blog/2015/04/14/picking-a-new-language-to-learn/"/>
+    <updated>2015-04-14T22:08:55+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/04/14/picking-a-new-language-to-learn</id>
+    <content type="html"><![CDATA[<p>I started writing this post with the idea to just layout what was important to me in choosing what language to pick up this year and go through the options. I didn&rsquo;t really expect to make a choice by the end of it.</p>
+
+<p>In doing this post and thinking about what I wanted out of a language, the community around it and doing the research, there was only one real winner in the end. It does help to put things into writing&hellip; The TL;DR is this year I will be looking at: <a href="http://clojure.org/">Clojure</a>? Why it ticks all of the boxes I set out in this post.</p>
+
+<hr />
+
+<p>Most years I try to learn a new language and typically the choice has been straight forward. For some reason this year I have struggled with this. Maybe it&rsquo;s because there&rsquo;s such a proliferation of interesting languages out there. Maybe it&rsquo;s because I am torn between picking between OO and a Functional paradigm.</p>
+
+<p>At the top of the list are <a href="http://www.scala-lang.org/">Scala</a>, <a href="https://golang.org/">Go</a>, <a href="http://clojure.org/">Clojure</a> and <a href="http://elixir-lang.org/">Elixir</a>. All but one are in the functional realm of programming languages; Go being the odd one out. However it does seems to have a huge traction right now. On the other hand there is something about Elixir that really appeals to me, maybe it&rsquo;s because it&rsquo;s described as being close to Ruby and be focused on developer happiness&hellip; and it&rsquo;s the shiny new hotness.</p>
+
+<p>Oddly enough only Scala featured in my <a href="http://www.tcias.co.uk/blog/2015/02/22/build-your-own-technology-radar/">Technology Radar</a>. Swift was one that I listed, but does not figure at all in my shortlist. This tells me I need to leverage my radar a bit more and also think about what goes into it a little more deeply.</p>
+
+<h3>What matters to me</h3>
+
+<p>Things that are important to me when making the choice are: the testing story, build tools, CI support, dependency management and the backing of a web framework.</p>
+
+<h3>Scala</h3>
+
+<p>Scala ships with <a href="http://www.scala-sbt.org/">SBT</a> as the build tool. <a href="http://www.circlci.com">Circle CI</a>, <a href="https://codeship.com/">Codeship</a> and <a href="https://www.snap-ci.com/">SnapCI</a>, all support Scala.</p>
+
+<p>You have a few choices on the web framework side of this with the <a href="https://www.playframework.com/">Play framework</a>, <a href="http://scalatra.org/">Scalatra</a> and <a href="http://liftweb.net/">Lift</a>.</p>
+
+<p>What about testing? The first two things I came across were <a href="http://www.scalatest.org/">ScalaTest</a> and <a href="http://etorreborre.github.io/specs2/">Specs2</a>. Being built on the JVM, you can also leverage Maven/Gradle for build automation and dependency management.</p>
+
+<h3>Elixir</h3>
+
+<p>The CI story for Elixir is a little murky, there are <a href="https://gist.github.com/joakimk/48ed80f1a7adb5f5ea27">custom scripts out there</a> to run builds on <a href="http://www.circlci.com">Circle CI</a>. As a web framework there is the <a href="http://www.phoenixframework.org/">Phoenix Framework</a>. The testing story <a href="http://elixir-lang.readthedocs.org/en/latest/exunit/">doesn&rsquo;t look fabulous</a> yet, but it&rsquo;s good enough. Elixir comes with <code>Mix</code> for dealing with dependencies. It&rsquo;s still early days, but being on the front line could be a good thing and well there&rsquo;s the whole developer happiness thing that just can&rsquo;t be discounted.</p>
+
+<h3>Clojure</h3>
+
+<p>As for <a href="http://clojure.org/">Clojure</a>, well there are quite a few options for the web framework side of things with <a href="http://let-caribou.in/">Caribou</a>, <a href="http://www.luminusweb.net/">Luminusweb</a> and <a href="https://github.com/pedestal/pedestal">Pedestal</a>.</p>
+
+<p>ThoughtWorks&#8217; CI service, <a href="https://www.snap-ci.com/">Snap CI</a>, has Clojure covered. <a href="https://codeship.com/">Codeship</a> also provide support.</p>
+
+<p>In terms of build automation tools you have <a href="http://leiningen.org/">Leiningen</a> and <a href="https://clojars.org/">Clojar</a> looks like a good source of libraries.</p>
+
+<p>The testing story is also a good one, it comes with it&rsquo;s <a href="http://clojure.github.io/clojure/clojure.test-api.html">own test framework</a>, but also has many other options, such as <a href="http://speclj.com/">speclj</a> and <a href="https://github.com/marick/Midje">Midje</a>. All in all it looks like Clojure ticks all of the boxes, thanks to it&rsquo;s wide adoption and maturity. The only downside, which is also one of it&rsquo;s advantages, is that it runs on the JVM and hence allows you to leverage the rich Java eco system. Oh my there are a lot braces to digest as well <code>:)</code>.</p>
+
+<h3>Go</h3>
+
+<p><a href="https://codeship.com/">Codeship</a> provides outamated builds. Go ships with a test framework as well as benchmarking tools, so that covers the automated testing angle. There are other solutions as well such as <a href="http://goconvey.co/">GoConvey</a> or <a href="http://onsi.github.io/ginkgo/">GinkGo</a>.</p>
+
+<p>For web frameworks both <a href="http://revel.github.io/">Revel</a> and <a href="http://martini.codegangsta.io/">Martini</a> look good. With regards to build tools and dependency management, these are also built into the language with <code>go build</code> and <code>go get</code> respectively.</p>
+
+<h3>Final thoughts</h3>
+
+<p>All of the languages address the things that are important to me, with varying degrees of maturity. However there&rsquo;s the question does the language jell with me? To help me with that I have found an awesome resource that allows me to explore the languages: <a href="http://exercism.io/">Exercism</a>, the brain child of Katrina Owen. She refers to them as a set of toy problems to solve and you can go very deep into the solutions, but it also provides with you with a good experimentation platform.</p>
+
+<p>The other thing I remembered was this book : <a href="https://pragprog.com/book/btlang/seven-languages-in-seven-weeks">Seven Languages in Seven Weeks</a>. I have been recently thumbing through it again and it provides a great introduction to some of the languages I am considering as well suggesting a few exercises for further exploration.</p>
+
+<p>Writing all this down seems like a lot of consideration for something that I used to do on a whim. However now that I went through this exercise, I know which language I would like to get to know this year: <a href="http://clojure.org/">Clojure</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Test Your Gem Against Multiple Ruby Versions Using Circle Ci]]></title>
+    <link href="www.tcias.co.uk/blog/2015/04/07/how-to-test-your-gem-against-multiple-ruby-versions-using-circle-ci/"/>
+    <updated>2015-04-07T21:14:24+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/04/07/how-to-test-your-gem-against-multiple-ruby-versions-using-circle-ci</id>
+    <content type="html"><![CDATA[<p>My work on my little gem continues to make steady progress. This week I wanted I carried out some major re-working of the API. I wanted to follow the <a href="http://www.tcias.co.uk/blog/2014/07/20/design-pattern-parallel-change/">Parallel Change</a> pattern for these changes, as I didn&rsquo;t want to completely break the API. However there was at least one breaking change, given that I moved from:</p>
+
+<pre><code>client = CoderWally::Client.new
+coder_wally = client.get_everything_for ARGV[0]
+</code></pre>
+
+<p>To:</p>
+
+<pre><code>client = CoderWally::Client.new ARGV[0]
+</code></pre>
+
+<p>For the record you can still call <code>client.get_everything_for ARGV[0]</code>, but you will see a deprecation warning. The prefered approach now is to call <code>client.user.everything</code>.</p>
+
+<p>The other thing that I wanted to experiment with, was running a build against multiple versions of Ruby. In <a href="https://circleci.com/">Circle Ci</a>, this is actually really straightforward. All you need to do is override the dependency and test steps in your <code>circle.yml</code> file. I wanted to run a build against ruby: <code>2.0.0-p568</code>, <code>2.1.5</code> and <code>2.2.0</code>, so here&rsquo;s what my config file now looks like:</p>
+
+<pre><code>dependencies:
+  override:
+    - 'rvm-exec 2.0.0-p598 bundle install'
+    - 'rvm-exec 2.1.5 bundle install'
+    - 'rvm-exec 2.2.0 bundle install'
+
+test:
+  override:
+    - 'rvm-exec 2.0.0-p598 bundle exec rake'
+    - 'rvm-exec 2.1.5 bundle exec rake'
+    - 'rvm-exec 2.2.0 bundle exec rake'
+</code></pre>
+
+<p>While this was easy to set up there were a cople of learnings:</p>
+
+<ul>
+<li>Do not specify a bundler version in your gems dev dependencies. It&rsquo;s just more flexible to trust the system and ruby version that is running the <code>bundle install</code> command. If you do, then you need to install the corresponding version on the build server. Also if you want to go back to older versions of ruby that aren&rsquo;t supported by the bundler version you have specified, then there&rsquo;s more fuffing about.</li>
+<li>The other thing I learned had to do with <a href="https://github.com/seattlerb/minitest">Minitest</a> and Ruby 2.2.0. The call to require it failed. To get the build to pass on <a href="https://circleci.com/">Circle Ci</a>, I had to <a href="https://github.com/gregstewart/coder_wally/blob/master/coder_wally.gemspec">add a dev dependency to my Gemspec</a>.</li>
+</ul>
+
+
+<p>I wanted to test running against older versions of Ruby and the latest JRuby, but when I had a <a href="https://circleci.com/gh/gregstewart/coder_wally/35">quick go</a>, <a href="https://github.com/bblimke/webmock">Webmock</a> was telling me that I should stub my requests, which I am doing, but for some reason they aren&rsquo;t being recognised in this configuration.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Couple of Bundler Tricks]]></title>
+    <link href="www.tcias.co.uk/blog/2015/04/07/a-couple-of-bundler-tricks/"/>
+    <updated>2015-04-07T21:04:33+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/04/07/a-couple-of-bundler-tricks</id>
+    <content type="html"><![CDATA[<p>Quite literally two things, no more no less.</p>
+
+<p>To install a specific version of bundler do:</p>
+
+<pre><code>gem install bundler -v x.x.x
+</code></pre>
+
+<p>Where <code>x.x.x</code> is the version to install. Probably well known, but I had to look it up. Then use that version run, instead of the the latest one you have installed:</p>
+
+<pre><code>bundle _x.x.x_ install
+</code></pre>
+
+<p>Those <code>_</code> surrounding the version number are not a typo and it does look odd, but it works&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Three Things I Learned About PhantomJs This Week]]></title>
+    <link href="www.tcias.co.uk/blog/2015/03/21/three-things-i-learned-about-phantomjs-this-week/"/>
+    <updated>2015-03-21T14:27:19+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/03/21/three-things-i-learned-about-phantomjs-this-week</id>
+    <content type="html"><![CDATA[<p>This week we had a bit of a <em>fun</em> moment with one of our feature tests. As a little background we are using a combination of <a href="http://phantomjs.org/">PhatomJs</a>, <a href="https://github.com/cucumber/cucumber-js">Cucumber.js</a> and <a href="http://webdriver.io/">WebDriver.io</a> for our end to end/user journey tests.</p>
+
+<p>One test failed repeatedly when we used to PhantomJs but if we switched to Chrome it would pass. The test itself was sending an Async POST request to an API and then based on the response the browser would redirect to the created resource (well it did more, but that was the basic premise).</p>
+
+<p>After some head scratching and painful debugging we eventually narrowed it down to our <code>Location</code> header disappearing from the API response. We initially thought this might be a bug in PhantomJs, because we could clearly see the server sending the header and in the debug tools it would show up as well; however it turns out that this is PhantomJs&#8217; security model. By default PhatomJs only handles &lsquo;<em>standard</em>&rsquo; headers. Apparently <code>Location</code> isn&rsquo;t one of them. The solution in the end is quite simple, simply start PhatomJs with the <code>--web-security</code> flag set to <code>false</code>: <code>./node_modules/.bin/phantomjs --web-security=false</code></p>
+
+<p>Note that this also turns off SSL certificate checking, but since we are using this for test purposes we are fine. Your mileage may vary though depending on what you are using PhantomJs for.</p>
+
+<p>The other thing I learned during this episode was that there is no need to use or install the Selenium stand alone server as you can launch PhantomJs with webdriver support (in the shape of <a href="https://github.com/detro/ghostdriver">GhostDriver</a> I believe): <code>./node_modules/.bin/phantomjs --webdriver=4444</code></p>
+
+<p>To debug the test we used the following flag, which allows you to then remote debug using a browser and the <a href="https://www.webkit.org/blog/1620/webkit-remote-debugging/">web inspector interface</a>: <code>./node_modules/.bin/phantomjs --remote-debugger-port=9000</code></p>
+
+<p>Open the browser and go to <code>http://localhost:9000</code> and you will be presented with a list of PhantomJs sessions. By selecting one you can start your debugging.</p>
+
+<p>So there you are three things I learned about PhantomJs.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Refactoring Using Hash#fetch]]></title>
+    <link href="www.tcias.co.uk/blog/2015/03/11/refactoring-using-hash-fetch/"/>
+    <updated>2015-03-11T21:28:54+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/03/11/refactoring-using-hash-fetch</id>
+    <content type="html"><![CDATA[<p>Last night I decided to add a simple memoization pattern to my <a href="https://rubygems.org/gems/coder_wally">coder_wall gem</a> to stop unnecessary network calls to retrieve data from the CoderWall API. Memoization is a form of caching, well there&rsquo;s more to it than that. So let&rsquo;s refer to <a href="http://en.wikipedia.org/wiki/Memoization">Wikipedia</a> for a more detailed explanation and more reading if you are interested:</p>
+
+<blockquote><p>In computing, memoization is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.</p></blockquote>
+
+<p>My intent was to reduce calls to the CoderWall API for the same <code>username</code>. Here is what the code for fecthing data used to look like:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># Fetch data from CoderWall
+</span><span class='line'>def fetch(username)
+</span><span class='line'>  uri = uri_for_user(username)
+</span><span class='line'>    json = send_request(uri)
+</span><span class='line'>
+</span><span class='line'>  begin   
+</span><span class='line'>      JSON.parse(json.read)
+</span><span class='line'>    rescue JSON::ParserError
+</span><span class='line'>        raise InvalidJson, 'Received invalid json in response'
+</span><span class='line'>    end
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I created a <code>@response</code> instance variable that would store the parsed results of the call. If the <code>username</code> key existed in the hash just return the result otherwise go over the wire to get the data:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># Fetch data from CoderWall
+</span><span class='line'>def fetch(username)
+</span><span class='line'>  return @response[username] unless @response[username].nil?
+</span><span class='line'>
+</span><span class='line'>  uri = uri_for_user(username)
+</span><span class='line'>    json = send_request(uri)
+</span><span class='line'> 
+</span><span class='line'>    begin
+</span><span class='line'>      @response[username] = JSON.parse(json.read)
+</span><span class='line'>    rescue JSON::ParserError
+</span><span class='line'>        raise InvalidJson, 'Received invalid json in response'
+</span><span class='line'>    end
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So far so good, until I ran <a href="https://github.com/metricfu/metric_fu">Metric_fu</a> and I got two warnings: Nil checking and duplicate calls. That immediately reminded me of a passage in <a href="http://about.avdi.org/">Avdi Grimm</a>&rsquo;s excellent book <a href="http://www.confidentruby.com/">Confident Ruby</a>. Armed with that knowledge I was wable to make one change that removed the code smells:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># Fetch data from CoderWall
+</span><span class='line'>def fetch(username)
+</span><span class='line'>  @response.fetch(username) do
+</span><span class='line'>        uri = uri_for_user(username)
+</span><span class='line'>        json = send_request(uri)
+</span><span class='line'>
+</span><span class='line'>        begin
+</span><span class='line'>          @response[username] = JSON.parse(json.read)
+</span><span class='line'>        rescue JSON::ParserError
+</span><span class='line'>          raise InvalidJson, 'Received invalid json in response'
+</span><span class='line'>        end
+</span><span class='line'>  end
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Because <code>@response</code> is a <a href="http://ruby-doc.org/core-2.2.0/Hash.html">Hash</a> I was able to leverage using the <a href="http://ruby-doc.org/core-2.2.0/Hash.html#method-i-fetch">fetch</a> method in conjunction with passing a block to it, thus avoiding any of Nil checking. There&rsquo;s a little more to it, but really you should read all about it in Avdi&rsquo;s <a href="http://www.confidentruby.com/">book</a>, it is a veritable treasure trove of patterns.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Raml and Osprey - a Better Way to Build Mock Apis]]></title>
+    <link href="www.tcias.co.uk/blog/2015/03/11/raml-and-osprey-a-better-way-to-build-mock-apis/"/>
+    <updated>2015-03-11T21:26:54+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/03/11/raml-and-osprey-a-better-way-to-build-mock-apis</id>
+    <content type="html"><![CDATA[<p>It is generally considered a good idea to develop and test your application against Mock services rather than the real thing. As we have been embarking on a new project, the team discussed the need for Mock services and how we would manage these. On prior projects, the effort in maintaining these was somewhat painful and I was a little weary.  One of the tools to help deal with the maintenance was <a href="http://raml.org/">RAML</a>. RAML stands for: <code>RESTful API Modeling Language</code>, it</p>
+
+<blockquote><p>&hellip; is a simple and succinct way of describing practically-RESTful APIs. It encourages reuse, enables discovery and pattern-sharing, and aims for merit-based emergence of best practices. The goal is to help our current API ecosystem by solving immediate problems and then encourage ever-better API patterns. RAML is built on broadly-used standards such as YAML and JSON and is a non-proprietary, vendor-neutral open spec.</p></blockquote>
+
+<p>Our intention is to use this to define the APIs we want to build and interface with. Also to use the specification we create to validate both development and integration, and use that specification as the foundation for our Mocks.</p>
+
+<p>After further research I discovered <a href="https://github.com/mulesoft/osprey">osprey</a>, which is a</p>
+
+<blockquote><p>&hellip; JavaScript framework, based on Node and Express, for rapidly building applications that expose APIs described via RAML, the RESTful API Modeling Language.</p></blockquote>
+
+<p>While it&rsquo;s still in development and doesn&rsquo;t yet support documentation and the validation, you are able to very quickly standup a mock service with an api described with RAML. There&rsquo;s also <a href="https://github.com/mulesoft/osprey-cli">a CLI</a> that allows you to scaffold an api based on a specification defined using RAML.</p>
+
+<p>I decided to spike things a little using the CLI tool. Once the CLI has been installed globally using NPM, you can simply run the following:</p>
+
+<pre><code>osprey new --name hello-world
+</code></pre>
+
+<p>By default you should have a <code>api.raml</code> file created and stored under <code>src/assets/raml</code>. I then used that file to define my spike API using RAML:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#%RAML 0.8
+</span><span class='line'>---
+</span><span class='line'>title: Hello World API
+</span><span class='line'>baseUri: http://localhost:3000/api/{version}
+</span><span class='line'>version: v1
+</span><span class='line'>/users:
+</span><span class='line'>    get:
+</span><span class='line'>        description: Return all users
+</span><span class='line'>        responses:
+</span><span class='line'>            200:
+</span><span class='line'>                body:
+</span><span class='line'>                    application/json:
+</span><span class='line'>                        example: |
+</span><span class='line'>                            {
+</span><span class='line'>                               "data": [
+</span><span class='line'>                                   { "name": "foo" },
+</span><span class='line'>                                   { "name": "fee"}
+</span><span class='line'>                               ],
+</span><span class='line'>                               "success": true,
+</span><span class='line'>                               "status": 200
+</span><span class='line'>                             }
+</span><span class='line'>    /{usermame}:
+</span><span class='line'>        get:
+</span><span class='line'>            description: Say hello to the given username
+</span><span class='line'>            responses:
+</span><span class='line'>                200:
+</span><span class='line'>                   body:
+</span><span class='line'>                     application/json:
+</span><span class='line'>                      example: |
+</span><span class='line'>                         {
+</span><span class='line'>                           "data": {
+</span><span class='line'>                             "message": "Hello foo",
+</span><span class='line'>                           },
+</span><span class='line'>                           "success": true,
+</span><span class='line'>                           "status": 200
+</span><span class='line'>                         }</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you are familiar with <a href="http://yaml.org/">YAML</a> and <a href="http://json.org/">JSON</a> you will find the output very readable, even if you aren&rsquo;t I think you can still agree that this is quite accessible.</p>
+
+<p>To validate the specification I had created, without having to start the server, I could run:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ osprey list src/assets/raml/api.raml
+</span><span class='line'>GET             /users                                                                                          
+</span><span class='line'>GET             /users/{usermame}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Before being able to run the service I had to make a couple changes to the server javascript file <code>app.js</code>.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>var express = require('express');
+</span><span class='line'>var path = require('path');
+</span><span class='line'>var osprey = require('osprey');
+</span><span class='line'>
+</span><span class='line'>var app = module.exports = express();
+</span><span class='line'>
+</span><span class='line'>app.use(express.bodyParser());
+</span><span class='line'>app.use(express.methodOverride());
+</span><span class='line'>app.use(express.compress());
+</span><span class='line'>app.use(express.logger('dev'));
+</span><span class='line'>
+</span><span class='line'>app.set('port', process.env.PORT || 3000);
+</span><span class='line'>
+</span><span class='line'>api = osprey.create('/api/v1', app, {
+</span><span class='line'>    ramlFile: path.join(__dirname, '/assets/raml/api.raml'),
+</span><span class='line'>    logLevel: 'debug'  //  logLevel: off-&gt;No logs | info-&gt;Show Osprey modules initializations | debug-&gt;Show all
+</span><span class='line'>});
+</span><span class='line'>
+</span><span class='line'>if (!module.parent) {
+</span><span class='line'>    var port = app.get('port');
+</span><span class='line'>    app.listen(port);
+</span><span class='line'>    console.log('listening on port ' + port);
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To start the mock api service simply run:</p>
+
+<pre><code>node /app/server.js
+</code></pre>
+
+<p>And you can now start exploring the API using your browser or any other tool you like to use to interact with an API. Being able to provide example data, quickly allows you to scaffold your mock service with data for your app.</p>
+
+<p>It&rsquo;s only been a couple of hours of playing with these two tools, but it already feels so much easier to work with and maintain, than having to write a bunch of code to handle requests and responses.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Working With Function Arguments]]></title>
+    <link href="www.tcias.co.uk/blog/2015/03/07/working-with-function-arguments/"/>
+    <updated>2015-03-07T19:39:11+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/03/07/working-with-function-arguments</id>
+    <content type="html"><![CDATA[<p>Last week I was working on build tasks to daemonise some of the services we intend to use for our project. I decided to use <a href="https://github.com/foreverjs/forever">forever</a> and ended up with a call that looks something like this:</p>
+
+<pre><code>let task = execForeverCommand('start', 'path/to/service');
+</code></pre>
+
+<p>or</p>
+
+<pre><code>let task = execForeverCommand('start', 'path/to/service', 'some', 'other', 'option');
+</code></pre>
+
+<p>The <code>execForeverCommand</code> would build up a command to execute by concatenating a variable length list of function arguments into one single string. What follows are three different approaches I took to build up that string based off of those arguments. By the way a function that accepts a variable number of arguments is also known as a <a href="https://hacks.mozilla.org/2015/05/es6-in-depth-rest-parameters-and-defaults/"><em>variadic function</em></a>.</p>
+
+<p>My initial intention was to just use <code>arguments.join(" ")</code>; however function arguments are not an array, instead they are <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments">an Array like object</a>, therefore I opted to use a for-in loop:</p>
+
+<pre><code>function execForeverCommand() {
+    let commands = '';
+    for (var argument in arguments) {
+        if(arguments.hasOwnProperty(argument)) {
+            commands += ' ' + arguments[argument];
+        }
+    }
+
+    return shell.task('./node_modules/forever/bin/forever ' + commands);
+}
+</code></pre>
+
+<p>That worked, but is very verbose. Having a working solution, I spent some time reading through the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments">MDN article</a> I referenced above in more detail. I straight away realised that I could change the code to use <code>Array.prototype.slice.call</code> and combine that with my initial plan:</p>
+
+<pre><code>function execForeverCommand() {
+    let commands = Array.prototype.slice.call(arguments).join(" ");
+
+    return shell.task('./node_modules/forever/bin/forever ' + commands);
+}
+</code></pre>
+
+<p>Now those astute readers might have spotted the use of <code>let</code> in these functions. On this project we are using ES6 features (with the assistance of <a href="https://babeljs.io/">Babel</a>). This gave me a third option: <a href="http://tc39wiki.calculist.org/es6/rest-parameters/">Rest Parameters</a>. Thanks to rest parameters I rewrote the function one last time, effetively going full circle and implementing my originally intended solution, i.e. by using <code>Array.prototype.join()</code>.:</p>
+
+<pre><code>function execForeverCommand(...commands) {
+    return shell.task('./node_modules/forever/bin/forever ' + commands.join(" "));
+}
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Build Your Own Technology Radar]]></title>
+    <link href="www.tcias.co.uk/blog/2015/02/22/build-your-own-technology-radar/"/>
+    <updated>2015-02-22T12:29:18+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/02/22/build-your-own-technology-radar</id>
+    <content type="html"><![CDATA[<p>This weeks <a href="http://devchat.tv/ruby-rogues/195-rr-building-your-technology-radar-with-neal-ford">Ruby Rogues episode</a> had Neal Ford on to talk about the <a href="http://www.thoughtworks.com/radar">ThoughtWorks Technology Radar</a>. One of the things that Neal discussed was creating your own <a href="http://nealford.com/memeagora/2013/05/28/build_your_own_technology_radar.html">Technology</a> <a href="https://www.youtube.com/watch?v=3cqf1neieE4">Radar</a>.</p>
+
+<p>I am always on the lookout for new ways of working, particularly to make my learning better. Neal recommends putting together such a radar to help focus how we learn by being more strategic, rather then tactical. That and it serves as reminder of the things we might want to look into <code>:)</code> (well for me at least).</p>
+
+<p>So here&rsquo;s my first go at putting such a list together:</p>
+
+<h1>Hold</h1>
+
+<ul>
+<li>RequireJs (Tools)</li>
+</ul>
+
+
+<h1>Assess</h1>
+
+<ul>
+<li>Gulp (Tools)</li>
+<li>Scala (Languages and Frameworks)</li>
+<li>Swift (Languages and Frameworks)</li>
+<li>ReactJs (Languages and Frameworks)</li>
+<li>Living CSS Style Guides (Techniques)</li>
+<li>Gradle (Tools)</li>
+<li>Play Framework (Languages and Frameworks)</li>
+<li>SnapCI (Tools)</li>
+<li>ES6 Transpilers (Tools)</li>
+</ul>
+
+
+<h1>Trial</h1>
+
+<ul>
+<li>Browserify (Languages and Frameworks)</li>
+<li>Functional programming (Techniques)</li>
+<li>ES6 (Languages and Frameworks)</li>
+<li>Dashing (Languages and Frameworks)</li>
+<li>Phantomas (Tools)</li>
+<li>Build your own Technology Radar (Techniques)</li>
+<li>Docker (Tools)</li>
+<li>Programming by Intention (Techniques)</li>
+<li>AWS (Platforms)</li>
+<li>CircleCi (Tools)</li>
+</ul>
+
+
+<h1>Adopt</h1>
+
+<ul>
+<li>Grunt (Tools)</li>
+<li>Vagrant (Tools)</li>
+<li>Heroku (Platforms)</li>
+<li>Linode (Platforms)</li>
+<li>CodeShip (Tools)</li>
+<li>Git Pull Request Workflow (Techniques)</li>
+</ul>
+
+
+<p>The next step is to experiment with <a href="https://github.com/bdargan/techradar">this visual tool</a> for displaying your own Technology Radar. Let&rsquo;s revisit this post in 6 months to see how effective this technique was and what has changed in my technology bubble.</p>
+
+<p>Have you put your own Technology Radar together yet?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Building Coder_wally Using Metrics - Part Deux]]></title>
+    <link href="www.tcias.co.uk/blog/2015/02/17/building-coder-wally-using-metrics-part-deux/"/>
+    <updated>2015-02-17T16:31:18+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/02/17/building-coder-wally-using-metrics-part-deux</id>
+    <content type="html"><![CDATA[<p>Earlier last week I <a href="//www.tcias.co.uk/blog/2015/02/09/building-my-coder-wally-gem-using-metrics/">posted a short piece</a> on building <a href="https://rubygems.org/gems/coder_wally/">Coder_Wally</a> and some of the tools I used to improve the code. This post continues on from where I left on talking about <a href="https://github.com/metricfu/reek">Reek</a> and <a href="https://github.com/bbatsov/rubocop">RuboCop</a>.</p>
+
+<p><a href="https://github.com/bbatsov/rubocop">RuboCop</a> was an interesting tool, as it helped me write code in more idomatic way, i.e. more like a Ruby developer would. Some of the methods I had written used things like <code>get_</code> or <code>has_</code>. The Ruby way you don&rsquo;t bother with the <code>get_something</code>, instead it just becomes <code>something</code>. <code>has_something</code> simply becomes <code>something?</code>.</p>
+
+<p>One thing that bit me though was changing <code>"</code> to <code>'</code> when no string interpolation was happening. Changing this:</p>
+
+<pre><code>spec.files = `git ls-files -z`.split("\x0")
+</code></pre>
+
+<p>to</p>
+
+<pre><code>spec.files  = `git ls-files -z`.split('\x0')
+</code></pre>
+
+<p>The Gem would no longer build or install throwing <code>string contains null byte message</code> error (somewhat after the fact). The problem: single quotes around <code>split('\x0')</code>. Need to look into exactly why this was a problem. I hope I am not being unfair to RuboCop, but it&rsquo;s primary focus is to help your code follow the <a href="https://github.com/bbatsov/ruby-style-guide">Ruby Style guide</a> and not point out code hot spots.</p>
+
+<p><a href="https://github.com/metricfu/reek">Reek</a> on the other hand was awesome for finding hotspots. It flagged a bunch of potential code smells (<a href="http://www.rubydoc.info/github/troessner/reek/Reek/Smells/DuplicateMethodCall">duplicate calls</a> and <a href="http://www.rubydoc.info/github/troessner/reek/Reek/Smells/NestedIterators">nested iterators</a>) and pointed out where methods on certain classes were exhibiting <a href="http://www.rubydoc.info/github/troessner/reek/Reek/Smells/FeatureEnvy">feature envy</a> and <a href="http://www.rubydoc.info/github/troessner/reek/Reek/Smells/UtilityFunction">utility function</a> behaviour. I am linking to the docs as they are really insightful.</p>
+
+<p>The outcome of refactoring the code was a few more classes. I extracted the exception handling to it&rsquo;s own class and created and error code finder. Methods that were manipulating objects to get there work done, were updated to have less knowledge and only work on what they needed. Take this method as an example:</p>
+
+<pre><code># parse account information from data
+def parse_accounts(response)
+  Account.new(response[accounts]) if response[accounts]
+end
+</code></pre>
+
+<p>This method actually has two problems for one it was making duplicate calls (<code>response[accounts]</code>). This could have been fixed by extracting the calls to a variable; however by fixing the underlying problem (the <a href="http://www.rubydoc.info/github/troessner/reek/Reek/Smells/UtilityFunction">utility function</a> behaviour) would also fix that issue. The method knew too much about response object and what it contains in order to get it&rsquo;s work done, the change is quite simple extract the knowledge to the calling method:</p>
+
+<pre><code># parse account information from data
+def parse_accounts(accounts)
+  Account.new(accounts) if accounts
+end
+
+...
+
+# build CoderWall object from API response
+def build(response)
+  badges = parse_badges(response['badges'])
+  accounts = parse_accounts(response['accounts'])
+  user = parse_user(response)
+
+  CoderWall.new badges, user, accounts
+end
+</code></pre>
+
+<p>Interestingly enough after extracting my Exception Handler object, I was now warned about a <a href="http://www.rubydoc.info/github/troessner/reek/Reek/Smells/ControlParameter">Control Parameter smell</a>. The solution there was to revert the extraction of helper method for request errors that raised an exception based on the status code by inlining them back again.<br/>
+I found this iterative approach of running <a href="https://github.com/bbatsov/rubocop">RuboCop</a> and <a href="https://github.com/metricfu/reek">Reek</a>, really helpful and it certainly led to cleaner looking code. At least I thinks so <code>:)</code>. Again, do not blindly follow metrics, but use your judgement. In the absence of having someone to review your work these tools certainly help. Overall an interesting exercise and productive exercise.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Presence and a Future Worth Wanting]]></title>
+    <link href="www.tcias.co.uk/blog/2015/02/13/presence-and-a-future-worth-wanting/"/>
+    <updated>2015-02-13T22:23:25+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/02/13/presence-and-a-future-worth-wanting</id>
+    <content type="html"><![CDATA[<p>James Whittaker is pissed off, really pissed off. We are held hostage by our browser and we should not stand for it.</p>
+
+<p>That&rsquo;s how he opens his talk on his vision for the future. I stumbled across this again the other week, when I came across  <a href="http://news.microsoft.com/stories/people/james-whittaker.html">this post</a>, where he also goes over some tips for stage presence.</p>
+
+<p>Really quickly let&rsquo;s go over these as they are super handy. There are 5 (well really 4.5) bullet points of about stage presence worth keeping in mind:</p>
+
+<ol>
+<li>Come out swinging</li>
+<li>Attention span interlude</li>
+<li>Know your shit</li>
+<li>Make it epic</li>
+<li>Be brief, be right, be gone</li>
+</ol>
+
+
+<p>He gives regular sessions on campus about Stage presence and I was able to watch one of the recordings and thoroughly enjoyed it and recommend watching it, if you get the chance.</p>
+
+<p>This post is not about stage presence though, rather his view of the future. It does provide a nice lead in though <code>:)</code>. Reading that post reminded me that I saw James Whittaker give a talk in person at our office on this topic, and he certainly came out swinging and kept on swinging for the whole duration. Below is a link to a similar talk he did:</p>
+
+<p><a href="//www.youtube.com/watch?v=U1sJNzEHny0"><img src="//img.youtube.com/vi/U1sJNzEHny0/0.jpg" alt="A Future Worth Wanting - James Whittaker, Microsoft" /></a></p>
+
+<p>For the most part I enjoyed his talk about his vision of the future. The jist was that we shouldn&rsquo;t have to go to the web to the find (<code>to hunt</code>) the information we are after. We shouldn&rsquo;t need to context switch. We don&rsquo;t need apps to do that either (<code>to gather</code>). Our tools should be context aware and fetch the information for us (<code>to farm</code>). His example centered around going to a concert with his daughter after having received an email from her, asking him go with her to see <a href="http://www.ofmonstersandmen.com/">Of Monsters and Men</a> (loved that album and thanks for putting me on to them <code>;)</code>).</p>
+
+<p>His tools, in this case Outlook, should be context aware and be smart enough to fetch maps/travel directions/suggestions for restaurants and book the tickets. He bemoans the context switch out of whatever tool you are in to open a browser or an App to complete those tasks. He firmly(?) believes that Microsoft is one of the few companies that is in a position to deliver on this proposition based on the tools and services they offer. These tools are &lsquo;Super apps&rsquo;! Things like Outlook + &lsquo;Bing knows&rsquo;</p>
+
+<p>While I agree with the premise, at the time I came away from the talk feeling another walled garden in the making. Rather than building open APIs and services it felt heavily slanted to being embedded in the Microsoft ecosystem. Despite mentioning Twitter and Facebook as well (and does talk tongue in cheek about &lsquo;this is branding&rsquo; when referring to the XBox and Surface), I couldn&rsquo;t shake that feeling. For what it&rsquo;s worth I have similar sentiments towwards Apple&hellip; but they do make lovely products&hellip;</p>
+
+<p>I believe that in order for companies (particularly Microsoft) to remain relevant, they need to be more open and allow tools from all sources to build on these systems simply and efficiently. Innovation seems to happen more frequently and rapidly outside of large bureaucratic companies and while they have the resources to deliver, they are slow to do so. Just in case you didn&rsquo;t realise, I work at <a href="//www.skype.com/">Skype</a>, at least for now.</p>
+
+<p>The web was built on openness and I find it quite tragic that more and more we are seeing tiered service provisioning, vendor lock in and data lock in. Yes, yes, companies need to make money, I am not that naive, but there are surely better ways.</p>
+
+<p>I don&rsquo;t think we should be locked into a world where the only way achieve this vision is with my Windows Phone (or iPhone for that matter), i.e. one ecosystem. Maybe I am the odd one out, at work I have a Windows machine, my phone is an Android device, my home setup is a Mac+iPad. Building so called &lsquo;Super apps&rsquo; for all platforms is a big ask. And therein lies the crux of the matter&hellip; All of these devices already have a &lsquo;Super App&rsquo; in common: the browser! We have had it for decades! Yes it was a pain to build for all of the different makes and versions; and while there are still problems, the last 3 or so years have seen an incredible convergence in supported features and functionality.</p>
+
+<p>We might have afforded the browser an &lsquo;incredible&rsquo; amount of power, I use it for almost everything. I don&rsquo;t mind using apps; however <code>my</code> context switch happens when I need to leave the browser to use Outlook for example. I would argue that we need to invest more into making our &lsquo;web apps&rsquo; better (services, uis, browsers). Turn these web apps into &lsquo;Super apps&rsquo; that leverage the <code>Ueber App</code> that is the venerable browser, so that I don&rsquo;t need to have Outlook or something else open to get what I need. Rather than invest in a walled garden of comfort that is proprietary and closed. It should run on any device, anywhere I am connected and that is the browser! All hail the <code>Ueber app</code> home of the <code>super app</code>s.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Building My Coder_wally Gem Using Metrics]]></title>
+    <link href="www.tcias.co.uk/blog/2015/02/09/building-my-coder-wally-gem-using-metrics/"/>
+    <updated>2015-02-09T22:37:32+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/02/09/building-my-coder-wally-gem-using-metrics</id>
+    <content type="html"><![CDATA[<p>A few weeks back I decided to add <a href="https://coderwall.com/welcome">CoderWall badges</a> to the feed on <a href="//www.tcias.co.uk">my site</a>. I could have just grabbed an existing gem but I decided to <a href="https://github.com/gregstewart/coder_wally">build my own</a>. If you are truly keen you can also find it over at <a href="https://rubygems.org/gems/coder_wally/">Rubygems.org</a> and add to the other 1,245 downloads <code>:)</code>.</p>
+
+<p>To get the ball rolling I followed the steps described over at <a href="http://www.howistart.org/posts/ruby/1">How I Start</a>. The first stab ended up looking like this:</p>
+
+<pre><code>require "coder_wally/version"
+require "open-uri"
+require "json"
+
+# All code in the gem is namespaced under this module.
+module CoderWally
+    # The URL of API we'll use.
+    Url = "https://coderwall.com/%s.json"
+
+    class Badge
+        attr_reader :name, :badge, :description, :created
+
+        def initialize(hashed_badge)
+            @name = hashed_badge.fetch("name")
+            @badge = hashed_badge.fetch("badge")
+            @description = hashed_badge.fetch("description")
+            @created = hashed_badge.fetch("created")
+        end
+    end
+
+    def CoderWally.get_badges_for username
+        raise(ArgumentError, "Plesae provide a username") if username.empty?
+        url = URI.parse(Url % username)
+        response = JSON.load(open(url))      
+
+        response["badges"].map { |badge| Badge.new(badge) }
+    end
+end
+</code></pre>
+
+<p>It simply fetched JSON from the API for a given username and returned a collection of badges. Over the next couple of iterations I reworked a few things and added support for user details and accounts. For testing purposes (and to speed things up) I used <a href="//github.com/bblimke/webmock">Webmock</a> to fake responses from the service. The most interesting thing to solve, was how to dynamically assign <code>attr_accessor</code>s to the account object. I eventually found that you could do so by using a combination of <code>singleton_class.class_eval</code> and <code>self.instance_variable_set</code>. With the features done I looked around at other gems and what their README&rsquo;s and tool chain looked like.</p>
+
+<p>The first tool I decided to investigate was <a href="http://ruby.sadi.st/Flog.html">Flog</a> which <a href="//www.youtube.com/watch?v=8bZh5LMaSmE">Sandy Metz used in a talk</a> I saw recently. The Initial run yielded the following output:</p>
+
+<pre><code> find lib -name \*.rb | xargs flog                                                                                                                                    
+ 84.3: flog total
+ 6.0: flog/method average
+
+19.1: CoderWally::Client#build_coder_wall lib/coder_wally/client.rb:47
+16.2: CoderWally::Client#send_request  lib/coder_wally/client.rb:20
+11.1: CoderWally::Account#initialize   lib/coder_wally/account.rb:6
+ 8.8: main#none
+</code></pre>
+
+<p>The <code>Client</code> object could use a little love. To start things of, I decided to pull all of the API related calls into their own class, so anything relating to <code>send_request</code>:</p>
+
+<pre><code> 89.0: flog total
+ 5.2: flog/method average
+
+16.4: CoderWally::Client#build_coder_wall lib/coder_wally/client.rb:27
+16.2: CoderWally::API#send_request     lib/coder_wally/api.rb:13
+11.1: CoderWally::Account#initialize   lib/coder_wally/account.rb:6
+ 9.9: main#none
+</code></pre>
+
+<p>That just moved the complexity around, but at least the Client object was now a little simpler, so to fix the complexity I extracted methods from the the send_request, which looked started off as follows:</p>
+
+<pre><code># Dispatch the request
+    def send_request url
+      begin
+        open(url)
+      rescue OpenURI::HTTPError =&gt; error
+        raise UserNotFoundError, 'User not found' if  error.io.status[0] == '404'
+        raise ServerError, 'Server error' if  error.io.status[0] == '500'
+      end
+    end
+</code></pre>
+
+<p>Not overly complicated, but let&rsquo;s follow the advice and see if we can&rsquo;t improve on this, by extracting methods. I ended up with this:</p>
+
+<pre><code>  def send_request(url)
+    begin
+      open(url)
+    rescue OpenURI::HTTPError =&gt; error
+      handle_user_not_found_error(error)
+      handle_server_error(error)
+    end
+  end
+
+  # Parse status code from error
+  def get_status_code(error)
+    error.io.status[0]
+  end
+
+  # Raise server error
+  def handle_server_error(error)
+    raise ServerError, 'Server error' if  get_status_code(error) == '500'
+  end
+
+  # Raise user not found error
+  def handle_user_not_found_error(error)
+    raise UserNotFoundError, 'User not found' if  get_status_code(error) == '404'
+  end
+</code></pre>
+
+<p>Running flog showed that the code in the <code>send_request</code> method was now no longer being flagged as complicated.</p>
+
+<pre><code>86.1: flog total
+ 4.3: flog/method average
+
+15.1: CoderWally::Client#build_coder_wall lib/coder_wally/client.rb:27
+11.1: CoderWally::Account#initialize   lib/coder_wally/account.rb:6
+ 9.9: main#none
+ 6.3: CoderWally::API#uri_for_user     lib/coder_wally/api.rb:36
+ 5.7: CoderWally::Badge#initialize     lib/coder_wally/badge.rb:9
+ 5.0: CoderWally::User#initialize      lib/coder_wally/user.rb:9
+</code></pre>
+
+<p>Next I tackled <code>CoderWally::Client#build_coder_wall</code> method. This led to creating a Coderwall <code>builder</code> object with simpler and more single purpose methods:</p>
+
+<pre><code>module CoderWally
+    # Builds the CoderWall object from the response
+    class Builder
+            # Instantiate class
+            def initialize
+            end
+
+            # parse badges from data
+            def parse_badges(data)
+                data['badges'].map { |badge| Badge.new(badge) } if data['badges']
+            end
+
+            # parse account information from data
+            def parse_accounts(data)
+                Account.new(data['accounts']) if data['accounts']
+            end
+
+            # parse user information from data
+            def parse_user(data)
+                User.new(data['name'], data['username'],
+                        data['location'], data['team'], data['endorsements'])
+            end
+
+            # build CoderWall object from API response
+            def build response
+                badges = parse_badges(response)
+                accounts = parse_accounts(response)
+                user = parse_user(response)
+
+                CoderWall.new badges, user, accounts
+            end
+    end
+end
+</code></pre>
+
+<p>Still not happy with all of the names, but it did feel and look better than this:</p>
+
+<pre><code># Builds a CoderWall object
+    def build_coder_wall(username)
+        json_response = JSON.load(send_request(uri_for_user(username)))
+        badges = json_response['badges'].map { |badge| Badge.new(badge) }
+        accounts = Account.new(json_response['accounts'])
+        user = User.new(json_response['name'], json_response['username'],
+                json_response['location'], json_response['team'], json_response['endorsements'])
+
+        CoderWall.new badges, user, accounts
+    end
+</code></pre>
+
+<p>Flog agreed as well, and while the flog total was on the up, the method average kept going down (we started with a <code>6.0</code> average and ended up with <code>3.9</code>):</p>
+
+<pre><code>93.4: flog total
+    3.9: flog/method average
+
+11.1: CoderWally::Account#initialize   lib/coder_wally/account.rb:6
+    11.0: main#none
+    7.0: CoderWally::Builder#parse_user   lib/coder_wally/builder.rb:15
+    6.3: CoderWally::API#uri_for_user     lib/coder_wally/api.rb:38
+    5.7: CoderWally::Badge#initialize     lib/coder_wally/badge.rb:9
+    5.0: CoderWally::Builder#build        lib/coder_wally/builder.rb:20
+    5.0: CoderWally::User#initialize      lib/coder_wally/user.rb:9
+    4.0: CoderWally::API#send_request     lib/coder_wally/api.rb:13
+    3.9: CoderWally::API#get_status_code  lib/coder_wally/api.rb:23
+</code></pre>
+
+<p>I am going to stop here. In a follow up post I will talk specifically about <a href="https://github.com/bbatsov/rubocop">Rubocop</a> and <a href="https://github.com/metricfu/metric_fu">Metric_fu</a> and how they further impacted the design and reability of the code. Before I go though, I wanted to finish up with some thoughts on using Flog and how it changed my code.</p>
+
+<p>I started with one object that did everything and through a series of refactorings I ended up with several smaller more cohesive objects that also followed the Single Responsibility principle more closely (I wasn&rsquo;t there yet and probably still am not).</p>
+
+<p>I felt that my initial implementation was simple and readable enough. But that&rsquo;s just the thing isn&rsquo;t it? We feel that our code is good enough, but statistics can back these &lsquo;feelings&rsquo; up or indeed refute them. I am not saying that one should blinbdly follow these kind of metrics and drive our code based off of these, but they are a good source of information and as this little experiment has shown can help improve the code. In the absence of being able to pair with somone or have someone else review your code, Flog proved very useful. Overall I am happier with having a class for API calls and who&rsquo;s methods are more intention revealing. Likewise with my builder object and it&rsquo;s methods, in the next post I will show how I continued on the improvement path for that particular class using <a href="https://github.com/metricfu/metric_fu">Metric_fu</a> (<a href="https://github.com/metricfu/reek">Reek</a> in particular) and <a href="https://github.com/bbatsov/rubocop">Rubocop</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Publishing Blog Posts the Git and Ci Way]]></title>
+    <link href="www.tcias.co.uk/blog/2015/01/24/publishing-blog-posts-the-git-and-ci-way/"/>
+    <updated>2015-01-24T16:50:53+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/01/24/publishing-blog-posts-the-git-and-ci-way</id>
+    <content type="html"><![CDATA[<p>I recently switched over the source control of my blog from <a href="https://bitbucket.org/">Bitbucket</a> to <a href="https://github.com/">Github</a>, because I wanted to try out a new workflow with regards to editing and publishing posts.</p>
+
+<p>As I tend to create a new git branch for each post I am working on, I wanted to use the <a href="https://help.github.com/articles/using-pull-requests/">pull request</a> approach to publishing postsI first came across this idea, thanks those wonderful folks over at <a href="http://playbook.thoughtbot.com/">ThoughtBot</a>. Now granted I am not collaborating with others on posts; however I still find this <code>review</code> process handy. Reading the post in a different context has been beneficial. Furthermore I now tend to give myself a few days between writing and posting as a result of this process. Using Github and <a href="https://github.com/blog/1379-zen-writing-mode">their editor</a> I can review, re-read and edit posts at my convenience. So far it&rsquo;s worked well for me.</p>
+
+<p>This got me thinking though: are there any other improvements I could make to my workflow&hellip; Well yes there are. As I mentioned I tend to create a branch for each post, followed by running the new post rake task. I started by modifying the tasks for posts and pages to create a new branch for me using the title. Then I realised I could take it even further, create an initial commit and create a new tracked remote branch. Here&rsquo;s what the output looks like:</p>
+
+<pre><code>blog git:(change-workflow) rake 'new_post[test branch]'
+mkdir -p source/_posts
+Creating new post: source/_posts/2015-01-24-test-branch.markdown
+Switched to a new branch 'test-branch'
+[test-branch c5c786a] created new post entry: test-branch
+2 files changed, 8 insertions(+), 4 deletions(-)
+create mode 100644 source/_posts/2015-01-24-test-branch.markdown
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 801 bytes | 0 bytes/s, done.
+Total 8 (delta 6), reused 0 (delta 0)
+To git@github.com:gregstewart/blog.git
+* [new branch]      test-branch -&gt; test-branch
+Branch test-branch set up to track remote branch test-branch from origin.
+</code></pre>
+
+<p>The code for this is pretty straight forward and not foolproof, but a good starting point:</p>
+
+<pre><code># create git branch
+def create_branch(branch_name)
+    exec "git checkout -b #{branch_name}; git add .; git commit -m 'created new post entry: #{branch_name}'; git push -u origin #{branch_name}"
+end
+</code></pre>
+
+<p>The next thing I wanted to improve upon was the publishing step. Commit/Push/Generate and Deploy were the steps I used in the past, a bit long winded and repetitive. Also if I was not at home, then I had to wait to publish an update. Given how I am now using Pull Requests and use Github to sign off on and merge these, why not use CI to build and publish the Blog on merge to <code>master</code>? So I created a new project over at <a href="https://codeship.com/">CodeShip</a>, left the test settings empty, but under deployment added:</p>
+
+<pre><code>bundle exec rake generate
+bundle exec rake deploy
+</code></pre>
+
+<p>Now whenever I merge a pull request, CI takes over and publishes my post to my server! Note that, if like me you use rsync, you will need to add <a href="https://codeship.com/documentation/continuous-integration/where-can-i-find-the-ssh-public-key-for-my-project/">CodeShips public key</a> to your <code>authorized_keys</code> in order for <a href="http://octopress.org/docs/deploying/rsync/">Octopress&#8217; rsync</a> publishing to work. This post is the first to feature this new workflow!</p>
+
+<p><em>Update: it turns out you can complete this workflow using Bitbucket as well!</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Refactoring Your Grunt File]]></title>
+    <link href="www.tcias.co.uk/blog/2015/01/19/refactoring-your-grunt-file/"/>
+    <updated>2015-01-19T08:58:44+00:00</updated>
+    <id>www.tcias.co.uk/blog/2015/01/19/refactoring-your-grunt-file</id>
+    <content type="html"><![CDATA[<p>Things left unchecked over time just grow to be unwieldy. Take this Gruntfile for example:</p>
+
+<pre><code>module.exports = function (grunt) {
+    'use strit';
+    grunt.initConfig({
+        express: {
+            test: {
+                options: {
+                    script: './server.js'
+                }
+            }
+        },
+        cucumberjs: {
+            src: 'tests/e2e/features/',
+            options: {
+                steps: 'tests/e2e/steps/'
+            }
+        },
+        less: {
+            production: {
+                options: {
+                    paths: ['app/css/'],
+                    cleancss: true
+                },
+                files: {
+                    'app/css/main.css': 'src/less/main.less'
+                }
+            }
+        },
+        copy: {
+            fonts: {
+                expand: true,
+                src: ['bower_components/bootstrap/fonts/*'],
+                dest: 'app/fonts/',
+                filter: 'isFile',
+                flatten: true
+            }
+        },
+        bower: {
+            install: {
+                options: {
+                    cleanTargetDir:false,
+                    targetDir: './bower_components'
+                }
+            }
+        },
+        browserify: {
+            code: {
+                dest: 'app/js/main.min.js',
+                src: 'node_modules/weatherly/js/**/*.js',
+                options: {
+                    transform: ['uglifyify']
+                }
+            },
+            test: {
+                dest: 'app/js/test.js',
+                src: 'tests/unit/**/*.js'
+            }
+        },
+        karma: {
+            dev: {
+                configFile: 'karma.conf.js'
+            },
+            ci: {
+                configFile: 'karma.conf.js',
+                singleRun: true,
+                autoWatch: false,
+                reporters: ['progress']
+            }
+        }
+    });
+    grunt.loadNpmTasks('grunt-express-server');
+    grunt.loadNpmTasks('grunt-selenium-webdriver');
+    grunt.loadNpmTasks('grunt-cucumber');
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-bower-task');
+    grunt.loadNpmTasks('grunt-karma');
+    grunt.registerTask('generate', ['less:production', 'copy:fonts', 'browserify:code']);
+    grunt.registerTask('build', ['bower:install', 'generate']);
+    grunt.registerTask('e2e', [
+        'selenium_start',
+        'express:test',
+        'cucumberjs',
+        'selenium_stop',
+        'express:test:stop'
+    ]);
+    grunt.registerTask('test', ['build', 'karma:ci', 'e2e']);
+    grunt.registerTask('heroku:production', 'build');
+};
+</code></pre>
+
+<p>It&rsquo;s the Gruntfile for the project in <a href="https://leanpub.com/building-a-web-app-guided-by-tests/">my book</a>. I&rsquo;ll be honest the principle reason I want to refactor this file is because it makes the book editing quite painful and for the reader being able to make changes is quite difficult. However the same thing can be said for people working with the file, it&rsquo;s getting to be difficult to see what is happening in this file, so let&rsquo;s make this better for all.</p>
+
+<p>Let&rsquo;s start with the karma tasks, these can be extracted to a file called <code>test.js</code> (I am keeping this generic, just in case I decide to switch testing frameworks at a later stage) and let&rsquo;s save it under a folder called <code>build</code>:</p>
+
+<pre><code>(function (module) {
+    'use strict';
+    var config = {
+        dev: {
+            configFile: 'karma.conf.js'
+        },
+        ci: {
+            configFile: 'karma.conf.js',
+            singleRun: true,
+            autoWatch: false,
+            reporters: ['progress']
+        }
+    };
+    module.exports = function (grunt) {
+        grunt.loadNpmTasks('grunt-karma');
+
+        grunt.config('karma', config);
+    }
+})(module);
+</code></pre>
+
+<p>I have extracted the task configuration and the loading of the task from the <code>Gruntfile.js</code>, leaving us with:</p>
+
+<pre><code> module.exports = function (grunt) {
+    'use strit';
+    grunt.initConfig({
+        express: {
+            test: {
+                options: {
+                    script: './server.js'
+                }
+            }
+        },
+        cucumberjs: {
+            src: 'tests/e2e/features/',
+            options: {
+                steps: 'tests/e2e/steps/'
+            }
+        },
+        less: {
+            production: {
+                options: {
+                    paths: ['app/css/'],
+                    cleancss: true
+                },
+                files: {
+                    'app/css/main.css': 'src/less/main.less'
+                }
+            }
+        },
+        copy: {
+            fonts: {
+                expand: true,
+                src: ['bower_components/bootstrap/fonts/*'],
+                dest: 'app/fonts/',
+                filter: 'isFile',
+                flatten: true
+            }
+        },
+        bower: {
+            install: {
+                options: {
+                    cleanTargetDir:false,
+                    targetDir: './bower_components'
+                }
+            }
+        },
+        browserify: {
+            code: {
+                dest: 'app/js/main.min.js',
+                src: 'node_modules/weatherly/js/**/*.js',
+                options: {
+                    transform: ['uglifyify']
+                }
+            },
+            test: {
+                dest: 'app/js/test.js',
+                src: 'tests/unit/**/*.js'
+            }
+        }
+    });
+
+    grunt.loadTasks('build');
+
+    grunt.loadNpmTasks('grunt-express-server');
+    grunt.loadNpmTasks('grunt-selenium-webdriver');
+    grunt.loadNpmTasks('grunt-cucumber');
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-bower-task');
+
+    grunt.registerTask('generate', ['less:production', 'copy:fonts', 'browserify:code']);
+    grunt.registerTask('build', ['bower:install', 'generate']);
+
+    grunt.registerTask('e2e', [
+        'selenium_start',
+        'express:test',
+        'cucumberjs',
+        'selenium_stop',
+        'express:test:stop'
+    ]);
+
+    grunt.registerTask('test', ['build', 'karma:ci', 'e2e']);
+
+    grunt.registerTask('heroku:production', 'build');
+};
+</code></pre>
+
+<p>Apart from removing the code for Karma, I also added the <code>grunt.loadTasks</code> directive pointing it to our new created <code>build</code> folder. To validate that everything is still ok, just run <code>grunt karma:dev</code>. Let&rsquo;s do the same for our <code>browserify</code> task, once again create a new file (called <code>browserify.js</code>) and save it under our build folder:</p>
+
+<pre><code>(function(module) {
+    'use strict';
+    var config = {
+        code: {
+            dest: 'app/js/main.min.js',
+            src: 'node_modules/weatherly/js/**/*.js',
+            options: {
+                transform: ['uglifyify']
+            }
+        },
+        test: {
+            dest: 'app/js/test.js',
+            src: 'tests/unit/**/*.js'
+        }
+    };
+
+    module.exports = function(grunt) {
+        grunt.loadNpmTasks('grunt-browserify');
+        grunt.config('browserify', config);
+    }
+})(module);
+</code></pre>
+
+<p>And remove the code from the <code>Gruntfile.js</code>:</p>
+
+<pre><code>module.exports = function (grunt) {
+    'use strit';
+    grunt.initConfig({
+        express: {
+            test: {
+                options: {
+                    script: './server.js'
+                }
+            }
+        },
+        cucumberjs: {
+            src: 'tests/e2e/features/',
+            options: {
+                steps: 'tests/e2e/steps/'
+            }
+        },
+        less: {
+            production: {
+                options: {
+                    paths: ['app/css/'],
+                    cleancss: true
+                },
+                files: {
+                    'app/css/main.css': 'src/less/main.less'
+                }
+            }
+        },
+        copy: {
+            fonts: {
+                expand: true,
+                src: ['bower_components/bootstrap/fonts/*'],
+                dest: 'app/fonts/',
+                filter: 'isFile',
+                flatten: true
+            }
+        },
+        bower: {
+            install: {
+                options: {
+                    cleanTargetDir:false,
+                    targetDir: './bower_components'
+                }
+            }
+        }
+    });
+
+    grunt.loadTasks('build');
+
+    grunt.loadNpmTasks('grunt-express-server');
+    grunt.loadNpmTasks('grunt-selenium-webdriver');
+    grunt.loadNpmTasks('grunt-cucumber');
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-bower-task');
+
+
+    grunt.registerTask('generate', ['less:production', 'copy:fonts', 'browserify:code']);
+    grunt.registerTask('build', ['bower:install', 'generate']);
+
+    grunt.registerTask('e2e', [
+        'selenium_start',
+        'express:test',
+        'cucumberjs',
+        'selenium_stop',
+        'express:test:stop'
+    ]);
+
+    grunt.registerTask('test', ['build', 'karma:ci', 'e2e']);
+    grunt.registerTask('heroku:production', 'build');
+};
+</code></pre>
+
+<p>Let&rsquo;s test our task by running <code>grunt browserify:code</code> or <code>grunt browserify:test</code>. To speed things up a little in the following I am just going to show the extracted code.</p>
+
+<p>Bower.js</p>
+
+<pre><code>(function(module) {
+    'use strict';
+    var config = {
+        install: {
+            options: {
+                cleanTargetDir: false,
+                targetDir: './bower_components'
+            }
+        }
+    };
+
+    module.exports = function(grunt) {
+        grunt.loadNpmTasks('grunt-bower-task');
+        grunt.config('bower', config);
+    }
+})(module);
+</code></pre>
+
+<p>Copy.js</p>
+
+<pre><code>(function(module) {
+    'use strict';
+    var config = {
+        fonts: {
+            expand: true,
+            src: ['bower_components/bootstrap/fonts/*'],
+            dest: 'app/fonts/',
+            filter: 'isFile',
+            flatten: true
+        }
+    };
+
+    module.exports = function(grunt) {
+        grunt.loadNpmTasks('grunt-contrib-copy');
+
+        grunt.config('copy', config);
+    }
+})(module);
+</code></pre>
+
+<p>Less.js</p>
+
+<pre><code>(function(module) {
+    'use strict';
+    var config = {
+        production: {
+            options: {
+                paths: ['app/css/'],
+                cleancss: true
+            },
+            files: {
+                'app/css/main.css': 'src/less/main.less'
+            }
+        }
+    };
+
+    module.exports = function(grunt) {
+        grunt.loadNpmTasks('grunt-contrib-less');
+
+        grunt.config('less', config);
+    }
+})(module);
+</code></pre>
+
+<p>Cucumber.js</p>
+
+<pre><code>(function(module) {
+    'use strict';
+    var config = {
+        src: 'tests/e2e/features/',
+        options: {
+            steps: 'tests/e2e/steps/'
+        }
+    };
+
+    module.exports = function(grunt) {
+        grunt.loadNpmTasks('grunt-selenium-webdriver');
+        grunt.loadNpmTasks('grunt-cucumber');
+
+        grunt.config('cucumberjs', config);
+    }
+})(module);
+</code></pre>
+
+<p>Express.js</p>
+
+<pre><code>(function(module) {
+    'use strict';
+    var config = {
+        test: {
+            options: {
+                script: './server.js'
+            }
+        }
+    };
+
+    module.exports = function(grunt) {
+        grunt.loadNpmTasks('grunt-express-server');
+
+        grunt.config('express', config);
+    }
+})(module);
+</code></pre>
+
+<p>Leaving us now with a <code>Gruntfile</code> that is so much more lightweight and only concerns itself with loading and registering tasks:</p>
+
+<pre><code>module.exports = function (grunt) {
+    'use strit';
+    grunt.loadTasks('build');
+
+    grunt.registerTask('generate', ['less:production', 'copy:fonts', 'browserify:code']);
+    grunt.registerTask('build', ['bower:install', 'generate']);
+
+    grunt.registerTask('e2e', [
+        'selenium_start',
+        'express:test',
+        'cucumberjs',
+        'selenium_stop',
+        'express:test:stop'
+    ]);
+
+    grunt.registerTask('test', ['build', 'karma:ci', 'e2e']);
+    grunt.registerTask('heroku:production', 'build');
+};
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
