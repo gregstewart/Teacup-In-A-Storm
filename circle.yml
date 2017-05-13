@@ -20,7 +20,7 @@ test:
 
 deployment:
   prod:
-    branch: master
+    branch: release
     commands:
       - cd ui && lein cljsbuild once min
       - cd build && npm start && cd ../
