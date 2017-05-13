@@ -61,9 +61,9 @@ provider:
 functions:
   hello:
     handler: handler.hello
-  events:
-    # 11pm every evening
-    - schedule: cron(0 23 * * ? *)
+    events:
+      # 11pm every evening
+      - schedule: cron(0 23 * * ? *)
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
