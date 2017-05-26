@@ -1,6 +1,5 @@
-import format from 'date-fns/format';
-
 import Instagram from 'node-instagram';
+import formatDate from '../format-date';
 
 const get = (url) => {
   const instagram = new Instagram({
@@ -14,7 +13,7 @@ const formatter = item => ({
   link: item.link,
   image: item.images.standard_resolution.url,
   value: (item.caption && item.caption.text) ? item.caption.text : '',
-  date: format(parseInt(item.created_time, 10) * 1000, 'YYYY/MM/DD @ HH:mm'),
+  date: formatDate(item.created_time),
 });
 
 const build = (key, config) => (

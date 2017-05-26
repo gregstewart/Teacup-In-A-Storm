@@ -1,5 +1,5 @@
 import Twitter from 'twitter';
-import format from 'date-fns/format';
+import formatDate from '../format-date';
 
 const get = (url, base) => {
   const twitter = new Twitter({
@@ -13,7 +13,7 @@ const get = (url, base) => {
 const formatter = item => ({
   link: `https://twitter.com/_greg_stewart_/status/${item.id}`,
   value: item.text,
-  date: format(item.created_at, 'YYYY/MM/DD @ HH:mm'),
+  date: formatDate(item.created_at),
 });
 
 const build = (key, config) => (

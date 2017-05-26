@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import format from 'date-fns/format';
+import formatDate from '../format-date';
 
 const get = endpoint => (
   new Promise((resolve, reject) => {
@@ -33,7 +33,7 @@ const formatter = item => ({
   link: item.link,
   image: item.pictures.sizes[4].link,
   value: item.name,
-  date: format(item.release_time, 'YYYY/MM/DD @ HH:mm'),
+  date: formatDate(item.release_time),
 });
 
 const build = (key, config) => (

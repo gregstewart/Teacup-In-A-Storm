@@ -1,6 +1,6 @@
 import GitHubApi from 'github';
 import Promise from 'bluebird';
-import format from 'date-fns/format';
+import formatDate from '../format-date';
 
 const get = () => (
   new Promise((resolve, reject) => {
@@ -22,7 +22,7 @@ const get = () => (
 const formatter = item => ({
   link: item.repo.url,
   value: `${item.type} ${item.repo.name}`,
-  date: format(item.created_at, 'YYYY/MM/DD @ HH:mm'),
+  date: formatDate(item.created_at),
 });
 
 const build = (key, config) => (
