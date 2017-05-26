@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 import pickup from 'pickup';
-import format from 'date-fns/format';
+import formatDate from '../format-date';
 
 const get = url => (
   new Promise((resolve, reject) => {
@@ -40,13 +40,13 @@ const get = url => (
 const formatter = item => (
   { link: item.link,
     value: item.title,
-    date: format(new Date(item.updated), 'YYYY/MM/DD @ HH:mm') }
+    date: formatDate(item.updated) }
 );
 
 const handleError = (key, link) => (
   [{ link,
     value: `${key} feed could not be fetched`,
-    date: format(new Date(), 'YYYY/MM/DD @ HH:mm'),
+    date: formatDate(new Date()),
   }]
 );
 

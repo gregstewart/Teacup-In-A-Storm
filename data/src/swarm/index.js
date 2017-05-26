@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import format from 'date-fns/format';
+import formatDate from '../format-date';
 
 const get = endpoint => (
   new Promise((resolve, reject) => {
@@ -21,7 +21,7 @@ const get = endpoint => (
 const formatter = item => ({
   link: item.venue.url ? item.venue.url : '',
   value: item.venue.name,
-  date: format(parseInt(item.createdAt, 10) * 1000, 'YYYY/MM/DD @ HH:mm'),
+  date: formatDate(item.createdAt),
   lat: item.venue.location.lat,
   lon: item.venue.location.lng,
 });
