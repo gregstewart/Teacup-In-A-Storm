@@ -34,7 +34,6 @@
 
 (defn list-renderer
   [items-structure top-level-style type]
-  (println items-structure)
   (def items (get items-structure "items"))
   [:ul {:className (or top-level-style :default)}
     (for [item items]
