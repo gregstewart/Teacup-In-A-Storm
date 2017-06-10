@@ -28,5 +28,12 @@ describe('Format date', () => {
 
       expect(formatDate(date)).to.equal(expected);
     });
+
+    it('when passed a Date object', () => {
+      const date = new Date();
+      const expected = format(new Date(), 'YYYY/MM/DD @ HH:mm');
+
+      expect(formatDate(date)).to.equal(expected);
+    });
   });
 });

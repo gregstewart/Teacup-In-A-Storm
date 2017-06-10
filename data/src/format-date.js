@@ -6,12 +6,11 @@ export default function (date) {
   let tempDate;
   if (isNaN(date)) {
     tempDate = new Date(date);
-  } else {
+  } else if (Number.isInteger(parseInt(date, 10))) {
     tempDate = toMilliSeconds(date);
+  } else {
+    tempDate = date;
   }
 
-  if (Object.prototype.toString.call(tempDate) === '[object Date]' && isNaN(tempDate.getTime())) {
-    tempDate = toMilliSeconds(parseInt(date, 10));
-  }
   return format(tempDate, 'YYYY/MM/DD @ HH:mm');
 }
