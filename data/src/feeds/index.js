@@ -1,6 +1,7 @@
 import fetch from 'node-fetch';
 import pickup from 'pickup';
 import formatDate from '../format-date';
+import fixLink from '../fix-link';
 
 const get = url => (
   new Promise((resolve, reject) => {
@@ -38,7 +39,7 @@ const get = url => (
 );
 
 const formatter = item => (
-  { link: item.link,
+  { link: fixLink(item.link),
     value: item.title,
     date: formatDate(item.updated) }
 );

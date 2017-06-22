@@ -47,6 +47,60 @@ describe('Feeds', () => {
         done();
       });
     });
+
+    it('builds my data structure', (done) => {
+      const expected = { wordpress:
+      {
+        details: ['W',
+          'https://www.tcias.co.uk/blog',
+          6,
+          'Click to view my blog',
+          'icon-wordpress'],
+        listItems: {
+          items: [{ link: 'https://www.tcias.co.uk/blog/2015/08/07/your-organisation-should-adopt-an-open-source-model/',
+            value: 'Your Organisation Should Adopt an Open Source Model',
+            date: '2015/08/07 @ 11:25' },
+          { link: 'https://www.tcias.co.uk/blog/2015/06/28/why-use-node-dot-js/',
+            value: 'Why Use Node.js',
+            date: '2015/06/28 @ 15:35' },
+          { link: 'https://www.tcias.co.uk/blog/2015/06/07/are-you-using-docker/',
+            value: 'Are You Using Docker?',
+            date: '2015/06/07 @ 22:51' },
+          { link: 'https://www.tcias.co.uk/blog/2015/06/01/two-cool-use-cases-for-vagrant/',
+            value: 'Two Cool Use Cases for Vagrant',
+            date: '2015/06/01 @ 21:56' },
+          { link: 'https://www.tcias.co.uk/blog/2015/05/17/clojure-data-structures/',
+            value: 'Clojure Data Structures',
+            date: '2015/05/17 @ 12:15' },
+          { link: 'https://www.tcias.co.uk/blog/2015/05/02/exploring-the-open-closed-principle/',
+            value: 'Exploring the Open Closed Principle',
+            date: '2015/05/02 @ 16:29' },
+          { link: 'https://www.tcias.co.uk/blog/2015/04/23/a-quarter-of-the-way-in/',
+            value: 'A Quarter of the Way In',
+            date: '2015/04/23 @ 16:27' },
+          { link: 'https://www.tcias.co.uk/blog/2015/04/14/picking-a-new-language-to-learn/',
+            value: 'Picking a New Language to Learn',
+            date: '2015/04/14 @ 23:08' },
+          { link: 'https://www.tcias.co.uk/blog/2015/04/07/how-to-test-your-gem-against-multiple-ruby-versions-using-circle-ci/',
+            value: 'How to Test Your Gem Against Multiple Ruby Versions Using Circle Ci',
+            date: '2015/04/07 @ 22:14' },
+          { link: 'https://www.tcias.co.uk/blog/2015/04/07/a-couple-of-bundler-tricks/',
+            value: 'A Couple of Bundler Tricks',
+            date: '2015/04/07 @ 22:04' }] } },
+      };
+
+      const doc = yaml.safeLoad(fs.readFileSync('./feed-config.yml', 'utf8'));
+
+      client.build('wordpress', doc.wordpress)
+        .then((response) => {
+          expect(response).to.deep.equal(expected);
+          done();
+        })
+        .catch((error) => {
+          expect(error).to.equal(undefined);
+          done();
+        });
+    });
   });
 
   describe('Delicious', () => {
