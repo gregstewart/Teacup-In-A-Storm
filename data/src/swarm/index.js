@@ -26,6 +26,13 @@ const formatter = item => ({
   lon: item.venue.location.lng,
 });
 
+const handleError = (key, link) => (
+  [{ link,
+    value: `${key} feed could not be fetched`,
+    date: formatDate(new Date()),
+  }]
+);
+
 const build = (key, config) => (
   new Promise((resolve) => {
     get('/users/self/checkins')
@@ -36,6 +43,15 @@ const build = (key, config) => (
           details: config.details,
           listItems: {
             items,
+          },
+        };
+        return resolve(outcome);
+      }).catch(() => {
+        const outcome = {};
+        outcome[key] = {
+          details: config.details,
+          listItems: {
+            items: handleError(key, config.details[1]),
           },
         };
         return resolve(outcome);

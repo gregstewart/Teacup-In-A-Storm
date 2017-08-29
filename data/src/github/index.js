@@ -26,7 +26,7 @@ const formatter = item => ({
 });
 
 const build = (key, config) => (
-  new Promise((resolve) => {
+  new Promise((resolve, reject) => {
     get().then((response) => {
       const items = response.slice(0, config.count).map(formatter);
       const outcome = {};
@@ -37,7 +37,7 @@ const build = (key, config) => (
         },
       };
       return resolve(outcome);
-    });
+    }).catch((error) => { reject(error); });
   })
 );
 

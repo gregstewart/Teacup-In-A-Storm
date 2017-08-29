@@ -37,7 +37,7 @@ const formatter = item => ({
 });
 
 const build = (key, config) => (
-  new Promise((resolve) => {
+  new Promise((resolve, reject) => {
     get('/me/videos').then((response) => {
       const items = response.data.slice(0, config.count).map(formatter);
       const outcome = {};
@@ -48,7 +48,7 @@ const build = (key, config) => (
         },
       };
       return resolve(outcome);
-    });
+    }).catch((error) => { reject(error); });
   })
 );
 

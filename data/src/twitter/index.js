@@ -17,7 +17,7 @@ const formatter = item => ({
 });
 
 const build = (key, config) => (
-  new Promise((resolve) => {
+  new Promise((resolve, reject) => {
     get('/statuses/user_timeline.json', { screen_name: '_greg_stewart_' })
       .then((response) => {
         const items = response.slice(0, config.count).map(formatter);
@@ -29,7 +29,7 @@ const build = (key, config) => (
           },
         };
         return resolve(outcome);
-      });
+      }).catch((error) => { reject(error); });
   })
 );
 
