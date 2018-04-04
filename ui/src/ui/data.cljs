@@ -5,7 +5,7 @@
 
 (def data { :given-name "Greg "
             :family-name "Stewart"
-            :title "Chief Technology Officer"
+            :title "Head of Engineering"
             :home-email "gregs@tcias.co.uk"
             :home-mailto "mailto:gregs+personal-website@tcias.co.uk?subject=Hello from the web"
             :work-email "greg.stewart@red-badger.com"
