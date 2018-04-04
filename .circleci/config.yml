@@ -93,6 +93,9 @@ jobs:
       - attach_workspace:
           at: ~/
       - run:
+          name: install node
+          command: nvm install 6.1 && nvm alias default 6.1
+      - run:
           name: Build UI
           command: cd ui && lein cljsbuild once min
       - run:
