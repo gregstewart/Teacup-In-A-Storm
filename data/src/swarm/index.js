@@ -33,7 +33,7 @@ const handleError = (key, link) => (
   }]
 );
 
-const build = (key, config) => (
+const build = (key, config, logger) => (
   new Promise((resolve) => {
     get('/users/self/checkins')
       .then((response) => {
@@ -46,7 +46,8 @@ const build = (key, config) => (
           },
         };
         return resolve(outcome);
-      }).catch(() => {
+      }).catch((error) => {
+        logger.error(error);
         const outcome = {};
         outcome[key] = {
           details: config.details,
