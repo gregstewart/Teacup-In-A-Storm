@@ -96,17 +96,17 @@ jobs:
       command: /sbin/init
     steps:
       - run:
-        name: Build UI
-        command: cd ui && lein cljsbuild once min
+          name: Build UI
+          command: cd ui && lein cljsbuild once min
       - run:
-        name: Build data to be burnt into page
-        command: cd build && npm start && cd ../
+          name: Build data to be burnt into page
+          command: cd build && npm start && cd ../
       - run:
-        name: Burn
-        command: cd build && npm run replace && cd ../
+          name: Burn
+          command: cd build && npm run replace && cd ../
       - run:
-        name: Deploy to AWS
-        command: sh ./bin/deploy.sh
+          name: Deploy to AWS
+          command: sh ./bin/deploy.sh
   # Teardown
 
 workflows:
