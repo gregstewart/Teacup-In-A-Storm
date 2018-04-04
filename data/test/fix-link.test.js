@@ -1,7 +1,7 @@
 import fixLink from '../src/fix-link';
 
 describe('Fix link', () => {
-  describe('returns a nicely link', () => {
+  describe('returns a nicely formatted link', () => {
     it('when passed a string without http', () => {
       const link = 'www.tcias.co.uk/blog/2015/08/07/your-organisation-should-adopt-an-open-source-model/';
       const expected = `https://${link}`;
