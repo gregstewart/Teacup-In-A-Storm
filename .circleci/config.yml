@@ -96,6 +96,9 @@ jobs:
   # since deployment in CircleCI 2.0 are better handled through workflows.
   # See the documentation for more information https://circleci.com/docs/2.0/workflows/
   deploy:
+    docker:
+    - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
+      command: /sbin/init
     steps:
       - run:
         name: Build UI
