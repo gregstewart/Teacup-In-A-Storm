@@ -16,7 +16,7 @@ const formatter = item => ({
   date: formatDate(item.created_time),
 });
 
-const build = (key, config) => (
+const build = (key, config, logger) => (
   new Promise((resolve, reject) => {
     get('users/self/media/recent').then((response) => {
       const items = response.data.slice(0, config.count).map(formatter);
@@ -28,7 +28,10 @@ const build = (key, config) => (
         },
       };
       return resolve(outcome);
-    }).catch((error) => { reject(error); });
+    }).catch((error) => {
+      logger.error(error);
+      reject(error);
+    });
   })
 );
 

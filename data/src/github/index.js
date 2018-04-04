@@ -25,7 +25,7 @@ const formatter = item => ({
   date: formatDate(item.created_at),
 });
 
-const build = (key, config) => (
+const build = (key, config, logger) => (
   new Promise((resolve, reject) => {
     get().then((response) => {
       const items = response.slice(0, config.count).map(formatter);
@@ -37,7 +37,10 @@ const build = (key, config) => (
         },
       };
       return resolve(outcome);
-    }).catch((error) => { reject(error); });
+    }).catch((error) => {
+      logger.error(error);
+      reject(error);
+    });
   })
 );
 
