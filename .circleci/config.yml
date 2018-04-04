@@ -115,4 +115,4 @@ workflows:
             - build
           filters:
             branches:
-              only: migrate-to-circle-2.0
+              only: release
