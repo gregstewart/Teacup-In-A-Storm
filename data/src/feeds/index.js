@@ -51,7 +51,7 @@ const handleError = (key, link) => (
   }]
 );
 
-const build = (key, config) => (
+const build = (key, config, logger) => (
   new Promise((resolve) => {
     get(config.url)
     .then((response) => {
@@ -70,7 +70,8 @@ const build = (key, config) => (
         },
       };
       return resolve(outcome);
-    }).catch(() => {
+    }).catch((error) => {
+      logger.error(error);
       const outcome = {};
       outcome[key] = {
         details: config.details,

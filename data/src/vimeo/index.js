@@ -36,7 +36,7 @@ const formatter = item => ({
   date: formatDate(item.release_time),
 });
 
-const build = (key, config) => (
+const build = (key, config, logger) => (
   new Promise((resolve, reject) => {
     get('/me/videos').then((response) => {
       const items = response.data.slice(0, config.count).map(formatter);
@@ -48,7 +48,10 @@ const build = (key, config) => (
         },
       };
       return resolve(outcome);
-    }).catch((error) => { reject(error); });
+    }).catch((error) => {
+      logger.error(logger);
+      reject(error);
+    });
   })
 );
 
