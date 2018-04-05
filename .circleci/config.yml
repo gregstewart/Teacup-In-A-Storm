@@ -101,6 +101,9 @@ jobs:
           name: Burn
           command: cd build && npm run replace && cd ../
       - run:
+          name: Minify CSS
+          command: cd build && npm run clean:css && cd ../
+      - run:
           name: Deploy to AWS
           command: sh ./bin/deploy.sh
   # Teardown

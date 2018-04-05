@@ -6,13 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel-node ./build",
-    "replace": "babel-node ./replace"
+    "replace": "babel-node ./replace",
+    "clean:css": "cleancss -o ../ui/resources/public/css/style.min.css ../ui/resources/public/css/style.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.4.0",
+    "clean-css-cli": "^4.1.11",
     "dotenv": "^4.0.0",
     "is-ci": "^1.0.10",
     "jsonfile": "^3.0.0"
