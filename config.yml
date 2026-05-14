@@ -1,0 +1,49 @@
+version: 2.1
+
+orbs:
+  aws-cli: circleci/aws-cli@4.1.3
+
+jobs:
+  deploy:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - aws-cli/setup:
+          aws_access_key_id: AWS_ACCESS_KEY_ID
+          aws_secret_access_key: AWS_SECRET_ACCESS_KEY
+          region: AWS_DEFAULT_REGION
+      - run:
+          name: Sync to S3
+          command: |
+            aws s3 sync . s3://$S3_BUCKET_NAME \
+              --exclude ".git/*" \
+              --exclude ".circleci/*" \
+              --exclude "README*" \
+              --delete \
+              --cache-control "max-age=86400"
+      - run:
+          name: Set HTML cache headers
+          command: |
+            aws s3 cp s3://$S3_BUCKET_NAME/index.html s3://$S3_BUCKET_NAME/index.html \
+              --metadata-directive REPLACE \
+              --cache-control "no-cache, no-store, must-revalidate" \
+              --content-type "text/html; charset=utf-8"
+      - run:
+          name: Invalidate CloudFront cache (if configured)
+          command: |
+            if [ -n "$CLOUDFRONT_DISTRIBUTION_ID" ]; then
+              aws cloudfront create-invalidation \
+                --distribution-id $CLOUDFRONT_DISTRIBUTION_ID \
+                --paths "/*"
+            else
+              echo "No CloudFront distribution configured, skipping invalidation."
+            fi
+
+workflows:
+  deploy-site:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: main
