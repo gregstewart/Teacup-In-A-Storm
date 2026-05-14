@@ -1,14 +1,32 @@
-.env
-.nyc_output/
-.idea/
-.DS_Store
-.bundle/
-coverage.data
-coverage/
-log/
-tmp/
-lib/
-.sass-cache/
-api_keys.yml
+# Dependencies
 node_modules/
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime
+.cache/
