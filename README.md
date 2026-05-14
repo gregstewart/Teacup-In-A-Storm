@@ -7,7 +7,7 @@ A single-page HTML/CSS/JS site — no build step required.
 
 - Pure HTML, CSS, JavaScript — zero dependencies, zero build tooling
 - Fonts loaded from Google Fonts (Libre Baskerville + DM Sans)
-- Deployed to AWS S3 via CircleCI
+- Deployed to AWS S3 via GitHub Actions
 
 ## Local development
 
@@ -25,11 +25,11 @@ python3 -m http.server 8080
 
 The site deploys automatically to S3 on every push to `main`.
 
-### CircleCI environment variables required
+### GitHub Actions secrets required
 
-Set these in your CircleCI project settings:
+Set these in your repository settings under **Settings → Secrets and variables → Actions**:
 
-| Variable | Description |
+| Secret | Description |
 |---|---|
 | `AWS_ACCESS_KEY_ID` | IAM user with S3 write access |
 | `AWS_SECRET_ACCESS_KEY` | Corresponding secret key |
@@ -72,8 +72,9 @@ The deploying IAM user needs:
 ```
 tcias.co.uk/
 ├── index.html          # The entire site
-├── .circleci/
-│   └── config.yml      # CI/CD pipeline
+├── .github/
+│   └── workflows/
+│       └── deploy.yml  # CI/CD pipeline
 └── README.md
 ```
 
